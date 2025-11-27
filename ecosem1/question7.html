@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q7 — Income and Cross Elasticity of Demand</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:17px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:20px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:14px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+    }
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 7 — Income and Cross Elasticity of Demand</h1>
+      <div class="meta">
+        Government College Ludhiana East • Commercial Law — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      The general concept of elasticity of demand measures the degree of responsiveness of quantity demanded
+      to a change in any of its determinants. While price elasticity of demand considers changes in own price,
+      <strong>income elasticity</strong> and <strong>cross elasticity</strong> extend this analysis to other
+      crucial determinants—namely, consumer income and prices of related goods. T.R. Jain and V.K. Ohri
+      treat these elasticities as essential tools for understanding how demand behaves in a realistic, multi-variable
+      economic environment.
+    </p>
+    <p>
+      In this note, we explain in detail the meaning, types and significance of (a) <strong>Income Elasticity of Demand</strong>,
+      and (b) <strong>Cross Elasticity of Demand</strong>, along with their importance in theory and policy. This
+      structured discussion is exactly in line with the expectations of Panjab University for a 15-marks long answer.
+    </p>
+
+    <!-- I. INCOME ELASTICITY -->
+    <p class="section-title">I. Income Elasticity of Demand</p>
+
+    <p class="subheading">1. Meaning and Definition</p>
+    <p>
+      <strong>Income Elasticity of Demand</strong> (usually denoted by E<sub>y</sub>) measures the degree of
+      responsiveness of quantity demanded of a commodity to a change in the income of the consumer, other factors
+      such as price and tastes remaining constant.
+    </p>
+
+    <div class="boxed">
+      <strong>Formal definition:</strong><br>
+      Income elasticity of demand is the percentage change in quantity demanded of a commodity divided by the
+      percentage change in the income of the consumer, <em>ceteris paribus</em>.
+      <br><br>
+      <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+        E<sub>y</sub> = (% change in Q) ÷ (% change in Y)
+      </span>
+    </div>
+
+    <p class="subheading">2. Measurement (Basic Formula)</p>
+    <p>
+      For finite changes, income elasticity of demand can be measured as:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      E<sub>y</sub> = (ΔQ / Q) ÷ (ΔY / Y) = (ΔQ / ΔY) × (Y / Q)
+    </p>
+    <p>
+      Where ΔQ = change in quantity demanded, ΔY = change in income, Q = initial quantity demanded and Y = initial income.
+      In certain contexts, an arc formula using averages of Q and Y may be used to measure income elasticity over a range.
+    </p>
+
+    <p class="subheading">3. Types of Income Elasticity of Demand</p>
+    <p>
+      Depending on the sign and magnitude of E<sub>y</sub>, we classify income elasticity into several types:
+    </p>
+
+    <ol class="points">
+      <li>
+        <strong>Positive Income Elasticity (E<sub>y</sub> &gt; 0):</strong>
+        Quantity demanded increases when income increases. Such goods are called <strong>normal goods</strong>.
+        Within this category:
+        <ul class="points">
+          <li><strong>0 &lt; E<sub>y</sub> &lt; 1:</strong> Necessities; demand rises less than proportionately with income.</li>
+          <li><strong>E<sub>y</sub> = 1:</strong> Unit income elasticity; demand rises in the same proportion as income.</li>
+          <li><strong>E<sub>y</sub> &gt; 1:</strong> Luxuries or superior goods; demand rises more than proportionately with income.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Negative Income Elasticity (E<sub>y</sub> &lt; 0):</strong>
+        Quantity demanded decreases when income increases. Such goods are <strong>inferior goods</strong> in the
+        Hicksian sense. As people become richer, they substitute these goods with better-quality alternatives.
+      </li>
+      <li>
+        <strong>Zero Income Elasticity (E<sub>y</sub> = 0):</strong>
+        Quantity demanded remains unchanged when income changes. Demand for such goods is completely independent
+        of income (e.g. life-saving drugs within a certain range).
+      </li>
+    </ol>
+
+    <div class="example">
+      <strong>Illustrative examples:</strong><br>
+      • Rice or wheat for low-income consumers typically shows positive but less than unit income elasticity (necessity).<br>
+      • High-end imported chocolates and premium cars may show income elasticity greater than one (luxury goods).<br>
+      • Coarse grains or very low-quality clothing may exhibit negative income elasticity for higher income groups (inferior goods).
+    </div>
+
+    <p class="subheading">4. Importance of Income Elasticity of Demand</p>
+    <p>
+      Income elasticity of demand plays an important role in several areas of economic analysis and policy:
+    </p>
+
+    <div class="importance">
+      <strong>(a) Business Forecasting and Planning</strong><br>
+      Firms use income elasticity to forecast how sales of their products will change with economic growth. A
+      product with high positive income elasticity will experience rapid growth in demand in periods of rising
+      national income. This helps firms plan capacity expansion, investment and long-term strategy.
+    </div>
+
+    <div class="importance">
+      <strong>(b) Classification of Goods into Necessities, Luxuries and Inferior Goods</strong><br>
+      Income elasticity provides an analytical basis for classifying goods. Necessities typically have low but
+      positive income elasticity, luxuries have income elasticity greater than one, and inferior goods have
+      negative income elasticity. This classification is important for welfare analysis and tax policy.
+    </div>
+
+    <div class="importance">
+      <strong>(c) Public Policy and Taxation</strong><br>
+      Governments closely study the income elasticity of different goods while designing tax structures and
+      subsidy policies. Highly income-elastic luxury goods can be taxed more heavily, whereas necessities consumed
+      by low-income groups may be given concessions or subsidies.
+    </div>
+
+    <div class="importance">
+      <strong>(d) Economic Development and Structural Change</strong><br>
+      In developing economies, as per capita income rises, demand shifts away from basic necessities towards
+      manufactured goods and services with higher income elasticity. Understanding these patterns (Engel’s law)
+      helps planners anticipate structural changes in the economy.
+    </div>
+
+    <div class="importance">
+      <strong>(e) International Trade Pattern</strong><br>
+      Countries exporting goods with high income elasticity benefit more from global income growth. Knowledge of
+      income elasticity structure thus influences trade and export promotion policies.
+    </div>
+
+    <!-- II. CROSS ELASTICITY -->
+    <p class="section-title">II. Cross Elasticity of Demand</p>
+
+    <p class="subheading">1. Meaning and Definition</p>
+    <p>
+      While income elasticity deals with responsiveness to changes in income, <strong>cross elasticity of demand</strong>
+      (denoted by E<sub>xy</sub>) measures the responsiveness of demand for one good to changes in the price of
+      <em>another</em> related good. It is therefore primarily concerned with the relationship between
+      <strong>substitute goods</strong> and <strong>complementary goods</strong>.
+    </p>
+
+    <div class="boxed">
+      <strong>Formal definition:</strong><br>
+      Cross elasticity of demand is the percentage change in quantity demanded of one commodity (X) divided by the
+      percentage change in the price of another related commodity (Y), <em>ceteris paribus</em>.
+      <br><br>
+      <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+        E<sub>xy</sub> = (% change in Q<sub>x</sub>) ÷ (% change in P<sub>y</sub>)
+      </span>
+    </div>
+
+    <p class="subheading">2. Measurement (Basic Formula)</p>
+    <p>
+      For measurable changes, cross elasticity can be written as:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      E<sub>xy</sub> = (ΔQ<sub>x</sub> / Q<sub>x</sub>) ÷ (ΔP<sub>y</sub> / P<sub>y</sub>) = (ΔQ<sub>x</sub> / ΔP<sub>y</sub>) × (P<sub>y</sub> / Q<sub>x</sub>)
+    </p>
+    <p>
+      Here, Q<sub>x</sub> is quantity demanded of commodity X and P<sub>y</sub> is the price of related commodity Y. 
+      The sign and magnitude of E<sub>xy</sub> provide crucial information on the nature and strength of the relationship between the two goods.
+    </p>
+
+    <p class="subheading">3. Types of Cross Elasticity of Demand</p>
+    <p>
+      According to whether two goods are substitutes, complements or unrelated, cross elasticity may be:
+    </p>
+
+    <ol class="points">
+      <li>
+        <strong>Positive Cross Elasticity (E<sub>xy</sub> &gt; 0) — Substitutes:</strong>
+        When the price of good Y rises, demand for good X increases (and vice versa). This indicates that X and Y are
+        <strong>substitute goods</strong>, such as tea and coffee, Coke and Pepsi, or butter and margarine.
+      </li>
+      <li>
+        <strong>Negative Cross Elasticity (E<sub>xy</sub> &lt; 0) — Complements:</strong>
+        When the price of good Y rises, demand for good X falls (and vice versa). This indicates that X and Y are
+        <strong>complementary goods</strong>, such as car and petrol, printer and ink, mobile handset and data packs.
+      </li>
+      <li>
+        <strong>Zero (or Almost Zero) Cross Elasticity (E<sub>xy</sub> ≈ 0) — Unrelated Goods:</strong>
+        When a change in the price of Y has practically no effect on the demand for X, the goods are unrelated (e.g. bread and diesel).
+      </li>
+    </ol>
+
+    <div class="example">
+      <strong>Illustrative examples:</strong><br>
+      • If price of coffee increases and demand for tea rises, cross elasticity of tea with respect to coffee is positive (substitutes).<br>
+      • If price of petrol increases and demand for cars falls, cross elasticity of cars with respect to petrol is negative (complements).<br>
+      • If price of pencils changes and demand for refrigerators is unaffected, cross elasticity is zero (unrelated goods).
+    </div>
+
+    <p class="subheading">4. Importance of Cross Elasticity of Demand</p>
+    <p>
+      Cross elasticity plays a vital role in several analytical and practical contexts:
+    </p>
+
+    <div class="importance">
+      <strong>(a) Classification of Goods as Substitutes or Complements</strong><br>
+      Cross elasticity provides a quantitative measure of the nature and strength of the relationship between two goods.
+      A positive coefficient confirms substitutability; a negative coefficient confirms complementarity. The higher the
+      absolute value, the stronger the relationship.
+    </div>
+
+    <div class="importance">
+      <strong>(b) Defining Industry and Market Boundaries</strong><br>
+      In industrial economics and competition law, markets are defined in terms of groups of commodities that are close
+      substitutes for each other. High positive cross elasticity among products indicates that they belong to the same
+      competitive market or industry. This is essential for assessing monopoly power, mergers and anti-competitive practices.
+    </div>
+
+    <div class="importance">
+      <strong>(c) Pricing Strategy and Rival Behaviour</strong><br>
+      When cross elasticity between the products of different firms is high, a price change by one firm has a significant
+      effect on the sales of rival firms. In such cases, firms must anticipate competitors’ reactions and adopt strategic
+      pricing and advertising policies.
+    </div>
+
+    <div class="importance">
+      <strong>(d) Joint Products and Complementary Pricing</strong><br>
+      For complementary goods (like cameras and memory cards), producers often design joint marketing and pricing strategies.
+      Knowledge of cross elasticity helps in determining optimal pricing combinations, bundle offers and tie-in sales.
+    </div>
+
+    <div class="importance">
+      <strong>(e) Public Policy, Taxation and Regulation</strong><br>
+      Government policies affecting the price of one good may have unintended consequences on related goods through cross
+      elasticity channel. For instance, raising fuel prices affects car demand, and taxing cigarettes may change demand for
+      substitute tobacco products. Policymakers must consider such cross effects for coherent policy design.
+    </div>
+
+    <!-- III. DISTINCTION -->
+    <p class="section-title">III. Distinction Between Income and Cross Elasticity of Demand</p>
+    <p>
+      Though both are forms of elasticity of demand, income elasticity and cross elasticity differ fundamentally in the
+      variable whose change is being considered and in their economic interpretation. A clear distinction is often required in exams.
+    </p>
+
+    <table aria-label="Difference between income elasticity and cross elasticity of demand">
+      <thead>
+        <tr>
+          <th>Basis</th>
+          <th>Income Elasticity of Demand</th>
+          <th>Cross Elasticity of Demand</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Definition</td>
+          <td>Measures responsiveness of demand for a good to a change in consumer income, other things remaining constant.</td>
+          <td>Measures responsiveness of demand for a good to a change in the price of another related good, other things remaining constant.</td>
+        </tr>
+        <tr>
+          <td>Notation</td>
+          <td>Usually denoted by E<sub>y</sub>.</td>
+          <td>Usually denoted by E<sub>xy</sub>.</td>
+        </tr>
+        <tr>
+          <td>Sign</td>
+          <td>Positive for normal goods; negative for inferior goods; zero for income-neutral goods.</td>
+          <td>Positive for substitutes; negative for complements; approximately zero for unrelated goods.</td>
+        </tr>
+        <tr>
+          <td>Classification of Goods</td>
+          <td>Classifies goods as necessities, luxuries and inferior goods.</td>
+          <td>Classifies goods as substitutes, complements or unrelated goods.</td>
+        </tr>
+        <tr>
+          <td>Main Use</td>
+          <td>Forecasting demand under changing income, studying economic development, tax policy on luxuries and necessities.</td>
+          <td>Defining market boundaries, studying interdependence of firms, designing pricing for related goods and competition policy.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, income elasticity and cross elasticity of demand are powerful extensions of the basic elasticity
+      concept. Income elasticity relates demand to changes in consumer income and enables us to distinguish between
+      necessities, luxuries and inferior goods, while cross elasticity relates demand to price changes of related
+      commodities and helps us identify substitutes and complements and delineate market boundaries. A well-prepared
+      answer should state precise definitions, give formulae, classify types on the basis of sign and magnitude, and
+      highlight the practical importance of each elasticity in business decisions and public policy. Such a structured
+      treatment fully matches the standard expected by Panjab University examiners.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      This answer forms part of a carefully curated set of important questions that have frequently appeared in
+      past university examinations and therefore hold a high probability of reappearing in future assessments.
+      While prepared with academic accuracy and aligned to the prescribed syllabus, these solutions should be
+      treated as high-quality preparation material rather than a guaranteed prediction of any upcoming exam paper.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

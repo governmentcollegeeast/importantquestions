@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q30 — Monopolistic Competition: Equilibrium of Firm & Group (Short Run & Long Run)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef;
+      --card:#fff;
+      --accent:#1e3a8a;
+      --muted:#55606a;
+      --maxw:1000px;
+      --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ul.points, ol.points{
+      padding-left:20px;
+      margin-top:6px;
+    }
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 30 — Monopolistic Competition: Equilibrium of Firm and Group in Short Run &amp; Long Run</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the theory of product markets, <strong>monopolistic competition</strong> occupies an intermediate position
+      between <strong>perfect competition</strong> and <strong>monopoly</strong>. It combines the element of
+      <strong>competition</strong> (large number of firms) with the element of <strong>monopoly</strong> (product
+      differentiation and some control over price). In the prescribed text
+      <em>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</em> for B.Com Semester I (Panjab University), equilibrium
+      under monopolistic competition is analysed in terms of the <strong>individual firm</strong> and the
+      <strong>group of firms</strong>, both in the <strong>short run</strong> and the <strong>long run</strong>.
+    </p>
+    <p>
+      To answer this question in an examiner-friendly manner, we shall first explain the <strong>meaning and features</strong>
+      of monopolistic competition and then discuss <strong>equilibrium of the firm</strong> and <strong>equilibrium of
+      the group</strong> in the short run and long run with proper diagrams and interpretation.
+    </p>
+
+    <!-- I. MEANING AND FEATURES -->
+    <p class="section-title">I. Meaning and Features of Monopolistic Competition</p>
+
+    <p class="subheading">1. Meaning</p>
+    <p>
+      The concept of monopolistic competition was developed by <strong>Prof. E.H. Chamberlin</strong>. It refers to
+      a market situation in which a relatively large number of firms sell products which are <strong>similar but not
+      identical</strong>. Each firm produces a differentiated variety and therefore enjoys some monopoly power, but
+      the presence of many close substitutes also makes the market competitive.
+    </p>
+
+    <div class="boxed">
+      <strong>Definition (exam-style):</strong><br>
+      Monopolistic competition is a market structure in which a fairly large number of firms sell differentiated
+      products which are close substitutes of one another, there is free entry and exit of firms, and each firm
+      has some degree of monopoly power over its own variety but faces competition from rival brands.
+    </div>
+
+    <p class="subheading">2. Essential Features</p>
+    <ol class="points">
+      <li>
+        <strong>Large number of firms:</strong><br>
+        There are many firms in the industry, each with a relatively small market share. No single firm can influence
+        the market conditions for the entire group, but each has some control over its own individual demand due to
+        product differentiation.
+      </li>
+      <li>
+        <strong>Product differentiation:</strong><br>
+        Each firm produces a <strong>slightly differentiated product</strong> — through brand name, quality, design,
+        colour, packaging, after-sale service, etc. The products are close substitutes but not perfect substitutes.
+        This gives each firm some <strong>monopoly element</strong>.
+      </li>
+      <li>
+        <strong>Freedom of entry and exit:</strong><br>
+        In the long run, firms can freely enter the industry when existing firms earn supernormal profits and can exit
+        when they suffer losses. This ensures that in the long run only <strong>normal profits</strong> are earned.
+      </li>
+      <li>
+        <strong>Selling costs:</strong><br>
+        Firms incur <strong>selling costs</strong> (advertising, sales promotion, publicity, etc.) to differentiate
+        their brands and attract customers. This is an important feature distinguishing monopolistic competition from
+        perfect competition.
+      </li>
+      <li>
+        <strong>Downward sloping firm demand curve:</strong><br>
+        Because of product differentiation, each firm faces a <strong>downward sloping demand curve (AR curve)</strong>.
+        It can raise price without losing all customers, but demand is still relatively elastic due to availability
+        of close substitutes.
+      </li>
+      <li>
+        <strong>Firm vs group:</strong><br>
+        Under monopolistic competition, Chamberlin uses the term <strong>“group”</strong> instead of “industry”.
+        A <strong>group</strong> consists of all firms producing close substitutes (e.g. all brands of toothpaste).
+        Each firm belongs to a group, but has some individuality due to differentiation.
+      </li>
+    </ol>
+
+    <div class="example">
+      <strong>Typical real-life examples:</strong> branded soaps, toothpastes, shampoos, garments, restaurants and
+      fast-food outlets — where each brand is differentiated but many close substitutes are available.
+    </div>
+
+    <!-- II. EQUILIBRIUM OF FIRM IN SHORT RUN -->
+    <p class="section-title">II. Equilibrium of the Firm under Monopolistic Competition in the Short Run</p>
+
+    <p class="subheading">1. Concept of Equilibrium of Firm</p>
+    <p>
+      A firm is in <strong>equilibrium</strong> when it has no tendency to change its level of output; that is, when
+      it maximises its profit (or minimises its loss). As in other market structures, the fundamental condition of
+      equilibrium is:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = MC and MC cuts MR from below.
+    </p>
+    <p>
+      Under monopolistic competition, each firm faces a downward sloping demand (AR) curve and a corresponding MR
+      curve lying below it. On the cost side, we have the usual short-run AC and MC curves.
+    </p>
+
+    <p class="subheading">2. Diagram: Short-run Equilibrium of the Firm</p>
+
+    <div class="diagram" aria-label="Short-run equilibrium of a firm under monopolistic competition">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ar{stroke:#16a34a;stroke-width:2.4;fill:none}
+          .mr{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .ac{stroke:#f97316;stroke-width:2.4;fill:none}
+          .mc{stroke:#111827;stroke-width:2.4;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .profit{fill:rgba(59,130,246,0.12);stroke:#3b82f6;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="500" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Price / Cost / Revenue</text>
+        <text x="480" y="430" class="label small">Output (Q)</text>
+
+        <!-- AR (firm demand curve) -->
+        <path d="M80 110 C 190 160, 310 230, 500 320" class="ar"/>
+        <text x="460" y="305" class="label small">AR (Demand)</text>
+
+        <!-- MR -->
+        <path d="M80 170 C 190 220, 310 280, 500 360" class="mr"/>
+        <text x="460" y="345" class="label small">MR</text>
+
+        <!-- AC -->
+        <path d="M120 320 C 200 240, 290 220, 380 245 C 430 265, 470 305, 490 345" class="ac"/>
+        <text x="455" y="270" class="label small">AC</text>
+
+        <!-- MC -->
+        <path d="M130 350 C 210 255, 290 225, 370 230 C 420 235, 460 260, 495 310" class="mc"/>
+        <text x="455" y="245" class="label small">MC</text>
+
+        <!-- Equilibrium: MR = MC -->
+        <circle cx="320" cy="250" r="4" fill="#111827"/>
+        <text x="326" y="245" class="label small">E</text>
+
+        <!-- Vertical from E to Q* -->
+        <line x1="320" y1="250" x2="320" y2="410" class="guide"/>
+        <text x="312" y="430" class="label small">Q*</text>
+
+        <!-- Price P* from AR at Q* -->
+        <circle cx="320" cy="210" r="3" fill="#111827"/>
+        <line x1="320" y1="210" x2="80" y2="210" class="guide"/>
+        <text x="55" y="215" class="label small">P*</text>
+
+        <!-- AC at Q* -->
+        <circle cx="320" cy="260" r="3" fill="#111827"/>
+        <line x1="320" y1="260" x2="80" y2="260" class="guide"/>
+        <text x="55" y="265" class="label small">C</text>
+
+        <!-- Supernormal profit area -->
+        <rect x="320" y="210" width="90" height="50" class="profit"/>
+        <text x="335" y="240" class="label small">Supernormal profit</text>
+      </svg>
+      <div class="caption">
+        Fig. 1 — Short-run equilibrium of a firm under monopolistic competition: equilibrium at E where MR = MC.
+        Firm produces Q* and charges price P* from the AR curve. Since P* &gt; AC, the firm earns supernormal profit
+        (shaded area).
+      </div>
+    </div>
+
+    <p class="subheading">3. Short-run Profit Positions</p>
+    <p>
+      In the short run a firm under monopolistic competition may earn:
+    </p>
+    <ol class="points">
+      <li>
+        <strong>Supernormal profits:</strong> If at the equilibrium output Q* we have <strong>P* &gt; AC</strong>,
+        the firm earns supernormal profit equal to (P* − AC) × Q* (shaded rectangle in Fig. 1).
+      </li>
+      <li>
+        <strong>Normal profit:</strong> If at Q* the AR curve is tangent to the AC curve (P* = AC), the firm earns
+        only normal profit.
+      </li>
+      <li>
+        <strong>Losses (subnormal profit):</strong> If at Q* we have <strong>P* &lt; AC</strong> but P* &gt; AVC,
+        the firm incurs losses yet continues to produce in the short run, as it covers its variable costs and part
+        of fixed costs.
+      </li>
+    </ol>
+    <p>
+      Thus, short-run equilibrium of a firm under monopolistic competition is similar to monopoly equilibrium in form,
+      but the demand curve is more elastic due to the presence of close substitutes.
+    </p>
+
+    <!-- III. EQUILIBRIUM OF GROUP IN SHORT RUN -->
+    <p class="section-title">III. Short-run Equilibrium of the Group under Monopolistic Competition</p>
+    <p>
+      As noted earlier, Chamberlin uses the term <strong>group</strong> instead of industry. A <strong>group</strong>
+      consists of all firms producing close substitute brands of a product (for example, all soap brands).
+    </p>
+
+    <p class="subheading">1. Determination of Group Equilibrium (Short Run)</p>
+    <p>
+      In the short run:
+    </p>
+    <ul class="points">
+      <li>
+        The <strong>number of firms</strong> in the group is given (entry and exit do not take place immediately).
+      </li>
+      <li>
+        Market demand for the product is distributed among these firms according to their brand loyalty, advertising,
+        location and other differentiation factors.
+      </li>
+      <li>
+        Each firm independently adjusts its output and price to maximise its own short-run profit where MR = MC.
+      </li>
+    </ul>
+    <p>
+      At the group level, the <strong>short-run equilibrium</strong> is reached when all firms are simultaneously in
+      their short-run equilibrium (MR = MC), though some may be earning supernormal profits, some normal profit and
+      some losses, depending on their individual cost and demand situations.
+    </p>
+    <p>
+      In this sense, short-run group equilibrium under monopolistic competition is characterised by:
+    </p>
+    <ul class="points">
+      <li>A given number of differentiated firms.</li>
+      <li>Each firm facing its own downward sloping demand curve.</li>
+      <li>Different price–output combinations for different firms.</li>
+    </ul>
+
+    <!-- IV. LONG-RUN EQUILIBRIUM OF FIRM -->
+    <p class="section-title">IV. Long-run Equilibrium of Firm under Monopolistic Competition</p>
+
+    <p>
+      In the <strong>long run</strong>, firms can adjust their plant size and, more importantly, new firms can enter
+      the group and existing firms can exit. The process of entry and exit plays a crucial role in determining
+      long-run equilibrium.
+    </p>
+
+    <p class="subheading">1. Adjustment from Short Run to Long Run</p>
+    <ul class="points">
+      <li>
+        If firms are earning <strong>supernormal profits</strong> in the short run, this attracts new firms into the
+        group in the long run. New entrants introduce their own differentiated brands, leading to a
+        <strong>substitution effect</strong> which reduces the demand for each existing firm’s product (its AR curve
+        shifts leftwards).
+      </li>
+      <li>
+        Conversely, if some firms are incurring <strong>losses</strong>, they will leave the group in the long run,
+        increasing the demand faced by the remaining firms.
+      </li>
+      <li>
+        Entry and exit continue until each firm is earning only <strong>normal profit</strong>; i.e. no firm has an
+        incentive to enter or leave the group.
+      </li>
+    </ul>
+
+    <p class="subheading">2. Long-run Equilibrium Conditions</p>
+    <p>
+      For a firm under monopolistic competition, long-run equilibrium requires:
+    </p>
+    <ol class="points">
+      <li><strong>MR = MC</strong> (profit-maximisation condition), and</li>
+      <li><strong>AR is tangent to long-run AC (LAC)</strong> at the equilibrium output, so that the firm earns
+          only normal profit (P = LAC).</li>
+    </ol>
+    <p>
+      Because AR is downward sloping, the tangency point between AR and AC occurs to the <strong>left of the minimum
+      point of AC</strong>, which implies that the firm operates with <strong>excess capacity</strong> in the long run.
+    </p>
+
+    <p class="subheading">3. Diagram: Long-run Equilibrium of the Firm (Excess Capacity)</p>
+
+    <div class="diagram" aria-label="Long-run equilibrium of a firm under monopolistic competition">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ar{stroke:#16a34a;stroke-width:2.4;fill:none}
+          .mr{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .ac{stroke:#f97316;stroke-width:2.4;fill:none}
+          .mc{stroke:#111827;stroke-width:2.4;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="500" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Price / Cost / Revenue</text>
+        <text x="480" y="430" class="label small">Output (Q)</text>
+
+        <!-- Long-run AC -->
+        <path d="M110 320 C 190 240, 280 220, 380 235 C 430 245, 470 275, 490 320" class="ac"/>
+        <text x="455" y="260" class="label small">LAC</text>
+
+        <!-- Long-run MC -->
+        <path d="M120 360 C 200 260, 280 230, 370 235 C 420 240, 460 265, 495 310" class="mc"/>
+        <text x="455" y="245" class="label small">LMC</text>
+
+        <!-- AR tangent to LAC (firm demand curve) -->
+        <path d="M80 140 C 190 190, 310 250, 500 330" class="ar"/>
+        <text x="460" y="315" class="label small">AR</text>
+
+        <!-- MR -->
+        <path d="M80 190 C 190 230, 310 280, 500 360" class="mr"/>
+        <text x="460" y="345" class="label small">MR</text>
+
+        <!-- Tangency & equilibrium point -->
+        <circle cx="300" cy="240" r="4" fill="#111827"/>
+        <text x="306" y="235" class="label small">E</text>
+
+        <!-- Vertical from E -->
+        <line x1="300" y1="240" x2="300" y2="410" class="guide"/>
+        <text x="291" y="430" class="label small">Q<sub>LR</sub></text>
+
+        <!-- Price at Q_LR from AR (same as LAC at tangency) -->
+        <circle cx="300" cy="210" r="3" fill="#111827"/>
+        <line x1="300" y1="210" x2="80" y2="210" class="guide"/>
+        <text x="55" y="215" class="label small">P<sub>LR</sub> = LAC</text>
+
+        <!-- Minimum point of LAC (capacity output) -->
+        <circle cx="350" cy="230" r="3" fill="#111827"/>
+        <line x1="350" y1="230" x2="350" y2="410" class="guide"/>
+        <text x="340" y="430" class="label small">Q<sub>c</sub></text>
+        <text x="360" y="225" class="label small">Min LAC</text>
+      </svg>
+      <div class="caption">
+        Fig. 2 — Long-run equilibrium of a firm under monopolistic competition: AR is tangent to LAC at E and
+        MR = LMC at the same output Q<sub>LR</sub>. The firm earns only normal profit (P<sub>LR</sub> = LAC).
+        Output Q<sub>LR</sub> is less than Q<sub>c</sub> (output at minimum LAC), indicating excess capacity.
+      </div>
+    </div>
+
+    <p class="subheading">4. Excess Capacity of the Firm</p>
+    <p>
+      The diagram shows that the firm’s long-run equilibrium output Q<sub>LR</sub> is <strong>less than</strong>
+      Q<sub>c</sub>, the output corresponding to minimum LAC. The difference (Q<sub>c</sub> − Q<sub>LR</sub>) is called
+      <strong>excess capacity</strong>. It implies that in long-run equilibrium, a firm under monopolistic competition
+      does not use its plant to the full capacity; it produces less than the output at which per-unit cost is minimum.
+    </p>
+    <p>
+      This is a major difference from perfect competition, where in long-run equilibrium each firm produces at
+      minimum LAC and there is no excess capacity.
+    </p>
+
+    <!-- V. LONG-RUN EQUILIBRIUM OF GROUP -->
+    <p class="section-title">V. Long-run Equilibrium of the Group under Monopolistic Competition</p>
+
+    <p class="subheading">1. Meaning of Group Equilibrium (Long Run)</p>
+    <p>
+      Long-run equilibrium of the <strong>group</strong> under monopolistic competition is attained when:
+    </p>
+    <ul class="points">
+      <li>The number of firms in the group is such that all firms are earning only normal profits.</li>
+      <li>No new firm has an incentive to enter (since there are no supernormal profits).</li>
+      <li>No existing firm has an incentive to leave (since losses are absent).</li>
+      <li>Each firm is in its own long-run equilibrium (MR = LMC and AR tangent to LAC).</li>
+    </ul>
+    <p>
+      Thus, long-run group equilibrium is a situation in which <strong>all firms are simultaneously in long-run
+      equilibrium</strong> and the number of firms is stable.
+    </p>
+
+    <p class="subheading">2. Process Leading to Group Equilibrium</p>
+    <p>
+      Starting from a short-run situation where some firms earn supernormal profits:
+    </p>
+    <ol class="points">
+      <li>
+        Supernormal profits attract new firms into the group. New firms introduce additional differentiated varieties.
+      </li>
+      <li>
+        Entry of new firms <strong>shifts the demand curve (AR) of each existing firm leftwards</strong>, because
+        total demand is now shared among a larger number of close substitutes.
+      </li>
+      <li>
+        This continues until <strong>all supernormal profits are competed away</strong> and each firm’s AR curve
+        becomes tangent to its LAC curve.
+      </li>
+      <li>
+        Any further entry would cause losses, so entry stops; any exit would recreate supernormal profits, so exit
+        is discouraged. The number of firms becomes stable.
+      </li>
+    </ol>
+
+    <p>
+      Consequently, in long-run group equilibrium:
+    </p>
+    <ul class="points">
+      <li>Each firm operates with excess capacity but earns normal profit.</li>
+      <li>The group as a whole supplies the quantity demanded at the ruling prices of different brands.</li>
+      <li>The pattern of product differentiation and brand loyalty becomes relatively stable.</li>
+    </ul>
+
+    <!-- VI. COMPARISON & SIGNIFICANCE -->
+    <p class="section-title">VI. Comparison with Perfect Competition and Significance</p>
+
+    <div class="importance-box">
+      <strong>Key differences (Long-run equilibrium of firm)</strong>
+      <ul class="points" style="margin-top:6px">
+        <li>
+          <strong>Price and cost:</strong><br>
+          Under perfect competition: P = MC = minimum LAC.<br>
+          Under monopolistic competition (long run): P = LAC &gt; MC, and P is set on a downward sloping demand curve.
+        </li>
+        <li>
+          <strong>Output and capacity:</strong><br>
+          Perfect competition: firm operates at minimum LAC (no excess capacity).<br>
+          Monopolistic competition: firm operates to the left of minimum LAC (excess capacity).
+        </li>
+        <li>
+          <strong>Number of firms:</strong><br>
+          In monopolistic competition, the group contains a large number of firms with differentiated products;
+          free entry and exit drive profits to normal in the long run.
+        </li>
+        <li>
+          <strong>Selling costs and product variety:</strong><br>
+          Selling costs are significant and many differentiated varieties exist. This may increase consumer choice,
+          but leads to duplication of costs and excess capacity.
+        </li>
+      </ul>
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip (for full 15 marks):</strong>
+      In Panjab University exams, write this answer in the following sequence:
+      (i) precise definition and main features of monopolistic competition;
+      (ii) short-run equilibrium of the firm with a neat AR–MR–AC–MC diagram and discussion of supernormal profits;
+      (iii) short-run group equilibrium (given number of differentiated firms, each in short-run equilibrium);
+      (iv) long-run equilibrium of the firm with AR tangent to LAC, MR = LMC and explanation of excess capacity
+      using a clear diagram; and
+      (v) long-run group equilibrium (entry–exit process leading to normal profits for all firms).
+      End with a brief comparison with perfect competition, highlighting excess capacity and normal profits.
+      Underline key phrases like “AR tangent to LAC”, “MR = MC”, “excess capacity” and “product differentiation” to
+      impress the examiner.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, <strong>monopolistic competition</strong> is characterised by a large number of firms, product
+      differentiation, selling costs and free entry and exit. In the <strong>short run</strong>, each firm attains
+      equilibrium where <strong>MR = MC</strong> and may earn supernormal profits, normal profit or losses. The
+      <strong>group equilibrium</strong> in the short run simply reflects each firm being in its own short-run
+      equilibrium with a given number of differentiated competitors. In the <strong>long run</strong>, entry and exit
+      of firms adjust the number of firms such that each firm’s AR curve becomes tangent to its LAC curve at the
+      output where MR = LMC, so that only <strong>normal profit</strong> is earned and no firm has any incentive to
+      enter or leave. At the same time, the firm operates with <strong>excess capacity</strong>, producing less than
+      the output corresponding to minimum LAC. This integrated treatment of the equilibrium of the firm and the group
+      under monopolistic competition is fully consistent with the approach of T.R. Jain &amp; V.K. Ohri and is of high
+      examination value for B.Com (Sem I), Panjab University.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

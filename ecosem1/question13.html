@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q13 — Price Effect and Substitution Effect (With Diagrams)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:17px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 13 — Price Effect and Substitution Effect (With Diagrams)</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the indifference curve analysis of demand, the response of quantity demanded of a commodity to a change in
+      its own price is analysed in terms of three closely related concepts: <strong>price effect</strong>,
+      <strong>substitution effect</strong> and <strong>income effect</strong>. T.R. Jain and V.K. Ohri treat these as
+      the core of the modern theory of demand for B.Com (Semester I), Panjab University. In this question we
+      concentrate on <strong>price effect</strong> and <strong>substitution effect</strong>, explaining their meaning,
+      measurement and graphical representation.
+    </p>
+    <p>
+      Broadly, <strong>price effect</strong> refers to the <em>total change</em> in quantity demanded due to a change
+      in the price of the commodity, while <strong>substitution effect</strong> reflects that part of the change
+      in quantity which is caused purely by the <em>change in relative price</em>, keeping the consumer’s real income
+      (or level of satisfaction) constant.
+    </p>
+
+    <!-- 1. PRICE EFFECT -->
+    <p class="section-title">1. Meaning of Price Effect</p>
+    <p>
+      When the price of a good changes, <strong>ceteris paribus</strong> (other things like money income, prices of
+      other goods and tastes remaining the same), the consumer will generally buy a different quantity of that good.
+      The <strong>price effect</strong> is defined as:
+    </p>
+
+    <div class="boxed">
+      <strong>Price Effect:</strong><br>
+      The <em>price effect</em> is the total change in quantity demanded of a commodity resulting from a change in
+      its own price, <strong>other things remaining the same</strong>. It is the movement from one equilibrium point
+      to another on the indifference map when the budget line rotates due to a change in the commodity’s price.
+    </div>
+
+    <p>
+      Thus, when the price of X falls, the consumer’s budget line becomes <strong>flatter</strong>, allowing him to
+      purchase more X with the same income. The consumer moves to a new equilibrium on a higher indifference curve.
+      The resulting change in quantity of X is called the <strong>price effect of a fall in price</strong>.
+    </p>
+
+    <p class="subheading">Algebraic Expression (Informal)</p>
+    <p>
+      If the initial equilibrium quantity of X is Q<sub>0</sub> at price P<sub>0</sub> and new equilibrium quantity
+      is Q<sub>1</sub> at price P<sub>1</sub>, then:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      Price Effect (PE) = Q<sub>1</sub> − Q<sub>0</sub>
+    </p>
+    <p>
+      When price falls and quantity demanded rises, the price effect is <strong>positive</strong> (for quantity). When
+      price rises and quantity demanded falls, the price effect is <strong>negative</strong>.
+    </p>
+
+    <p class="subheading">Types of Price Effect (by Nature of the Good)</p>
+    <p>
+      In terms of direction, price effect may be:
+    </p>
+    <ul class="points">
+      <li><strong>Negative price effect:</strong> Price falls → quantity demanded rises (normal case).</li>
+      <li><strong>Positive price effect:</strong> Price falls → quantity demanded falls (Giffen case).</li>
+      <li><strong>Zero price effect:</strong> Price change → no change in quantity demanded (perfectly inelastic demand; rare theoretical case).</li>
+    </ul>
+
+    <!-- 1A. DIAGRAM FOR PRICE EFFECT -->
+    <p class="section-title">Diagram for Price Effect (Normal Good)</p>
+    <p>
+      Consider a normal good X and a composite good Y (representing “all other goods”) on the vertical axis. In the
+      following diagram, the consumer’s initial budget line is BL₁ and his equilibrium is at point E₁ on indifference
+      curve IC₁. When the price of X falls, the budget line rotates outwards to BL₂, and the new equilibrium is at
+      E₂ on a higher indifference curve IC₂. The movement from E₁ to E₂ represents the <strong>price effect</strong>
+      of a fall in the price of X.
+    </p>
+
+    <div class="diagram" aria-label="Price effect for a normal good">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ic{stroke:#1e3a8a;stroke-width:2.5;fill:none}
+          .bl{stroke:#16a34a;stroke-width:2.5}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .point{fill:#111827}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="60" y="65" class="label">Y (composite good)</text>
+        <text x="445" y="430" class="label">X</text>
+
+        <!-- Indifference curves -->
+        <path d="M135 155 C 200 195, 260 250, 330 305" class="ic"/> <!-- IC1 -->
+        <path d="M105 135 C 190 185, 270 250, 370 320" class="ic"/> <!-- IC2 -->
+
+        <text x="310" y="300" class="label">IC₁</text>
+        <text x="350" y="320" class="label">IC₂</text>
+
+        <!-- Budget lines -->
+        <line x1="110" y1="140" x2="280" y2="410" class="bl"/> <!-- BL1 -->
+        <line x1="110" y1="140" x2="420" y2="410" class="bl"/> <!-- BL2 -->
+
+        <text x="260" y="200" class="label">BL₁</text>
+        <text x="380" y="260" class="label">BL₂</text>
+
+        <!-- Points E1 and E2 -->
+        <circle cx="210" cy="220" r="4" class="point"/>
+        <text x="218" y="215" class="label">E₁</text>
+
+        <circle cx="300" cy="265" r="4" class="point"/>
+        <text x="308" y="260" class="label">E₂</text>
+
+        <!-- Guides to X-axis -->
+        <line x1="210" y1="220" x2="210" y2="410" class="guide"/>
+        <line x1="300" y1="265" x2="300" y2="410" class="guide"/>
+
+        <text x="205" y="425" class="label">Q₀</text>
+        <text x="295" y="425" class="label">Q₁</text>
+      </svg>
+      <div class="caption">
+        Fig. 1 — Price Effect: fall in price of X rotates budget line from BL₁ to BL₂ and moves equilibrium from E₁ to E₂,
+        increasing quantity of X from Q₀ to Q₁.
+      </div>
+    </div>
+
+    <p>
+      In the case of a <strong>normal good</strong>, a fall in price of X enables the consumer to reach a higher
+      indifference curve and buy more of X, so the price effect is <strong>negative</strong> (price and quantity move
+      in opposite directions).
+    </p>
+
+    <!-- 2. SUBSTITUTION EFFECT -->
+    <p class="section-title">2. Meaning of Substitution Effect</p>
+    <p>
+      The <strong>substitution effect</strong> isolates that part of the price effect which is caused solely by the
+      <strong>change in the relative price</strong> of the good, keeping the consumer’s <strong>real income or level
+      of satisfaction constant</strong>.
+    </p>
+
+    <div class="boxed">
+      <strong>Substitution Effect:</strong><br>
+      The substitution effect of a change in the price of a good is the change in quantity demanded of that good
+      when its price changes and the consumer’s real income or utility is <strong>kept constant</strong>, so that
+      he remains on the same indifference curve and merely substitutes the relatively cheaper good for the relatively
+      dearer one.
+    </div>
+
+    <p>
+      When the price of X falls, it becomes <strong>cheaper relative to Y</strong>. Even if the consumer were somehow
+      compensated so that his level of satisfaction remained unchanged, he would still rearrange his consumption in
+      favour of X and against Y, because X has become relatively cheaper. This tendency to substitute the cheaper
+      good for the dearer one is called the <strong>substitution effect</strong>.
+    </p>
+
+    <p class="subheading">Key Features of Substitution Effect</p>
+    <ul class="points">
+      <li>It is concerned with <strong>relative prices</strong>, not with absolute real income.</li>
+      <li>The consumer is kept on the <strong>same indifference curve</strong> (same satisfaction level).</li>
+      <li>For a <strong>fall in price of X</strong>, the substitution effect for X is always <strong>positive</strong> (more of X is demanded).</li>
+      <li>For a <strong>rise in price of X</strong>, the substitution effect for X is always <strong>negative</strong>.</li>
+      <li>
+        In the Hicksian version (followed in standard textbooks), the consumer is <strong>compensated</strong> so that
+        after the price change he can just reach his <em>original indifference curve</em>.
+      </li>
+    </ul>
+
+    <!-- 2A. DIAGRAM FOR SUBSTITUTION EFFECT -->
+    <p class="section-title">Diagram for Substitution Effect (Hicksian Approach)</p>
+    <p>
+      The substitution effect is diagrammatically measured using a <strong>compensated budget line</strong>. Starting
+      from the initial equilibrium E₁ on IC₁ with budget line BL₁, suppose the price of X falls. The new budget line
+      is BL₂. To keep the consumer on the <strong>same indifference curve IC₁</strong> (same satisfaction), income is
+      reduced (if price falls) so that a new budget line BL* is drawn <strong>parallel to BL₂</strong> but tangent to
+      IC₁ at a new point E*. The movement from E₁ to E* along IC₁ represents the <strong>substitution effect</strong>.
+    </p>
+
+    <div class="diagram" aria-label="Substitution effect with compensated budget line">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ic{stroke:#1e3a8a;stroke-width:2.5;fill:none}
+          .bl-main{stroke:#16a34a;stroke-width:2.5}
+          .bl-comp{stroke:#6b7280;stroke-width:2;stroke-dasharray:6 4}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .point{fill:#111827}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="60" y="65" class="label">Y</text>
+        <text x="445" y="430" class="label">X</text>
+
+        <!-- Indifference curves -->
+        <path d="M135 165 C 200 205, 260 260, 330 315" class="ic"/> <!-- IC1 -->
+        <path d="M110 140 C 190 190, 270 255, 365 325" class="ic"/> <!-- IC2 -->
+
+        <text x="315" y="305" class="label">IC₁</text>
+        <text x="350" y="325" class="label">IC₂</text>
+
+        <!-- Budget lines -->
+        <line x1="110" y1="180" x2="280" y2="410" class="bl-main"/> <!-- BL1 -->
+        <line x1="110" y1="150" x2="420" y2="410" class="bl-main"/> <!-- BL2 -->
+
+        <!-- Compensated budget line BL* parallel to BL2 but tangent to IC1 -->
+        <line x1="120" y1="200" x2="390" y2="410" class="bl-comp"/> <!-- BL* -->
+
+        <text x="250" y="205" class="label">BL₁</text>
+        <text x="380" y="260" class="label">BL₂</text>
+        <text x="340" y="215" class="label">BL*</text>
+
+        <!-- Points E1, E* and E2 -->
+        <circle cx="210" cy="235" r="4" class="point"/>
+        <text x="218" y="230" class="label">E₁</text>
+
+        <circle cx="260" cy="255" r="4" class="point"/>
+        <text x="268" y="250" class="label">E*</text>
+
+        <circle cx="310" cy="285" r="4" class="point"/>
+        <text x="318" y="280" class="label">E₂</text>
+
+        <!-- Guides to X-axis -->
+        <line x1="210" y1="235" x2="210" y2="410" class="guide"/>
+        <line x1="260" y1="255" x2="260" y2="410" class="guide"/>
+        <line x1="310" y1="285" x2="310" y2="410" class="guide"/>
+
+        <text x="205" y="425" class="label">Q₀</text>
+        <text x="255" y="425" class="label">Q′</text>
+        <text x="305" y="425" class="label">Q₁</text>
+      </svg>
+      <div class="caption">
+        Fig. 2 — Substitution Effect (E₁ → E* along IC₁) and Price Effect (E₁ → E₂). BL* is the compensated budget line
+        parallel to BL₂ and tangent to IC₁ at E*.
+      </div>
+    </div>
+
+    <p>
+      In the diagram:
+    </p>
+    <ul class="points">
+      <li><strong>E₁</strong> is the initial equilibrium on IC₁ with budget line BL₁ (quantity Q₀ of X).</li>
+      <li>After the fall in price of X and compensation of income, the consumer moves to <strong>E*</strong> on IC₁ with budget line BL* (quantity Q′ of X).</li>
+      <li>The movement E₁ → E* (Q₀ to Q′) is the <strong>substitution effect</strong>.</li>
+      <li>Without compensation, the actual new equilibrium is at <strong>E₂</strong> on the higher IC₂ with BL₂ (quantity Q₁ of X).</li>
+    </ul>
+    <p>
+      Thus, the total price effect E₁ → E₂ (Q₀ to Q₁) is decomposed into a <strong>substitution effect</strong> (E₁ → E*)
+      and an <strong>income effect</strong> (E* → E₂). Detailed discussion of income effect is usually taken up in the
+      next question, but the basic relationship is important to mention here.
+    </p>
+
+    <!-- 3. RELATION BETWEEN PRICE EFFECT & SUBSTITUTION EFFECT -->
+    <p class="section-title">3. Relationship between Price Effect and Substitution Effect</p>
+    <p>
+      Conceptually, the <strong>price effect</strong> of a change in the price of a commodity can be broken into two
+      components:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      Price Effect = Substitution Effect + Income Effect
+    </p>
+    <p>
+      For a <strong>fall in the price</strong> of a normal good X:
+    </p>
+    <ul class="points">
+      <li>Substitution effect is <strong>always positive</strong> for X (consumer buys more X because it is relatively cheaper).</li>
+      <li>Income effect is also <strong>positive</strong> for a normal good (fall in price makes consumer effectively richer; he buys more X).</li>
+      <li>Therefore, price effect is strongly <strong>positive</strong> (quantity demanded increases when price falls).</li>
+    </ul>
+    <p>
+      For an <strong>inferior good</strong>, substitution effect remains positive but income effect is negative.
+      In extreme Giffen cases, negative income effect may outweigh the positive substitution effect, leading to a
+      <strong>positive price effect</strong> (price falls, quantity demanded falls). This detailed classification is
+      examined more sharply when studying income effect and Giffen goods.
+    </p>
+
+    <!-- 4. DISTINCTION TABLE -->
+    <p class="section-title">4. Distinction between Price Effect and Substitution Effect</p>
+    <table aria-label="Difference between price effect and substitution effect">
+      <thead>
+        <tr>
+          <th>Basis</th>
+          <th>Price Effect</th>
+          <th>Substitution Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Meaning</td>
+          <td>Total change in quantity demanded due to a change in the commodity’s own price, other things constant.</td>
+          <td>That part of the change in quantity demanded which is due solely to change in relative price, keeping real income/utility constant.</td>
+        </tr>
+        <tr>
+          <td>Income Position</td>
+          <td>Effective real income of the consumer changes (real purchasing power changes).</td>
+          <td>Consumer is kept on the same indifference curve; real income or utility is held constant by compensation.</td>
+        </tr>
+        <tr>
+          <td>Components</td>
+          <td>Includes both substitution effect and income effect.</td>
+          <td>Excludes income effect, isolates pure substitution response.</td>
+        </tr>
+        <tr>
+          <td>Sign</td>
+          <td>May be negative (normal), positive (Giffen) or zero.</td>
+          <td>Always negative for price and quantity of the same good (for a fall in price, demand for that good increases).</td>
+        </tr>
+        <tr>
+          <td>Graphical Representation</td>
+          <td>Movement from initial equilibrium to new equilibrium when price changes, along actual budget line.</td>
+          <td>Movement along original indifference curve from initial equilibrium to compensated equilibrium on BL* parallel to new budget line.</td>
+        </tr>
+        <tr>
+          <td>Role in Demand Theory</td>
+          <td>Explains the overall inverse or direct relation between price and quantity demanded.</td>
+          <td>Provides the basic negative slope of the demand curve; income effect only modifies its strength.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 5. IMPORTANCE -->
+    <p class="section-title">5. Importance of Substitution Effect in Price–Demand Relationship</p>
+    <p>
+      The substitution effect has a <strong>central role</strong> in modern demand theory:
+    </p>
+
+    <div class="importance-box">
+      <strong>(a) Basic Reason for Downward Sloping Demand Curve</strong><br>
+      Even if income effect were absent (for example, compensated demand), the substitution effect alone ensures that
+      the <strong>individual demand curve slopes downwards</strong>. When price of X falls, X becomes cheaper relative
+      to Y, and the consumer substitutes X for Y, increasing quantity of X demanded.
+    </div>
+
+    <div class="importance-box">
+      <strong>(b) Distinction between Normal, Inferior and Giffen Goods</strong><br>
+      The sign and magnitude of <strong>income effect</strong> combined with the always negative substitution effect
+      explains the behaviour of normal, inferior and Giffen goods. Thus, the decomposition of price effect into its
+      components is crucial for classification of goods.
+    </div>
+
+    <div class="importance-box">
+      <strong>(c) Basis for Compensated Demand Curve</strong><br>
+      By considering only substitution effect (keeping utility constant), economists derive the
+      <strong>compensated demand curve</strong>, which has important theoretical uses in welfare economics and
+      analysis of consumer surplus.
+    </div>
+
+    <div class="importance-box">
+      <strong>(d) Policy and Welfare Implications</strong><br>
+      Understanding how much of the response to a price change is due to substitution and how much to income helps
+      in evaluating the welfare impact of taxes, subsidies and price controls. This is further developed in advanced
+      microeconomics.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a 15-marks answer in Panjab University on “Price Effect and Substitution Effect”, you should:
+      (i) clearly define price effect, with a neat diagram (Fig. 1); 
+      (ii) define substitution effect carefully (Hicksian sense), with a separate diagram decomposing PE into SE and IE (Fig. 2);
+      (iii) explain the relationship PE = SE + IE; 
+      (iv) give a table distinguishing PE and SE; and 
+      (v) add a short section on the importance of substitution effect in determining the negative slope of the demand curve.
+      A short, crisp conclusion at the end improves presentation.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, the <strong>price effect</strong> measures the <em>overall impact</em> of a change in the price of a
+      good on its quantity demanded, while the <strong>substitution effect</strong> isolates the <em>pure effect of the
+      change in relative price</em>, holding the consumer’s utility constant. In the indifference curve framework,
+      price effect is represented by the movement from one equilibrium point to another as the budget line rotates,
+      whereas substitution effect is shown by movement along the same indifference curve from the initial equilibrium
+      to a compensated equilibrium. This decomposition, as presented in your prescribed text by T.R. Jain &amp; V.K. Ohri,
+      provides a deeper understanding of the demand behaviour of consumers and lays the foundation for the analysis of
+      income effect and Giffen goods in the subsequent questions.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      This answer forms part of a carefully curated set of important questions that have frequently appeared in
+      past university examinations and therefore hold a high probability of reappearing in future assessments.
+      While prepared with academic accuracy and aligned to the prescribed syllabus, these solutions should be
+      treated as high-quality preparation material rather than a guaranteed prediction of any upcoming exam paper.
+    </div>
+
+  </article>
+</div>
+<!-- Book Reference Required — Popup Disclaimer -->
+<div id="bookDisclaimerOverlay" style="
+  position:fixed; inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+">
+  <div id="bookDisclaimerModal" style="
+    max-width:520px; width:90%;
+    background:#fffaf0;
+    border-radius:12px;
+    border:1px solid #fee4a6;
+    box-shadow:0 20px 45px rgba(15,23,42,0.25);
+    padding:20px 20px 16px 20px;
+    position:relative;
+    font-family:Inter,system-ui,Arial;
+  ">
+    <button id="bookDisclaimerClose" aria-label="Close disclaimer" style="
+      position:absolute;
+      top:10px; right:12px;
+      border:none;
+      background:transparent;
+      font-size:20px;
+      color:#7c6f54;
+      cursor:pointer;
+    ">&times;</button>
+
+    <div style="
+      display:inline-block;
+      margin-bottom:8px;
+      font-size:11px;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+      color:#a16207;
+      background:#fef3c7;
+      padding:4px 8px;
+      border-radius:999px;
+      font-weight:600;
+    ">Book Reference Required</div>
+
+    <h3 style="margin:2px 0 8px 0;font-size:17px;color:#8a4f0b;">Additional Study Recommended</h3>
+
+    <p style="margin:0;font-size:14px;line-height:1.7;color:#5a3410;">
+      This question involves advanced concepts and requires deeper understanding. Students must refer to the official
+      Panjab University prescribed textbook,
+      <strong>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</strong>
+      along with these structured notes for complete exam-oriented preparation.
+    </p>
+
+  </div>
+</div>
+
+<script>
+  (function(){
+    var overlay = document.getElementById('bookDisclaimerOverlay');
+    var closeBtn = document.getElementById('bookDisclaimerClose');
+
+    function hidePopup(){
+      if(overlay){
+        overlay.style.opacity = '0';
+        setTimeout(() => { overlay.style.display = 'none'; }, 400);
+      }
+    }
+
+    // Close when click "X"
+    if(closeBtn){
+      closeBtn.addEventListener('click', hidePopup);
+    }
+
+    // Close on click outside
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay){
+        hidePopup();
+      }
+    });
+
+    // Auto hide after 10 seconds
+    setTimeout(hidePopup, 10000);
+  })();
+</script>
+</body>
+</html>

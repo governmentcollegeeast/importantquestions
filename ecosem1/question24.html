@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q24 — Relation between AR and MR & Importance of Revenue</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:center;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 24 — Relation between AR and MR &amp; Importance of Revenue</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the theory of the firm, the <strong>revenue side</strong> is as important as the <strong>cost side</strong>.
+      While cost tells us what the firm has to sacrifice to produce a given output, revenue tells us what the firm
+      receives from selling that output. Producer’s equilibrium (profit-maximising output and price) is ultimately
+      determined by the interaction of <strong>Marginal Revenue (MR)</strong> with <strong>Marginal Cost (MC)</strong>.
+      Hence, a clear understanding of the <strong>relationship between Average Revenue (AR) and Marginal Revenue (MR)</strong>
+      and the <strong>importance of revenue</strong> is essential for any serious student of microeconomics, especially
+      at B.Com Semester I level under Panjab University.
+    </p>
+
+    <!-- I. MEANING OF AR AND MR -->
+    <p class="section-title">I. Meaning of Average Revenue (AR) and Marginal Revenue (MR)</p>
+
+    <p class="subheading">1. Average Revenue (AR)</p>
+    <p>
+      <strong>Average Revenue</strong> is the <strong>revenue per unit of output</strong>. It is obtained by dividing
+      total revenue by the quantity of output sold:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AR = TR / Q
+    </p>
+    <p>
+      Since total revenue (TR) is equal to price (P) multiplied by quantity (Q), i.e. TR = P × Q, we have:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AR = (P × Q) / Q = P
+    </p>
+    <p>
+      Thus, <strong>AR is nothing but price itself</strong>. Therefore, the <strong>demand curve faced by a firm is
+      also its AR curve</strong>.
+    </p>
+
+    <p class="subheading">2. Marginal Revenue (MR)</p>
+    <p>
+      <strong>Marginal Revenue</strong> is the <strong>addition to total revenue</strong> when one more unit of output
+      is sold. It is the change in TR resulting from a one-unit change in quantity sold:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = ΔTR / ΔQ
+    </p>
+    <p>
+      In calculus form, MR is the <strong>first derivative</strong> of TR with respect to Q:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = d(TR) / dQ
+    </p>
+    <p>
+      MR therefore measures how fast total revenue is changing as output increases.
+    </p>
+
+    <!-- II. BASIC RELATION BETWEEN AR AND MR -->
+    <p class="section-title">II. Basic Relation between AR and MR</p>
+    <p>
+      The relationship between AR and MR depends on the nature of the demand (AR) curve and therefore on the type of
+      market structure in which the firm operates. We discuss the two main cases separately.
+    </p>
+
+    <p class="subheading">1. Under Perfect Competition: AR = MR</p>
+    <p>
+      Under <strong>perfect competition</strong>, the firm is a <strong>price-taker</strong>. It can sell any quantity
+      at the prevailing market price, which is determined by industry demand and supply.
+    </p>
+    <ul class="points">
+      <li>Price (P) is constant for the firm.</li>
+      <li>TR = P × Q increases <strong>proportionately</strong> with Q.</li>
+      <li>AR = TR / Q = P (constant).</li>
+      <li>MR = ΔTR / ΔQ = P (also constant).</li>
+    </ul>
+    <p>
+      Therefore, under perfect competition:
+    </p>
+    <div class="boxed">
+      <strong>AR = MR = P</strong><br>
+      The AR and MR curves coincide, forming a <strong>horizontal straight line</strong> parallel to the X-axis at the
+      level of market price.
+    </div>
+
+    <p class="subheading">2. Under Imperfect Competition: AR &gt; MR</p>
+    <p>
+      Under <strong>imperfect competition</strong> (monopoly, monopolistic competition), the firm faces a
+      <strong>downward sloping demand curve</strong>. To sell more units, it must reduce the price on all units sold.
+      Consequently:
+    </p>
+    <ul class="points">
+      <li>AR (which is equal to price) falls as Q increases.</li>
+      <li>When price is reduced to sell an extra unit, the firm loses some revenue on the previous units as well.</li>
+      <li>Hence the extra revenue from the last unit (MR) is <strong>less than its price</strong>.</li>
+    </ul>
+    <p>
+      Therefore, under imperfect competition:
+    </p>
+    <div class="boxed">
+      <strong>MR is less than AR</strong> at all positive levels of output, i.e. <strong>MR &lt; AR</strong>, and both
+      AR and MR curves slope downward from left to right. The MR curve lies <strong>below</strong> the AR curve and
+      falls more rapidly.
+    </div>
+
+    <!-- III. NUMERICAL ILLUSTRATION -->
+    <p class="section-title">III. Numerical Illustration of AR–MR Relation (Imperfect Competition)</p>
+    <p>
+      Consider a firm which can sell different quantities of a product at different prices as follows:
+    </p>
+
+    <table aria-label="Illustrative schedule showing relation between AR and MR">
+      <thead>
+        <tr>
+          <th>Output<br>(Q)</th>
+          <th>Price<br>(P = AR)</th>
+          <th>Total Revenue<br>(TR = P × Q)</th>
+          <th>Marginal Revenue<br>(MR = ΔTR / ΔQ)</th>
+          <th>Relation between AR and MR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>10</td><td>10</td><td>10</td><td>AR = MR initially</td>
+        </tr>
+        <tr>
+          <td>2</td><td>9</td><td>18</td><td>8</td><td>AR (9) &gt; MR (8)</td>
+        </tr>
+        <tr>
+          <td>3</td><td>8</td><td>24</td><td>6</td><td>AR (8) &gt; MR (6)</td>
+        </tr>
+        <tr>
+          <td>4</td><td>7</td><td>28</td><td>4</td><td>AR (7) &gt; MR (4)</td>
+        </tr>
+        <tr>
+          <td>5</td><td>6</td><td>30</td><td>2</td><td>AR (6) &gt; MR (2)</td>
+        </tr>
+        <tr>
+          <td>6</td><td>5</td><td>30</td><td>0</td><td>MR becomes zero</td>
+        </tr>
+        <tr>
+          <td>7</td><td>4</td><td>28</td><td>-2</td><td>MR becomes negative</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      From this schedule we observe:
+    </p>
+    <ul class="points">
+      <li>AR equals price and falls as output increases.</li>
+      <li>MR starts equal to AR for the first unit but then <strong>falls faster</strong> and remains below AR.</li>
+      <li>MR becomes <strong>zero</strong> when TR reaches its <strong>maximum</strong> (between 5 and 6 units here).</li>
+      <li>When MR becomes <strong>negative</strong>, TR actually starts declining.</li>
+    </ul>
+
+    <div class="boxed">
+      This numerical illustration confirms that under imperfect competition, for all positive outputs beyond the
+      first unit, we have <strong>AR &gt; MR</strong>, and MR eventually may fall to zero and become negative while
+      AR remains positive.
+    </div>
+
+    <!-- IV. GEOMETRIC / ALGEBRAIC RELATION: STRAIGHT-LINE AR -->
+    <p class="section-title">IV. Geometric and Algebraic Relation between AR and MR (Straight-line Demand)</p>
+    <p>
+      In the traditional textbook treatment (as in T.R. Jain &amp; V.K. Ohri), the relation between AR and MR is very
+      neat when the AR (demand) curve is a <strong>straight line</strong>.
+    </p>
+
+    <p class="subheading">1. Algebraic Form</p>
+    <p>
+      Suppose the AR curve is a straight line given by:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AR = P = a − bQ
+    </p>
+    <p>
+      where <em>a</em> and <em>b</em> are positive constants. Then:
+    </p>
+    <ul class="points">
+      <li>
+        <strong>Total Revenue:</strong>
+        <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:3px 8px;border-radius:4px;display:inline-block;margin-top:4px;">
+          TR = P × Q = (a − bQ)Q = aQ − bQ²
+        </span>
+      </li>
+      <li>
+        <strong>Marginal Revenue:</strong> MR is the derivative of TR with respect to Q:
+        <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:3px 8px;border-radius:4px;display:inline-block;margin-top:4px;">
+          MR = d(TR)/dQ = a − 2bQ
+        </span>
+      </li>
+    </ul>
+    <p>
+      Thus MR has the <strong>same intercept</strong> as the AR curve on the price axis (a) but <strong>twice the
+      slope</strong> (−2b instead of −b). As a result, MR cuts the quantity axis at exactly <strong>half the distance</strong>
+      at which AR cuts it.
+    </p>
+
+    <p class="subheading">2. Geometric Properties</p>
+    <p>
+      When the AR curve is a straight downward sloping line:
+    </p>
+    <ul class="points">
+      <li>The MR curve is also a straight line, starting from the same point on the price axis.</li>
+      <li>The MR curve lies entirely <strong>below</strong> the AR curve (except at the price axis intercept).</li>
+      <li>MR meets the quantity axis at a point where output is <strong>half</strong> of the output at which AR meets the quantity axis.</li>
+    </ul>
+
+    <!-- V. DIAGRAM: AR & MR UNDER DIFFERENT MARKET FORMS -->
+    <p class="section-title">V. Diagrams: Relation between AR and MR under Different Market Forms</p>
+
+    <div class="diagram" aria-label="Relation between AR and MR under perfect and imperfect competition">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .arline{stroke:#16a34a;stroke-width:2.3;fill:none}
+          .mrline{stroke:#111827;stroke-width:2.1;fill:none}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+        </style>
+
+        <!-- Left panel: Perfect competition (AR = MR) -->
+        <g transform="translate(40,40)">
+          <line x1="40" y1="160" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="160" x2="220" y2="160" class="axis"/>
+          <text x="25" y="0" class="label small">Price / AR, MR</text>
+          <text x="205" y="175" class="label small">Q</text>
+          <text x="60" y="-10" class="label small">(a) Perfect Competition</text>
+
+          <!-- AR = MR horizontal line -->
+          <path d="M40 80 L 220 80" class="arline"/>
+          <path d="M40 80 L 220 80" class="mrline"/>
+
+          <text x="125" y="70" class="label small">AR = MR = P</text>
+        </g>
+
+        <!-- Right panel: Imperfect competition (AR > MR) -->
+        <g transform="translate(340,40)">
+          <line x1="40" y1="160" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="160" x2="220" y2="160" class="axis"/>
+          <text x="20" y="0" class="label small">Price / AR, MR</text>
+          <text x="205" y="175" class="label small">Q</text>
+          <text x="60" y="-10" class="label small">(b) Imperfect Competition</text>
+
+          <!-- AR downward sloping -->
+          <path d="M40 20 C 110 60, 165 100, 220 145" class="arline"/>
+
+          <!-- MR downward sloping, below AR -->
+          <path d="M40 60 C 110 95, 165 130, 220 160" class="mrline"/>
+
+          <!-- Guides for intercept relation (schematic) -->
+          <line x1="160" y1="160" x2="160" y2="160" class="guide"/>
+
+          <text x="190" y="55" class="label small">AR</text>
+          <text x="190" y="115" class="label small">MR</text>
+        </g>
+      </svg>
+      <div class="caption">
+        Fig. — Relation between AR and MR: under perfect competition AR and MR coincide; under imperfect
+        competition AR slopes downward and MR lies below AR, falling more steeply.
+      </div>
+    </div>
+
+    <!-- VI. IMPORTANCE OF REVENUE (TR, AR, MR) -->
+    <p class="section-title">VI. Importance of Revenue and AR–MR Relationship</p>
+    <p>
+      Revenue concepts, and in particular the AR–MR relationship, are extremely important in microeconomic analysis.
+      Their main uses can be summarised as follows:
+    </p>
+
+    <p class="subheading">1. Basis of Equilibrium of the Firm (Profit Maximisation)</p>
+    <p>
+      The fundamental condition for profit maximisation of a firm in all market forms is:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = MC
+    </p>
+    <p>
+      This condition cannot even be stated without the concept of MR, which itself is derived from TR and AR. Therefore,
+      <strong>AR and MR are indispensable for determining the firm’s equilibrium output and price</strong>.
+    </p>
+
+    <p class="subheading">2. Distinguishing Different Market Structures</p>
+    <p>
+      The pattern of AR and MR curves varies across market forms:
+    </p>
+    <ul class="points">
+      <li>Under perfect competition: <strong>AR = MR</strong> and both are horizontal.</li>
+      <li>Under monopoly and monopolistic competition: <strong>AR &gt; MR</strong>, both are downward sloping.</li>
+    </ul>
+    <p>
+      Thus, the AR–MR relationship helps us to <strong>identify and distinguish</strong> different types of market
+      structures and to analyse equilibrium in each case (perfect competition, monopoly, monopolistic competition).
+    </p>
+
+    <p class="subheading">3. Guidance for Pricing and Output Decisions</p>
+    <p>
+      The firm’s pricing and output decisions are ultimately guided by the <strong>behaviour of revenue</strong>:
+    </p>
+    <ul class="points">
+      <li>AR tells the firm the <strong>price</strong> it can charge at different output levels.</li>
+      <li>MR tells the firm the <strong>extra revenue</strong> it gains from selling one more unit.</li>
+      <li>
+        Comparing MR with MC at each level of output helps the firm decide whether increasing or decreasing output
+        will increase profit.
+      </li>
+    </ul>
+    <p>
+      Without AR and MR, rational pricing policy and output adjustment would not be possible.
+    </p>
+
+    <p class="subheading">4. Understanding Effect of Price Changes on Total Revenue</p>
+    <p>
+      The way total revenue (TR) changes when price changes is crucial for taxation policy, discount policy and sales
+      strategy of firms. TR, AR and MR together show:
+    </p>
+    <ul class="points">
+      <li>Whether cutting price will increase or decrease revenue.</li>
+      <li>At which output TR is <strong>maximum</strong> (where MR = 0).</li>
+      <li>When further reduction in price makes MR negative and causes TR to fall.</li>
+    </ul>
+    <p>
+      Although the detailed relation between MR, AR and price elasticity of demand is taken up in a separate question,
+      the foundation is laid by the AR–MR relationship.
+    </p>
+
+    <p class="subheading">5. Evaluation of Selling Costs and Non-price Competition</p>
+    <p>
+      In monopolistic competition and modern marketing, firms incur heavy <strong>selling costs</strong> (advertising,
+      sales promotion, branding). The success of such expenditure is judged by its impact on:
+    </p>
+    <ul class="points">
+      <li>Shifting the AR (demand) curve to the right.</li>
+      <li>Making the AR curve less elastic, which changes the MR schedule and may increase revenue at a given price.</li>
+    </ul>
+    <p>
+      Thus, revenue concepts provide a basis for <strong>cost-benefit analysis</strong> of selling activities.
+    </p>
+
+    <p class="subheading">6. Importance in Public Policy and Welfare Economics</p>
+    <p>
+      For the government, knowledge of revenue behaviour helps in:
+    </p>
+    <ul class="points">
+      <li>Designing <strong>indirect taxes</strong> so as to raise maximum revenue with minimum excess burden.</li>
+      <li>Understanding how monopolies and oligopolies exploit their market power through pricing.</li>
+    </ul>
+    <p>
+      Again, these issues rest on the relationship between AR, MR and the underlying demand conditions.
+    </p>
+
+    <p class="subheading">7. Examination Importance (Panjab University)</p>
+    <p>
+      In the B.Com (Sem I) Microeconomics paper of Panjab University, the question
+      <em>“What is the relation between AR and MR? Explain the importance of revenue.”</em> is a <strong>standard 15-marks
+      theoretical question</strong>. A good answer must:
+    </p>
+    <ul class="points">
+      <li>Define AR and MR clearly.</li>
+      <li>Explain the AR–MR relation under perfect and imperfect competition.</li>
+      <li>Support with a numerical example and neat diagram(s).</li>
+      <li>Discuss at least 5–6 points showing the importance of revenue concepts in theory and practice.</li>
+    </ul>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip (for 15 marks):</strong>
+      Start with definitions of AR and MR, then explain the AR–MR relation separately for perfect competition
+      (AR = MR) and imperfect competition (AR &gt; MR, MR below AR). Provide a small numerical table and a diagram
+      with two panels for perfect and imperfect competition. Afterwards, give a well-structured list of the
+      <em>importance of revenue</em>: firm’s equilibrium, market-structure distinction, pricing and output policy,
+      TR behaviour, selling-cost decisions and public policy relevance. End with a short conclusion. This pattern
+      matches exactly what Panjab University examiners expect for full marks.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, the <strong>relationship between AR and MR</strong> is simple yet powerful. Under perfect competition,
+      the firm is a price-taker and <strong>AR = MR = Price</strong>. Under imperfect competition, the firm faces a
+      downward sloping demand curve; consequently, AR falls with output and MR falls faster than AR, always remaining
+      <strong>below</strong> it and eventually becoming zero or negative. This relationship is central to understanding
+      how total revenue behaves and how a profit-maximising firm chooses its output through the MR = MC rule. Because
+      of this, revenue concepts play a foundational role in the microeconomic theory of the firm and occupy a prominent
+      place in the B.Com Semester I syllabus of Panjab University.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

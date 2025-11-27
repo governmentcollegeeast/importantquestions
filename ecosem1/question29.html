@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q29 — Price Discrimination & Equilibrium of a Discriminating Monopolist</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef;
+      --card:#fff;
+      --accent:#1e3a8a;
+      --muted:#55606a;
+      --maxw:1000px;
+      --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ul.points, ol.points{
+      padding-left:20px;
+      margin-top:6px;
+    }
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 29 — Price Discrimination &amp; Equilibrium of a Discriminating Monopolist</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the standard theory of monopoly, the monopolist normally charges <strong>one uniform price</strong> for all
+      units of his product. In reality, however, many monopolists and dominant firms charge
+      <strong>different prices for the same commodity</strong> from different customers or in different markets.
+      This practice is known as <strong>price discrimination</strong> and constitutes one of the most important
+      applications of monopoly theory in the Panjab University B.Com (Sem I) syllabus, as presented in
+      <em>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</em>.
+    </p>
+    <p>
+      In this answer we shall: (i) define price discrimination; (ii) state and explain the conditions under which
+      price discrimination is possible and profitable; and (iii) discuss <strong>price and output determination</strong>
+      by a discriminating monopolist with the help of a clear three-panel diagram and logical explanation.
+    </p>
+
+    <!-- I. MEANING -->
+    <p class="section-title">I. Meaning and Types of Price Discrimination</p>
+
+    <p class="subheading">1. Meaning of Price Discrimination</p>
+    <p>
+      When a monopolist (or a seller with market power) charges <strong>different prices</strong> for the <strong>same
+      commodity or service</strong> to different buyers, <strong>without corresponding difference in cost of supply</strong>,
+      he is said to practise <strong>price discrimination</strong>.
+    </p>
+
+    <div class="boxed">
+      <strong>Definition (exam-style):</strong><br>
+      Price discrimination is the practice of selling the same commodity at different prices to different buyers or in
+      different markets, not justified by differences in the cost of supplying the product, but based on differences
+      in demand elasticity or ability to pay.
+    </div>
+
+    <p class="subheading">2. Examples (for conceptual clarity)</p>
+    <ul class="points">
+      <li>Different railway fares for first class, second class and sleeper class passengers.</li>
+      <li>Higher charges for electricity used for commercial purposes than for domestic use.</li>
+      <li>Student concessions and senior citizen concessions in transport and cinema halls.</li>
+      <li>Doctor charging rich and poor patients different fees for the same treatment.</li>
+    </ul>
+
+    <p class="subheading">3. Degrees (Forms) of Price Discrimination (Pigou’s Classification)</p>
+    <p>
+      A.W. Pigou distinguished three degrees (you may briefly mention them to enrich your answer):
+    </p>
+    <ol class="points">
+      <li>
+        <strong>First-degree (perfect) price discrimination:</strong> The monopolist charges each individual customer
+        the <strong>maximum price</strong> he is willing to pay for each unit. He captures the entire consumer surplus.
+        This is a theoretical extreme.
+      </li>
+      <li>
+        <strong>Second-degree price discrimination:</strong> Different prices are charged for different
+        <strong>blocks of units</strong> or quantities, e.g. bulk discounts, block tariff for electricity, etc.
+      </li>
+      <li>
+        <strong>Third-degree price discrimination:</strong> Different prices are charged in <strong>different
+        sub-markets</strong> segmented on the basis of elasticity of demand (e.g. domestic vs industrial users,
+        local vs foreign market). This is the most important form and the main focus of this question.
+      </li>
+    </ol>
+
+    <!-- II. CONDITIONS -->
+    <p class="section-title">II. Conditions for the Possibility of Price Discrimination</p>
+    <p>
+      Price discrimination is not always possible. Certain <strong>necessary conditions</strong> must be satisfied for
+      a monopolist to practise price discrimination successfully and profitably.
+    </p>
+
+    <p class="subheading">1. Monopoly Power or Market Control</p>
+    <p>
+      The first essential condition is that the firm must possess some degree of <strong>monopoly power</strong>:
+    </p>
+    <ul class="points">
+      <li>There must not be a large number of competitors selling close substitutes.</li>
+      <li>The firm should have control over the supply of the product or over a major part of the market.</li>
+      <li>In perfect competition, price discrimination is impossible because each firm is a price-taker.</li>
+    </ul>
+
+    <p class="subheading">2. Ability to Separate Markets</p>
+    <p>
+      The monopolist must be able to <strong>divide the market into separate sub-markets</strong> (or groups of buyers)
+      such that:
+    </p>
+    <ul class="points">
+      <li>Each group or sub-market can be charged a different price.</li>
+      <li>Examples: geographical separation (domestic vs foreign market), customer categories (students, adults),
+          type of use (industrial vs commercial vs domestic).</li>
+    </ul>
+    <p>
+      Without such segmentation, it is impossible to charge different prices to different buyers for the same product.
+    </p>
+
+    <p class="subheading">3. Differences in Elasticity of Demand between Markets</p>
+    <p>
+      There must be a <strong>difference in price elasticity of demand</strong> in the different sub-markets:
+    </p>
+    <ul class="points">
+      <li>
+        In the market where demand is <strong>less elastic</strong> (|e| smaller), the monopolist charges a
+        <strong>higher price</strong>.
+      </li>
+      <li>
+        In the market where demand is <strong>more elastic</strong> (|e| larger), the monopolist charges a
+        <strong>lower price</strong>.
+      </li>
+      <li>
+        If elasticity were the same in all markets, price discrimination would not increase profit as compared with a
+        uniform price.
+      </li>
+    </ul>
+
+    <p class="subheading">4. Prevention of Resale (No Arbitrage)</p>
+    <p>
+      Another essential condition is that buyers who buy at a low price in one market should not be able to
+      <strong>resell the product</strong> easily to buyers in the high-price market. Otherwise:
+    </p>
+    <ul class="points">
+      <li>Price differences between markets would break down.</li>
+      <li>Arbitrageurs would buy in the cheaper market and sell in the costlier market until prices equalise.</li>
+    </ul>
+    <p>
+      Therefore, the monopolist must be able to prevent resale by using legal, technical or physical barriers
+      (e.g. non-transferable tickets, personal services, geographically separated markets).
+    </p>
+
+    <p class="subheading">5. Ignorance of Buyers or Imperfect Information</p>
+    <p>
+      Sometimes price discrimination is facilitated by <strong>ignorance of consumers</strong> about prices charged to
+      other buyers, or by the difficulty of comparing prices. If buyers know each other’s prices perfectly,
+      discriminatory pricing may be resisted.
+    </p>
+
+    <p class="subheading">6. Legal and Institutional Possibility</p>
+    <p>
+      In some cases, <strong>legal restrictions</strong> may prevent certain forms of discrimination (e.g. anti-trust
+      laws). Price discrimination can be practised only when it is not prohibited by law and is institutionally feasible
+      (for example, railway tariffs fixed by the government often explicitly allow differential pricing by class).
+    </p>
+
+    <div class="importance-box">
+      <strong>Summary of Conditions for Price Discrimination</strong>
+      <ul class="points" style="margin-top:6px">
+        <li>Existence of monopoly power or at least market dominance.</li>
+        <li>Ability to divide the market into separate sub-markets or groups of buyers.</li>
+        <li>Different price elasticities of demand in different markets.</li>
+        <li>Prevention of resale between markets (no arbitrage).</li>
+        <li>Sufficient ignorance or acceptance of price differences by consumers.</li>
+        <li>Legal and institutional possibility of differential pricing.</li>
+      </ul>
+    </div>
+
+    <!-- III. PRICE & OUTPUT DETERMINATION -->
+    <p class="section-title">III. Price and Output Determination by a Discriminating Monopolist (Third-Degree)</p>
+    <p>
+      We now explain how a <strong>discriminating monopolist</strong> determines his <strong>total output</strong> and
+      the <strong>prices in different markets</strong>, assuming third-degree price discrimination between two markets,
+      say Market A and Market B, with different elasticities of demand.
+    </p>
+
+    <p class="subheading">1. Basic Assumptions</p>
+    <ul class="points">
+      <li>The monopolist sells the same product in two distinct markets, A and B.</li>
+      <li>Demand in Market A is relatively <strong>less elastic</strong>; demand in Market B is relatively
+          <strong>more elastic</strong>.</li>
+      <li>The monopolist’s total cost depends on the <strong>total output</strong> supplied to both markets together.</li>
+      <li>He can separate the two markets and prevent resale between them.</li>
+    </ul>
+
+    <p class="subheading">2. Step-wise Procedure for Equilibrium</p>
+    <p>
+      The discriminating monopolist chooses output and prices in two steps:
+    </p>
+
+    <ol class="points">
+      <li>
+        <strong>Step 1: Determination of total output (Q) for the two markets taken together.</strong><br/>
+        For this, the monopolist constructs a <strong>combined marginal revenue curve (MR<sub>T</sub>)</strong> by
+        <strong>horizontally summing</strong> the individual MR curves of the two markets (MR<sub>A</sub> and
+        MR<sub>B</sub>). He then equates this combined MR<sub>T</sub> to his <strong>marginal cost (MC)</strong> curve
+        for total output:
+        <br/>
+        <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:4px 8px;border-radius:6px;display:inline-block;margin-top:4px;">
+          MR<sub>T</sub> = MC
+        </span>
+        <br/>
+        This determines the <strong>profit-maximising total output Q*</strong>.
+      </li>
+      <li>
+        <strong>Step 2: Allocation of total output between the two markets and determination of prices.</strong><br/>
+        The total output Q* is then <strong>divided between Market A and Market B</strong> such that:
+        <br/>
+        <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:4px 8px;border-radius:6px;display:inline-block;margin-top:4px;">
+          MR<sub>A</sub> = MR<sub>B</sub> = MC
+        </span>
+        <br/>
+        That is, the monopolist sells Q<sub>A</sub> units in Market A and Q<sub>B</sub> units in Market B, where
+        Q<sub>A</sub> + Q<sub>B</sub> = Q* and marginal revenue in each market is equal to the common marginal cost.
+        The different prices in the two markets are then read off from the respective AR (demand) curves:
+        <strong>P<sub>A</sub></strong> from AR<sub>A</sub> at Q<sub>A</sub> and <strong>P<sub>B</sub></strong>
+        from AR<sub>B</sub> at Q<sub>B</sub>.
+      </li>
+    </ol>
+
+    <p>
+      Important: Since demand in Market A is less elastic, <strong>P<sub>A</sub> will be higher</strong>. Since demand
+      in Market B is more elastic, <strong>P<sub>B</sub> will be lower</strong>. Thus, “higher price in inelastic
+      market and lower price in elastic market” is the core principle of profitable price discrimination.
+    </p>
+
+    <!-- DIAGRAM -->
+    <p class="section-title">IV. Diagram: Price and Output under Third-degree Price Discrimination</p>
+
+    <div class="diagram" aria-label="Price and output determination by a discriminating monopolist">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ar{stroke:#16a34a;stroke-width:2.2;fill:none}
+          .mr{stroke:#1e3a8a;stroke-width:2.2;fill:none}
+          .mc{stroke:#111827;stroke-width:2.3;fill:none}
+          .mrt{stroke:#f97316;stroke-width:2.2;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:13px;fill:#111827}
+          .small{font-size:11px}
+        </style>
+
+        <!-- Panel (A): Market A (less elastic demand, higher price) -->
+        <g transform="translate(40,40)">
+          <line x1="40" y1="160" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="160" x2="220" y2="160" class="axis"/>
+          <text x="20" y="0" class="label small">Price / Rev</text>
+          <text x="205" y="175" class="label small">Q in A</text>
+          <text x="70" y="-10" class="label small">(A) Market A</text>
+
+          <!-- AR_A (steeper, less elastic) -->
+          <path d="M40 20 C 110 70, 160 110, 220 150" class="ar"/>
+          <text x="180" y="45" class="label small">ARₐ</text>
+
+          <!-- MR_A -->
+          <path d="M40 60 C 110 95, 160 125, 220 155" class="mr"/>
+          <text x="180" y="90" class="label small">MRₐ</text>
+
+          <!-- Equilibrium in A at MR_A = common MC level (shown by horizontal guide from panel C) -->
+          <!-- We'll mark general point Qa where MR_A = MC -->
+          <circle cx="140" cy="95" r="3" fill="#111827"/>
+          <line x1="140" y1="95" x2="140" y2="160" class="guide"/>
+          <text x="132" y="175" class="label small">Qₐ</text>
+
+          <!-- Price in A from AR_A at Qa -->
+          <circle cx="140" cy="55" r="3" fill="#111827"/>
+          <line x1="140" y1="55" x2="40" y2="55" class="guide"/>
+          <text x="18" y="60" class="label small">Pₐ</text>
+        </g>
+
+        <!-- Panel (B): Market B (more elastic demand, lower price) -->
+        <g transform="translate(330,40)">
+          <line x1="40" y1="160" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="160" x2="220" y2="160" class="axis"/>
+          <text x="20" y="0" class="label small">Price / Rev</text>
+          <text x="205" y="175" class="label small">Q in B</text>
+          <text x="70" y="-10" class="label small">(B) Market B</text>
+
+          <!-- AR_B (flatter, more elastic) -->
+          <path d="M40 40 C 130 80, 190 110, 220 130" class="ar"/>
+          <text x="180" y="70" class="label small">AR_b</text>
+
+          <!-- MR_B -->
+          <path d="M40 80 C 130 110, 190 130, 220 145" class="mr"/>
+          <text x="180" y="105" class="label small">MR_b</text>
+
+          <!-- Equilibrium in B at MR_B = common MC level -->
+          <circle cx="150" cy="115" r="3" fill="#111827"/>
+          <line x1="150" y1="115" x2="150" y2="160" class="guide"/>
+          <text x="143" y="175" class="label small">Q_b</text>
+
+          <!-- Price in B from AR_B at Qb -->
+          <circle cx="150" cy="70" r="3" fill="#111827"/>
+          <line x1="150" y1="70" x2="40" y2="70" class="guide"/>
+          <text x="18" y="75" class="label small">P_b</text>
+        </g>
+
+        <!-- Panel (C): Combined market & common MC -->
+        <g transform="translate(185,250)">
+          <line x1="40" y1="160" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="160" x2="260" y2="160" class="axis"/>
+          <text x="20" y="0" class="label small">MR, MC</text>
+          <text x="245" y="175" class="label small">Total Q</text>
+          <text x="90" y="-10" class="label small">(C) Combined MR &amp; MC</text>
+
+          <!-- MR_T (step-like, schematic) -->
+          <path d="M40 40 C 120 70, 170 100, 220 130" class="mrt"/>
+          <text x="200" y="60" class="label small">MR_T</text>
+
+          <!-- MC (upward sloping) -->
+          <path d="M60 150 C 120 120, 180 90, 240 60" class="mc"/>
+          <text x="220" y="80" class="label small">MC</text>
+
+          <!-- Equilibrium at MR_T = MC -->
+          <circle cx="160" cy="100" r="3" fill="#111827"/>
+          <line x1="160" y1="100" x2="160" y2="160" class="guide"/>
+          <text x="150" y="175" class="label small">Q* = Qₐ + Q_b</text>
+          <text x="166" y="95" class="label small">E</text>
+        </g>
+      </svg>
+
+      <div class="caption">
+        Fig. — Third-degree price discrimination: Market A (less elastic) is charged higher price Pₐ for
+        quantity Qₐ; Market B (more elastic) is charged lower price P_b for quantity Q_b. Total output Q* is
+        determined where combined MR (MR<sub>T</sub>) equals MC. Allocation is such that MRₐ = MR_b = MC.
+      </div>
+    </div>
+
+    <p class="subheading">5. Key Properties of Discriminating Monopoly Equilibrium</p>
+    <ul class="points">
+      <li>Total output Q* is the same as if the monopolist were selling in a single market with MR<sub>T</sub>.</li>
+      <li>Output is distributed between markets so that MR is <strong>equalised</strong> across them:
+          MR<sub>A</sub> = MR<sub>B</sub> = MC.</li>
+      <li>Price is <strong>higher in the market with less elastic demand</strong> and lower where demand is more elastic:
+          P<sub>A</sub> &gt; P<sub>B</sub>.</li>
+      <li>Total profit under discrimination is <strong>greater</strong> than under a uniform price policy (otherwise,
+          the monopolist would not practise discrimination).</li>
+    </ul>
+
+    <div class="example">
+      <strong>Illustrative statement:</strong> The discriminating monopolist equates marginal revenue in each
+      sub-market to a common marginal cost and charges higher price in the inelastic market and lower price in the
+      elastic market, thereby securing higher total profit than under a uniform price.
+    </div>
+
+    <!-- V. ADVANTAGES AND DISADVANTAGES (BRIEF, VALUE ADD) -->
+    <p class="section-title">V. Price Discrimination: Desirability and Effects (Brief Discussion)</p>
+    <p>
+      While the question mainly asks for definition, conditions and equilibrium, a brief discussion of merits and
+      demerits of price discrimination enhances your answer and shows maturity of understanding.
+    </p>
+
+    <p class="subheading">1. Possible Advantages</p>
+    <ul class="points">
+      <li>
+        <strong>Greater output and utilisation of capacity:</strong> By charging lower prices in more elastic markets,
+        the monopolist can sell more units and operate at a higher level of output, sometimes closer to efficient
+        capacity.
+      </li>
+      <li>
+        <strong>Beneficial services:</strong> Price discrimination may make socially useful services (e.g. railways,
+        electricity, education) economically viable by allowing high-paying users to cross-subsidise low-paying groups.
+      </li>
+      <li>
+        <strong>International competitiveness:</strong> Lower prices in foreign markets can help a firm compete
+        internationally, while higher prices in domestic markets recover fixed costs.
+      </li>
+    </ul>
+
+    <p class="subheading">2. Possible Disadvantages</p>
+    <ul class="points">
+      <li>
+        <strong>Exploitation of consumers:</strong> In inelastic markets, consumers may be charged very high prices
+        because of lack of substitutes.
+      </li>
+      <li>
+        <strong>Misallocation of resources:</strong> Since price is not equal to MC in each market, price discrimination
+        may lead to allocative inefficiency.
+      </li>
+      <li>
+        <strong>Equity issues:</strong> Some forms of price discrimination may be regarded as unfair or discriminatory,
+        especially when based on arbitrary classifications.
+      </li>
+    </ul>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip (for full 15 marks):</strong>
+      Structure your answer as follows: (i) formal definition with 1–2 concrete examples; (ii) brief classification
+      of degrees of price discrimination (first, second, third degree) with focus on third degree; (iii) clearly
+      listed conditions for price discrimination (monopoly power, market separation, different elasticities, no resale,
+      etc.); (iv) detailed explanation of price and output determination by a discriminating monopolist—two-step
+      procedure, combined MR<sub>T</sub>, MRₐ = MR_b = MC, and “higher price where demand is less elastic”; and
+      (v) neat three-panel diagram with proper labelling. End with 3–4 lines of evaluation or effects. This pattern is
+      fully consistent with T.R. Jain &amp; V.K. Ohri and is highly appreciated by Panjab University examiners.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, <strong>price discrimination</strong> is a typical feature of monopoly power, whereby the monopolist
+      charges different prices for the same product in different markets or from different groups of buyers, not
+      justified by cost differences but by differences in demand elasticity and ability to pay. It is possible only
+      under certain conditions—existence of monopoly power, separable markets, different elasticities and prevention
+      of resale. Under <strong>third-degree price discrimination</strong>, the discriminating monopolist first chooses
+      total output by equating combined marginal revenue (MR<sub>T</sub>) to marginal cost (MC), and then allocates
+      output between markets so that MR is equal in each market and equal to MC, charging higher price in the
+      inelastic market and lower price in the elastic one. This yields greater total profit than uniform pricing and
+      represents the standard textbook analysis prescribed for B.Com (Sem I), Panjab University.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

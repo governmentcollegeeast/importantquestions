@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q14 — Income Effect: Positive, Negative and Zero (With Diagrams)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:17px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 14 — Income Effect: Positive, Negative and Zero (With Diagrams)</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In modern demand theory based on <strong>indifference curves</strong>, any change in the price of a commodity
+      affects its quantity demanded through two distinct channels: <strong>substitution effect</strong> and
+      <strong>income effect</strong>. In the previous question, we studied substitution effect. In this question, as
+      treated in <strong>T.R. Jain &amp; V.K. Ohri, Microeconomics (B.Com Ist Sem, Panjab University)</strong>, we
+      focus on the <strong>income effect</strong> in detail and show how it can be <strong>positive, negative or zero</strong>,
+      with the help of suitable diagrams.
+    </p>
+    <p>
+      The concept of income effect is extremely important for distinguishing between <strong>normal goods, inferior
+      goods</strong> and the special case of <strong>Giffen goods</strong>, and for understanding the full price–demand
+      relationship.
+    </p>
+
+    <!-- MEANING/DEFINITION -->
+    <p class="section-title">Meaning and Definition of Income Effect</p>
+    <p>
+      A change in the price of a commodity changes the <strong>purchasing power or real income</strong> of the consumer.
+      Even if his money income (in rupees) remains unchanged, the consumer becomes effectively richer when price falls
+      and poorer when price rises.
+    </p>
+
+    <div class="boxed">
+      <strong>Definition:</strong><br>
+      The <strong>income effect</strong> of a change in the price of a commodity is the change in quantity demanded
+      of that commodity resulting from the change in the <strong>real income (purchasing power)</strong> of the consumer,
+      when relative prices are held constant.
+    </div>
+
+    <p>
+      In other words, income effect measures how much extra (or less) of a commodity a consumer will buy when his
+      <em>real income changes</em>, assuming that the ratio of prices of the commodities remains the same.
+    </p>
+
+    <p class="example">
+      <strong>Illustration:</strong>  
+      Suppose the consumer spends his income on two goods, X and Y. When the price of X falls, the same money income
+      can now buy more of both goods. The consumer’s <strong>real income increases</strong>. The portion of the
+      resulting change in quantity of X that is due to this increase in real income (keeping relative prices fixed)
+      is called the <strong>income effect</strong> of the price fall.
+    </p>
+
+    <!-- RELATION WITH PRICE EFFECT AND SUBSTITUTION EFFECT -->
+    <p class="section-title">Relationship between Price Effect, Substitution Effect and Income Effect</p>
+    <p>
+      When price of a good changes, total change in quantity demanded (price effect) can be decomposed into:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      Price Effect (PE) = Substitution Effect (SE) + Income Effect (IE)
+    </p>
+    <p>
+      For a <strong>fall in price of X</strong>:
+    </p>
+    <ul class="points">
+      <li>SE: X becomes relatively cheaper compared to Y → consumer <strong>substitutes X for Y</strong> → demand for X rises.</li>
+      <li>IE: Real income increases → depending on the nature of good X (normal or inferior), demand may rise, fall, or remain unchanged.</li>
+    </ul>
+    <p>
+      Substitution effect is always <strong>negative with respect to price</strong> (i.e. a fall in price of X always
+      increases quantity of X demanded through SE). The sign of the income effect, however, depends on the type of good.
+    </p>
+
+    <!-- CLASSIFICATION: POSITIVE, NEGATIVE, ZERO -->
+    <p class="section-title">Income Effect: Positive, Negative and Zero</p>
+    <p>
+      The income effect of a price change can be:
+    </p>
+    <ol class="points">
+      <li><strong>Positive income effect</strong> — quantity demanded moves in the same direction as real income.</li>
+      <li><strong>Negative income effect</strong> — quantity demanded moves in the opposite direction to real income.</li>
+      <li><strong>Zero income effect</strong> — quantity demanded is unaffected by changes in real income.</li>
+    </ol>
+
+    <!-- 1. POSITIVE INCOME EFFECT -->
+    <p class="subheading">1. Positive Income Effect (Normal Goods)</p>
+    <p>
+      For a <strong>normal good</strong>, when the consumer’s real income increases, he buys <strong>more</strong> of
+      the good; when real income falls, he buys <strong>less</strong>. Thus, for normal goods, income effect is
+      <strong>positive</strong>.
+    </p>
+
+    <p>
+      Consider the case when price of X falls. Real income increases. Since X is a normal good, quantity demanded of
+      X will rise due to the increase in real income. Therefore, for a normal good X, both substitution effect and
+      income effect move in the <strong>same direction</strong> and reinforce each other.
+    </p>
+
+    <!-- DIAGRAM: POSITIVE INCOME EFFECT -->
+    <div class="diagram" aria-label="Positive income effect for a normal good">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ic{stroke:#1e3a8a;stroke-width:2.5;fill:none}
+          .bl{stroke:#16a34a;stroke-width:2.5}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .point{fill:#111827}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="60" y="65" class="label">Y</text>
+        <text x="445" y="430" class="label">X</text>
+
+        <!-- Indifference curves -->
+        <path d="M135 165 C 200 205, 260 260, 330 315" class="ic"/> <!-- IC1 -->
+        <path d="M110 140 C 190 190, 270 255, 365 325" class="ic"/> <!-- IC2 -->
+
+        <text x="315" y="305" class="label">IC₁</text>
+        <text x="350" y="325" class="label">IC₂</text>
+
+        <!-- Budget lines: same slope, different income -->
+        <line x1="120" y1="200" x2="360" y2="410" class="bl"/> <!-- BL1 -->
+        <line x1="120" y1="150" x2="420" y2="410" class="bl"/> <!-- BL2 -->
+
+        <text x="300" y="235" class="label">BL₁</text>
+        <text x="370" y="260" class="label">BL₂</text>
+
+        <!-- Equilibria -->
+        <circle cx="220" cy="245" r="4" class="point"/>
+        <text x="228" y="240" class="label">E₁</text>
+
+        <circle cx="290" cy="275" r="4" class="point"/>
+        <text x="298" y="270" class="label">E₂</text>
+
+        <!-- Guides to X-axis -->
+        <line x1="220" y1="245" x2="220" y2="410" class="guide"/>
+        <line x1="290" y1="275" x2="290" y2="410" class="guide"/>
+
+        <text x="215" y="425" class="label">X₁</text>
+        <text x="285" y="425" class="label">X₂</text>
+      </svg>
+      <div class="caption">
+        Fig. 1 — Positive Income Effect (Normal Good): Increase in income shifts budget line from BL₁ to BL₂,
+        moving equilibrium from E₁ to E₂ and increasing quantity of X from X₁ to X₂.
+      </div>
+    </div>
+
+    <p>
+      In Fig. 1, both budget lines BL₁ and BL₂ have the <strong>same slope</strong> (same prices). When income rises,
+      the budget line shifts outwards, and equilibrium moves from E₁ on IC₁ to E₂ on higher IC₂. The quantity of X
+      increases from X₁ to X₂. Hence income effect is positive.
+    </p>
+
+    <!-- 2. NEGATIVE INCOME EFFECT -->
+    <p class="subheading">2. Negative Income Effect (Inferior Goods and Giffen Goods)</p>
+    <p>
+      A commodity is said to be an <strong>inferior good</strong> if its quantity demanded <strong>falls</strong>
+      when the consumer’s real income <strong>rises</strong>, and quantity demanded <strong>rises</strong> when real
+      income <strong>falls</strong>. Thus, for inferior goods, income effect is <strong>negative</strong>.
+    </p>
+    <p>
+      When price of X falls, real income rises. If X is an inferior good, consumer may reduce consumption of X and
+      shift towards superior substitutes. In such cases, substitution effect (which is always positive for X when its
+      price falls) and income effect (which is negative) work in <strong>opposite directions</strong>. If negative
+      income effect is strong enough to dominate substitution effect, we get a <strong>Giffen good</strong>, where
+      demand falls when price falls.
+    </p>
+
+    <!-- DIAGRAM: NEGATIVE INCOME EFFECT -->
+    <div class="diagram" aria-label="Negative income effect for an inferior good">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ic{stroke:#1e3a8a;stroke-width:2.5;fill:none}
+          .bl{stroke:#16a34a;stroke-width:2.5}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .point{fill:#111827}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="60" y="65" class="label">Y</text>
+        <text x="445" y="430" class="label">X</text>
+
+        <!-- Indifference curves -->
+        <path d="M135 165 C 200 205, 260 260, 330 315" class="ic"/> <!-- IC1 -->
+        <path d="M110 140 C 190 190, 270 255, 365 325" class="ic"/> <!-- IC2 -->
+
+        <text x="315" y="305" class="label">IC₁</text>
+        <text x="350" y="325" class="label">IC₂</text>
+
+        <!-- Budget lines with same slope -->
+        <line x1="120" y1="200" x2="360" y2="410" class="bl"/> <!-- BL1 -->
+        <line x1="120" y1="150" x2="420" y2="410" class="bl"/> <!-- BL2 -->
+
+        <text x="300" y="235" class="label">BL₁</text>
+        <text x="370" y="260" class="label">BL₂</text>
+
+        <!-- Equilibria (inferior good: X falls when income rises) -->
+        <circle cx="290" cy="275" r="4" class="point"/>
+        <text x="298" y="270" class="label">E₁</text>
+
+        <circle cx="220" cy="245" r="4" class="point"/>
+        <text x="228" y="240" class="label">E₂</text>
+
+        <!-- Guides to X-axis -->
+        <line x1="290" y1="275" x2="290" y2="410" class="guide"/>
+        <line x1="220" y1="245" x2="220" y2="410" class="guide"/>
+
+        <text x="285" y="425" class="label">X₁</text>
+        <text x="215" y="425" class="label">X₂</text>
+      </svg>
+      <div class="caption">
+        Fig. 2 — Negative Income Effect (Inferior Good): Increase in income shifts BL₁ to BL₂, but equilibrium moves
+        from E₁ to E₂ with quantity of X falling from X₁ to X₂.
+      </div>
+    </div>
+
+    <p>
+      In Fig. 2, when income rises (parallel shift of budget line outwards), the consumer moves from E₁ to E₂ on a higher
+      indifference curve, but the quantity of X falls from X₁ to X₂. This shows a <strong>negative income effect</strong>.
+      Inferior and Giffen goods are characterised by such negative income effect.
+    </p>
+
+    <!-- Giffen Note -->
+    <div class="boxed">
+      <strong>Note on Giffen Goods:</strong><br>
+      For a Giffen good, income effect is not only negative but also <strong>stronger in magnitude</strong> than the
+      positive substitution effect. As a result, when price falls, the overall price effect becomes <strong>positive</strong>
+      (price and quantity move in the same direction), which is contrary to the law of demand. This phenomenon is very rare
+      and typically associated with staple goods in extremely poor communities.
+    </div>
+
+    <!-- 3. ZERO INCOME EFFECT -->
+    <p class="subheading">3. Zero Income Effect (Income-Neutral Goods)</p>
+    <p>
+      In some hypothetical cases, a change in real income may have <strong>no effect</strong> on the quantity demanded
+      of a commodity. Such a good is said to have <strong>zero income effect</strong>.
+    </p>
+    <p>
+      For example, if a good occupies an extremely small proportion of the consumer’s budget or is strictly fixed in
+      quantity by custom (say, a fixed number of candles for a ritual), then even when income rises or falls, the quantity
+      demanded remains unchanged.
+    </p>
+
+    <!-- DIAGRAM: ZERO INCOME EFFECT -->
+    <div class="diagram" aria-label="Zero income effect">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ic{stroke:#1e3a8a;stroke-width:2.5;fill:none}
+          .bl{stroke:#16a34a;stroke-width:2.5}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .point{fill:#111827}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="60" y="65" class="label">Y</text>
+        <text x="445" y="430" class="label">X</text>
+
+        <!-- Indifference curves (for zero IE case, equilibrium X unchanged) -->
+        <path d="M135 165 C 200 205, 260 260, 330 315" class="ic"/> <!-- IC1 -->
+        <path d="M115 150 C 195 200, 260 260, 345 310" class="ic"/> <!-- IC2, drawn to keep same X* at tangency -->
+
+        <text x="315" y="305" class="label">IC₁</text>
+        <text x="340" y="290" class="label">IC₂</text>
+
+        <!-- Budget lines -->
+        <line x1="120" y1="200" x2="360" y2="410" class="bl"/> <!-- BL1 -->
+        <line x1="120" y1="150" x2="400" y2="410" class="bl"/> <!-- BL2 -->
+
+        <!-- Equilibria at same X* -->
+        <circle cx="260" cy="260" r="4" class="point"/>
+        <text x="268" y="255" class="label">E₁</text>
+
+        <circle cx="260" cy="240" r="4" class="point"/>
+        <text x="268" y="235" class="label">E₂</text>
+
+        <!-- Guide to X-axis -->
+        <line x1="260" y1="260" x2="260" y2="410" class="guide"/>
+
+        <text x="255" y="425" class="label">X*</text>
+      </svg>
+      <div class="caption">
+        Fig. 3 — Zero Income Effect: As income rises (BL₁ to BL₂), equilibrium shifts from E₁ to E₂, but quantity of X
+        remains constant at X*.
+      </div>
+    </div>
+
+    <p>
+      In Fig. 3, increase in income shifts the budget line outward from BL₁ to BL₂, and equilibrium moves from E₁
+      to E₂ on a higher indifference curve. However, the quantity of X remains constant at X*. This indicates
+      <strong>zero income effect</strong> for X.
+    </p>
+
+    <!-- INCOME EFFECT THROUGH PRICE CHANGE (DECOMPOSITION) -->
+    <p class="section-title">Income Effect in the Context of a Price Change</p>
+    <p>
+      In the indifference curve framework, when the price of X falls:
+    </p>
+    <ol class="points">
+      <li>The budget line rotates outwards (X-axis intercept increases).</li>
+      <li>We first trace the <strong>substitution effect</strong> by drawing a compensated budget line parallel to the
+          new budget line but tangent to the original indifference curve.</li>
+      <li>Then, the movement from the compensated equilibrium to the actual new equilibrium on a higher indifference
+          curve measures the <strong>income effect</strong>.</li>
+    </ol>
+    <p>
+      For a <strong>normal good</strong>, the income effect reinforces substitution effect; for an <strong>inferior good</strong>,
+      it works against substitution effect; and for a hypothetical zero-income-effect good, the final equilibrium lies
+      on the same vertical line as the compensated equilibrium.
+    </p>
+
+    <!-- SUMMARY TABLE -->
+    <p class="section-title">Summary: Positive, Negative and Zero Income Effects</p>
+    <table aria-label="Summary of types of income effect">
+      <thead>
+        <tr>
+          <th>Type of Income Effect</th>
+          <th>Direction of Change in Quantity when Real Income Rises</th>
+          <th>Type of Good</th>
+          <th>Effect on Price–Demand Relationship (when price falls)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Positive</td>
+          <td>Quantity demanded increases</td>
+          <td>Normal goods</td>
+          <td>Reinforces substitution effect; demand definitely rises when price falls.</td>
+        </tr>
+        <tr>
+          <td>Negative</td>
+          <td>Quantity demanded decreases</td>
+          <td>Inferior and Giffen goods</td>
+          <td>Works opposite to substitution effect; in extreme Giffen case, may reverse law of demand.</td>
+        </tr>
+        <tr>
+          <td>Zero</td>
+          <td>No change in quantity demanded</td>
+          <td>Income-neutral goods (rare theoretical case)</td>
+          <td>Price–demand relationship depends only on substitution effect.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- IMPORTANCE -->
+    <p class="section-title">Importance of the Concept of Income Effect</p>
+    <p>
+      The concept of income effect is of great theoretical and practical significance:
+    </p>
+
+    <div class="importance-box">
+      <strong>1. Basis of Classification of Goods</strong><br>
+      Whether a good is <strong>normal, inferior or Giffen</strong> is decided by the nature of its income effect.
+      Positive income effect implies normal good; negative income effect implies inferior or Giffen good.
+    </div>
+
+    <div class="importance-box">
+      <strong>2. Explanation of Giffen Paradox</strong><br>
+      The rare case of a Giffen good, where demand rises with price, can be explained only by combining
+      <strong>strong negative income effect</strong> with substitution effect. Without income effect there can be
+      no Giffen good.
+    </div>
+
+    <div class="importance-box">
+      <strong>3. Deeper Understanding of Price Effect</strong><br>
+      Decomposing price effect into substitution and income effects enables a more refined analysis of how
+      and why demand responds to price changes. It is a core feature of modern indifference curve analysis.
+    </div>
+
+    <div class="importance-box">
+      <strong>4. Policy Applications</strong><br>
+      For evaluating the impact of <strong>indirect taxes, subsidies and price controls</strong> on different income
+      groups, policy-makers need to understand how changes in real income (through price changes) affect the consumption
+      of various goods.
+    </div>
+
+    <div class="importance-box">
+      <strong>5. Exam Relevance</strong><br>
+      In Panjab University examinations, questions on income effect frequently appear as separate long questions
+      and also as part of the analysis of Giffen goods and decomposition of price effect. A clear diagram-based
+      explanation of positive, negative and zero income effects is highly scoring.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a 15-marks answer on “Income Effect — It may be positive, negative and zero”, you should:
+      (i) give a precise definition, 
+      (ii) relate income effect to price change and real income, 
+      (iii) explain positive, negative and zero income effects separately,
+      (iv) draw three neat, clearly labelled diagrams (normal, inferior and zero-effect cases),
+      (v) link income effect to classification of goods and Giffen paradox,
+      and (vi) end with a short, balanced conclusion. This structure closely matches the expectations
+      of Panjab University examiners.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, the <strong>income effect</strong> is that part of the impact of a price change on quantity demanded
+      which operates through the change in the consumer’s <strong>real income or purchasing power</strong>. It may be
+      <strong>positive</strong> (normal goods), <strong>negative</strong> (inferior and Giffen goods) or <strong>zero</strong>
+      (income-neutral goods). In combination with the always negative substitution effect, income effect helps to explain
+      the usual downward slope of the demand curve, the exceptional Giffen behaviour and the classification of goods in
+      modern microeconomics, exactly as developed in the prescribed text of T.R. Jain &amp; V.K. Ohri for B.Com Semester I.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      This answer forms part of a carefully curated set of important questions that have frequently appeared in
+      past university examinations and therefore hold a high probability of reappearing in future assessments.
+      While prepared with academic accuracy and aligned to the prescribed syllabus, these solutions should be
+      treated as high-quality preparation material rather than a guaranteed prediction of any upcoming exam paper.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

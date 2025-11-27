@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q2 — Movement along Demand Curve & Shift in Demand Curve</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a;
+      --muted:#55606a; --maxw:980px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text);line-height:1.78}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:28px;background:var(--card);
+      border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.07);border:1px solid #e9eef3}
+    header{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    .logo{width:56px;height:56px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;color:var(--muted);font-size:13px}
+
+    .answer{margin-top:22px;padding:26px;background:#fff;border-radius:10px;border:1px solid #eef3fb}
+    .section-title{font-weight:700;margin-top:20px;color:var(--text);font-size:16px}
+    p.lead{margin:8px 0;color:#27303a}
+    ol.points, ul.points{padding-left:20px;margin-top:10px}
+    .boxed{padding:14px;border-left:4px solid #cfe8ff;background:#f7fbff;border-radius:8px;margin-top:12px}
+    .diagram{margin-top:22px;padding:16px;background:#fff;border:1px solid #e6eef8;border-radius:10px}
+    .diagram svg{width:100%;height:auto;max-width:820px;display:block;margin:0 auto}
+    .caption{text-align:center;margin-top:8px;font-size:13px;color:#55606a}
+    table.compare{width:100%;border-collapse:collapse;margin-top:14px}
+    table.compare th, table.compare td{border:1px solid #eef3fb;padding:10px;text-align:left;font-size:14px}
+    table.compare th{background:#f7fbff;font-weight:700}
+    .exam-tip{margin-top:16px;padding:12px;background:#fffbe6;border-left:4px solid #ffb020;border-radius:8px;color:#473410}
+    .disclaimer{margin-top:24px;font-size:14px;color:#55606a;background:#f9fafc;border-left:4px solid #1e3a8a;padding:14px;border-radius:8px}
+    @media(max-width:760px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">ME</div>
+      <div>
+        <h1>Question 2 — Movement along the Demand Curve and Shift in the Demand Curve</h1>
+        <div class="meta">Government College Ludhiana East • Commercial Law — B.Com (Sem I) | Prepared by: Jeevansh Manocha</div>
+      </div>
+    </header>
+
+    <article class="answer">
+      <!-- INTRODUCTION -->
+      <p class="section-title">Introduction</p>
+      <p class="lead">
+        The distinction between a <strong>movement along the demand curve</strong> and a <strong>shift of the demand curve</strong> is foundational in price theory. 
+        A movement along the curve reflects a change in quantity demanded brought about exclusively by a change in the price of the commodity itself; 
+        a shift of the curve indicates a change in demand arising from non-price determinants. Precise understanding of this difference is essential for interpreting
+        market behaviour, policy effects and practical forecasting.
+      </p>
+
+      <!-- EXPLANATION -->
+      <p class="section-title">Explanation: Movement along the Demand Curve (Change in Quantity Demanded)</p>
+      <p class="lead">
+        A <strong>movement along the demand curve</strong> occurs when there is a change in the commodity's price and all other determinants of demand remain unchanged.
+        In this case the demand curve (D) remains fixed and price variation causes a point-to-point movement along that curve. A fall in price causes a downward
+        movement along the curve to the right (increase in quantity demanded); a rise in price produces an upward movement to the left (decrease in quantity demanded).
+      </p>
+
+      <p class="section-title">Key characteristics of movement along the demand curve</p>
+      <ol class="points">
+        <li><strong>Cause:</strong> Change in own-price of the commodity.</li>
+        <li><strong>Effect:</strong> Change in quantity demanded only (not demand).</li>
+        <li><strong>Curve:</strong> Same demand curve; point-to-point movement.</li>
+        <li><strong>Analysis:</strong> Used to study price responsiveness (elasticity) at a point on demand curve.</li>
+        <li><strong>Graphical representation:</strong> A single downward-sloping curve with two points representing (P₁, Q₁) and (P₂, Q₂).</li>
+      </ol>
+
+      <!-- DIAGRAM: Movement along demand curve -->
+      <div class="diagram" aria-hidden="false" role="img" aria-label="Movement along the demand curve">
+        <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <style>
+            .axis{stroke:#111827;stroke-width:2}
+            .dline{stroke:#1e3a8a;stroke-width:4;fill:none}
+            .dot{fill:#ef4444}
+            .label{font-family:Inter,Arial;font-size:15px;fill:#0b1220}
+            .guide{stroke:#6b7280;stroke-dasharray:6 4;stroke-width:1}
+          </style>
+
+          <!-- Axes -->
+          <line x1="100" y1="60" x2="100" y2="460" class="axis"/>
+          <line x1="100" y1="460" x2="820" y2="460" class="axis"/>
+
+          <!-- Demand curve -->
+          <path d="M170 120 C 260 170, 350 210, 470 260 C 600 310, 700 350, 760 390" class="dline"/>
+
+          <!-- Points on curve -->
+          <circle cx="300" cy="200" r="6" class="dot"/>
+          <text x="315" y="195" class="label">A (P₁, Q₁)</text>
+
+          <circle cx="550" cy="300" r="6" class="dot"/>
+          <text x="565" y="295" class="label">B (P₂, Q₂)</text>
+
+          <!-- Guides -->
+          <line x1="300" y1="200" x2="300" y2="460" class="guide"/>
+          <line x1="550" y1="300" x2="550" y2="460" class="guide"/>
+          <line x1="100" y1="200" x2="300" y2="200" class="guide"/>
+          <line x1="100" y1="300" x2="550" y2="300" class="guide"/>
+
+          <!-- Axis labels -->
+          <text x="60" y="45" class="label">Price (P)</text>
+          <text x="830" y="475" class="label">Quantity (Q)</text>
+
+          <!-- Curve label -->
+          <text x="700" y="360" class="label" style="font-weight:700">D</text>
+
+          <!-- Explanatory note -->
+          <rect x="120" y="10" width="650" height="40" rx="6" ry="6" fill="#ffffff" stroke="#e6eef8"/>
+          <text x="140" y="36" class="label" style="font-size:13px">Fig. 1 — Movement along the same demand curve due to change in own-price (P₁ → P₂ causes Q₁ → Q₂).</text>
+        </svg>
+        <div class="caption">Fig. 1 — Movement along the demand curve: price change causes change in quantity demanded (point movement).</div>
+      </div>
+
+      <!-- SHIFT -->
+      <p class="section-title">Explanation: Shift of the Demand Curve (Change in Demand)</p>
+      <p class="lead">
+        A <strong>shift in the demand curve</strong> denotes a change in demand for the commodity at every possible price. Shifts arise from changes in non-price determinants:
+        income, tastes, prices of related goods, expectations, population, government policy, etc. An <em>increase</em> in demand shifts the curve to the right (D → D₁),
+        while a <em>decrease</em> shifts it to the left (D → D₂). Price here is held constant while the whole relationship between price and quantity demanded alters.
+      </p>
+
+      <p class="section-title">Key characteristics of shift in demand curve</p>
+      <ol class="points">
+        <li><strong>Cause:</strong> Change in non-price determinants (income, tastes, prices of substitutes/complements, population, etc.).</li>
+        <li><strong>Effect:</strong> Change in demand (quantity demanded at each price), not merely quantity demanded.</li>
+        <li><strong>Curve:</strong> Entire demand schedule/curve moves to a new position.</li>
+        <li><strong>Analysis:</strong> Used to study structural changes in market demand and policy impacts.</li>
+      </ol>
+
+      <!-- DIAGRAM: Shift in demand curve -->
+      <div class="diagram" aria-hidden="false" role="img" aria-label="Shift of the demand curve">
+        <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <style>
+            .axis{stroke:#111827;stroke-width:2}
+            .dold{stroke:#1e3a8a;stroke-width:4;fill:none}
+            .dnew{stroke:#3b82f6;stroke-width:3;stroke-dasharray:8 6;fill:none}
+            .label{font-family:Inter,Arial;font-size:15px;fill:#0b1220}
+          </style>
+
+          <!-- Axes -->
+          <line x1="100" y1="60" x2="100" y2="460" class="axis"/>
+          <line x1="100" y1="460" x2="820" y2="460" class="axis"/>
+
+          <!-- Original demand -->
+          <path d="M170 150 C 270 200, 360 240, 470 280 C 590 320, 680 350, 740 380" class="dold"/>
+
+          <!-- New demand (rightward shift) -->
+          <path d="M140 120 C 240 170, 330 210, 440 250 C 560 290, 650 320, 710 350" class="dnew"/>
+
+          <!-- Labels -->
+          <text x="60" y="45" class="label">Price (P)</text>
+          <text x="830" y="475" class="label">Quantity (Q)</text>
+
+          <text x="700" y="320" class="label">D (Original)</text>
+          <text x="660" y="200" class="label">D₁ (After increase)</text>
+
+          <!-- Explanatory note -->
+          <rect x="120" y="10" width="650" height="40" rx="6" ry="6" fill="#ffffff" stroke="#e6eef8"/>
+          <text x="140" y="36" class="label" style="font-size:13px">Fig. 2 — Rightward shift (D → D₁) indicates an increase in demand; leftward shift would indicate decrease.</text>
+        </svg>
+        <div class="caption">Fig. 2 — Shift of the demand curve: non-price determinants alter demand at every price.</div>
+      </div>
+
+      <!-- COMPARATIVE TABLE -->
+      <p class="section-title">Comparative Summary: Movement vs Shift</p>
+      <table class="compare" aria-label="Comparison between movement and shift">
+        <thead>
+          <tr><th>Aspect</th><th>Movement along Demand Curve</th><th>Shift of Demand Curve</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cause</td><td>Change in own-price of the commodity</td><td>Change in income, tastes, prices of related goods, population, expectations, policy</td></tr>
+          <tr><td>Effect</td><td>Change in quantity demanded only</td><td>Change in demand at every price (quantity at each price changes)</td></tr>
+          <tr><td>Curve</td><td>Same curve; movement from one point to another</td><td>Entire curve shifts right (increase) or left (decrease)</td></tr>
+          <tr><td>Graphical marker</td><td>Two points on same curve (P₁,Q₁) → (P₂,Q₂)</td><td>New curve D₁ or D₂ drawn parallel/near original</td></tr>
+          <tr><td>Policy relevance</td><td>Short-run price analysis; elasticity</td><td>Structural changes, long-run policy and market analysis</td></tr>
+        </tbody>
+      </table>
+
+      <!-- CAUSES OF SHIFT: DETAILED -->
+      <p class="section-title">Detailed Causes of Demand Shifts (with examples)</p>
+      <ol class="points">
+        <li><strong>Change in consumer income:</strong> For a normal good (e.g., branded clothing), an increase in income shifts demand right; for an inferior good (e.g., low-quality staple), an increase in income may shift demand left.</li>
+        <li><strong>Change in tastes and preferences:</strong> Successful advertising or changes in fashion can raise demand for specific goods (e.g., smartphones), shifting demand right.</li>
+        <li><strong>Prices of substitutes:</strong> If the price of coffee rises, demand for tea (a substitute) increases — Dtea shifts right.</li>
+        <li><strong>Prices of complements:</strong> A fall in petrol price increases demand for cars — car demand shifts right.</li>
+        <li><strong>Population and demographics:</strong> Increase in population or change in age-distribution can expand market demand for certain commodities (e.g., baby food).</li>
+        <li><strong>Expectations:</strong> Anticipation of future price rises or shortages leads to higher present demand (stocking behaviour), shifting current demand right.</li>
+        <li><strong>Government policy and taxation:</strong> Subsidies for essential goods increase demand; heavy taxation reduces demand.</li>
+      </ol>
+
+      <!-- ELASTICITY NOTE -->
+      <p class="section-title">Interaction with Elasticity and Revenue</p>
+      <p class="lead">
+        Movement along the demand curve is the context in which price elasticity of demand is measured. Elasticity determines revenue response:
+      </p>
+      <ol class="points">
+        <li>If demand is <strong>elastic</strong> at a point (|E| &gt; 1), a fall in price increases total revenue (TR); a rise in price reduces TR.</li>
+        <li>If demand is <strong>inelastic</strong> at a point (|E| &lt; 1), a rise in price increases TR; a fall in price reduces TR.</li>
+        <li>If demand is <strong>unitary elastic</strong> (|E| = 1), small price changes do not affect TR.</li>
+      </ol>
+
+      <!-- COMMON ERRORS -->
+      <p class="section-title">Common Examination Errors to Avoid</p>
+      <ol class="points">
+        <li>Confusing a movement along the curve with a shift — emphasise cause (price vs non-price).</li>
+        <li>Failing to label axes (Price on vertical, Quantity on horizontal) — always label diagrams clearly.</li>
+        <li>Omitting examples for causes of shift — use one-line examples to demonstrate understanding.</li>
+        <li>Neglecting elasticity implications when discussing movement — link to revenue where relevant.</li>
+      </ol>
+
+      <!-- EXAM TIPS -->
+      <div class="exam-tip">
+        <strong>Exam-writing checklist:</strong> Define both terms; draw two neat labelled diagrams (movement and shift); explain causes and consequences; provide real-world one-line examples; conclude with a brief comparison. This structure impresses examiners and ensures full marks.
+      </div>
+
+      <!-- CONCLUSION -->
+      <p class="section-title">Conclusion</p>
+      <p class="lead">
+        In summary, movement along the demand curve and shift of the demand curve are distinct concepts with different causes and implications.
+        Correct identification of whether a change is due to own-price or other determinants is essential for applied economic analysis, policy evaluation
+        and business decision-making. The analytical clarity provided by this distinction is core to the TR Jain &amp; V.K. Ohri exposition and to practical
+        market interpretation.
+      </p>
+
+      <!-- DISCLAIMER -->
+      <div class="disclaimer">
+        The following answer forms part of a curated set of frequently recurring university questions. These questions have appeared repeatedly in past examinations and therefore possess a high probability of recurring in future assessments. While academically reliable and prepared with scholarly rigour, this material is intended as high-quality preparation guidance and does not constitute a guaranteed prediction of examination content.
+      </div>
+
+    </article>
+  </div>
+</body>
+</html>

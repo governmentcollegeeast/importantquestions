@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q4 — Important Notice (Refer Textbook)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:980px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.68;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:36px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;color:var(--muted);font-size:13px}
+
+    .card{
+      margin-top:18px;
+      background:#fff;
+      padding:20px;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .important{
+      background:#f9fafc;
+      border-left:4px solid var(--accent);
+      padding:14px;
+      border-radius:6px;
+      margin-top:12px;
+    }
+
+    .note{
+      margin-top:14px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .disclaimer{
+      margin-top:18px;
+      background:#fff;
+      border-left:4px solid var(--accent);
+      padding:14px;
+      border-radius:6px;
+      font-size:13px;
+      color:#475569;
+    }
+
+    @media(max-width:700px){
+      .wrap{
+        margin:16px;
+        padding:18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="logo">ME</div>
+      <div>
+        <h1>Question 4 — What is price Elasticity of Demand? Explain the various methods used for measuring price Elasticity of
+          Demand.
+          </h1>
+        <div class="meta">Government College Ludhiana East • Commercial Law — B.Com (Sem I) | Prepared by: Jeevansh Manocha</div>
+      </div>
+    </header>
+
+    <section class="card">
+
+      <p style="font-weight:700;margin:0 0 8px 0;">Read Before Attempting Q4</p>
+
+      <div class="important">
+        <p style="margin:0 0 10px 0;">
+          Question 4, dealing with <strong>Price Elasticity of Demand and its Methods of Measurement</strong>, is one of the most 
+          detailed and technically demanding questions in the Microeconomics syllabus of Panjab University. It contains multiple 
+          interlinked concepts, rigorous derivations, and requires clear understanding of five major measurement methods along 
+          with their underlying assumptions, mathematical foundations and conceptual distinctions.
+        </p>
+
+        <p style="margin:10px 0 0 0;">
+          The complete academic explanation — including formal derivations, diagrammatic interpretations, properties of linear 
+          and non-linear curves, slope–elasticity distinction, marginal revenue linkage, midpoint logic, and method-wise 
+          applications — is best studied directly from the officially recommended textbook:
+          <br><br>
+          <strong>📘 T.R. Jain & V.K. Ohri — Microeconomics (B.Com Semester I, Panjab University)</strong>
+          <br>
+          This book provides the exact wording, structured diagrams, solved illustrations, and 
+          analytical detail that aligns with Panjab University’s evaluation standards.
+        </p>
+      </div>
+
+      <p class="note">
+        <strong>Why this note?</strong><br>
+        Because Q4 requires:  
+        • Multi-method explanation (Total Outlay, Proportionate, Point Method, Arc Method, Revenue Method)  
+        • Precise mathematical handling and stepwise derivations  
+        • Multiple diagrammatic supports  
+        • A level of detail that is expected to match textbook presentation  
+        <br><br>
+        Therefore, to maintain syllabus accuracy and academic quality, students should rely on the textbook’s 
+        comprehensive exposition for this specific question rather than abbreviated notes.
+      </p>
+
+      <div class="disclaimer">
+        This advisory has been provided because this question is both highly important and frequently repeated in 
+        university examinations. While it has a strong likelihood of reappearing, it should still be treated as a 
+        recommended topic for in-depth academic preparation rather than a guaranteed prediction.
+      </div>
+
+    </section>
+
+  </div>
+  <!-- Book Reference Required — Popup Disclaimer -->
+<div id="bookDisclaimerOverlay" style="
+position:fixed; inset:0;
+background:rgba(15,23,42,0.45);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+">
+<div id="bookDisclaimerModal" style="
+  max-width:520px; width:90%;
+  background:#fffaf0;
+  border-radius:12px;
+  border:1px solid #fee4a6;
+  box-shadow:0 20px 45px rgba(15,23,42,0.25);
+  padding:20px 20px 16px 20px;
+  position:relative;
+  font-family:Inter,system-ui,Arial;
+">
+  <button id="bookDisclaimerClose" aria-label="Close disclaimer" style="
+    position:absolute;
+    top:10px; right:12px;
+    border:none;
+    background:transparent;
+    font-size:20px;
+    color:#7c6f54;
+    cursor:pointer;
+  ">&times;</button>
+
+  <div style="
+    display:inline-block;
+    margin-bottom:8px;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#a16207;
+    background:#fef3c7;
+    padding:4px 8px;
+    border-radius:999px;
+    font-weight:600;
+  ">Book Reference Required</div>
+
+  <h3 style="margin:2px 0 8px 0;font-size:17px;color:#8a4f0b;">Additional Study Recommended</h3>
+
+  <p style="margin:0;font-size:14px;line-height:1.7;color:#5a3410;">
+    This question involves advanced concepts and requires deeper understanding. Students must refer to the official
+    Panjab University prescribed textbook,
+    <strong>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</strong>
+    along with these structured notes for complete exam-oriented preparation.
+  </p>
+
+</div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('bookDisclaimerOverlay');
+  var closeBtn = document.getElementById('bookDisclaimerClose');
+
+  function hidePopup(){
+    if(overlay){
+      overlay.style.opacity = '0';
+      setTimeout(() => { overlay.style.display = 'none'; }, 400);
+    }
+  }
+
+  // Close when click "X"
+  if(closeBtn){
+    closeBtn.addEventListener('click', hidePopup);
+  }
+
+  // Close on click outside
+  overlay.addEventListener('click', function(e){
+    if(e.target === overlay){
+      hidePopup();
+    }
+  });
+
+  // Auto hide after 10 seconds
+  setTimeout(hidePopup, 10000);
+})();
+</script>
+</body>
+</html>

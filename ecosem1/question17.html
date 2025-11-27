@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q17 — Law of Returns to Scale (Table & Diagrams)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:center;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 17 — Explain the Law of Returns to Scale with the help of Suitable Table and Diagrams.</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the <strong>theory of production</strong>, we study how output changes when the quantities of inputs (factors
+      of production) are varied. In the <strong>short run</strong>, some factors are fixed and some are variable, and the
+      behaviour of output is explained by the <strong>Law of Variable Proportions</strong>. In the <strong>long run</strong>,
+      however, <strong>all factors become variable</strong>. The firm can change the size of its plant, scale of
+      operation, and employ larger or smaller quantities of all inputs. The behaviour of output when all factors are
+      increased in some proportion is analysed with the help of the <strong>Law of Returns to Scale</strong>.
+    </p>
+    <p>
+      In the B.Com (Semester I) syllabus of Panjab University, following <em>Microeconomics</em> by
+      <strong>T.R. Jain &amp; V.K. Ohri</strong>, the law of returns to scale is treated as a fundamental long-run
+      production law and is usually explained with the help of a <strong>numerical table</strong> and
+      <strong>isoquant diagrams</strong>.
+    </p>
+
+    <!-- MEANING & DEFINITION -->
+    <p class="section-title">Meaning and Definition of Returns to Scale</p>
+    <p>
+      The term <strong>scale</strong> refers to the <strong>overall size of the firm</strong> or the level of operation,
+      determined by the quantities of all factors used. Returns to scale describe how <strong>output changes</strong>
+      when <strong>all inputs are increased in the same proportion</strong>.
+    </p>
+
+    <div class="boxed">
+      <strong>Definition:</strong><br>
+      The <strong>Law of Returns to Scale</strong> describes the behaviour of output when all inputs are increased in
+      the <strong>same proportion</strong>. If, when all factors of production are increased by a certain percentage,
+      output increases by a greater, equal, or smaller percentage, the firm is said to experience respectively
+      <strong>increasing</strong>, <strong>constant</strong> or <strong>decreasing returns to scale</strong>.
+    </div>
+
+    <p>
+      Thus, while the law of variable proportions deals with the effect on output of changing <em>one</em> factor at a
+      time (keeping others fixed), the law of returns to scale deals with the effect of changing <em>all</em> factors
+      <strong>simultaneously and proportionally</strong> in the long run.
+    </p>
+
+    <!-- ASSUMPTIONS -->
+    <p class="section-title">Assumptions of the Law of Returns to Scale</p>
+    <p>
+      The standard assumptions under which the law operates are as follows:
+    </p>
+    <ol class="points">
+      <li>
+        <strong>All factors are variable:</strong> The analysis is <strong>long-run</strong> in nature. The firm can
+        change the scale of operations by varying all inputs together.
+      </li>
+      <li>
+        <strong>Homogeneous factor units:</strong> Units of each factor (labour, capital, land, etc.) are identical in
+        quality. Every additional unit added is of the same efficiency as previous units.
+      </li>
+      <li>
+        <strong>Unchanged technology:</strong> The level of <strong>technology remains constant</strong>. Changes in
+        output are due solely to changes in scale, not due to technical progress.
+      </li>
+      <li>
+        <strong>Efficient organisation:</strong> The firm’s management is efficient and adjusts itself to the new scale
+        of production without unnecessary wastage.
+      </li>
+      <li>
+        <strong>Divisible inputs:</strong> Factors can be increased or decreased in small proportions to permit smooth
+        changes in scale.
+      </li>
+      <li>
+        <strong>Perfect competition:</strong> The firm is assumed to be operating under conditions of perfect competition
+        in factor and product markets, so that external disturbances are minimal.
+      </li>
+    </ol>
+
+    <!-- ILLUSTRATIVE TABLE -->
+    <p class="section-title">Illustrative Table Showing Returns to Scale</p>
+    <p>
+      Consider a firm using two inputs: <strong>Labour (L)</strong> and <strong>Capital (K)</strong>. In the long run,
+      both L and K are varied in the same proportion. The resulting changes in output can be presented in a numerical
+      schedule as follows (hypothetical figures for illustration, in the spirit of T.R. Jain &amp; V.K. Ohri):
+    </p>
+
+    <table aria-label="Illustrative table for law of returns to scale">
+      <thead>
+        <tr>
+          <th>Scale<br>(Proportionate Change in L &amp; K)</th>
+          <th>Units of Labour<br>(L)</th>
+          <th>Units of Capital<br>(K)</th>
+          <th>Total Output<br>(Q)</th>
+          <th>Proportionate Change<br>in Output</th>
+          <th>Nature of Returns<br>to Scale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Initial</td>
+          <td>10</td>
+          <td>5</td>
+          <td>100</td>
+          <td>–</td>
+          <td>Base situation</td>
+        </tr>
+        <tr>
+          <td>Double inputs</td>
+          <td>20</td>
+          <td>10</td>
+          <td>230</td>
+          <td>+130% output vs +100% inputs</td>
+          <td><strong>Increasing Returns to Scale</strong></td>
+        </tr>
+        <tr>
+          <td>Triple inputs</td>
+          <td>30</td>
+          <td>15</td>
+          <td>300</td>
+          <td>+200% output vs +200% inputs</td>
+          <td><strong>Constant Returns to Scale</strong></td>
+        </tr>
+        <tr>
+          <td>Quadruple inputs</td>
+          <td>40</td>
+          <td>20</td>
+          <td>360</td>
+          <td>+260% output vs +300% inputs</td>
+          <td><strong>Decreasing Returns to Scale</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Interpretation of the table:
+    </p>
+    <ul class="points">
+      <li>
+        When L and K are doubled (from 10 &amp; 5 to 20 &amp; 10), output increases from 100 to 230. Output has more than
+        doubled → <strong>increasing returns to scale</strong>.
+      </li>
+      <li>
+        When L and K are trebled (30 &amp; 15), output rises to 300, exactly three times. Output increases in the same
+        proportion as inputs → <strong>constant returns to scale</strong>.
+      </li>
+      <li>
+        When L and K are quadrupled (40 &amp; 20), output increases only to 360, less than four times. Output increases
+        less than proportionately → <strong>decreasing returns to scale</strong>.
+      </li>
+    </ul>
+
+    <!-- DIAGRAM: ISOQUANT EXPLANATION -->
+    <p class="section-title">Diagrammatic Explanation using Isoquants</p>
+    <p>
+      The law of returns to scale is conveniently explained with the help of <strong>isoquants</strong>. An isoquant is a
+      curve showing different combinations of L and K that yield the same level of output. On a diagram with labour
+      measured on the horizontal axis and capital on the vertical axis, higher isoquants represent <strong>higher
+      levels of output</strong>.
+    </p>
+    <p>
+      Returns to scale are studied along a <strong>ray from the origin</strong> (also called an <strong>expansion path</strong>)
+      where L and K are increased in the same proportion. The spacing of isoquants along this ray shows whether returns
+      to scale are increasing, constant or decreasing.
+    </p>
+
+    <div class="diagram" aria-label="Isoquant diagrams for increasing, constant and decreasing returns to scale">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:1.8}
+          .iq{stroke:#1e3a8a;stroke-width:2;fill:none}
+          .ray{stroke:#16a34a;stroke-width:1.8;stroke-dasharray:6 4}
+          .label{font-family:Inter,Arial;font-size:13px;fill:#111827}
+          .panel-title{font-weight:bold;font-size:14px}
+        </style>
+
+        <!-- Panel (a) Increasing Returns to Scale -->
+        <g transform="translate(30,40)">
+          <!-- Axes -->
+          <line x1="40" y1="150" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="150" x2="180" y2="150" class="axis"/>
+          <text x="25" y="0" class="label">K</text>
+          <text x="180" y="165" class="label">L</text>
+          <text x="60" y="-10" class="label panel-title">(a) IRS</text>
+
+          <!-- Isoquants -->
+          <path d="M60 135 C 80 110, 110 95, 140 90" class="iq"/>
+          <path d="M55 120 C 80 95, 115 80, 150 75" class="iq"/>
+          <path d="M50 105 C 80 80, 120 65, 160 60" class="iq"/>
+
+          <text x="142" y="88" class="label">Q₁</text>
+          <text x="152" y="73" class="label">Q₂</text>
+          <text x="162" y="58" class="label">Q₃</text>
+
+          <!-- Ray from origin -->
+          <line x1="40" y1="150" x2="170" y2="20" class="ray"/>
+
+          <!-- Scale points along the ray (closer as output rises) -->
+          <circle cx="75" cy="115" r="2"/>
+          <circle cx="105" cy="90" r="2"/>
+          <circle cx="132" cy="68" r="2"/>
+        </g>
+
+        <!-- Panel (b) Constant Returns to Scale -->
+        <g transform="translate(310,40)">
+          <!-- Axes -->
+          <line x1="40" y1="150" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="150" x2="180" y2="150" class="axis"/>
+          <text x="25" y="0" class="label">K</text>
+          <text x="180" y="165" class="label">L</text>
+          <text x="60" y="-10" class="label panel-title">(b) CRS</text>
+
+          <!-- Isoquants -->
+          <path d="M60 135 C 80 110, 110 95, 140 90" class="iq"/>
+          <path d="M55 120 C 75 95, 105 80, 135 75" class="iq"/>
+          <path d="M50 105 C 70 80, 100 65, 130 60" class="iq"/>
+
+          <text x="142" y="88" class="label">Q₁</text>
+          <text x="137" y="73" class="label">Q₂</text>
+          <text x="132" y="58" class="label">Q₃</text>
+
+          <!-- Ray from origin -->
+          <line x1="40" y1="150" x2="170" y2="20" class="ray"/>
+
+          <!-- Scale points along the ray (roughly equal spacing) -->
+          <circle cx="80" cy="110" r="2"/>
+          <circle cx="110" cy="85" r="2"/>
+          <circle cx="140" cy="60" r="2"/>
+        </g>
+
+        <!-- Panel (c) Decreasing Returns to Scale -->
+        <g transform="translate(590,40)">
+          <!-- Axes -->
+          <line x1="40" y1="150" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="150" x2="180" y2="150" class="axis"/>
+          <text x="25" y="0" class="label">K</text>
+          <text x="180" y="165" class="label">L</text>
+          <text x="60" y="-10" class="label panel-title">(c) DRS</text>
+
+          <!-- Isoquants -->
+          <path d="M60 135 C 80 110, 110 95, 140 90" class="iq"/>
+          <path d="M55 120 C 78 100, 110 87, 145 82" class="iq"/>
+          <path d="M50 105 C 80 90, 120 80, 160 78" class="iq"/>
+
+          <text x="142" y="88" class="label">Q₁</text>
+          <text x="147" y="80" class="label">Q₂</text>
+          <text x="162" y="76" class="label">Q₃</text>
+
+          <!-- Ray from origin -->
+          <line x1="40" y1="150" x2="170" y2="20" class="ray"/>
+
+          <!-- Scale points along the ray (farther apart as output rises) -->
+          <circle cx="70" cy="118" r="2"/>
+          <circle cx="117" cy="78" r="2"/>
+          <circle cx="165" cy="37" r="2"/>
+        </g>
+      </svg>
+      <div class="caption">
+        Fig. — Law of Returns to Scale: Along a ray from the origin, isoquants are closer together under
+        Increasing Returns to Scale (IRS), equally spaced under Constant Returns to Scale (CRS), and farther
+        apart under Decreasing Returns to Scale (DRS).
+      </div>
+    </div>
+
+    <!-- TYPES OF RETURNS TO SCALE -->
+    <p class="section-title">Types of Returns to Scale</p>
+
+    <p class="subheading">1. Increasing Returns to Scale (IRS)</p>
+    <p>
+      When all inputs are increased in a given proportion and output increases by a <strong>greater proportion</strong>,
+      the firm is said to experience <strong>increasing returns to scale</strong>.
+    </p>
+    <ul class="points">
+      <li>If inputs are doubled and output more than doubles → IRS.</li>
+      <li>In the table above, going from (L=10, K=5, Q=100) to (L=20, K=10, Q=230) shows IRS.</li>
+      <li>On the isoquant diagram, as we move along the expansion path, isoquants are <strong>closer together</strong>.</li>
+    </ul>
+    <p class="example">
+      <strong>Reasons:</strong> Increasing returns to scale usually arise due to internal economies of scale such as
+      better specialisation of labour and management, technical indivisibilities (larger machines being more efficient),
+      economies in buying and selling, and improved use of by-products.
+    </p>
+
+    <p class="subheading">2. Constant Returns to Scale (CRS)</p>
+    <p>
+      When all inputs are increased in a given proportion and output increases in <strong>exactly the same proportion</strong>,
+      the firm experiences <strong>constant returns to scale</strong>.
+    </p>
+    <ul class="points">
+      <li>If inputs are trebled and output also becomes three times → CRS.</li>
+      <li>In the table, moving from (L=10, K=5, Q=100) to (L=30, K=15, Q=300) illustrates CRS.</li>
+      <li>On the isoquant diagram, isoquants are <strong>equally spaced</strong> along the expansion path.</li>
+    </ul>
+    <p>
+      At constant returns to scale, the firm is operating at a stage where internal economies have been largely
+      exhausted and diseconomies have not yet set in. Many textbooks describe this as the “balanced” zone of
+      long-run production.
+    </p>
+
+    <p class="subheading">3. Decreasing Returns to Scale (DRS)</p>
+    <p>
+      When all inputs are increased in a given proportion and output increases by a <strong>smaller proportion</strong>,
+      the firm faces <strong>decreasing returns to scale</strong>.
+    </p>
+    <ul class="points">
+      <li>If inputs are quadrupled but output increases less than four times → DRS.</li>
+      <li>In the table, moving from (L=10, K=5, Q=100) to (L=40, K=20, Q=360) shows DRS.</li>
+      <li>On the isoquant diagram, isoquants are <strong>farther apart</strong> along the expansion path.</li>
+    </ul>
+    <p class="example">
+      <strong>Reasons:</strong> Decreasing returns to scale arise mainly due to internal diseconomies: difficulties of
+      coordination and control in a very large organisation, overburdened management, communication delays, and possible
+      labour–management problems. As scale becomes too large, these factors reduce the proportional increase in output.
+    </p>
+
+    <!-- DIFFERENCE VS VARIABLE PROPORTIONS (BRIEF) -->
+    <p class="section-title">Difference between Law of Variable Proportions and Law of Returns to Scale (Brief)</p>
+    <p>
+      Since both laws relate to production, examiners often expect a brief comparison:
+    </p>
+
+    <table aria-label="Difference between law of variable proportions and law of returns to scale">
+      <thead>
+        <tr>
+          <th>Basis</th>
+          <th>Law of Variable Proportions</th>
+          <th>Law of Returns to Scale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Time Period</td>
+          <td>Short run — at least one factor is fixed.</td>
+          <td>Long run — all factors are variable.</td>
+        </tr>
+        <tr>
+          <td>Change in Inputs</td>
+          <td>Only one factor is varied, others kept constant.</td>
+          <td>All factors are varied in the <strong>same proportion</strong>.</td>
+        </tr>
+        <tr>
+          <td>Main Concept</td>
+          <td>Explains TP, MP, AP of a <em>single variable factor</em>.</td>
+          <td>Explains proportional changes in output when the <em>scale</em> changes.</td>
+        </tr>
+        <tr>
+          <td>Stages</td>
+          <td>Three stages: Increasing, Diminishing and Negative returns to a factor.</td>
+          <td>Three phases: Increasing, Constant and Decreasing returns to scale.</td>
+        </tr>
+        <tr>
+          <td>Practical Use</td>
+          <td>Guides optimum use of variable factor for a given plant size.</td>
+          <td>Guides decision on optimum size of plant or firm in the long run.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- IMPORTANCE -->
+    <p class="section-title">Importance of the Law of Returns to Scale</p>
+    <p>
+      The law of returns to scale is important both theoretically and practically:
+    </p>
+
+    <div class="importance-box">
+      <strong>(a) Determination of Optimum Scale of the Firm</strong><br>
+      By studying the pattern of returns to scale, a firm can identify the range over which <strong>increasing returns</strong>
+      and then <strong>constant returns</strong> prevail, and avoid the region of decreasing returns. This helps in deciding
+      the <strong>optimum size</strong> of the plant in the long run.
+    </div>
+
+    <div class="importance-box">
+      <strong>(b) Basis of Long-run Cost Curves</strong><br>
+      Returns to scale are closely related to the shape of the <strong>long-run average cost (LAC)</strong> curve.
+      Increasing returns to scale are associated with falling LAC, constant returns with flat LAC, and decreasing returns
+      with rising LAC. Thus, the law provides the theoretical foundation for long-run cost analysis.
+    </div>
+
+    <div class="importance-box">
+      <strong>(c) Explanation of Economies and Diseconomies of Scale</strong><br>
+      Internal economies (technical, managerial, financial, marketing, etc.) and internal diseconomies are reflected in
+      the pattern of returns to scale. The law translates these qualitative aspects into a clear quantitative relationship
+      between inputs and output.
+    </div>
+
+    <div class="importance-box">
+      <strong>(d) Policy and Planning</strong><br>
+      For economic planners and industrial policy-makers, understanding returns to scale is important in deciding whether
+      an industry should be developed on a <strong>large scale</strong> (where increasing returns are significant) or on a
+      more decentralised basis.
+    </div>
+
+    <div class="importance-box">
+      <strong>(e) Examination Significance</strong><br>
+      In Panjab University B.Com (Sem I) examinations, this question frequently appears in the form: “Explain the Law of
+      Returns to Scale with the help of suitable table and diagrams.” A clear schedule, well-labelled isoquant diagrams,
+      and a systematic explanation of IRS, CRS and DRS almost always fetch high marks.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a 15-marks answer on the Law of Returns to Scale, your answer should include:
+      (i) meaning and precise definition; 
+      (ii) assumptions; 
+      (iii) a neat numerical table showing proportional change in inputs and output; 
+      (iv) an isoquant diagram with three panels (IRS, CRS, DRS) or a single expansion-path diagram with spacing of isoquants; 
+      (v) separate explanation of increasing, constant and decreasing returns to scale; 
+      (vi) a brief distinction between law of variable proportions and law of returns to scale; and 
+      (vii) a short section on importance, followed by a compact conclusion.
+      This structure matches the style of answers expected from a Panjab University topper.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To sum up, the <strong>Law of Returns to Scale</strong> explains how output responds when all factors of production
+      are increased in the same proportion in the long run. Depending on whether output increases more than proportionately,
+      in the same proportion, or less than proportionately, the firm experiences respectively increasing, constant or
+      decreasing returns to scale. Graphically, this is reflected in the spacing of isoquants along the expansion path.
+      The law, as presented in the prescribed text of T.R. Jain &amp; V.K. Ohri for B.Com Semester I, provides a rigorous
+      theoretical basis for understanding long-run production behaviour, economies and diseconomies of scale, and the
+      shape of long-run cost curves, and is therefore of high examination importance.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

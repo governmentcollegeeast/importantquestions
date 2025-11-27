@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q21 — Traditional Theory of Cost: Short-run and Long-run Costs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 21 — Explain the Traditional Theory of Cost or Costs in the Short and Long Run.</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      The <strong>traditional theory of cost</strong>, as presented in your prescribed text
+      <em>Microeconomics</em> by <strong>T.R. Jain &amp; V.K. Ohri</strong> (Panjab University, B.Com Semester I),
+      explains the behaviour of cost of production in the <strong>short run</strong> and <strong>long run</strong>
+      with the help of a family of <strong>U-shaped cost curves</strong>. The traditional analysis distinguishes
+      between:
+    </p>
+    <ul class="points">
+      <li><strong>Short-run cost curves</strong> — when some factors are fixed and some are variable; and</li>
+      <li><strong>Long-run cost curves</strong> — when all factors are variable and the firm can change plant size.</li>
+    </ul>
+    <p>
+      A complete answer must clearly define short-run and long-run, derive the shapes of the various cost curves from
+      the underlying <strong>law of variable proportions</strong> and <strong>economies/diseconomies of scale</strong>,
+      and show how traditional cost curves are related to each other.
+    </p>
+
+    <!-- SHORT RUN VS LONG RUN: BASIC IDEA -->
+    <p class="section-title">1. Short Run and Long Run in Cost Analysis</p>
+    <p>
+      In the traditional theory, the distinction between short run and long run is not in terms of calendar time, but
+      in terms of <strong>flexibility of factors</strong>:
+    </p>
+    <ul class="points">
+      <li>
+        <strong>Short run:</strong> A period during which at least <strong>one factor</strong> (e.g. plant, machinery,
+        building) is <strong>fixed</strong>, while other factors (labour, raw materials, power) are variable.
+      </li>
+      <li>
+        <strong>Long run:</strong> A period long enough for the firm to vary <strong>all factors</strong>, including
+        plant size. There are no fixed factors.
+      </li>
+    </ul>
+
+    <div class="boxed">
+      In the short run, the firm faces both <strong>fixed and variable costs</strong> and therefore separate
+      short-run cost curves (TFC, TVC, TC, AFC, AVC, AC, MC). In the long run, all costs are variable and the firm
+      chooses among different plant sizes, giving rise to a family of <strong>short-run average cost curves</strong>
+      and a single <strong>long-run average cost curve (LAC)</strong> as their envelope.
+    </div>
+
+    <!-- SHORT RUN COSTS: TFC, TVC, TC -->
+    <p class="section-title">2. Traditional Short-run Costs: TFC, TVC and TC</p>
+
+    <p class="subheading">2.1 Total Fixed Cost (TFC)</p>
+    <p>
+      <strong>Total Fixed Cost</strong> is the cost of fixed factors of production which <strong>does not change</strong>
+      with the level of output. Whether the firm produces nothing or produces at full capacity, it must incur these costs.
+    </p>
+    <p>
+      Examples: rent of building, interest on fixed capital, insurance, salaries of permanent staff, etc.
+    </p>
+    <p>
+      In the traditional theory, the TFC curve is a <strong>horizontal straight line</strong> parallel to the X-axis,
+      showing the same fixed cost at every level of output.
+    </p>
+
+    <p class="subheading">2.2 Total Variable Cost (TVC)</p>
+    <p>
+      <strong>Total Variable Cost</strong> is the cost of variable factors of production, which <strong>varies directly
+      with output</strong>. If output is zero, TVC is zero; as output increases, TVC increases.
+    </p>
+    <p>
+      Examples: wages of casual labour, cost of raw materials, power and fuel, packing expenses, etc.
+    </p>
+
+    <p class="subheading">2.3 Total Cost (TC)</p>
+    <p>
+      <strong>Total Cost</strong> in the short run is the sum of TFC and TVC:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      TC = TFC + TVC
+    </p>
+    <p>
+      Since TFC is constant and TVC rises with output, the TC curve starts from the level of TFC on the cost axis and
+      rises as output increases. The shape of TC is thus determined by TVC.
+    </p>
+
+    <!-- DIAGRAM 1: TFC, TVC, TC -->
+    <div class="diagram" aria-label="Short-run total cost curves: TFC, TVC, TC">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .curve-tfc{stroke:#f97316;stroke-width:2.2;fill:none}
+          .curve-tvc{stroke:#16a34a;stroke-width:2.2;fill:none}
+          .curve-tc{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- TFC (horizontal line) -->
+        <path d="M80 300 L 460 300" class="curve-tfc"/>
+        <text x="420" y="290" class="label small">TFC</text>
+
+        <!-- TVC (origin, rising) -->
+        <path d="M80 410 C 150 360, 260 320, 430 270" class="curve-tvc"/>
+        <text x="420" y="265" class="label small">TVC</text>
+
+        <!-- TC (shift of TVC up by TFC) -->
+        <path d="M80 300 C 150 250, 260 210, 430 160" class="curve-tc"/>
+        <text x="420" y="160" class="label small">TC</text>
+      </svg>
+      <div class="caption">
+        Fig. 1 — Traditional Short-run Cost Curves: TFC is constant, TVC starts from origin and rises with output;
+        TC is the vertical summation of TFC and TVC.
+      </div>
+    </div>
+
+    <!-- SHORT-RUN AVERAGE AND MARGINAL COSTS -->
+    <p class="section-title">3. Traditional Short-run Average and Marginal Cost Curves</p>
+
+    <p class="subheading">3.1 Average Fixed Cost (AFC)</p>
+    <p>
+      <strong>AFC</strong> is fixed cost per unit of output:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AFC = TFC / Q
+    </p>
+    <p>
+      As output increases, TFC is spread over more units, so AFC <strong>continuously falls</strong> and approaches zero
+      but never becomes zero. The AFC curve is therefore <strong>downward sloping</strong> and hyperbolic.
+    </p>
+
+    <p class="subheading">3.2 Average Variable Cost (AVC)</p>
+    <p>
+      <strong>AVC</strong> is variable cost per unit of output:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AVC = TVC / Q
+    </p>
+    <p>
+      In the traditional theory, the AVC curve is <strong>U-shaped</strong>. At first, due to better utilisation of
+      variable factors and increasing marginal returns, AVC falls. Beyond a certain point, due to the <strong>law of
+      diminishing marginal returns</strong>, AVC starts rising.
+    </p>
+
+    <p class="subheading">3.3 Average Cost (AC) or Average Total Cost (ATC)</p>
+    <p>
+      <strong>AC</strong> is total cost per unit of output:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AC = TC / Q = AFC + AVC
+    </p>
+    <p>
+      Since AC is the sum of a continuously falling AFC and a U-shaped AVC, the AC curve is also <strong>U-shaped</strong>
+      in the traditional theory — it falls initially, reaches a minimum, and then rises.
+    </p>
+
+    <p class="subheading">3.4 Marginal Cost (MC)</p>
+    <p>
+      <strong>MC</strong> is the addition to total cost when one more unit of output is produced:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MC = ΔTC / ΔQ = ΔTVC / ΔQ
+    </p>
+    <p>
+      MC depends only on TVC, since TFC does not change with output. In the traditional theory, MC is also
+      <strong>U-shaped</strong>. It falls at first due to increasing marginal returns (rising MP) and then rises due to
+      diminishing marginal returns (falling MP).
+    </p>
+
+    <!-- DIAGRAM 2: AFC, AVC, AC, MC -->
+    <div class="diagram" aria-label="Short-run AFC, AVC, AC and MC curves">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .curve-ac{stroke:#1e3a8a;stroke-width:2.3;fill:none}
+          .curve-avc{stroke:#16a34a;stroke-width:2.1;fill:none}
+          .curve-afc{stroke:#f97316;stroke-width:2;fill:none}
+          .curve-mc{stroke:#111827;stroke-width:2.2;fill:none}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- AFC curve -->
+        <path d="M90 190 C 170 240, 260 285, 430 320" class="curve-afc"/>
+
+        <!-- AVC curve -->
+        <path d="M90 310 C 160 260, 260 250, 360 280 C 410 300, 440 330, 455 360" class="curve-avc"/>
+
+        <!-- AC curve -->
+        <path d="M90 260 C 160 230, 250 225, 340 250 C 390 270, 430 305, 455 340" class="curve-ac"/>
+
+        <!-- MC curve -->
+        <path d="M110 360 C 170 300, 230 250, 290 235 C 330 230, 370 240, 410 270 C 435 290, 450 315, 460 340" class="curve-mc"/>
+
+        <!-- Labels -->
+        <text x="425" y="340" class="label small">AC</text>
+        <text x="435" y="320" class="label small">AVC</text>
+        <text x="395" y="310" class="label small">AFC</text>
+        <text x="420" y="250" class="label small">MC</text>
+
+        <!-- Minimum points guide (schematic) -->
+        <line x1="295" y1="235" x2="295" y2="410" class="guide"/>
+        <text x="289" y="430" class="label small">Q*</text>
+      </svg>
+      <div class="caption">
+        Fig. 2 — Traditional Short-run Cost Curves: AFC falls continuously; AVC and AC are U-shaped;
+        MC is U-shaped and cuts AVC and AC at their minimum points.
+      </div>
+    </div>
+
+    <p class="subheading">3.5 Relationship between AC and MC in the Traditional Theory</p>
+    <p>
+      The traditional cost theory emphasises the precise relation between AC and MC:
+    </p>
+    <ul class="points">
+      <li>When <strong>MC &lt; AC</strong>, AC is falling.</li>
+      <li>When <strong>MC &gt; AC</strong>, AC is rising.</li>
+      <li>When <strong>MC = AC</strong>, AC is at its <strong>minimum</strong> point.</li>
+    </ul>
+    <p>
+      This is because AC is an <strong>average</strong>, while MC is the <strong>increment</strong>. If the additional
+      cost of the last unit (MC) is less than the existing average, the average falls; if it is more, the average rises.
+    </p>
+
+    <!-- LINK TO LAW OF VARIABLE PROPORTIONS -->
+    <p class="section-title">4. Basis of Short-run Cost Curves: Law of Variable Proportions</p>
+    <p>
+      The U-shapes of AVC, AC and MC in the traditional theory are derived from the <strong>Law of Variable
+      Proportions</strong> (already studied in Question 16). As more units of a variable factor are combined with a
+      fixed factor:
+    </p>
+    <ul class="points">
+      <li>Initially, increasing returns cause <strong>rising marginal product</strong> → falling MC and AC.</li>
+      <li>Later, diminishing returns cause <strong>falling marginal product</strong> → rising MC and AC.</li>
+    </ul>
+    <p>
+      Thus, the traditional short-run cost curves are simply the <strong>monetary reflection</strong> of physical law
+      of variable proportions.
+    </p>
+
+    <!-- TRADITIONAL LONG-RUN COSTS -->
+    <p class="section-title">5. Traditional Long-run Costs: LAC as an Envelope of SAC Curves</p>
+    <p>
+      In the <strong>long run</strong>, no factor is fixed. The firm can choose among different plant sizes or scales
+      of operation. Each plant size has its own short-run average cost (SAC) curve. The traditional theory assumes a
+      family of <strong>U-shaped SAC curves</strong> corresponding to different plant sizes:
+    </p>
+    <ul class="points">
+      <li>Smaller plants efficient at low outputs,</li>
+      <li>Medium plants efficient at moderate outputs, and</li>
+      <li>Larger plants efficient at high outputs.</li>
+    </ul>
+
+    <p class="subheading">5.1 Long-run Average Cost (LAC)</p>
+    <p>
+      The <strong>Long-run Average Cost</strong> curve shows the <strong>minimum average cost</strong> at which each
+      level of output can be produced when the firm can adjust all factors, including plant size. In traditional
+      analysis:
+    </p>
+    <ul class="points">
+      <li>LAC is <strong>U-shaped</strong>, but flatter than individual SAC curves.</li>
+      <li>LAC is the <strong>envelope</strong> of the SAC curves — it is tangent to each SAC at one point.</li>
+      <li>Initially, LAC falls due to <strong>economies of scale</strong>, reaches a minimum, and then rises due to
+          <strong>diseconomies of scale</strong>.</li>
+    </ul>
+
+    <p class="subheading">5.2 Long-run Marginal Cost (LMC)</p>
+    <p>
+      The <strong>LMC</strong> curve is derived from LTC in the same way as MC is derived from TC. In the traditional
+      theory:
+    </p>
+    <ul class="points">
+      <li>LMC is also <strong>U-shaped</strong>.</li>
+      <li>LMC lies below LAC when LAC is falling and above LAC when LAC is rising.</li>
+      <li>LMC intersects LAC at its <strong>minimum point</strong>, exactly as MC cuts AC in the short run.</li>
+    </ul>
+
+    <!-- DIAGRAM 3: LAC AS ENVELOPE OF SACs -->
+    <div class="diagram" aria-label="Traditional long-run average cost as envelope of short-run average costs">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .sac{stroke:#9ca3af;stroke-width:1.6;fill:none}
+          .lac{stroke:#1e3a8a;stroke-width:2.6;fill:none}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- Three SAC curves -->
+        <path d="M120 330 C 160 260, 210 240, 260 260 C 300 280, 330 315, 350 350" class="sac"/>
+        <path d="M160 340 C 210 270, 270 245, 330 260 C 380 280, 410 315, 430 350" class="sac"/>
+        <path d="M200 350 C 260 280, 320 255, 380 270 C 420 285, 445 315, 455 345" class="sac"/>
+
+        <!-- LAC envelope -->
+        <path d="M130 320 C 190 260, 260 235, 340 245 C 390 255, 425 280, 450 305" class="lac"/>
+
+        <!-- Labels -->
+        <text x="350" y="242" class="label small">LAC</text>
+        <text x="240" y="260" class="label small">SAC₁</text>
+        <text x="300" y="272" class="label small">SAC₂</text>
+        <text x="360" y="285" class="label small">SAC₃</text>
+      </svg>
+      <div class="caption">
+        Fig. 3 — Traditional Long-run Average Cost (LAC): LAC is the envelope of a family of U-shaped SAC curves.
+        It falls due to economies of scale, reaches a minimum (optimum scale) and then rises due to diseconomies.
+      </div>
+    </div>
+
+    <!-- ECONOMIES & DISECONOMIES LINK -->
+    <p class="section-title">6. Basis of Traditional LAC Shape: Economies and Diseconomies of Scale</p>
+    <p>
+      The U-shape of the LAC curve in the traditional theory is explained by <strong>economies and diseconomies of
+      scale</strong> (already discussed in Question 19):
+    </p>
+    <ul class="points">
+      <li>
+        At low levels of output, as the scale of the firm expands, <strong>internal and external economies</strong>
+        (technical, managerial, marketing, financial, risk-bearing, etc.) dominate → <strong>LAC falls</strong>.
+      </li>
+      <li>
+        At some intermediate range, economies of scale are exactly balanced by diseconomies, giving a region of
+        <strong>constant returns</strong> where LAC may be roughly flat.
+      </li>
+      <li>
+        At very large scale, <strong>diseconomies of scale</strong> (managerial difficulties, congestion, coordination
+        problems, rising input prices) dominate → <strong>LAC rises</strong>.
+      </li>
+    </ul>
+    <p>
+      The minimum point of LAC corresponds to the <strong>optimum size of the firm</strong> in traditional theory —
+      the most efficient scale of operation.
+    </p>
+
+    <!-- SHORT RUN VS LONG RUN TRADITIONAL COSTS: COMPARISON -->
+    <p class="section-title">7. Comparison between Short-run and Long-run Costs in Traditional Theory</p>
+    <table aria-label="Comparison of traditional short-run and long-run costs">
+      <thead>
+        <tr>
+          <th>Basis</th>
+          <th>Short-run Costs (Traditional)</th>
+          <th>Long-run Costs (Traditional)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nature of Factors</td>
+          <td>Some factors fixed, some variable.</td>
+          <td>All factors variable; no fixed factors.</td>
+        </tr>
+        <tr>
+          <td>Types of Cost</td>
+          <td>Fixed and variable; TFC, TVC, TC.</td>
+          <td>Only variable (in long-run sense); all costs can be adjusted.</td>
+        </tr>
+        <tr>
+          <td>Key Curves</td>
+          <td>AFC, AVC, AC, MC (all short-run).</td>
+          <td>LAC and LMC derived as envelope over SAC and SMC curves.</td>
+        </tr>
+        <tr>
+          <td>Source of U-shape</td>
+          <td>Law of variable proportions (increasing then diminishing returns).</td>
+          <td>Economies and diseconomies of scale (increasing, constant, decreasing returns to scale).</td>
+        </tr>
+        <tr>
+          <td>Flexibility</td>
+          <td>Firm cannot change plant size; only utilisation changes.</td>
+          <td>Firm can choose among different plant sizes to minimise cost at each output.</td>
+        </tr>
+        <tr>
+          <td>Relevance</td>
+          <td>Useful for day-to-day output decisions for a given plant.</td>
+          <td>Useful for planning the optimum scale of plant in the long run.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- TRADITIONAL vs MODERN COST THEORY (BRIEF) -->
+    <p class="section-title">8. Note on Traditional vs Modern Cost Theory (Brief)</p>
+    <p>
+      Your syllabus primarily emphasises the <strong>traditional theory</strong>, with clearly U-shaped cost curves.
+      Modern empirical studies often find that costs may remain constant over a wide range of output or even show
+      “L-shaped” patterns. However, for Panjab University examinations at B.Com Semester I level, you are expected
+      to present the <strong>traditional U-shaped short-run and long-run cost curves</strong> as given in T.R. Jain
+      &amp; V.K. Ohri.
+    </p>
+
+    <!-- IMPORTANCE -->
+    <p class="section-title">9. Importance of the Traditional Theory of Cost</p>
+    <p>
+      The traditional theory of cost occupies a central position in microeconomics:
+    </p>
+
+    <div class="importance-box">
+      <strong>(a) Basis of Price and Output Determination</strong><br>
+      The equilibrium of a firm under different market forms (perfect competition, monopoly, monopolistic competition)
+      is derived from the condition <strong>MC = MR</strong>. Without clear short-run and long-run cost curves, the
+      theory of price determination cannot be understood.
+    </div>
+
+    <div class="importance-box">
+      <strong>(b) Determination of Optimum Scale of Firm</strong><br>
+      The minimum point of the LAC curve indicates the <strong>optimum size</strong> at which a firm should operate in
+      the long run. This guides long-term investment and capacity planning.
+    </div>
+
+    <div class="importance-box">
+      <strong>(c) Cost Control and Managerial Decisions</strong><br>
+      Distinguishing between fixed and variable costs helps management in analysing break-even point, shutdown decisions,
+      and cost-control strategies, especially in the short run.
+    </div>
+
+    <div class="importance-box">
+      <strong>(d) Policy Implications</strong><br>
+      For regulated industries and public utilities, knowledge of long-run cost conditions (economies of scale) is
+      essential for designing pricing and subsidy policies.
+    </div>
+
+    <div class="importance-box">
+      <strong>(e) Examination Importance</strong><br>
+      The question “Explain the traditional theory of cost or costs in the short and long run” is a <strong>standard
+      15-marks theory question</strong> in Panjab University B.Com Semester I. A well-structured answer covering short-run
+      and long-run cost curves with neat diagrams and clear linkage to laws of production is highly scoring.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip (Pattern for 15 Marks):</strong>
+      For full marks, write your answer in this order:
+      (i) define short run and long run; 
+      (ii) explain TFC, TVC, TC with Fig. 1; 
+      (iii) derive AFC, AVC, AC, MC with Fig. 2 and explain their U-shapes and AC–MC relation; 
+      (iv) define LAC and LMC and show LAC as the envelope of SACs with Fig. 3; 
+      (v) briefly relate short-run curves to law of variable proportions and long-run curves to economies/diseconomies of scale; 
+      (vi) give a short comparison table between short-run and long-run costs; and 
+      (vii) conclude with importance. This structure matches exactly the expectations of Panjab University examiners.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To summarise, the <strong>traditional theory of cost</strong> explains the behaviour of costs in the short run
+      and long run with the help of a set of <strong>U-shaped cost curves</strong>. In the short run, the presence of
+      fixed and variable costs gives rise to TFC, TVC, TC, AFC, AVC, AC and MC, whose shapes are governed by the law
+      of variable proportions. In the long run, when all factors are variable, the firm chooses among alternative plant
+      sizes; the envelope of the short-run average cost curves is the long-run average cost curve (LAC), whose U-shape
+      reflects economies and diseconomies of scale. Together, these cost curves form the backbone of the traditional
+      theory of the firm and are a core component of the B.Com (Sem I) Microeconomics syllabus of Panjab University.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

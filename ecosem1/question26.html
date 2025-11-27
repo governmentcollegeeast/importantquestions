@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q26 — Perfect Competition: Equilibrium of Firm and Industry (Short Run & Long Run)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ul.points, ol.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 26 — Perfect Competition: Equilibrium of Firm and Industry in Short Run and Long Run</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      The concept of <strong>perfect competition</strong> occupies a central place in traditional microeconomic
+      theory. It provides a clear and rigorous benchmark for analysing how prices and output are determined by the
+      interaction of <strong>market demand</strong> and <strong>market supply</strong>, and how individual firms
+      behave when they are <strong>price-takers</strong>. In your prescribed book
+      <em>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</em> for B.Com (Sem I), Panjab University, the equilibrium of
+      a firm and the industry under perfect competition is analysed separately for the <strong>short run</strong> and
+      the <strong>long run</strong>.
+    </p>
+    <p>
+      A complete answer must therefore: (i) define perfect competition and state its main features; (ii) explain the
+      short-run equilibrium of a competitive firm (and show cases of supernormal profit, normal profit and loss);
+      (iii) explain the short-run equilibrium of the industry; and (iv) explain long-run equilibrium of firm and
+      industry under perfect competition with suitable diagrams and clear conditions.
+    </p>
+
+    <!-- I. MEANING AND FEATURES -->
+    <p class="section-title">I. Meaning and Essential Features of Perfect Competition</p>
+
+    <p class="subheading">1. Meaning</p>
+    <p>
+      <strong>Perfect competition</strong> is a market structure in which a large number of buyers and sellers deal in a
+      homogeneous product, and no individual buyer or seller is able to influence the price. The price of the
+      commodity is determined by the <strong>forces of demand and supply at the industry level</strong>, and each firm
+      is a <strong>price-taker</strong>.
+    </p>
+
+    <div class="boxed">
+      <strong>Definition (exam-style):</strong><br>
+      Perfect competition is a form of market in which there are a very large number of sellers and buyers of a
+      homogeneous product, each firm is too small relative to the market to influence price individually, and price is
+      determined by the industry through the interaction of market demand and market supply. The individual firm only
+      chooses the quantity to produce at the given market price.
+    </div>
+
+    <p class="subheading">2. Essential Features of Perfect Competition</p>
+    <ol class="points">
+      <li>
+        <strong>Large number of buyers and sellers:</strong> The number of firms is so large that each firm supplies
+        only a negligible fraction of total market output. No single firm can influence the market price.
+      </li>
+      <li>
+        <strong>Homogeneous product:</strong> All firms sell identical (homogeneous) units of the product. There is no
+        product differentiation. As a result, buyers are indifferent regarding the source of supply.
+      </li>
+      <li>
+        <strong>Free entry and exit of firms:</strong> In the long run, there are no artificial legal or natural
+        barriers to entry or exit. Firms are free to enter the industry when they expect profits and free to leave
+        when they incur losses.
+      </li>
+      <li>
+        <strong>Perfect knowledge:</strong> Buyers and sellers possess complete knowledge about market conditions—
+        prices, quality and availability. Hence no firm can charge a price higher than the ruling market price.
+      </li>
+      <li>
+        <strong>Perfect mobility of factors:</strong> Factors of production can move freely from one occupation or
+        region to another. This ensures uniformity of factor prices and facilitates entry or exit of firms.
+      </li>
+      <li>
+        <strong>Absence of transport cost (or equal transport costs):</strong> For simplicity, it is assumed that
+        either there is no transport cost or it is the same for all firms, so it does not create any price difference.
+      </li>
+      <li>
+        <strong>No selling costs:</strong> Since products are homogeneous and buyers have perfect knowledge, firms do
+        not need to incur selling costs like advertising to attract customers.
+      </li>
+      <li>
+        <strong>Price-taker firm:</strong> The individual firm takes price as given. Its own demand curve is perfectly
+        elastic at the ruling market price.
+      </li>
+    </ol>
+
+    <p>
+      These assumptions collectively ensure that the individual firm under perfect competition has a
+      <strong>horizontal AR and MR curve</strong> at the level of market price.
+    </p>
+
+    <!-- II. SHORT-RUN EQUILIBRIUM OF THE FIRM -->
+    <p class="section-title">II. Short-run Equilibrium of a Firm under Perfect Competition</p>
+
+    <p class="subheading">1. Concept of Equilibrium of a Firm</p>
+    <p>
+      A firm is in <strong>equilibrium</strong> when it has no tendency either to expand or to contract its level of
+      output, i.e. when its <strong>profit is maximised</strong> (or loss is minimised). In traditional microeconomic
+      theory, the profit-maximising condition is:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = MC and MC cuts MR from below.
+    </p>
+    <p>
+      Under perfect competition, since price is constant for the firm, we have:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      P = AR = MR
+    </p>
+    <p>
+      Therefore, the equilibrium condition of a competitive firm becomes:
+    </p>
+    <div class="boxed">
+      <strong>Equilibrium condition (short run):</strong><br>
+      The firm is in equilibrium at the level of output where <strong>P = MC</strong> (i.e. AR = MR = MC) and the MC
+      curve cuts the AR = MR line from below.
+    </div>
+
+    <p class="subheading">2. Diagram: Short-run Equilibrium of a Competitive Firm</p>
+
+    <div class="diagram" aria-label="Short-run equilibrium of a perfectly competitive firm">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ar{stroke:#16a34a;stroke-width:2.4;fill:none}
+          .mc{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .ac{stroke:#f97316;stroke-width:2.4;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost/Revenue</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- AR = MR = Price line -->
+        <path d="M80 220 L 460 220" class="ar"/>
+        <text x="380" y="210" class="label small">AR = MR = P</text>
+
+        <!-- U-shaped AC -->
+        <path d="M100 280 C 170 230, 250 210, 340 230 C 390 250, 430 290, 455 330" class="ac"/>
+        <text x="430" y="285" class="label small">AC</text>
+
+        <!-- U-shaped MC cutting AC at minimum -->
+        <path d="M110 340 C 170 260, 250 220, 330 225 C 370 230, 410 250, 450 300" class="mc"/>
+        <text x="430" y="245" class="label small">MC</text>
+
+        <!-- Equilibrium point -->
+        <circle cx="310" cy="220" r="4" fill="#111827"/>
+        <line x1="310" y1="220" x2="310" y2="410" class="guide"/>
+        <text x="304" y="430" class="label small">Q*</text>
+        <text x="315" y="215" class="label small">E</text>
+
+        <!-- AC at Q* -->
+        <line x1="310" y1="250" x2="310" y2="250" class="guide"/>
+      </svg>
+      <div class="caption">
+        Fig. 1 — Short-run equilibrium of a perfectly competitive firm: AR = MR = P is a horizontal line;
+        MC cuts it from below at point E and determines equilibrium output Q*. The position of AC relative to AR
+        determines whether the firm earns supernormal profits, normal profits or losses.
+      </div>
+    </div>
+
+    <p class="subheading">3. Possible Profit Situations in the Short Run</p>
+    <p>
+      Depending on the position of the short-run average cost (SAC or AC) curve relative to the AR = MR line, three
+      cases arise:
+    </p>
+
+    <ol class="points">
+      <li>
+        <strong>Supernormal (abnormal) profits:</strong><br>
+        If at equilibrium output Q*, the AR = P line lies <strong>above</strong> the AC curve (P &gt; AC), the firm
+        earns supernormal profit equal to (P − AC) × Q*. This is possible in the short run because entry of new
+        firms is not instantaneous.
+      </li>
+      <li>
+        <strong>Normal profits:</strong><br>
+        If at Q*, the AR line is <strong>tangent</strong> to the AC curve (P = AC), the firm earns only normal
+        profit. Normal profit is treated as part of cost (the minimum return necessary to keep the entrepreneur in
+        the business).
+      </li>
+      <li>
+        <strong>Loss (sub-normal profit):</strong><br>
+        If at Q*, the AR line lies <strong>below</strong> the AC curve (P &lt; AC) but is still above the AVC curve,
+        the firm incurs losses in the short run but continues production because it covers all variable costs and a
+        part of fixed cost. Shutdown occurs only when price falls below minimum AVC.
+      </li>
+    </ol>
+
+    <div class="example">
+      <strong>Shutdown rule (short run):</strong><br>
+      A competitive firm continues to produce in the short run as long as price (P) is at least equal to minimum AVC.
+      If P &lt; minimum AVC, the firm minimises its loss by shutting down and bearing only fixed costs.
+    </div>
+
+    <!-- III. SHORT-RUN EQUILIBRIUM OF INDUSTRY -->
+    <p class="section-title">III. Short-run Equilibrium of Industry under Perfect Competition</p>
+    <p>
+      An <strong>industry</strong> is a group of firms producing a homogeneous product. Short-run equilibrium of the
+      industry is determined by the intersection of <strong>market demand</strong> and <strong>market supply</strong>.
+    </p>
+
+    <p class="subheading">1. Determination of Market Price</p>
+    <ul class="points">
+      <li>
+        The <strong>market demand curve</strong> for the product is downward sloping, showing an inverse relation
+        between price and quantity demanded.
+      </li>
+      <li>
+        The <strong>market supply curve</strong> is obtained by horizontal summation of individual firms’ marginal
+        cost curves above their respective minimum AVC.
+      </li>
+      <li>
+        The intersection of demand and supply curves determines the <strong>short-run equilibrium price (P₀)</strong>
+        and total quantity supplied by the industry.
+      </li>
+      <li>
+        At this price, each firm behaves as a price-taker and adjusts its output so that <strong>MC = P₀</strong>.
+      </li>
+    </ul>
+
+    <div class="diagram" aria-label="Short-run equilibrium of industry and firm under perfect competition">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .demand{stroke:#16a34a;stroke-width:2.4;fill:none}
+          .supply{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .ar{stroke:#16a34a;stroke-width:2.2;fill:none}
+          .mc{stroke:#1e3a8a;stroke-width:2.2;fill:none}
+          .ac{stroke:#f97316;stroke-width:2.1;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Left panel: Industry -->
+        <g transform="translate(40,40)">
+          <line x1="40" y1="160" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="160" x2="220" y2="160" class="axis"/>
+          <text x="25" y="0" class="label small">Price</text>
+          <text x="205" y="175" class="label small">Industry Output (Q)</text>
+          <text x="70" y="-10" class="label small">(a) Industry</text>
+
+          <!-- Demand -->
+          <path d="M40 20 C 100 60, 150 110, 220 150" class="demand"/>
+          <text x="190" y="145" class="label small">D</text>
+
+          <!-- Supply -->
+          <path d="M40 150 C 90 110, 145 70, 220 30" class="supply"/>
+          <text x="190" y="40" class="label small">S</text>
+
+          <!-- Equilibrium -->
+          <circle cx="130" cy="90" r="4" fill="#111827"/>
+          <line x1="130" y1="90" x2="130" y2="160" class="guide"/>
+          <line x1="130" y1="90" x2="40" y2="90" class="guide"/>
+          <text x="120" y="175" class="label small">Q₀</text>
+          <text x="20" y="94" class="label small">P₀</text>
+          <text x="136" y="85" class="label small">E₀</text>
+        </g>
+
+        <!-- Right panel: Representative firm -->
+        <g transform="translate(330,40)">
+          <line x1="40" y1="160" x2="40" y2="0" class="axis"/>
+          <line x1="40" y1="160" x2="220" y2="160" class="axis"/>
+          <text x="25" y="0" class="label small">Cost/Revenue</text>
+          <text x="205" y="175" class="label small">Firm Output (q)</text>
+          <text x="60" y="-10" class="label small">(b) Firm</text>
+
+          <!-- Horizontal AR=MR=P0 -->
+          <path d="M40 90 L 220 90" class="ar"/>
+          <text x="150" y="80" class="label small">AR = MR = P₀</text>
+
+          <!-- AC -->
+          <path d="M50 130 C 100 90, 150 80, 210 100 C 230 110, 245 130, 250 145" class="ac"/>
+
+          <!-- MC -->
+          <path d="M60 150 C 110 95, 160 75, 210 80 C 230 85, 245 100, 250 120" class="mc"/>
+
+          <!-- Firm equilibrium -->
+          <circle cx="150" cy="90" r="4" fill="#111827"/>
+          <line x1="150" y1="90" x2="150" y2="160" class="guide"/>
+          <text x="145" y="175" class="label small">q₀</text>
+          <text x="155" y="85" class="label small">E</text>
+        </g>
+      </svg>
+      <div class="caption">
+        Fig. 2 — Short-run equilibrium of industry and firm under perfect competition: industry equilibrium
+        price P₀ is determined by market demand and supply; each firm takes P₀ as given and chooses its own
+        equilibrium output where MC = P₀.
+      </div>
+    </div>
+
+    <p>
+      At the industry level, equilibrium is achieved when <strong>quantity demanded equals quantity supplied</strong>.
+      At the firm level, each competitive firm produces that quantity at which its <strong>MC curve intersects the
+      horizontal price line</strong>. The number of firms in the industry is given by dividing industry output (Q₀)
+      by the average output per firm (q₀).
+    </p>
+
+    <!-- IV. LONG-RUN EQUILIBRIUM -->
+    <p class="section-title">IV. Long-run Equilibrium of Firm and Industry under Perfect Competition</p>
+    <p>
+      In the <strong>long run</strong>, all factors of production are variable. Firms are free to enter or exit the
+      industry. Therefore, supernormal profits or losses in the short run are <strong>only temporary</strong>. Long-run
+      equilibrium under perfect competition is characterised by <strong>zero supernormal profit</strong>, i.e. each
+      firm earns only <strong>normal profit</strong>.
+    </p>
+
+    <p class="subheading">1. Adjustment from Short Run to Long Run</p>
+    <ul class="points">
+      <li>
+        If firms are earning <strong>supernormal profits</strong> in the short run (P &gt; AC), this attracts new firms
+        into the industry in the long run. Industry supply increases, shifting the supply curve to the right and
+        causing the market price to fall.
+      </li>
+      <li>
+        If firms are incurring <strong>losses</strong> in the short run (P &lt; AC), some firms exit the industry in
+        the long run. Industry supply decreases, shifting the supply curve to the left and causing the market price
+        to rise.
+      </li>
+      <li>
+        Entry and exit continue till all firms earn only <strong>normal profit</strong> (P = minimum LAC), and no firm
+        has any incentive to either enter or leave the industry.
+      </li>
+    </ul>
+
+    <p class="subheading">2. Long-run Equilibrium Conditions for a Competitive Firm</p>
+    <p>
+      For a perfectly competitive firm in long-run equilibrium, the following conditions must hold simultaneously:
+    </p>
+    <ol class="points">
+      <li>
+        <strong>Profit maximisation:</strong> MR = MC (as always).
+      </li>
+      <li>
+        <strong>Zero supernormal profit:</strong> P = AR = minimum LAC (only normal profit is earned).
+      </li>
+      <li>
+        <strong>MC intersects LAC at its minimum point:</strong> MC = LAC at the minimum point of LAC.
+      </li>
+    </ol>
+    <p>
+      Since under perfect competition P = AR = MR, the long-run equilibrium implies:
+    </p>
+    <div class="boxed">
+      <strong>Long-run equilibrium (firm):</strong><br>
+      P = AR = MR = LMC = minimum LAC
+    </div>
+
+    <p class="subheading">3. Diagram: Long-run Equilibrium of a Competitive Firm</p>
+
+    <div class="diagram" aria-label="Long-run equilibrium of a perfectly competitive firm">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .lac{stroke:#f97316;stroke-width:2.4;fill:none}
+          .lmc{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .price{stroke:#16a34a;stroke-width:2.3;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost/Revenue</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- LAC curve -->
+        <path d="M100 290 C 170 230, 250 210, 340 220 C 390 230, 430 260, 455 300" class="lac"/>
+        <text x="420" y="255" class="label small">LAC</text>
+
+        <!-- LMC curve -->
+        <path d="M110 340 C 170 250, 250 210, 330 215 C 370 220, 410 240, 450 280" class="lmc"/>
+        <text x="420" y="240" class="label small">LMC</text>
+
+        <!-- Horizontal price line at min LAC -->
+        <path d="M80 225 L 460 225" class="price"/>
+        <text x="380" y="215" class="label small">P = AR = MR</text>
+
+        <!-- Equilibrium point -->
+        <circle cx="310" cy="225" r="4" fill="#111827"/>
+        <line x1="310" y1="225" x2="310" y2="410" class="guide"/>
+        <text x="304" y="430" class="label small">Q<sub>LR</sub></text>
+        <text x="318" y="220" class="label small">E<sub>LR</sub></text>
+      </svg>
+      <div class="caption">
+        Fig. 3 — Long-run equilibrium of a perfectly competitive firm: price line is tangent to LAC at its
+        minimum point, and LMC intersects LAC at the same point. The firm earns only normal profit.
+      </div>
+    </div>
+
+    <p>
+      In the above figure:
+    </p>
+    <ul class="points">
+      <li>The price line P = AR = MR is horizontal and is tangent to LAC at its minimum point.</li>
+      <li>LMC cuts LAC at its minimum point and also intersects the price line at the same point.</li>
+      <li>The corresponding output Q<sub>LR</sub> is the firm’s <strong>long-run equilibrium output</strong>.</li>
+      <li>At this point, the firm earns <strong>zero supernormal profit</strong> (P = LAC), so there is no incentive
+          for new firms to enter or existing firms to leave the industry.</li>
+    </ul>
+
+    <p class="subheading">4. Long-run Equilibrium of the Industry</p>
+    <p>
+      At the industry level, long-run equilibrium under perfect competition is attained when:
+    </p>
+    <ul class="points">
+      <li>The number of firms in the industry is such that the <strong>industry supply curve</strong> intersects
+          the market demand curve at a price equal to <strong>minimum LAC</strong> of each firm.</li>
+      <li>All firms earn only <strong>normal profit</strong> and there is no tendency for firms to enter or exit.</li>
+      <li>The industry operates at a scale where, given technology and factor prices, production is most efficient.</li>
+    </ul>
+
+    <p>
+      In a constant-cost industry (assumed at this level unless otherwise stated), long-run supply is typically
+      horizontal at the level of minimum LAC. In increasing or decreasing cost industries, the long-run supply curve
+      slopes upward or downward respectively, but the fundamental feature of long-run competitive equilibrium remains:
+      <strong>P = minimum LAC</strong> for each firm.
+    </p>
+
+    <!-- V. SUMMARY OF SHORT-RUN VS LONG-RUN EQUILIBRIUM -->
+    <p class="section-title">V. Summary: Short-run vs Long-run Equilibrium under Perfect Competition</p>
+
+    <div class="importance-box">
+      <strong>Short-run equilibrium:</strong>
+      <ul class="points" style="margin-top:6px">
+        <li>Some factors are fixed; number of firms is given.</li>
+        <li>Firm’s equilibrium condition: MR = MC and MC cuts MR from below.</li>
+        <li>Firms may earn supernormal profits, normal profits or losses.</li>
+        <li>Industry equilibrium: market demand = market supply at equilibrium price, which is taken as given by each firm.</li>
+      </ul>
+    </div>
+
+    <div class="importance-box">
+      <strong>Long-run equilibrium:</strong>
+      <ul class="points" style="margin-top:6px">
+        <li>All factors are variable; free entry and exit of firms.</li>
+        <li>Firms adjust their scale of plant; inefficient firms exit, new firms may enter.</li>
+        <li>Equilibrium conditions: P = MR = MC = minimum LAC (normal profit only).</li>
+        <li>No firm has any tendency to change its output or plant size; no firm has incentive to enter or leave the industry.</li>
+      </ul>
+    </div>
+
+    <!-- VI. IMPORTANCE / EXAM NOTE -->
+    <p class="section-title">VI. Importance and Examination Relevance</p>
+    <p>
+      The analysis of perfect competition and equilibrium of firm and industry is important for several reasons:
+    </p>
+    <ul class="points">
+      <li>
+        It provides a clear <strong>benchmark of efficiency</strong> where price equals marginal cost and minimum
+        long-run average cost.
+      </li>
+      <li>
+        It helps in understanding how <strong>market forces of demand and supply</strong> operate in the absence of
+        monopoly power and imperfections.
+      </li>
+      <li>
+        It serves as a <strong>standard of comparison</strong> when analysing imperfect markets such as monopoly and
+        monopolistic competition (taken up in later questions).
+      </li>
+      <li>
+        For Panjab University B.Com (Sem I), this question is a <strong>core 15-marks theory question</strong>. A
+        well-structured answer with clear definitions, step-wise explanation of short-run and long-run equilibrium,
+        and neat diagrams for firm and industry is highly scoring and aligns closely with the treatment in
+        T.R. Jain &amp; V.K. Ohri.
+      </li>
+    </ul>
+
+    <div class="exam-tip">
+      <strong>Exam Tip (for full 15 marks):</strong>
+      Write your answer in this sequence: (i) precise definition and features of perfect competition;
+      (ii) short-run equilibrium of firm (conditions, diagram, three profit cases);
+      (iii) short-run equilibrium of industry with separate panel for market and firm;
+      (iv) long-run equilibrium of firm (conditions P = MR = MC = minimum LAC, diagram) and industry (entry–exit
+      and normal profit); and (v) a brief concluding paragraph. Label all curves and equilibrium points clearly in
+      diagrams as Panjab University examiners give special credit for neat and well-labelled figures.
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

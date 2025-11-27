@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q20 — Cost Function and Various Concepts of Cost</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 20 — What is Cost Function? Explain the Various Concepts of Cost.</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the theory of the firm, <strong>cost of production</strong> occupies a central place. A producer’s decisions
+      regarding output, price and scale of operations are all guided by the behaviour of costs. Modern microeconomics,
+      as presented in <em>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</em> for B.Com Semester I (Panjab University),
+      explains cost behaviour with the help of a <strong>cost function</strong> and a number of well-defined
+      <strong>concepts of cost</strong>. A good answer must first clarify what a cost function is and then systematically
+      classify and explain the various cost concepts relevant to economic analysis.
+    </p>
+
+    <!-- MEANING OF COST FUNCTION -->
+    <p class="section-title">1. Meaning and Definition of Cost Function</p>
+    <p>
+      In simple words, the <strong>cost function</strong> expresses the <strong>functional relationship</strong> between
+      the cost of production and the level of output. Given the prices of factors of production and the technology in
+      use, the cost of producing a particular quantity of output is determined. This relationship can be written in a
+      general form as:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:8px 12px;border-radius:6px;display:inline-block;">
+      C = f(Q)
+    </p>
+    <p>
+      where:
+    </p>
+    <ul class="points">
+      <li><strong>C</strong> = total cost of production,</li>
+      <li><strong>Q</strong> = quantity of output, and</li>
+      <li><strong>f</strong> = functional relationship depending upon technology and factor prices.</li>
+    </ul>
+
+    <div class="boxed">
+      <strong>Definition:</strong><br>
+      A <strong>cost function</strong> is a mathematical or analytical expression which shows how the total cost of
+      production varies with the level of output, given the technology and prices of inputs. In other words, it
+      indicates the <strong>minimum cost</strong> at which different quantities of output can be produced when the firm
+      is using the best available technique.
+    </div>
+
+    <p class="subheading">Short-run and Long-run Cost Functions</p>
+    <ul class="points">
+      <li>
+        In the <strong>short run</strong>, some factors are fixed and some are variable. The short-run cost function
+        shows how cost varies with output when plant size is fixed.
+      </li>
+      <li>
+        In the <strong>long run</strong>, all factors are variable. The long-run cost function shows the minimum cost
+        associated with each level of output when the firm is free to choose its most efficient plant size.
+      </li>
+    </ul>
+
+    <p>
+      The cost function is the basis on which various <strong>cost concepts</strong> such as fixed cost, variable cost,
+      average cost, marginal cost, etc., are defined and analysed.
+    </p>
+
+    <!-- BROAD CLASSIFICATION OF COST CONCEPTS -->
+    <p class="section-title">2. Broad Classification of Cost Concepts</p>
+    <p>
+      For a clear and examiner-friendly answer, cost concepts may be classified under the following heads:
+    </p>
+    <ol class="points">
+      <li><strong>Traditional or General Cost Concepts</strong> (money cost, real cost, opportunity cost, etc.)</li>
+      <li><strong>Accounting and Economic Cost Concepts</strong> (explicit, implicit, accounting, economic cost)</li>
+      <li><strong>Short-run Cost Concepts</strong> (TFC, TVC, TC, AFC, AVC, SAC, SMC)</li>
+      <li><strong>Long-run Cost Concepts</strong> (LTC, LAC, LMC)</li>
+      <li><strong>Social and Private Costs</strong> (where relevant)</li>
+    </ol>
+
+    <!-- I. TRADITIONAL / GENERAL COST CONCEPTS -->
+    <p class="section-title">3. Traditional / General Concepts of Cost</p>
+
+    <p class="subheading">3.1 Money Cost</p>
+    <p>
+      <strong>Money cost</strong> (also called <em>nominal cost</em>) refers to the <strong>actual money expenditure</strong>
+      incurred by a firm in the production of a commodity. It includes wages, rent, interest, payment for raw materials,
+      power, fuel, taxes, etc., all measured in monetary terms.
+    </p>
+    <p>
+      From the accounting point of view, money cost is what appears in the firm’s books of accounts and profit and loss
+      statement.
+    </p>
+
+    <p class="subheading">3.2 Real Cost</p>
+    <p>
+      <strong>Real cost</strong> refers to the <strong>sacrifice</strong> involved in terms of efforts and disutility
+      of labour and abstinence of capitalists. In older economic literature, it meant the “pain and sacrifice” undergone
+      by various factors of production in the process of creating output. In modern usage, the term is rarely used in
+      exact measurement, but the idea survives indirectly in opportunity cost.
+    </p>
+
+    <p class="subheading">3.3 Opportunity Cost</p>
+    <p>
+      <strong>Opportunity cost</strong> is one of the most important concepts in modern microeconomics.
+    </p>
+    <div class="boxed">
+      <strong>Opportunity Cost:</strong><br>
+      The opportunity cost of any resource is the <strong>value of the next best alternative use</strong> that is
+      sacrificed when the resource is used in a particular way.
+    </div>
+    <p>
+      For example, if a farmer uses his land to grow wheat instead of sugarcane, the opportunity cost of producing
+      wheat is the income forgone from not producing sugarcane. Opportunity cost is the foundation of modern economic
+      cost and is particularly relevant in economic decision-making.
+
+    </p>
+
+    <p class="subheading">3.4 Explicit and Implicit Cost</p>
+    <ul class="points">
+      <li>
+        <strong>Explicit Cost:</strong> These are <strong>actual money payments</strong> made by the firm to outsiders
+        for hiring factor services and purchasing inputs (wages, rent, interest, raw materials, power, etc.).
+      </li>
+      <li>
+        <strong>Implicit Cost:</strong> These are the <strong>imputed costs</strong> of self-owned and self-supplied
+        resources for which no direct payment is made. For example, the salary that the owner could earn elsewhere or
+        the interest he forgoes on his own capital invested in the business.
+      </li>
+    </ul>
+
+    <p class="subheading">3.5 Accounting Cost and Economic Cost</p>
+    <ul class="points">
+      <li>
+        <strong>Accounting Cost:</strong> The cost recorded in the books of accounts, consisting mainly of explicit
+        money expenses. Accounting profit is calculated as total revenue minus accounting cost.
+      </li>
+      <li>
+        <strong>Economic Cost:</strong> The cost used in economic analysis, consisting of both <strong>explicit and
+        implicit costs</strong> (i.e., including opportunity costs). Economic profit = total revenue − economic cost.
+      </li>
+    </ul>
+
+    <p class="subheading">3.6 Private Cost and Social Cost</p>
+    <ul class="points">
+      <li>
+        <strong>Private Cost:</strong> Costs actually incurred by the firm or individual in production (wages, rent,
+        materials, etc.).
+      </li>
+      <li>
+        <strong>Social Cost:</strong> Private cost plus any <strong>external costs</strong> imposed on society due to
+        production, such as pollution, congestion, environmental damage. Social cost is relevant in welfare economics
+        and public policy.
+      </li>
+    </ul>
+
+    <!-- II. SHORT-RUN COST CONCEPTS -->
+    <p class="section-title">4. Short-run Cost Concepts</p>
+    <p>
+      In the <strong>short run</strong>, some factors (like plant, machinery, building) are fixed and others (like
+      labour, raw materials, power) are variable. Accordingly, short-run cost concepts are defined as follows:
+    </p>
+
+    <p class="subheading">4.1 Total Fixed Cost (TFC)</p>
+    <p>
+      <strong>Total Fixed Cost</strong> is the total cost of employing the fixed factors of production. It does not vary
+      with the level of output. Even if output is zero, fixed costs must be incurred.
+    </p>
+    <p>Examples: rent of factory building, insurance, salaries of permanent staff, interest on fixed capital, etc.</p>
+    <p>
+      Graphically, the TFC curve is a <strong>horizontal straight line</strong> parallel to the X-axis, indicating that
+      fixed cost remains constant at all levels of output.
+    </p>
+
+    <p class="subheading">4.2 Total Variable Cost (TVC)</p>
+    <p>
+      <strong>Total Variable Cost</strong> is the total cost of employing variable factors. It varies directly with the
+      level of output: if output is zero, TVC is zero; as output increases, TVC increases.
+    </p>
+    <p>Examples: cost of raw materials, wages of casual labour, power, fuel, etc.</p>
+
+    <p class="subheading">4.3 Total Cost (TC)</p>
+    <p>
+      <strong>Total Cost</strong> in the short run is the sum of total fixed cost and total variable cost:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:8px 12px;border-radius:6px;display:inline-block;">
+      TC = TFC + TVC
+    </p>
+    <p>
+      The TC curve starts from the level of TFC on the cost axis and rises as output increases in the same pattern as
+      the TVC curve.
+    </p>
+
+    <p class="section-title">5. Average and Marginal Cost Concepts (Short Run)</p>
+
+    <p class="subheading">5.1 Average Fixed Cost (AFC)</p>
+    <p>
+      <strong>Average Fixed Cost</strong> is the fixed cost per unit of output:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AFC = TFC / Q
+    </p>
+    <p>
+      As output increases, TFC is spread over more units, so AFC <strong>continuously falls</strong> and approaches zero
+      but never becomes zero. The AFC curve is downward sloping and hyperbolic in shape.
+    </p>
+
+    <p class="subheading">5.2 Average Variable Cost (AVC)</p>
+    <p>
+      <strong>Average Variable Cost</strong> is the variable cost per unit of output:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AVC = TVC / Q
+    </p>
+    <p>
+      Initially, due to better utilisation of variable factors and increasing returns, AVC falls; after a certain level
+      of output, due to diminishing returns to the variable factor, AVC starts rising. Hence the AVC curve is
+      <strong>U-shaped</strong>.
+    </p>
+
+    <p class="subheading">5.3 Average Cost (AC) or Average Total Cost (ATC)</p>
+    <p>
+      <strong>Average Cost</strong> is total cost per unit of output:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AC = TC / Q = (TFC + TVC) / Q = AFC + AVC
+    </p>
+    <p>
+      The AC curve is also <strong>U-shaped</strong>. At low levels of output, both AFC and AVC fall, causing AC to
+      decline. Beyond a certain point, the rise in AVC (due to diminishing returns) dominates the fall in AFC and AC
+      begins to rise.
+    </p>
+
+    <p class="subheading">5.4 Marginal Cost (MC)</p>
+    <p>
+      <strong>Marginal Cost</strong> is the addition to total cost when one more unit of output is produced:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MC = ΔTC / ΔQ
+    </p>
+    <p>
+      Since fixed cost does not change with output, marginal cost is also equal to the change in TVC:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MC = ΔTVC / ΔQ
+    </p>
+    <p>
+      The MC curve is also <strong>U-shaped</strong>, falling initially due to increasing returns and rising later due
+      to diminishing returns. MC intersects AVC and AC at their respective minimum points.
+    </p>
+
+    <!-- DIAGRAM OF SHORT-RUN COST CURVES -->
+    <p class="section-title">6. Diagrammatic Presentation of Short-run Cost Curves</p>
+    <p>
+      The mutual relationship between AFC, AVC, AC and MC can be shown with the help of the following standard diagram
+      (as used in T.R. Jain &amp; V.K. Ohri):
+    </p>
+
+    <div class="diagram" aria-label="Short-run cost curves: AFC, AVC, AC, MC">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .curve-ac{stroke:#1e3a8a;stroke-width:2.3;fill:none}
+          .curve-avc{stroke:#16a34a;stroke-width:2.1;fill:none}
+          .curve-afc{stroke:#f97316;stroke-width:2;fill:none}
+          .curve-mc{stroke:#111827;stroke-width:2.2;fill:none}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- AFC curve -->
+        <path d="M90 190 C 170 240, 260 285, 430 320" class="curve-afc"/>
+
+        <!-- AVC curve -->
+        <path d="M90 310 C 160 260, 260 250, 360 280 C 410 300, 440 330, 455 360" class="curve-avc"/>
+
+        <!-- AC curve -->
+        <path d="M90 260 C 160 230, 250 225, 340 250 C 390 270, 430 305, 455 340" class="curve-ac"/>
+
+        <!-- MC curve -->
+        <path d="M110 360 C 170 300, 230 250, 290 235 C 330 230, 370 240, 410 270 C 435 290, 450 315, 460 340" class="curve-mc"/>
+
+        <!-- Labels -->
+        <text x="430" y="330" class="label small">AC</text>
+        <text x="430" y="305" class="label small">AVC</text>
+        <text x="420" y="335" class="label small" transform="translate(-40,5)">AFC</text>
+        <text x="420" y="250" class="label small">MC</text>
+
+        <!-- Minimum points and guides (schematic) -->
+        <line x1="290" y1="235" x2="290" y2="410" class="guide"/>
+        <text x="285" y="430" class="label small">Q*</text>
+      </svg>
+      <div class="caption">
+        Fig. — Short-run Cost Curves: AFC continuously falls; AVC and AC are U-shaped; MC is U-shaped and
+        intersects AVC and AC at their minimum points.
+      </div>
+    </div>
+
+    <!-- III. LONG-RUN COST CONCEPTS -->
+    <p class="section-title">7. Long-run Cost Concepts</p>
+    <p>
+      In the <strong>long run</strong> all factors of production are variable and the firm can change its plant size.
+      The firm has a family of short-run average cost curves corresponding to different plant sizes. Long-run cost
+      concepts are defined as:
+    </p>
+
+    <p class="subheading">7.1 Long-run Total Cost (LTC)</p>
+    <p>
+      <strong>Long-run Total Cost</strong> is the minimum cost of producing different levels of output when the firm is
+      free to adjust all inputs and choose the most efficient plant. It represents the envelope of various possible
+      total cost combinations in the long run.
+    </p>
+
+    <p class="subheading">7.2 Long-run Average Cost (LAC)</p>
+    <p>
+      <strong>Long-run Average Cost</strong> is the minimum average cost of producing different levels of output when
+      the firm adjusts all factors optimally. It is obtained as:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      LAC = LTC / Q
+    </p>
+    <p>
+      The LAC curve is generally <strong>U-shaped</strong> or <strong>“saucer-shaped”</strong>, falling initially due
+      to economies of scale, remaining flat over a range of constant returns to scale, and rising later due to
+      diseconomies of scale. It is often described as an <strong>envelope curve</strong> of short-run AC curves.
+    </p>
+
+    <p class="subheading">7.3 Long-run Marginal Cost (LMC)</p>
+    <p>
+      <strong>Long-run Marginal Cost</strong> is the addition to LTC when one extra unit of output is produced in the
+      long run:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      LMC = ΔLTC / ΔQ
+    </p>
+    <p>
+      The LMC curve relates to the LAC curve in the same way as MC relates to AC in the short run: LMC lies below LAC
+      when LAC is falling, cuts LAC at its minimum point, and lies above LAC when LAC is rising.
+    </p>
+
+    <!-- SUMMARY TABLE OF COST CONCEPTS -->
+    <p class="section-title">8. Summary Table: Major Cost Concepts at a Glance</p>
+    <table aria-label="Summary of cost concepts">
+      <thead>
+        <tr>
+          <th>Cost Concept</th>
+          <th>Symbol / Formula</th>
+          <th>Key Idea</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Money Cost</td>
+          <td>–</td>
+          <td>Actual monetary expenditure of the firm.</td>
+        </tr>
+        <tr>
+          <td>Opportunity Cost</td>
+          <td>–</td>
+          <td>Value of next best alternative forgone.</td>
+        </tr>
+        <tr>
+          <td>Explicit Cost</td>
+          <td>–</td>
+          <td>Direct money payments to outsiders.</td>
+        </tr>
+        <tr>
+          <td>Implicit Cost</td>
+          <td>–</td>
+          <td>Imputed cost of owner’s own resources.</td>
+        </tr>
+        <tr>
+          <td>Accounting Cost</td>
+          <td>–</td>
+          <td>Explicit costs recorded in books.</td>
+        </tr>
+        <tr>
+          <td>Economic Cost</td>
+          <td>–</td>
+          <td>Explicit + implicit (opportunity) costs.</td>
+        </tr>
+        <tr>
+          <td>Total Fixed Cost</td>
+          <td>TFC</td>
+          <td>Cost of fixed factors; constant for all Q.</td>
+        </tr>
+        <tr>
+          <td>Total Variable Cost</td>
+          <td>TVC</td>
+          <td>Cost of variable factors; varies with Q.</td>
+        </tr>
+        <tr>
+          <td>Total Cost</td>
+          <td>TC = TFC + TVC</td>
+          <td>Overall cost of producing Q units.</td>
+        </tr>
+        <tr>
+          <td>Average Fixed Cost</td>
+          <td>AFC = TFC / Q</td>
+          <td>Fixed cost per unit; always falling.</td>
+        </tr>
+        <tr>
+          <td>Average Variable Cost</td>
+          <td>AVC = TVC / Q</td>
+          <td>Variable cost per unit; U-shaped.</td>
+        </tr>
+        <tr>
+          <td>Average Cost</td>
+          <td>AC = TC / Q = AFC + AVC</td>
+          <td>Total cost per unit; U-shaped.</td>
+        </tr>
+        <tr>
+          <td>Marginal Cost</td>
+          <td>MC = ΔTC / ΔQ</td>
+          <td>Extra cost of producing one more unit; U-shaped.</td>
+        </tr>
+        <tr>
+          <td>Long-run Average Cost</td>
+          <td>LAC = LTC / Q</td>
+          <td>Minimum average cost at each output when all factors vary.</td>
+        </tr>
+        <tr>
+          <td>Long-run Marginal Cost</td>
+          <td>LMC = ΔLTC / ΔQ</td>
+          <td>Extra cost of one more unit in the long run.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- IMPORTANCE -->
+    <p class="section-title">9. Importance of Cost Function and Cost Concepts</p>
+    <p>
+      The discussion of cost function and cost concepts is not merely theoretical; it has direct practical relevance:
+    </p>
+
+    <div class="importance-box">
+      <strong>(a) Basis of Output and Pricing Decisions</strong><br>
+      A firm’s decision about how much to produce depends on the relationship between <strong>marginal cost and marginal
+      revenue</strong>. Without a clear understanding of MC and AC, the firm cannot correctly determine its equilibrium
+      output and price.
+    </div>
+
+    <div class="importance-box">
+      <strong>(b) Planning of Scale and Plant Size</strong><br>
+      Long-run cost concepts (LAC, LMC) help the firm decide the <strong>optimum scale of operations</strong>, plant
+      size and level of output at which long-run average cost is minimised.
+    </div>
+
+    <div class="importance-box">
+      <strong>(c) Cost Control and Cost Reduction</strong><br>
+      Distinguishing between fixed and variable costs enables management to identify which items can be controlled in
+      the short run and how the cost per unit can be reduced by increasing capacity utilisation.
+    </div>
+
+    <div class="importance-box">
+      <strong>(d) Policy Formulation</strong><br>
+      For public utilities, regulated industries and taxation policy, the government must understand cost structure and
+      cost behaviour to frame appropriate pricing and subsidy policies.
+    </div>
+
+    <div class="importance-box">
+      <strong>(e) Examination Significance</strong><br>
+      In Panjab University B.Com (Sem I) examinations, the question “What is cost function? Explain the various concepts
+      of cost.” typically carries high marks. A systematic, well-classified answer covering general, short-run and
+      long-run cost concepts as above is highly scoring and reflects a sound understanding of the prescribed text of
+      T.R. Jain &amp; V.K. Ohri.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a 15-marks answer, first define cost function with C = f(Q) and mention short-run and long-run cost functions.
+      Then systematically classify cost concepts: (i) traditional/general (money, real, opportunity, explicit/implicit,
+      accounting/economic, private/social); (ii) short-run (TFC, TVC, TC, AFC, AVC, AC, MC) with formulas and U-shaped
+      curves; (iii) long-run (LTC, LAC, LMC). Support with a neat short-run cost diagram and finish with the importance
+      of cost concepts. This structure is exactly in line with Panjab University expectations.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, a <strong>cost function</strong> captures in a compact form the technological and price conditions
+      under which a firm operates by showing the minimum cost of producing different levels of output. On this
+      foundation, microeconomics builds a rich set of <strong>cost concepts</strong>—money cost, opportunity cost,
+      explicit and implicit cost, accounting and economic cost, fixed and variable cost, total, average and marginal
+      costs, and long-run cost measures. Together, these concepts form the analytical backbone of the theory of the
+      firm, guiding output, pricing and scale decisions and occupying a core position in the B.Com Semester I
+      Microeconomics syllabus of Panjab University.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

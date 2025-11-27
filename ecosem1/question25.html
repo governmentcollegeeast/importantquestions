@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q25 — Relation between AR, MR and Price Elasticity of Demand</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ul.points, ol.points{
+      padding-left:20px;
+      margin-top:6px;
+    }
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:center;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 25 — Explain the Relation between AR, MR and Price Elasticity of Demand</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the theory of the firm, the two pillars of analysis are <strong>revenue</strong> and <strong>cost</strong>.
+      On the revenue side, three concepts are fundamental: <strong>Total Revenue (TR)</strong>,
+      <strong>Average Revenue (AR)</strong> and <strong>Marginal Revenue (MR)</strong>. On the demand side,
+      the key concept is <strong>price elasticity of demand</strong>, which measures the responsiveness of
+      quantity demanded to changes in price.
+    </p>
+    <p>
+      In the prescribed text <em>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</em> for B.Com Semester I (Panjab
+      University), a very important theoretical result is derived which <strong>directly links AR, MR and
+      price elasticity of demand</strong>. This question asks you to state and explain that relationship.
+      A complete answer must: (i) recall the definitions of AR, MR and price elasticity, (ii) derive the
+      mathematical relation between them, (iii) interpret the relation for different degrees of elasticity,
+      and (iv) support the explanation with a neat diagram and economic implications.
+    </p>
+
+    <!-- I. BASIC CONCEPTS -->
+    <p class="section-title">I. Basic Concepts: AR, MR and Price Elasticity of Demand</p>
+
+    <p class="subheading">1. Average Revenue (AR)</p>
+    <p>
+      <strong>Average Revenue</strong> is the <strong>revenue per unit of output</strong>. It is obtained by dividing
+      total revenue by the quantity sold:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AR = TR / Q
+    </p>
+    <p>
+      Since total revenue is price multiplied by quantity (TR = P × Q), it follows that:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AR = (P × Q) / Q = P
+    </p>
+    <p>
+      Thus, <strong>AR is numerically equal to price</strong>. Therefore, the firm’s <strong>demand curve</strong> is
+      also its <strong>AR curve</strong>.
+    </p>
+
+    <p class="subheading">2. Marginal Revenue (MR)</p>
+    <p>
+      <strong>Marginal Revenue</strong> is the <strong>addition to total revenue</strong> when one extra unit of
+      output is sold. It is the change in total revenue per unit change in quantity:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = ΔTR / ΔQ
+    </p>
+    <p>
+      In calculus form, MR is the first derivative of TR with respect to Q:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = d(TR) / dQ
+    </p>
+
+    <p class="subheading">3. Price Elasticity of Demand (e<sub>p</sub>)</p>
+    <p>
+      <strong>Price elasticity of demand</strong> measures the <strong>responsiveness of quantity demanded to changes
+      in price</strong>. For small changes, point elasticity at a point on the demand curve is defined as:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      e<sub>p</sub> = − (dQ/dP) × (P/Q)
+    </p>
+    <p>
+      The minus sign is taken because the demand curve generally slopes downward (price and quantity move in opposite
+      directions). In practical use, we usually refer to the <strong>absolute value</strong> of elasticity, i.e.
+      |e<sub>p</sub>|.
+    </p>
+
+    <!-- II. DERIVATION -->
+    <p class="section-title">II. Derivation of the Relation between AR, MR and Price Elasticity</p>
+    <p>
+      We now derive the standard textbook formula that links marginal revenue (MR) with average revenue (AR) and
+      price elasticity of demand (e<sub>p</sub>), as given in T.R. Jain &amp; V.K. Ohri.
+    </p>
+
+    <p class="subheading">Step 1: Start from Total Revenue</p>
+    <p>
+      Total Revenue is given by:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      TR = P × Q
+    </p>
+
+    <p class="subheading">Step 2: Express MR as the Derivative of TR</p>
+    <p>
+      By definition,
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = d(TR)/dQ = d(PQ)/dQ
+    </p>
+    <p>
+      Using the product rule of differentiation:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = P + Q·(dP/dQ)
+    </p>
+
+    <p class="subheading">Step 3: Use the Definition of Price Elasticity</p>
+    <p>
+      Point elasticity of demand is:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      e<sub>p</sub> = − (dQ/dP) × (P/Q)
+    </p>
+    <p>
+      Taking reciprocal on both sides:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      1 / e<sub>p</sub> = − (dP/dQ) × (Q/P)
+    </p>
+    <p>
+      Rearranging, we get:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      dP/dQ = − (P / Q) × (1 / e<sub>p</sub>)
+    </p>
+
+    <p class="subheading">Step 4: Substitute dP/dQ into the Expression for MR</p>
+    <p>
+      From Step 2 we have:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = P + Q·(dP/dQ)
+    </p>
+    <p>
+      Substituting the value of dP/dQ from above:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = P + Q &times; [ − (P / Q) × (1 / e<sub>p</sub>) ]
+    </p>
+    <p>
+      Simplifying:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MR = P − P × (1 / e<sub>p</sub>)<br/>
+      MR = P &times; (1 − 1 / e<sub>p</sub>)
+    </p>
+
+    <p>
+      Since P = AR, we finally obtain the standard relation:
+    </p>
+
+    <div class="boxed">
+      <strong>Basic Relation (with sign of e):</strong><br/>
+      MR = AR &times; (1 − 1 / e<sub>p</sub>)
+    </div>
+
+    <p>
+      In practice, because the price elasticity of demand for a downward sloping demand curve is negative, many authors
+      (including your textbook) work with the <strong>absolute value</strong> of elasticity, |e<sub>p</sub>|. Then the
+      relation is written as:
+    </p>
+
+    <div class="boxed">
+      <strong>Standard Exam Formula (using absolute elasticity):</strong><br/>
+      MR = AR &times; ( 1 − 1 / |e<sub>p</sub>| )
+    </div>
+
+    <p>
+      This is the required theoretical relation between <strong>Average Revenue (AR)</strong>,
+      <strong>Marginal Revenue (MR)</strong> and <strong>price elasticity of demand (e<sub>p</sub>)</strong>.
+    </p>
+
+    <!-- III. INTERPRETATION -->
+    <p class="section-title">III. Interpretation of the Relation for Different Elasticities</p>
+    <p>
+      The formula
+      <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:3px 8px;border-radius:4px;display:inline-block;">
+        MR = AR &times; ( 1 − 1 / |e<sub>p</sub>| )
+      </span>
+      allows us to relate the <strong>sign of MR</strong> to the <strong>degree of price elasticity</strong>.
+    </p>
+
+    <p class="subheading">1. When Demand is Elastic (|e<sub>p</sub>| &gt; 1)</p>
+    <p>
+      Suppose |e<sub>p</sub>| &gt; 1. Then 1 / |e<sub>p</sub>| &lt; 1, so:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:3px 8px;border-radius:4px;display:inline-block;">
+      ( 1 − 1 / |e<sub>p</sub>| ) &gt; 0
+    </p>
+    <p>
+      Since AR is positive (price cannot be negative in normal cases), it follows that:
+    </p>
+    <div class="boxed">
+      When |e<sub>p</sub>| &gt; 1, then MR &gt; 0.
+    </div>
+    <p>
+      So, in the <strong>elastic range of the demand curve</strong>, marginal revenue is <strong>positive</strong>.
+      In this range, a fall in price (and rise in output) causes <strong>total revenue to increase</strong>.
+    </p>
+
+    <p class="subheading">2. When Demand is Unitary Elastic (|e<sub>p</sub>| = 1)</p>
+    <p>
+      If |e<sub>p</sub>| = 1, then:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:3px 8px;border-radius:4px;display:inline-block;">
+      1 − 1 / |e<sub>p</sub>| = 1 − 1 = 0
+    </p>
+    <p>
+      So:
+    </p>
+    <div class="boxed">
+      When |e<sub>p</sub>| = 1, then MR = 0 and TR is <strong>maximum</strong>.
+    </div>
+    <p>
+      At unitary elasticity, total revenue neither increases nor decreases when price changes; it is at its
+      <strong>highest point</strong>. This is a very important result.
+    </p>
+
+    <p class="subheading">3. When Demand is Inelastic (|e<sub>p</sub>| &lt; 1)</p>
+    <p>
+      If |e<sub>p</sub>| &lt; 1, then 1 / |e<sub>p</sub>| &gt; 1 and therefore:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:3px 8px;border-radius:4px;display:inline-block;">
+      ( 1 − 1 / |e<sub>p</sub>| ) &lt; 0
+    </p>
+    <p>
+      So:
+    </p>
+    <div class="boxed">
+      When |e<sub>p</sub>| &lt; 1, then MR &lt; 0.
+    </div>
+    <p>
+      In the <strong>inelastic range</strong> of the demand curve, marginal revenue is <strong>negative</strong>.
+      In this range, a fall in price (and rise in output) actually <strong>reduces total revenue</strong>.
+    </p>
+
+    <!-- SUMMARY TABLE -->
+    <p class="section-title">IV. Summary Table: AR–MR–Elasticity Relation</p>
+    <table aria-label="Relation between elasticity and MR sign">
+      <thead>
+        <tr>
+          <th>Elasticity of Demand<br/>(|e<sub>p</sub>|)</th>
+          <th>Value of (1 − 1/|e<sub>p</sub>|)</th>
+          <th>Sign of MR</th>
+          <th>Behaviour of TR</th>
+          <th>Region of Demand Curve</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>|e<sub>p</sub>| &gt; 1</td>
+          <td>Positive</td>
+          <td>MR &gt; 0</td>
+          <td>TR increases as output increases</td>
+          <td>Elastic region (upper part of AR)</td>
+        </tr>
+        <tr>
+          <td>|e<sub>p</sub>| = 1</td>
+          <td>Zero</td>
+          <td>MR = 0</td>
+          <td>TR is maximum</td>
+          <td>Mid-point of straight-line AR</td>
+        </tr>
+        <tr>
+          <td>|e<sub>p</sub>| &lt; 1</td>
+          <td>Negative</td>
+          <td>MR &lt; 0</td>
+          <td>TR decreases as output increases</td>
+          <td>Inelastic region (lower part of AR)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- DIAGRAM -->
+    <p class="section-title">V. Diagram: AR, MR and Elasticity along a Straight-line Demand Curve</p>
+    <p>
+      In the traditional geometric presentation (also used in T.R. Jain &amp; V.K. Ohri), the relation between AR, MR
+      and elasticity is shown on a straight-line demand (AR) curve. The MR curve is also a straight line starting from
+      the same price-axis intercept but cutting the quantity axis at half the distance.
+    </p>
+
+    <div class="diagram" aria-label="Relation between AR, MR and elasticity along demand curve">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ar{stroke:#16a34a;stroke-width:2.4;fill:none}
+          .mr{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="60" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="480" y2="410" class="axis"/>
+
+        <text x="55" y="55" class="label small">Price / Revenue</text>
+        <text x="460" y="430" class="label small">Quantity (Q)</text>
+
+        <!-- AR (Demand) Curve -->
+        <path d="M80 80 L 460 360" class="ar"/>
+
+        <!-- MR Curve (same intercept, double slope) -->
+        <path d="M80 80 L 460 410" class="mr"/>
+
+        <!-- Mid-point of AR -->
+        <circle cx="270" cy="220" r="4" fill="#111827"/>
+        <line x1="270" y1="220" x2="270" y2="410" class="guide"/>
+
+        <!-- MR=0 point -->
+        <circle cx="380" cy="410" r="4" fill="#111827"/>
+
+        <!-- Labels -->
+        <text x="430" y="340" class="label small">AR (Demand)</text>
+        <text x="430" y="390" class="label small">MR</text>
+
+        <text x="260" y="214" class="label small">E</text>
+        <text x="232" y="430" class="label small">Q at e = 1</text>
+        <text x="380" y="430" class="label small">MR = 0</text>
+
+        <text x="130" y="130" class="label small">Elastic (|e| &gt; 1)</text>
+        <text x="350" y="300" class="label small">Inelastic (|e| &lt; 1)</text>
+      </svg>
+      <div class="caption">
+        Fig. — Straight-line AR and MR Curves: Upper half of AR is elastic (MR &gt; 0),
+        mid-point is unitary elastic (MR = 0), lower half is inelastic (MR &lt; 0).
+      </div>
+    </div>
+
+    <p class="subheading">Explanation of the Diagram</p>
+    <p>
+      In the figure:
+    </p>
+    <ul class="points">
+      <li>AR is a straight downward sloping line from the price axis to the quantity axis.</li>
+      <li>MR is also a straight line from the same price intercept but meets the quantity axis at half the distance.</li>
+      <li>
+        The mid-point <strong>E</strong> of the AR curve divides it into two parts: the upper half where
+        |e<sub>p</sub>| &gt; 1 (elastic region) and the lower half where |e<sub>p</sub>| &lt; 1 (inelastic region).
+      </li>
+      <li>At point E (mid-point), |e<sub>p</sub>| = 1 and corresponding MR = 0; TR is maximum here.</li>
+    </ul>
+
+    <!-- VI. ECONOMIC IMPLICATIONS -->
+    <p class="section-title">VI. Economic Implications of the AR–MR–Elasticity Relation</p>
+
+    <p class="subheading">1. Output and Pricing Decisions of a Monopolist</p>
+    <p>
+      For a monopolist (or any firm under imperfect competition), the equilibrium output is determined by the condition
+      <strong>MR = MC</strong>. Using the relation MR = AR × (1 − 1/|e<sub>p</sub>|), we can show that:
+    </p>
+    <ul class="points">
+      <li>At equilibrium, MR must be positive (equal to MC, which is positive).</li>
+      <li>Therefore, the firm will <strong>never produce in the inelastic range</strong> of the demand curve where MR is negative.</li>
+      <li>
+        A monopolist will always operate on the <strong>elastic portion</strong> of the demand curve; otherwise, reducing
+        output and raising price would increase TR and reduce cost, contradicting profit maximisation.
+      </li>
+    </ul>
+
+    <p class="subheading">2. Behaviour of Total Revenue (TR)</p>
+    <p>
+      The relation between MR and elasticity tells us how TR behaves:
+    </p>
+    <ul class="points">
+      <li>When |e<sub>p</sub>| &gt; 1, MR &gt; 0 → TR rises with increase in output (or fall in price).</li>
+      <li>When |e<sub>p</sub>| = 1, MR = 0 → TR is maximum.</li>
+      <li>When |e<sub>p</sub>| &lt; 1, MR &lt; 0 → TR falls with increase in output (or fall in price).</li>
+    </ul>
+    <p>
+      Thus, the <strong>TR curve</strong> is rising, flat, or falling according to whether elasticity is greater than,
+      equal to, or less than unity.
+    </p>
+
+    <p class="subheading">3. Taxation and Public Policy</p>
+    <p>
+      Governments often impose indirect taxes (excise, GST, etc.) on goods. Whether a tax increase will raise or reduce
+      total revenue depends on the elasticity of demand:
+    </p>
+    <ul class="points">
+      <li>If demand is inelastic, higher tax (higher price) may increase TR (and tax revenue).</li>
+      <li>If demand is elastic, higher price may reduce TR.</li>
+    </ul>
+    <p>
+      The MR–AR–elasticity relation is thus useful in understanding revenue effects of taxation and pricing policies.
+    </p>
+
+    <p class="subheading">4. Practical Pricing Strategy for Firms</p>
+    <p>
+      For a firm engaged in price-setting:
+    </p>
+    <ul class="points">
+      <li>Price cuts are advisable only in the elastic region where MR is positive and TR rises.</li>
+      <li>In the inelastic region, further price cuts reduce TR; firms should generally avoid this region.</li>
+      <li>Knowledge of elasticity helps firms identify the output range where MR is positive and profits can be increased.</li>
+    </ul>
+
+    <p class="subheading">5. Elasticity as a Bridge between Demand and Revenue</p>
+    <p>
+      Conceptually, the relation MR = AR(1 − 1/|e<sub>p</sub>|) acts as a <strong>bridge</strong> between the consumer
+      side and the producer side:
+    </p>
+    <ul class="points">
+      <li>On the <strong>demand side</strong>, elasticity summarises how consumers react to price changes.</li>
+      <li>On the <strong>firm’s side</strong>, MR summarises how the firm’s total revenue changes with output.</li>
+      <li>This formula shows how consumer behaviour (elasticity) determines the shape and position of the MR curve.</li>
+    </ul>
+
+    <p class="subheading">6. Examination Significance (Panjab University)</p>
+    <p>
+      In the B.Com (Sem I) Microeconomics paper of Panjab University, the question
+      <em>“Explain the relation between AR, MR and price elasticity of demand.”</em> is a <strong>classic 15-marks
+      theory question</strong>. A high-quality answer should:
+    </p>
+    <ul class="points">
+      <li>Define AR, MR and price elasticity of demand.</li>
+      <li>Derive the relation MR = AR(1 − 1/|e<sub>p</sub>|) step by step.</li>
+      <li>Explain the sign of MR for different ranges of elasticity with a summary table.</li>
+      <li>Support the explanation with a neat diagram showing AR, MR and the elastic/unitary/inelastic regions.</li>
+      <li>Mention economic implications for monopolist’s pricing, TR behaviour and policy aspects.</li>
+    </ul>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip (for 15 marks):</strong>
+      In your answer booklet, use the following sequence: (i) brief introduction, (ii) definitions of AR, MR and
+      price elasticity, (iii) algebraic derivation of MR = AR(1 − 1/|e|) from TR = PQ and the elasticity formula,
+      (iv) interpretation for |e| &gt; 1, |e| = 1 and |e| &lt; 1 with a small table, (v) a neat diagram of linear
+      AR with MR and marking of elastic, unitary and inelastic segments, and (vi) a short paragraph on implications
+      for monopolist and TR behaviour. This structure is exactly in line with the presentation given in
+      T.R. Jain &amp; V.K. Ohri and is highly appreciated by Panjab University examiners.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, the relation between <strong>Average Revenue (AR)</strong>, <strong>Marginal Revenue (MR)</strong>
+      and <strong>price elasticity of demand</strong> is captured in the compact and powerful formula
+      <strong>MR = AR(1 − 1/|e<sub>p</sub>|)</strong>. This formula shows that the sign and size of MR at any point on
+      the firm’s demand (AR) curve are completely determined by the price elasticity of demand at that point. In the
+      elastic range of demand MR is positive and TR rises with output; at unitary elasticity MR is zero and TR is
+      maximised; in the inelastic range MR is negative and TR falls with further expansion. This elegant relationship
+      unifies demand analysis and revenue analysis and forms one of the most important theoretical results in the
+      B.Com (Sem I) Microeconomics syllabus of Panjab University.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

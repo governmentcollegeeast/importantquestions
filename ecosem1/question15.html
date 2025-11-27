@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q15 — Price Effect as a Combination of Substitution and Income Effect</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 15 — “Price Effect is the Combination of Substitution and Income Effect.” Explain.</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      The <strong>Law of Demand</strong> tells us that, other things remaining the same, quantity demanded of a
+      commodity varies inversely with its price. Modern microeconomics, particularly the <strong>indifference curve
+      analysis</strong> developed by Hicks and Allen and presented in your prescribed text <em>“Microeconomics” by
+      T.R. Jain &amp; V.K. Ohri</em>, goes deeper and explains <em>why</em> this happens. It shows that when the price
+      of a good changes, the total change in quantity demanded, called the <strong>price effect</strong>, can be
+      decomposed into two distinct parts:
+    </p>
+    <ul class="points">
+      <li><strong>Substitution Effect (SE)</strong></li>
+      <li><strong>Income Effect (IE)</strong></li>
+    </ul>
+    <p>
+      The statement that “<strong>price effect is the combination of substitution and income effect</strong>” means
+      that the overall response of demand to a price change is the <strong>sum of these two effects</strong>. This
+      question requires a clear conceptual explanation, supported by an indifference curve diagram, in the style used
+      in Panjab University B.Com (Sem I) examinations.
+    </p>
+
+    <!-- 1. MEANING OF PRICE EFFECT -->
+    <p class="section-title">1. Meaning of Price Effect</p>
+    <p>
+      Suppose a consumer consumes two goods X and Y. If the price of X changes while money income and the price of Y
+      remain constant, the consumer’s equilibrium will shift, leading to a change in the quantity demanded of X.
+    </p>
+
+    <div class="boxed">
+      <strong>Price Effect (PE):</strong><br>
+      The <strong>price effect</strong> is the <em>total change in quantity demanded</em> of a commodity resulting from
+      a change in its own price, <strong>other things remaining the same</strong>.
+    </div>
+
+    <p>
+      If the initial quantity demanded of X is Q<sub>0</sub> at price P<sub>0</sub>, and after a fall in price to
+      P<sub>1</sub> the equilibrium quantity becomes Q<sub>1</sub>, then:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      Price Effect (PE) = Q<sub>1</sub> − Q<sub>0</sub>
+    </p>
+    <p>
+      For a normal case where price falls and quantity demanded rises, the price effect is <strong>positive for
+      quantity</strong> (and negative with respect to price).
+    </p>
+
+    <!-- 2. SUBSTITUTION EFFECT -->
+    <p class="section-title">2. Meaning of Substitution Effect</p>
+    <p>
+      When the price of X falls and the price of Y remains unchanged, X becomes <strong>relatively cheaper</strong> as
+      compared to Y. Even if the consumer’s real income (or utility) were somehow kept constant, he would tend to
+      <strong>substitute X for Y</strong>, because each rupee spent on X now yields more satisfaction than a rupee spent
+      on Y.
+    </p>
+
+    <div class="boxed">
+      <strong>Substitution Effect (SE):</strong><br>
+      The <strong>substitution effect</strong of a change in the price of a commodity is the change in its quantity
+      demanded when its price changes and the <strong>consumer’s real income or utility is kept constant</strong>, so
+      that he remains on the same indifference curve and merely substitutes the relatively cheaper good for the
+      relatively dearer one.
+    </div>
+
+    <p class="subheading">Key features of substitution effect</p>
+    <ul class="points">
+      <li>It arises due to <strong>change in relative prices</strong>, not due to change in real income.</li>
+      <li>The consumer is kept on the <strong>same indifference curve</strong> (same level of satisfaction).</li>
+      <li>
+        For a <strong>fall in price of X</strong>, substitution effect for X is <strong>always positive</strong>
+        (quantity of X demanded increases).
+      </li>
+      <li>
+        For a <strong>rise in price of X</strong>, substitution effect for X is <strong>always negative</strong>.
+      </li>
+    </ul>
+
+    <!-- 3. INCOME EFFECT -->
+    <p class="section-title">3. Meaning of Income Effect</p>
+    <p>
+      When the price of X falls, the consumer can buy the same quantities of X and Y as before and still save some
+      money. In other words, his <strong>purchasing power or real income increases</strong>, even though his money
+      income is unchanged. This change in real income itself affects the quantity demanded of X.
+    </p>
+
+    <div class="boxed">
+      <strong>Income Effect (IE):</strong><br>
+      The <strong>income effect</strong of a change in the price of a commodity is the change in its quantity demanded
+      resulting from the change in the <strong>real income</strong> of the consumer caused by the price change, when
+      <strong>relative prices are kept constant</strong>.
+    </div>
+
+    <p>
+      The sign of the income effect depends on the nature of the good:
+    </p>
+    <ul class="points">
+      <li><strong>Normal good:</strong> Real income ↑ ⇒ quantity demanded ↑ (positive income effect).</li>
+      <li><strong>Inferior good:</strong> Real income ↑ ⇒ quantity demanded ↓ (negative income effect).</li>
+      <li><strong>Giffen good (extreme inferior):</strong> Negative income effect is so strong that it may outweigh substitution effect.</li>
+    </ul>
+
+    <!-- 4. PRICE EFFECT AS SE + IE (CONCEPTUAL STATEMENT) -->
+    <p class="section-title">4. Price Effect as the Sum of Substitution Effect and Income Effect</p>
+    <p>
+      Consider again a fall in price of X. The total change in quantity demanded of X (price effect) can be logically
+      decomposed into two parts:
+    </p>
+    <ol class="points">
+      <li>
+        <strong>First</strong>, because X becomes cheaper relative to Y, the consumer substitutes X for Y while staying
+        on the same indifference curve. This is the <strong>substitution effect</strong>.
+      </li>
+      <li>
+        <strong>Secondly</strong>, because the real purchasing power of the consumer has increased, he moves to a higher
+        or lower indifference curve (depending on whether X is normal or inferior) and further adjusts his quantities.
+        This is the <strong>income effect</strong>.
+      </li>
+    </ol>
+    <p>
+      Thus, the total change in quantity demanded of X due to a change in its price is equal to the sum of the
+      substitution effect and the income effect:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:8px 12px;border-radius:6px;display:inline-block;">
+      Price Effect (PE) = Substitution Effect (SE) + Income Effect (IE)
+    </p>
+
+    <!-- 5. DIAGRAM: DECOMPOSITION OF PRICE EFFECT -->
+    <p class="section-title">5. Diagrammatic Explanation: Decomposition of Price Effect into SE and IE</p>
+    <p>
+      The relationship <strong>PE = SE + IE</strong> can be shown clearly with the help of an
+      <strong>indifference curve–budget line diagram</strong>, using the Hicksian <em>compensated variation</em>
+      technique.
+    </p>
+
+    <div class="diagram" aria-label="Decomposition of price effect into substitution and income effects">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ic{stroke:#1e3a8a;stroke-width:2.5;fill:none}
+          .bl-main{stroke:#16a34a;stroke-width:2.5}
+          .bl-comp{stroke:#6b7280;stroke-width:2;stroke-dasharray:6 4}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .point{fill:#111827}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="60" y="65" class="label">Y</text>
+        <text x="445" y="430" class="label">X</text>
+
+        <!-- Indifference curves -->
+        <path d="M140 190 C 205 230, 265 285, 335 340" class="ic"/> <!-- IC1 -->
+        <path d="M115 165 C 195 215, 275 280, 370 350" class="ic"/> <!-- IC2 -->
+
+        <text x="320" y="330" class="label">IC₁</text>
+        <text x="355" y="350" class="label">IC₂</text>
+
+        <!-- Budget lines -->
+        <line x1="120" y1="220" x2="310" y2="410" class="bl-main"/> <!-- BL1 -->
+        <line x1="120" y1="180" x2="420" y2="410" class="bl-main"/> <!-- BL2 -->
+
+        <!-- Compensated budget line parallel to BL2 -->
+        <line x1="130" y1="230" x2="360" y2="410" class="bl-comp"/> <!-- BL* -->
+
+        <text x="260" y="235" class="label">BL₁</text>
+        <text x="380" y="260" class="label">BL₂</text>
+        <text x="340" y="225" class="label">BL*</text>
+
+        <!-- Points E1 (initial), E* (SE), E2 (final) -->
+        <circle cx="215" cy="255" r="4" class="point"/>
+        <text x="223" y="250" class="label">E₁</text>
+
+        <circle cx="260" cy="280" r="4" class="point"/>
+        <text x="268" y="275" class="label">E*</text>
+
+        <circle cx="310" cy="305" r="4" class="point"/>
+        <text x="318" y="300" class="label">E₂</text>
+
+        <!-- Guides to X-axis -->
+        <line x1="215" y1="255" x2="215" y2="410" class="guide"/>
+        <line x1="260" y1="280" x2="260" y2="410" class="guide"/>
+        <line x1="310" y1="305" x2="310" y2="410" class="guide"/>
+
+        <text x="208" y="425" class="label">Q₀</text>
+        <text x="253" y="425" class="label">Q′</text>
+        <text x="303" y="425" class="label">Q₁</text>
+      </svg>
+      <div class="caption">
+        Fig. — Decomposition of Price Effect: E₁ → E* = Substitution Effect; E* → E₂ = Income Effect; E₁ → E₂ = Total Price Effect.
+      </div>
+    </div>
+
+    <p>
+      In the diagram:
+    </p>
+    <ul class="points">
+      <li>
+        The consumer initially faces budget line <strong>BL₁</strong> and is in equilibrium at
+        <strong>E₁</strong> on indifference curve <strong>IC₁</strong>, consuming Q₀ units of X.
+      </li>
+      <li>
+        When the price of X falls, the budget line rotates outward to <strong>BL₂</strong>. If there is no income
+        compensation, the consumer moves to a higher indifference curve <strong>IC₂</strong>, reaching equilibrium
+        at <strong>E₂</strong>, consuming Q₁ units of X. The movement E₁ → E₂ (Q₀ → Q₁) is the
+        <strong>total price effect</strong>.
+      </li>
+      <li>
+        To isolate the substitution effect, a <strong>compensated budget line BL*</strong> is drawn parallel to BL₂
+        (same relative prices) but tangent to the original indifference curve IC₁ at point <strong>E*</strong>.
+        Movement from E₁ to E* along IC₁ (Q₀ → Q′) is the <strong>substitution effect</strong>.
+      </li>
+      <li>
+        Finally, movement from E* on IC₁ to E₂ on higher IC₂ (Q′ → Q₁), along BL₂, represents the
+        <strong>income effect</strong> of the price change.
+      </li>
+    </ul>
+    <p>
+      Hence, geometrically and conceptually:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:8px 12px;border-radius:6px;display:inline-block;">
+      (E₁ → E₂) Price Effect = (E₁ → E*) Substitution Effect + (E* → E₂) Income Effect
+    </p>
+
+    <!-- 6. CASES: NORMAL, INFERIOR, GIFFEN -->
+    <p class="section-title">6. Behaviour of Price Effect for Different Types of Goods</p>
+    <p>
+      Since substitution effect is always negative with respect to price (a fall in price of X always increases demand
+      for X through SE), the <strong>overall price effect</strong> depends crucially on the <strong>sign and magnitude
+      of income effect</strong>.
+    </p>
+
+    <table aria-label="Price effect as combination of SE and IE for different goods">
+      <thead>
+        <tr>
+          <th>Type of Good</th>
+          <th>Substitution Effect (SE)</th>
+          <th>Income Effect (IE)</th>
+          <th>Resulting Price Effect (PE)</th>
+          <th>Nature of Demand Curve</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Normal good</strong></td>
+          <td>For price ↓, SE is positive (Q of X rises)</td>
+          <td>Positive (real income ↑ ⇒ demand ↑)</td>
+          <td>SE and IE reinforce each other; PE strongly negative w.r.t price</td>
+          <td>Downward sloping; law of demand firmly holds</td>
+        </tr>
+        <tr>
+          <td><strong>Inferior good (non-Giffen)</strong></td>
+          <td>For price ↓, SE is positive</td>
+          <td>Negative but <em>smaller</em> than SE</td>
+          <td>SE &gt; |IE| ⇒ net PE still negative w.r.t price</td>
+          <td>Downward sloping demand curve (law of demand holds)</td>
+        </tr>
+        <tr>
+          <td><strong>Giffen good</strong> (extreme inferior)</td>
+          <td>For price ↓, SE is positive</td>
+          <td>Strongly negative; dominates SE</td>
+          <td>|IE| &gt; SE ⇒ PE becomes positive: price ↓ ⇒ demand ↓</td>
+          <td>Upward sloping demand curve; apparent violation of law of demand</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      This table shows that the <strong>direction and strength of the price effect</strong> cannot be understood by
+      looking at substitution effect alone. It is the combination of SE and IE that finally determines how quantity
+      demanded responds to a change in price.
+    </p>
+
+    <!-- 7. IMPORTANCE OF THE DECOMPOSITION PE = SE + IE -->
+    <p class="section-title">7. Importance of Viewing Price Effect as SE + IE</p>
+    <p>
+      The decomposition of price effect into substitution and income effects has several important implications in
+      microeconomic theory:
+    </p>
+
+    <div class="importance-box">
+      <strong>(a) Deeper Explanation of Law of Demand</strong><br>
+      The traditional law of demand simply states an inverse relationship between price and quantity demanded.
+      The indifference curve approach explains this law by showing that even if income effect were zero, the
+      <strong>substitution effect alone</strong> would make the individual demand curve slope downwards. Income
+      effect only modifies the strength of that relationship.
+    </div>
+
+    <div class="importance-box">
+      <strong>(b) Understanding Normal, Inferior and Giffen Goods</strong><br>
+      The classification of goods into normal, inferior and Giffen is based on the sign and magnitude of the
+      <strong>income effect</strong>. Since price effect is the sum of SE and IE, understanding IE is essential
+      to explain why some inferior goods may still follow the law of demand and why exceptional Giffen behaviour
+      may occur.
+    </div>
+
+    <div class="importance-box">
+      <strong>(c) Construction of Compensated Demand Curves</strong><br>
+      In advanced microeconomics and welfare economics, we distinguish between <strong>Marshallian (uncompensated)</strong>
+      demand and <strong>Hicksian (compensated)</strong> demand. The compensated demand curve isolates the substitution
+      effect (holding utility constant). The idea that PE = SE + IE is at the heart of this distinction.
+    </div>
+
+    <div class="importance-box">
+      <strong>(d) Policy Evaluation and Welfare Analysis</strong><br>
+      When governments impose indirect taxes or give subsidies, both relative prices and real incomes change.
+      By separating substitution and income effects, economists can analyse how much of the change in consumption
+      is due to distortion of relative prices and how much is due to redistribution of real income.
+    </div>
+
+    <div class="importance-box">
+      <strong>(e) Clearer Theoretical Structure</strong><br>
+      Presenting price effect as a combination of SE and IE provides a <strong>logically rigorous and examiner-friendly
+      framework</strong> which is exactly what is expected in B.Com (Sem I) answers based on T.R. Jain &amp; V.K. Ohri.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a 15-marks question on “Price effect is the combination of substitution and income effect”, a high-scoring
+      answer should be structured as follows:
+      (i) precise definitions of price effect, substitution effect and income effect;
+      (ii) clear conceptual statement PE = SE + IE;
+      (iii) neat indifference curve diagram with BL₁, BL₂, BL*, IC₁, IC₂ and points E₁, E*, E₂, showing E₁ → E* → E₂;
+      (iv) explanation of the three cases: normal, inferior (non-Giffen) and Giffen goods; and
+      (v) a separate, brief section on the importance of this decomposition, followed by a compact conclusion.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      In conclusion, the statement that <strong>“price effect is the combination of substitution and income effect”</strong>
+      is fully justified in the modern indifference curve analysis of demand. When the price of a good changes, the
+      consumer’s equilibrium quantity changes for two reasons: first, because the good has become relatively cheaper
+      or dearer compared with other goods (substitution effect), and second, because the consumer’s real income or
+      purchasing power has changed (income effect). The total price effect is therefore the <strong>sum of these two
+      forces</strong>. This combined view not only explains the ordinary downward-sloping demand curve for normal goods,
+      but also throws light on the behaviour of inferior and Giffen goods and provides a rigorous foundation for
+      modern demand theory as presented in the Panjab University B.Com (Sem I) syllabus.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+<!-- Book Reference Required — Popup Disclaimer -->
+<div id="bookDisclaimerOverlay" style="
+  position:fixed; inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+">
+  <div id="bookDisclaimerModal" style="
+    max-width:520px; width:90%;
+    background:#fffaf0;
+    border-radius:12px;
+    border:1px solid #fee4a6;
+    box-shadow:0 20px 45px rgba(15,23,42,0.25);
+    padding:20px 20px 16px 20px;
+    position:relative;
+    font-family:Inter,system-ui,Arial;
+  ">
+    <button id="bookDisclaimerClose" aria-label="Close disclaimer" style="
+      position:absolute;
+      top:10px; right:12px;
+      border:none;
+      background:transparent;
+      font-size:20px;
+      color:#7c6f54;
+      cursor:pointer;
+    ">&times;</button>
+
+    <div style="
+      display:inline-block;
+      margin-bottom:8px;
+      font-size:11px;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+      color:#a16207;
+      background:#fef3c7;
+      padding:4px 8px;
+      border-radius:999px;
+      font-weight:600;
+    ">Book Reference Required</div>
+
+    <h3 style="margin:2px 0 8px 0;font-size:17px;color:#8a4f0b;">Additional Study Recommended</h3>
+
+    <p style="margin:0;font-size:14px;line-height:1.7;color:#5a3410;">
+      This question involves advanced concepts and requires deeper understanding. Students must refer to the official
+      Panjab University prescribed textbook,
+      <strong>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</strong>
+      along with these structured notes for complete exam-oriented preparation.
+    </p>
+
+  </div>
+</div>
+
+<script>
+  (function(){
+    var overlay = document.getElementById('bookDisclaimerOverlay');
+    var closeBtn = document.getElementById('bookDisclaimerClose');
+
+    function hidePopup(){
+      if(overlay){
+        overlay.style.opacity = '0';
+        setTimeout(() => { overlay.style.display = 'none'; }, 400);
+      }
+    }
+
+    // Close when click "X"
+    if(closeBtn){
+      closeBtn.addEventListener('click', hidePopup);
+    }
+
+    // Close on click outside
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay){
+        hidePopup();
+      }
+    });
+
+    // Auto hide after 10 seconds
+    setTimeout(hidePopup, 10000);
+  })();
+</script>
+</body>
+</html>

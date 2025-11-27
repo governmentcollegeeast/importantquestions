@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q12 — Consumer Equilibrium (Indifference Curve Analysis)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:17px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:center;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 12 — Consumer Equilibrium (Indifference Curve Analysis)</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      The central problem of the theory of demand is to explain how a consumer, with a <strong>limited money
+      income</strong> and given market prices, chooses a particular combination of goods out of the many combinations
+      available to him. The solution is expressed by the concept of <strong>consumer equilibrium</strong>. In the
+      <strong>indifference curve analysis</strong>, also called the <em>ordinal utility approach</em>, we assume that
+      the consumer can <strong>rank consumption bundles</strong> according to preference, without measuring utility in
+      numerical units.
+    </p>
+    <p>
+      T.R. Jain and V.K. Ohri, in their treatment of consumer equilibrium for B.Com Semester I (Panjab University),
+      derive the equilibrium condition by combining the <strong>indifference map</strong> (representing preferences)
+      with the <strong>budget line</strong> (representing income and prices). The consumer achieves equilibrium at the
+      point where he reaches the <strong>highest possible indifference curve</strong> subject to his budget constraint.
+    </p>
+
+    <!-- MEANING -->
+    <p class="section-title">Meaning of Consumer Equilibrium (Indifference Curve Approach)</p>
+    <p>
+      In the indifference curve framework, a consumer is said to be in <strong>equilibrium</strong> when, given his
+      money income and the prices of goods, he chooses such a combination of two commodities (say X and Y) that:
+    </p>
+    <ul class="points">
+      <li>lies on the <strong>highest attainable indifference curve</strong>, and</li>
+      <li>is <strong>just affordable</strong>, i.e. it lies on the budget line.</li>
+    </ul>
+    <p>
+      At this point, the consumer has <strong>no tendency to change</strong> his chosen bundle, because any other
+      affordable combination (on or below the budget line) would lie on a lower indifference curve and therefore give
+      a lower level of satisfaction.
+    </p>
+
+    <!-- BASIC CONCEPTS: BUDGET LINE & IC -->
+    <p class="section-title">Basic Tools: Indifference Map and Budget Line</p>
+
+    <p class="subheading">1. Indifference Map</p>
+    <p>
+      An <strong>indifference map</strong> is a set of indifference curves, IC₁, IC₂, IC₃, …, where each curve represents
+      a different level of satisfaction. Curves further from the origin indicate <strong>higher levels of utility</strong>.
+      The consumer always prefers combinations on a higher indifference curve to those on a lower one.
+    </p>
+
+    <p class="subheading">2. Budget Line (Price Line)</p>
+    <p>
+      With money income <strong>M</strong> and prices <strong>P<sub>x</sub></strong> and <strong>P<sub>y</sub></strong>
+      of goods X and Y respectively, the consumer’s <strong>budget line</strong> or <strong>price line</strong> shows all
+      combinations of X and Y which he can just purchase by spending his entire income.
+    </p>
+    <p>
+      The budget equation is:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      P<sub>x</sub>·X + P<sub>y</sub>·Y = M
+    </p>
+    <p>
+      The slope of the budget line is:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      \(\text{Slope of budget line} = - \dfrac{P_x}{P_y}\)
+    </p>
+    <p>
+      Thus, the budget line is a straight line with negative slope, representing the <strong>market rate of exchange</strong>
+      between X and Y: the amount of Y that the consumer has to give up to obtain one extra unit of X, given prices.
+    </p>
+
+    <!-- EQUILIBRIUM CONDITION -->
+    <p class="section-title">Condition of Consumer Equilibrium (Indifference Curve Analysis)</p>
+    <p>
+      Graphically, the consumer reaches equilibrium at the point where:
+    </p>
+    <ol class="points">
+      <li>The budget line is <strong>tangent</strong> to an indifference curve (touches it at just one point), and</li>
+      <li>This point of tangency lies on the <strong>highest attainable indifference curve</strong>.</li>
+    </ol>
+    <p>
+      At the point of tangency, the <strong>slope of the indifference curve</strong> (which is the marginal rate of
+      substitution of X for Y) is equal to the <strong>slope of the budget line</strong> (the price ratio).
+    </p>
+
+    <p class="subheading">Marginal Rate of Substitution (MRS) and Price Ratio</p>
+    <p>
+      The <strong>Marginal Rate of Substitution of X for Y (MRS<sub>xy</sub>)</strong> is defined as:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MRS<sub>xy</sub> = − (ΔY / ΔX)
+    </p>
+    <p>
+      It represents the amount of Y that the consumer is willing to sacrifice to obtain one additional unit of X while
+      remaining on the same indifference curve (i.e., with unchanged satisfaction). The slope of an indifference curve
+      at any point is precisely this MRS<sub>xy</sub>.
+    </p>
+    <p>
+      The slope of the budget line, as mentioned, is:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      Slope of budget line = − P<sub>x</sub> / P<sub>y</sub>
+    </p>
+
+    <div class="boxed">
+      <strong>Equilibrium Condition (Two-Good Case):</strong><br>
+      The consumer is in equilibrium when:
+      <br><br>
+      <span style="font-family:ui-monospace,monospace;background:#eef4ff;padding:6px 10px;border-radius:6px;display:inline-block;">
+        MRS<sub>xy</sub> = \(\dfrac{P_x}{P_y}\)
+      </span>
+      <br><br>
+      That is, the <strong>rate at which the consumer is willing to substitute X for Y</strong> equals the
+      <strong>rate at which the market allows him to substitute X for Y</strong>.
+    </div>
+
+    <!-- DIAGRAM -->
+    <p class="section-title">Diagrammatic Explanation of Consumer Equilibrium</p>
+    <p>
+      The equilibrium of the consumer under indifference curve analysis can be shown with the help of the following diagram.
+      On the horizontal axis we measure quantity of X, and on the vertical axis quantity of Y. IC₁, IC₂ and IC₃ represent
+      three indifference curves, with IC₃ showing the highest level of satisfaction. BL is the budget line.
+    </p>
+
+    <div class="diagram" aria-label="Consumer equilibrium with indifference curves and budget line">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .ic{stroke:#1e3a8a;stroke-width:2.5;fill:none}
+          .bl{stroke:#16a34a;stroke-width:2.5}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .point{fill:#111827}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="60" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <!-- Labels -->
+        <text x="60" y="55" class="label">Y</text>
+        <text x="445" y="430" class="label">X</text>
+
+        <!-- Indifference curves -->
+        <path d="M135 125 C 200 160, 260 215, 320 280" class="ic"/> <!-- IC1 -->
+        <path d="M115 145 C 190 185, 260 240, 345 305" class="ic"/> <!-- IC2 -->
+        <path d="M95 165 C 180 210, 260 270, 370 330" class="ic"/> <!-- IC3 -->
+
+        <text x="320" y="285" class="label">IC₁</text>
+        <text x="345" y="310" class="label">IC₂</text>
+        <text x="370" y="335" class="label">IC₃</text>
+
+        <!-- Budget line -->
+        <line x1="110" y1="120" x2="410" y2="360" class="bl"/>
+        <text x="380" y="180" class="label">BL</text>
+
+        <!-- Equilibrium point -->
+        <circle cx="260" cy="230" r="4" class="point"/>
+        <text x="268" y="225" class="label">E</text>
+
+        <!-- Guides to axes -->
+        <line x1="260" y1="230" x2="260" y2="410" class="guide"/>
+        <line x1="260" y1="230" x2="80"  y2="230" class="guide"/>
+        <text x="255" y="425" class="label">X*</text>
+        <text x="55"  y="235" class="label">Y*</text>
+      </svg>
+      <div class="caption">
+        Fig. — Consumer equilibrium at point E where budget line BL is tangent to the highest attainable indifference curve IC₂, and
+        MRS<sub>xy</sub> = P<sub>x</sub>/P<sub>y</sub>.
+      </div>
+    </div>
+
+    <p>
+      In the diagram, point E represents the consumer’s equilibrium:
+    </p>
+    <ul class="points">
+      <li>At E, the budget line BL is <strong>just tangent</strong> to IC₂.</li>
+      <li>IC₃ lies above BL and is therefore <strong>unattainable</strong> at the given income and prices.</li>
+      <li>All points on IC₁ are attainable but lie on a <strong>lower indifference curve</strong>, giving less satisfaction than E.</li>
+    </ul>
+    <p>
+      Therefore, E is the highest satisfaction point attainable within the budget constraint; the consumer has no incentive
+      to move away from E.
+    </p>
+
+    <!-- STABILITY EXPLANATION -->
+    <p class="section-title">Why is Point of Tangency a Point of Stable Equilibrium?</p>
+    <p>
+      Consider any other affordable point on the budget line, say point A on IC₁ or point B on IC₂ but not at tangency.
+    </p>
+    <ul class="points">
+      <li>
+        At a point like A (on IC₁), the consumer is on a <strong>lower indifference curve</strong> than IC₂ but still
+        spends his entire income. Moving from A to E shifts him to a higher indifference curve, so A cannot be an equilibrium.
+      </li>
+      <li>
+        At a point like B on IC₂ but not at tangency, the <strong>slopes differ</strong>: MRS<sub>xy</sub> ≠ P<sub>x</sub>/P<sub>y</sub>.
+        If MRS<sub>xy</sub> &gt; P<sub>x</sub>/P<sub>y</sub>, the consumer is willing to give up more of Y for an extra unit of X than the
+        market requires, so he will increase X and reduce Y until tangency is reached. Similarly for MRS<sub>xy</sub> &lt; P<sub>x</sub>/P<sub>y</sub>.
+      </li>
+    </ul>
+    <p>
+      Hence, any non-tangency point on the budget line is unstable. <strong>Only at E</strong> is the consumer content to stay, as neither
+      direction of movement along BL raises his satisfaction.
+    </p>
+
+    <!-- ASSUMPTIONS -->
+    <p class="section-title">Assumptions of Consumer Equilibrium under Indifference Curve Analysis</p>
+    <p>
+      The derivation of equilibrium in the indifference curve framework rests on the following assumptions:
+    </p>
+    <ol class="points">
+      <li>
+        <strong>Rationality:</strong> The consumer is rational and aims at <strong>maximising satisfaction</strong> subject to his budget constraint.
+      </li>
+      <li>
+        <strong>Ordinal Utility:</strong> Utility is <strong>ordinal</strong>, not cardinal. The consumer can rank different bundles by preference,
+        but need not assign numerical utility values.
+      </li>
+      <li>
+        <strong>Consistency and Transitivity:</strong> Preferences are consistent over time and transitive. If A is preferred to B and B to C,
+        then A is preferred to C.
+      </li>
+      <li>
+        <strong>Diminishing MRS:</strong> Indifference curves are convex to the origin, reflecting diminishing marginal rate of substitution of X for Y.
+      </li>
+      <li>
+        <strong>Two-Good World:</strong> The analysis usually assumes the consumer allocates income between only two goods X and Y, or between one
+        good and a composite good representing “all other goods”.
+      </li>
+      <li>
+        <strong>Given Prices and Income:</strong> Money income and prices of X and Y are given and constant during the analysis; no saving or borrowing.
+      </li>
+      <li>
+        <strong>Goods are “goods”:</strong> More of each good gives more satisfaction; there are no “bads” in the model.
+      </li>
+      <li>
+        <strong>Continuous Goods:</strong> Goods are divisible so that small adjustments in quantities are possible.
+      </li>
+    </ol>
+
+    <!-- EFFECT OF CHANGES IN INCOME AND PRICES (BRIEF) -->
+    <p class="section-title">Effect of Changes in Income and Prices on Equilibrium (Brief Note)</p>
+    <p class="subheading">1. Change in Money Income</p>
+    <p>
+      When money income changes and prices remain constant, the budget line shifts <strong>parallel</strong> to itself:
+    </p>
+    <ul class="points">
+      <li>Increase in income → budget line shifts outward (to the right), enabling the consumer to reach a <strong>higher indifference curve</strong>.</li>
+      <li>Decrease in income → budget line shifts inward, forcing the consumer onto a <strong>lower indifference curve</strong>.</li>
+    </ul>
+
+    <p class="subheading">2. Change in Price of One Good</p>
+    <p>
+      When the price of one good (say X) changes and income and price of Y remain constant:
+    </p>
+    <ul class="points">
+      <li>Fall in price of X → budget line rotates outward along the X-axis, enabling the consumer to buy more of X; new equilibrium is at a higher IC.</li>
+      <li>Rise in price of X → budget line rotates inward, leading to a new equilibrium with generally lower consumption of X.</li>
+    </ul>
+    <p>
+      These movements of equilibrium points as price varies are later used to derive the <strong>individual demand curve</strong> for X.
+    </p>
+
+    <!-- COMPARISON WITH CARDINAL APPROACH -->
+    <p class="section-title">Comparison with Cardinal Utility Analysis (Very Brief)</p>
+    <p>
+      Under cardinal analysis, consumer equilibrium is expressed by the equi-marginal condition:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      \(\dfrac{MU_x}{P_x} = \dfrac{MU_y}{P_y} = \dots = MU_m\)
+    </p>
+    <p>
+      In indifference curve analysis, the same idea is re-expressed in terms of preferences and prices:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MRS<sub>xy</sub> = \(\dfrac{P_x}{P_y}\)
+    </p>
+    <p>
+      The indifference curve approach is more general and realistic because it does not assume cardinal measurability of utility and constant
+      marginal utility of money.
+    </p>
+
+    <!-- IMPORTANCE -->
+    <p class="section-title">Importance of Indifference Curve Approach to Consumer Equilibrium</p>
+    <p>
+      The indifference curve approach to consumer equilibrium has several important advantages and applications:
+    </p>
+    <div class="importance-box">
+      <strong>1. Realistic Treatment of Utility:</strong><br>
+      It is based on <strong>ordinal utility</strong> and does not require the unrealistic assumption that utility can be measured cardinally.
+      This makes the theory closer to actual consumer behaviour.
+    </div>
+
+    <div class="importance-box">
+      <strong>2. Clear Separation of Effects:</strong><br>
+      It provides a powerful framework for distinguishing between <strong>substitution effect</strong> and <strong>income effect</strong>
+      of a price change, which is not possible in the simple cardinal approach.
+    </div>
+
+    <div class="importance-box">
+      <strong>3. Basis of Modern Demand Theory:</strong><br>
+      The modern theory of demand, including derivation of demand curves, analysis of price effect, income effect and substitution effect,
+      is built upon the indifference curve representation of consumer equilibrium.
+    </div>
+
+    <div class="importance-box">
+      <strong>4. Application in Welfare Economics:</strong><br>
+      Indifference curves are widely used in welfare economics to study changes in consumer welfare, compensating and equivalent variations,
+      and evaluation of taxes and subsidies.
+    </div>
+
+    <div class="importance-box">
+      <strong>5. Graphical Clarity and Exam Relevance:</strong><br>
+      For B.Com students, the IC approach offers a clear and rigorous graphical method to depict equilibrium, which is highly
+      appreciated by examiners when properly labelled and explained.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a full 15-marks answer in Panjab University, you should write:
+      (i) clear meaning of consumer equilibrium,
+      (ii) explanation of indifference map and budget line,
+      (iii) derivation of equilibrium condition MRS<sub>xy</sub> = P<sub>x</sub>/P<sub>y</sub>,
+      (iv) a neat, fully labelled diagram showing tangency,
+      (v) explanation of stability and assumptions,
+      and (vi) a short note on the importance/advantages of the IC approach. End with a compact conclusion.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, <strong>consumer equilibrium under indifference curve analysis</strong> is achieved at the tangency point
+      between the budget line and the highest attainable indifference curve, where the consumer’s subjective marginal rate
+      of substitution equals the objective market price ratio. At this point he maximises satisfaction subject to his income
+      and prices. The indifference curve approach, as presented in the prescribed text by T.R. Jain &amp; V.K. Ohri, provides
+      a logically consistent and empirically more acceptable foundation for the theory of demand and remains a cornerstone of
+      modern microeconomics.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      This answer forms part of a carefully curated set of important questions that have frequently appeared in
+      past university examinations and therefore hold a high probability of reappearing in future assessments.
+      While prepared with academic accuracy and aligned to the prescribed syllabus, these solutions should be
+      treated as high-quality preparation material rather than a guaranteed prediction of any upcoming exam paper.
+    </div>
+
+  </article>
+</div>
+<!-- Book Reference Required — Popup Disclaimer -->
+<div id="bookDisclaimerOverlay" style="
+  position:fixed; inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+">
+  <div id="bookDisclaimerModal" style="
+    max-width:520px; width:90%;
+    background:#fffaf0;
+    border-radius:12px;
+    border:1px solid #fee4a6;
+    box-shadow:0 20px 45px rgba(15,23,42,0.25);
+    padding:20px 20px 16px 20px;
+    position:relative;
+    font-family:Inter,system-ui,Arial;
+  ">
+    <button id="bookDisclaimerClose" aria-label="Close disclaimer" style="
+      position:absolute;
+      top:10px; right:12px;
+      border:none;
+      background:transparent;
+      font-size:20px;
+      color:#7c6f54;
+      cursor:pointer;
+    ">&times;</button>
+
+    <div style="
+      display:inline-block;
+      margin-bottom:8px;
+      font-size:11px;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+      color:#a16207;
+      background:#fef3c7;
+      padding:4px 8px;
+      border-radius:999px;
+      font-weight:600;
+    ">Book Reference Required</div>
+
+    <h3 style="margin:2px 0 8px 0;font-size:17px;color:#8a4f0b;">Additional Study Recommended</h3>
+
+    <p style="margin:0;font-size:14px;line-height:1.7;color:#5a3410;">
+      This question involves advanced concepts and requires deeper understanding. Students must refer to the official
+      Panjab University prescribed textbook,
+      <strong>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</strong>
+      along with these structured notes for complete exam-oriented preparation.
+    </p>
+
+  </div>
+</div>
+
+<script>
+  (function(){
+    var overlay = document.getElementById('bookDisclaimerOverlay');
+    var closeBtn = document.getElementById('bookDisclaimerClose');
+
+    function hidePopup(){
+      if(overlay){
+        overlay.style.opacity = '0';
+        setTimeout(() => { overlay.style.display = 'none'; }, 400);
+      }
+    }
+
+    // Close when click "X"
+    if(closeBtn){
+      closeBtn.addEventListener('click', hidePopup);
+    }
+
+    // Close on click outside
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay){
+        hidePopup();
+      }
+    });
+
+    // Auto hide after 10 seconds
+    setTimeout(hidePopup, 10000);
+  })();
+</script>
+</body>
+</html>

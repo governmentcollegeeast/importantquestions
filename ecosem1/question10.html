@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q10 — Consumer Equilibrium (Cardinal Utility Analysis)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:17px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:20px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:center;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 10 — Consumer Equilibrium (Cardinal Utility Analysis)</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In microeconomic theory, the central problem of the consumer is how to allocate his <strong>limited money income</strong>
+      among various commodities in such a way that his <strong>total satisfaction (utility) is maximised</strong>. The solution
+      to this problem is expressed by the concept of <strong>consumer equilibrium</strong>. In the <em>cardinal utility analysis</em>
+      (Marshall–Jevons approach), it is assumed that utility can be measured in numerical units, called <em>utils</em>, and that
+      the consumer behaves rationally.
+    </p>
+    <p>
+      In this framework, consumer equilibrium is derived using the <strong>Law of Diminishing Marginal Utility</strong> and the
+      <strong>Law of Equi-marginal Utility</strong>. The discussion below explains (i) the meaning of consumer equilibrium,
+      (ii) conditions of equilibrium under cardinal analysis, (iii) illustration with schedule and diagram, (iv) assumptions,
+      (v) critical evaluation, and (vi) importance of the concept, in a manner consistent with the treatment in
+      <strong>T.R. Jain &amp; V.K. Ohri, Microeconomics (B.Com Semester I)</strong>.
+    </p>
+
+    <!-- MEANING -->
+    <p class="section-title">Meaning of Consumer Equilibrium</p>
+    <p>
+      A consumer is said to be in <strong>equilibrium</strong> when he has reached such a position that he has <strong>no tendency
+      to rearrange his expenditure</strong> on the various commodities, given the prices of goods and his money income.
+      In equilibrium:
+    </p>
+    <ul class="points">
+      <li>The consumer is obtaining the <strong>maximum possible total satisfaction</strong> from the goods he purchases.</li>
+      <li>He has <strong>fully adjusted his budget</strong> and has no incentive to shift a rupee of expenditure from one good to another.</li>
+      <li>Any change in his present pattern of consumption would <strong>reduce</strong> his total utility.</li>
+    </ul>
+
+    <!-- BASIC CONCEPTS -->
+    <p class="section-title">Basic Concepts: Total Utility, Marginal Utility and Marginal Utility of Money</p>
+    <p>
+      Before deriving equilibrium, the cardinal approach makes use of the following core concepts:
+    </p>
+    <ul class="points">
+      <li>
+        <strong>Total Utility (TU):</strong>
+        The total satisfaction a consumer derives from consuming all units of a commodity.
+      </li>
+      <li>
+        <strong>Marginal Utility (MU):</strong>
+        The additional satisfaction obtained by consuming one more unit of a commodity:
+        <span style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:4px 8px;border-radius:6px;display:inline-block;margin-top:4px;">
+          MU<sub>n</sub> = TU<sub>n</sub> − TU<sub>n−1</sub>
+        </span>
+      </li>
+      <li>
+        <strong>Marginal Utility of Money (MU<sub>m</sub>):</strong>
+        The additional satisfaction obtained from spending one more rupee. In the simple Marshallian model, it is assumed
+        to be <strong>constant</strong> over the relevant range of income.
+      </li>
+    </ul>
+
+    <div class="boxed">
+      <strong>Key Idea:</strong>  
+      For a utility-maximising consumer under cardinal analysis, equilibrium is achieved when the <strong>marginal utility of
+      the last rupee spent on each commodity is equal</strong> and equals the marginal utility of money.
+    </div>
+
+    <!-- I. SINGLE COMMODITY CASE -->
+    <p class="section-title">I. Consumer Equilibrium: Single Commodity Case</p>
+    <p>
+      To begin with, assume that the consumer spends his income only on one commodity X, whose price is P<sub>x</sub> and
+      whose marginal utility schedule is known. He will decide how many units of X to buy.
+    </p>
+
+    <p class="subheading">Condition of Equilibrium (Single Commodity)</p>
+    <p>
+      Consumer equilibrium in respect of commodity X is reached when:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MU<sub>x</sub> = P<sub>x</sub> &times; MU<sub>m</sub>
+    </p>
+    <p>
+      If we take MU in “utils” and assume <strong>MU<sub>m</sub> = 1</strong> util per rupee (for simplicity), then equilibrium
+      condition reduces to:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MU<sub>x</sub> = P<sub>x</sub>
+    </p>
+    <p>
+      A rational consumer will keep buying additional units of X as long as MU<sub>x</sub> &gt; P<sub>x</sub>. Once
+      MU<sub>x</sub> falls to P<sub>x</sub>, he stops buying further units because the last unit’s utility is just equal
+      to the sacrifice in terms of money.
+    </p>
+
+    <p class="subheading">Illustrative Schedule (Single Commodity)</p>
+    <p>
+      Suppose the marginal utility of successive units of X and its price are as follows:
+    </p>
+
+    <table aria-label="Single commodity consumer equilibrium schedule">
+      <thead>
+        <tr>
+          <th>Units of X</th>
+          <th>MU<sub>x</sub> (utils)</th>
+          <th>Price P<sub>x</sub> (₹)</th>
+          <th>Decision</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>16</td><td>10</td><td>MU &gt; P: Buy</td></tr>
+        <tr><td>2</td><td>13</td><td>10</td><td>MU &gt; P: Buy</td></tr>
+        <tr><td>3</td><td>10</td><td>10</td><td>MU = P: Equilibrium reached</td></tr>
+        <tr><td>4</td><td>7</td><td>10</td><td>MU &lt; P: Do not buy</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      The consumer maximises his satisfaction by buying 3 units of X because at that level MU<sub>x</sub> = P<sub>x</sub>.
+      Buying more (4th unit) would reduce overall satisfaction since the additional utility is less than the price paid.
+    </p>
+
+    <!-- II. TWO-COMMODITY CASE -->
+    <p class="section-title">II. Consumer Equilibrium: Two-Commodity Case</p>
+    <p>
+      In reality, a consumer buys many goods. For clarity, consider a two-good world: commodities X and Y, with prices
+      P<sub>x</sub> and P<sub>y</sub>. The consumer has a given money income M. Cardinal analysis states that the consumer
+      reaches equilibrium when his limited income is so allocated between X and Y that <strong>no reallocation of expenditure
+      can increase his total utility</strong>.
+    </p>
+
+    <p class="subheading">Equilibrium Condition (Two Commodities)</p>
+    <p>
+      The condition for consumer equilibrium is that the <strong>marginal utility per rupee spent</strong> on each commodity
+      must be equal:
+    </p>
+
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MU<sub>x</sub> / P<sub>x</sub> = MU<sub>y</sub> / P<sub>y</sub> = MU<sub>m</sub>
+    </p>
+
+    <p>
+      If MU<sub>x</sub>/P<sub>x</sub> &gt; MU<sub>y</sub>/P<sub>y</sub>, then 1 rupee spent on X gives more satisfaction than
+      1 rupee spent on Y. The consumer should shift expenditure from Y to X, thus increasing total utility. This process continues
+      until equality is achieved.
+    </p>
+
+    <p class="subheading">Illustrative Numerical Example</p>
+    <p>
+      Assume that the prices of X and Y are each ₹2 per unit. The marginal utilities (in utils) are:
+    </p>
+
+    <table aria-label="Two-commodity consumer equilibrium schedule">
+      <thead>
+        <tr>
+          <th>Units</th>
+          <th>MU<sub>x</sub></th>
+          <th>MU<sub>x</sub>/P<sub>x</sub></th>
+          <th>MU<sub>y</sub></th>
+          <th>MU<sub>y</sub>/P<sub>y</sub></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>20</td><td>10</td><td>18</td><td>9</td></tr>
+        <tr><td>2</td><td>16</td><td>8</td><td>14</td><td>7</td></tr>
+        <tr><td>3</td><td>12</td><td>6</td><td>10</td><td>5</td></tr>
+        <tr><td>4</td><td>8</td><td>4</td><td>7</td><td>3.5</td></tr>
+        <tr><td>5</td><td>6</td><td>3</td><td>5</td><td>2.5</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Suppose the consumer has ₹12 to spend. One possible equilibrium combination is 3 units of X and 3 units of Y (total
+      expenditure = 6 units × ₹2 = ₹12). At 3 units of each:
+    </p>
+    <ul class="points">
+      <li>MU<sub>x</sub>/P<sub>x</sub> = 12 / 2 = 6</li>
+      <li>MU<sub>y</sub>/P<sub>y</sub> = 10 / 2 = 5</li>
+    </ul>
+    <p>
+      If the consumer slightly adjusts quantities (e.g., 4X, 2Y or 2X, 4Y) and compares the total utility, he eventually arrives
+      at a combination where MU<sub>x</sub>/P<sub>x</sub> and MU<sub>y</sub>/P<sub>y</sub> are approximately equal given his budget.
+      At that point, shifting one rupee from one good to another would not increase total utility; equilibrium is achieved.
+    </p>
+
+    <!-- GENERAL CASE -->
+    <p class="section-title">III. Consumer Equilibrium with Many Commodities</p>
+    <p>
+      When the consumer spends his income on many commodities X, Y, Z, … the condition of consumer equilibrium generalises to:
+    </p>
+
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MU<sub>x</sub>/P<sub>x</sub> = MU<sub>y</sub>/P<sub>y</sub> = MU<sub>z</sub>/P<sub>z</sub> = … = MU<sub>m</sub>
+    </p>
+
+    <p>
+      subject to the budget constraint:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      P<sub>x</sub>Q<sub>x</sub> + P<sub>y</sub>Q<sub>y</sub> + P<sub>z</sub>Q<sub>z</sub> + … = M
+    </p>
+    <p>
+      This condition reflects the <strong>Law of Equi-marginal Utility</strong>: the last rupee spent on each good yields
+      the same marginal utility. If this were not so, the consumer could rearrange his spending and increase total satisfaction.
+    </p>
+
+    <!-- DIAGRAM -->
+    <p class="section-title">Diagrammatic Explanation (Two-Commodity Case)</p>
+    <p>
+      The equi-marginal condition can also be explained with the help of marginal utility per rupee curves. On the X-axis we
+      measure the quantity of each commodity; on the Y-axis we measure MU per rupee. Equilibrium occurs where the MU/P curves of
+      the two goods intersect, given their prices.
+    </p>
+
+    <div class="diagram" aria-label="Consumer equilibrium under cardinal utility analysis">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .muxp{stroke:#1e3a8a;stroke-width:3;fill:none}
+          .muyp{stroke:#dc2626;stroke-width:3;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:5 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+        </style>
+
+        <!-- Axes (combined for simplicity) -->
+        <line x1="80" y1="70" x2="80" y2="260" class="axis"/>
+        <line x1="80" y1="260" x2="430" y2="260" class="axis"/>
+        <text x="50" y="65" class="label">MU per ₹</text>
+        <text x="410" y="278" class="label">Quantity</text>
+
+        <!-- MUx/P curve -->
+        <path d="M90 90 C 150 130, 230 180, 410 240" class="muxp"/>
+
+        <!-- MUy/P curve -->
+        <path d="M90 230 C 160 190, 240 150, 410 110" class="muyp"/>
+
+        <!-- Point of intersection -->
+        <line x1="250" y1="160" x2="250" y2="260" class="guide"/>
+        <circle cx="250" cy="160" r="4" fill="#111827"/>
+        <text x="258" y="155" class="label">E</text>
+        <text x="120" y="100" class="label">MU<sub>x</sub>/P<sub>x</sub></text>
+        <text x="295" y="120" class="label">MU<sub>y</sub>/P<sub>y</sub></text>
+      </svg>
+      <div class="caption">
+        Fig. — Consumer equilibrium where MU<sub>x</sub>/P<sub>x</sub> = MU<sub>y</sub>/P<sub>y</sub>. At point E the marginal utility per rupee
+        is equal for both goods; any deviation reduces total satisfaction.
+      </div>
+    </div>
+
+    <!-- ASSUMPTIONS -->
+    <p class="section-title">IV. Assumptions of Consumer Equilibrium under Cardinal Analysis</p>
+    <p>
+      The above derivation is based on several simplifying assumptions:
+    </p>
+    <ol class="points">
+      <li><strong>Cardinal measurability of utility:</strong> Utility can be measured and compared in numerical units.</li>
+      <li><strong>Rational consumer:</strong> The consumer behaves rationally and aims at maximum satisfaction.</li>
+      <li><strong>Diminishing marginal utility:</strong> The marginal utility of each good diminishes as its consumption increases.</li>
+      <li><strong>Constant marginal utility of money:</strong> MU of money remains constant over the relevant income range.</li>
+      <li><strong>Given prices and income:</strong> Prices of all goods and the money income of the consumer are given and constant.</li>
+      <li><strong>Divisibility of goods:</strong> Commodities are divisible so that consumption can be adjusted in small units.</li>
+      <li><strong>Independent utilities:</strong> Utility derived from one commodity is independent of the quantity consumed of other goods.</li>
+      <li><strong>No saving or borrowing:</strong> The entire income is spent on consumption in the current period.</li>
+    </ol>
+
+    <!-- CRITICAL EVALUATION -->
+    <p class="section-title">V. Critical Evaluation of Cardinal Consumer Equilibrium</p>
+    <p>
+      While the cardinal analysis of consumer equilibrium is simple and intuitive, modern economists have raised several objections:
+    </p>
+    <ol class="points">
+      <li>
+        <strong>Utility is not cardinally measurable:</strong>
+        It is unrealistic to assume that consumers can measure satisfaction in absolute units (utils). Hicksian indifference curve
+        analysis treats utility as <strong>ordinal</strong>, requiring only ranking of bundles.
+      </li>
+      <li>
+        <strong>Marginal utility of money is not constant:</strong>
+        As a consumer spends more of his income, his remaining money becomes scarce and more valuable; MU of money should rise, not remain constant.
+      </li>
+      <li>
+        <strong>Independence of utilities is doubtful:</strong>
+        Many goods are substitutes or complements. Utility from one good depends on consumption of others (e.g., tea and sugar).
+      </li>
+      <li>
+        <strong>Practical difficulty in marginal calculations:</strong>
+        Ordinary consumers do not consciously compute MU<sub>x</sub>/P<sub>x</sub> for every good. Their behaviour is more rule-of-thumb based.
+      </li>
+      <li>
+        <strong>Neglect of income and substitution effects separation:</strong>
+        The cardinal model does not analytically separate substitution and income effects of price changes, which is a strength of indifference curve analysis.
+      </li>
+      <li>
+        <strong>Static framework:</strong>
+        The analysis assumes a static world with no changes in tastes, expectations, or prices during the adjustment process.
+      </li>
+    </ol>
+
+    <div class="boxed">
+      <strong>Balanced Appraisal:</strong>  
+      Despite these limitations, the cardinal approach to consumer equilibrium provides a clear and straightforward explanation
+      of how a rational consumer would allocate income so that the “last rupee spent” on each good yields the same marginal utility.
+      It is pedagogically very useful at the introductory level and remains part of the B.Com syllabus.
+    </div>
+
+    <!-- IMPORTANCE -->
+    <p class="section-title">VI. Importance and Applications of the Concept of Consumer Equilibrium</p>
+    <p>
+      The concept of consumer equilibrium under cardinal analysis is important for several reasons:
+    </p>
+
+    <div class="importance-box">
+      <strong>1. Foundation of the Law of Demand</strong><br>
+      Consumer equilibrium, combined with the Law of Diminishing Marginal Utility, leads directly to a
+      <strong>downward-sloping demand curve</strong>. When price falls, MU per rupee from a commodity rises, disturbing equilibrium.
+      The consumer buys more of that commodity until MU per rupee is restored to equality with other goods. Hence, equilibrium analysis
+      explains why quantity demanded varies inversely with price.
+    </div>
+
+    <div class="importance-box">
+      <strong>2. Basis of the Equi-marginal Principle</strong><br>
+      The equi-marginal rule, which guides optimal allocation of any scarce resource among competing uses, is rooted in the concept of
+      consumer equilibrium. This principle is widely used in production, public finance, time allocation and investment decisions.
+    </div>
+
+    <div class="importance-box">
+      <strong>3. Helpful in Welfare Comparisons</strong><br>
+      Cardinal utility and consumer equilibrium concepts provide a simple framework to discuss the effect of taxes, subsidies or price
+      controls on consumer welfare, even though modern welfare economics uses more refined tools.
+    </div>
+
+    <div class="importance-box">
+      <strong>4. Basis for Demand Forecasting and Market Analysis</strong><br>
+      Understanding consumer equilibrium helps firms judge how changes in price and income will affect the demand for their products and
+      for related goods, thereby supporting pricing and marketing strategies.
+    </div>
+
+    <div class="importance-box">
+      <strong>5. Pedagogical Importance</strong><br>
+      For B.Com students, the cardinal approach offers a clear step-by-step logic of how utility, marginal utility, and price interact
+      to determine equilibrium. It provides a conceptual stepping stone for the more advanced indifference curve analysis which follows
+      in the syllabus.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a 15-marks answer in Panjab University, structure your answer as:
+      (i) clear meaning of consumer equilibrium,
+      (ii) brief recap of TU, MU and MU of money,
+      (iii) equilibrium condition for one commodity,
+      (iv) equilibrium condition for two/many commodities with MU/P formulae,
+      (v) illustrative schedule and labelled diagram,
+      (vi) assumptions,
+      (vii) critical evaluation,
+      and (viii) importance and applications, followed by a neat conclusion. This format is highly scoring.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, <strong>consumer equilibrium under cardinal utility analysis</strong> explains how a rational consumer, having
+      limited income and facing given prices, distributes his expenditure among various goods so as to maximise total satisfaction.
+      The equi-marginal condition MU<sub>x</sub>/P<sub>x</sub> = MU<sub>y</sub>/P<sub>y</sub> = … = MU<sub>m</sub> summarises this
+      optimisation behaviour. Although the assumptions of cardinal measurability and constant marginal utility of money may not be
+      fully realistic, the framework remains extremely useful for developing economic intuition and is of high examination importance
+      for B.Com Semester I under Panjab University.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      This answer forms part of a carefully curated set of important questions that have frequently appeared in
+      past university examinations and therefore hold a high probability of reappearing in future assessments.
+      While prepared with academic accuracy and aligned to the prescribed syllabus, these solutions should be
+      treated as high-quality preparation material rather than a guaranteed prediction of any upcoming exam paper.
+    </div>
+
+  </article>
+</div>
+TOP 10 SURE-SHOT QUESTIONS (PU Microeconomics)
+
+1️⃣ Law of Demand — Causes + Exceptions (Diagram compulsory)
+2️⃣ Methods of Measuring Price Elasticity of Demand (Any 3–5 with diagrams)
+3️⃣ Indifference Curve Analysis — Properties + Consumer Equilibrium (Diagram compulsory)
+4️⃣ Price Effect = Income Effect + Substitution Effect (IC diagram special)
+5️⃣ Law of Diminishing Marginal Utility — Assumptions + Importance + Criticism
+6️⃣ Revenue Curves (TR, AR, MR) — Relationship under different markets
+7️⃣ Law of Variable Proportions / Returns to a Factor (Diagram compulsory)
+8️⃣ Short-run & Long-run Cost Curves — Shapes + Relationships
+9️⃣ Perfect Competition — Short-run & Long-run Equilibrium of Firm
+🔟 Monopoly Market — Price & Output Determination with Diagram
+</body>
+</html>

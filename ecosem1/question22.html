@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q22 — Relation between AC and MC & U-shape of LAC</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:18px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:18px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:center;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 22 — What is the Relation between AC and MC? Why is LAC U-shaped?</h1>
+      <div class="meta">
+        Government College Ludhiana East • Micro Economics — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      In the theory of the firm, the concepts of <strong>Average Cost (AC)</strong> and <strong>Marginal Cost (MC)</strong>
+      occupy a central position in explaining a firm’s output and pricing decisions. The behaviour of AC and MC in the
+      <strong>short run</strong> and the shape of the <strong>Long-run Average Cost (LAC)</strong> curve in the
+      <strong>long run</strong> together form the backbone of the traditional cost theory as prescribed in
+      <em>Microeconomics</em> by <strong>T.R. Jain &amp; V.K. Ohri</strong> for B.Com Semester I (Panjab University).
+    </p>
+    <p>
+      A complete answer to this question requires: (i) precise definitions of AC and MC, (ii) a clear explanation of the
+      mathematical and graphical relation between AC and MC, and (iii) an analytical discussion of why the LAC curve is
+      usually <strong>U-shaped</strong>, supported by appropriate diagrams.
+    </p>
+
+    <!-- PART I: AC & MC DEFINITIONS -->
+    <p class="section-title">I. Meaning of Average Cost (AC) and Marginal Cost (MC)</p>
+
+    <p class="subheading">1. Average Cost (AC) / Average Total Cost (ATC)</p>
+    <p>
+      <strong>Average Cost</strong> (also called <strong>Average Total Cost</strong>) is the <strong>cost per unit of
+      output</strong>. It is obtained by dividing total cost by the quantity of output produced:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AC = TC / Q
+    </p>
+    <p>
+      Since total cost (TC) is the sum of <strong>Total Fixed Cost (TFC)</strong> and <strong>Total Variable Cost (TVC)</strong>,
+      we have:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      AC = (TFC + TVC) / Q = AFC + AVC
+    </p>
+    <p>
+      where AFC is average fixed cost and AVC is average variable cost. In the traditional theory, the AC curve is
+      <strong>U-shaped</strong> due to the combined effect of falling AFC and the U-shaped AVC.
+    </p>
+
+    <p class="subheading">2. Marginal Cost (MC)</p>
+    <p>
+      <strong>Marginal Cost</strong> is the <strong>addition to total cost</strong> when one extra unit of output is
+      produced:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MC = ΔTC / ΔQ
+    </p>
+    <p>
+      Since TFC does not change with output, MC is also equal to the change in total variable cost:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MC = ΔTVC / ΔQ
+    </p>
+    <p>
+      In the traditional analysis, the MC curve is also <strong>U-shaped</strong> — it falls at first due to increasing
+      marginal returns and then rises due to diminishing marginal returns (Law of Variable Proportions).
+    </p>
+
+    <!-- PART II: RELATION BETWEEN AC & MC -->
+    <p class="section-title">II. Relation between AC and MC</p>
+    <p>
+      The relation between AC and MC is both <strong>mathematical</strong> and <strong>graphical</strong>. It can be
+      explained with the help of a numerical schedule, a diagram, and intuitive reasoning.
+    </p>
+
+    <p class="subheading">1. Numerical Illustration</p>
+    <p>
+      Consider the following hypothetical cost schedule for a firm in the short run:
+    </p>
+
+    <table aria-label="Illustrative schedule showing relation between AC and MC">
+      <thead>
+        <tr>
+          <th>Output<br>(Q)</th>
+          <th>Total Cost<br>(TC)</th>
+          <th>Average Cost<br>(AC = TC/Q)</th>
+          <th>Marginal Cost<br>(MC = ΔTC/ΔQ)</th>
+          <th>Behaviour of AC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>60</td><td>60.0</td><td>–</td><td>–</td>
+        </tr>
+        <tr>
+          <td>2</td><td>110</td><td>55.0</td><td>50</td><td>AC falling (MC &lt; AC)</td>
+        </tr>
+        <tr>
+          <td>3</td><td>150</td><td>50.0</td><td>40</td><td>AC falling (MC &lt; AC)</td>
+        </tr>
+        <tr>
+          <td>4</td><td>190</td><td>47.5</td><td>40</td><td>AC still falling (MC &lt; AC)</td>
+        </tr>
+        <tr>
+          <td>5</td><td>240</td><td>48.0</td><td>50</td><td>AC rising (MC &gt; AC)</td>
+        </tr>
+        <tr>
+          <td>6</td><td>300</td><td>50.0</td><td>60</td><td>AC rising (MC &gt; AC)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      From the schedule we observe:
+    </p>
+    <ul class="points">
+      <li>When <strong>MC is below AC</strong> (e.g. at Q = 2, 3, 4), AC <strong>falls</strong>.</li>
+      <li>When <strong>MC is above AC</strong> (e.g. at Q = 5, 6), AC <strong>rises</strong>.</li>
+      <li>When <strong>MC equals AC</strong>, AC is at its <strong>minimum</strong> (this would occur at some Q between 4 and 5 in the example).</li>
+    </ul>
+
+    <div class="boxed">
+      Thus, the fundamental relation is:<br>
+      (i) When MC &lt; AC, AC falls.<br>
+      (ii) When MC &gt; AC, AC rises.<br>
+      (iii) When MC = AC, AC is minimum.
+    </div>
+
+    <p class="subheading">2. Graphical Relation between AC and MC</p>
+    <p>
+      This relation can be shown through the traditional U-shaped AC and MC curves:
+    </p>
+
+    <div class="diagram" aria-label="Relation between AC and MC">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .curve-ac{stroke:#1e3a8a;stroke-width:2.4;fill:none}
+          .curve-mc{stroke:#111827;stroke-width:2.4;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- AC curve -->
+        <path d="M90 300 C 160 250, 250 235, 340 250 C 390 265, 430 295, 455 330" class="curve-ac"/>
+
+        <!-- MC curve -->
+        <path d="M110 340 C 170 270, 235 240, 295 235 C 335 235, 380 245, 420 275 C 440 290, 455 310, 465 335" class="curve-mc"/>
+
+        <!-- Minimum point of AC -->
+        <line x1="295" y1="235" x2="295" y2="410" class="guide"/>
+        <circle cx="295" cy="235" r="4" fill="#111827"/>
+
+        <!-- Labels -->
+        <text x="430" y="290" class="label small">AC</text>
+        <text x="415" y="250" class="label small">MC</text>
+        <text x="289" y="430" class="label small">Q*</text>
+        <text x="305" y="228" class="label small">MC = AC (min AC)</text>
+      </svg>
+      <div class="caption">
+        Fig. 1 — Relation between AC and MC: MC cuts AC at the minimum point of AC. When MC lies
+        below AC, AC falls; when MC lies above AC, AC rises.
+      </div>
+    </div>
+
+    <p class="subheading">3. Intuitive Explanation of the AC–MC Relation</p>
+    <p>
+      The relation between AC and MC is analogous to the relation between an average and a marginal (or incremental)
+      magnitude in arithmetic:
+    </p>
+    <ul class="points">
+      <li>
+        If the marks obtained in the last paper (marginal marks) are <strong>more</strong> than the average marks
+        so far, the new average marks will <strong>rise</strong>.
+      </li>
+      <li>
+        If the marks obtained in the last paper are <strong>less</strong> than the average marks so far, the new
+        average will <strong>fall</strong>.
+      </li>
+      <li>
+        If the marks obtained in the last paper are <strong>equal</strong> to the existing average, the average
+        will remain <strong>unchanged</strong> and will be at its turning point.
+      </li>
+    </ul>
+    <p>
+      Exactly in the same way, in cost analysis:
+    </p>
+    <ul class="points">
+      <li>
+        When the cost of producing an extra unit (MC) is <strong>less</strong> than the average cost, it pulls the
+        average cost downwards.
+      </li>
+      <li>
+        When MC is <strong>greater</strong> than AC, it pushes the average cost upwards.
+      </li>
+      <li>
+        When MC <strong>equals</strong> AC, AC is at its <strong>minimum</strong>; before this point MC lies below AC,
+        and beyond this point MC lies above AC.
+      </li>
+    </ul>
+
+    <div class="boxed">
+      Therefore, the MC curve necessarily <strong>cuts the AC curve at its minimum point</strong>. This is a standard,
+      universal relationship and is frequently used in equilibrium analysis of the firm under different market forms.
+    </div>
+
+    <!-- PART III: WHY LAC IS U-SHAPED -->
+    <p class="section-title">III. Why is the Long-run Average Cost (LAC) Curve U-shaped?</p>
+    <p>
+      In the <strong>long run</strong>, all factors of production are variable and the firm can adjust its plant size.
+      The <strong>Long-run Average Cost (LAC)</strong> curve shows the minimum average cost of producing each level of
+      output when the firm is free to choose the most suitable scale of plant.
+    </p>
+
+    <p class="subheading">1. LAC as an Envelope of Short-run AC Curves</p>
+    <p>
+      The traditional theory (followed in T.R. Jain &amp; V.K. Ohri) assumes that the firm has a set of alternative
+      plant sizes, each with its own <strong>Short-run Average Cost (SAC)</strong> curve, all U-shaped. For every level
+      of output, the firm chooses the plant that gives the <strong>lowest possible AC</strong>. The locus of these
+      minimum points forms the <strong>LAC curve</strong>.
+    </p>
+    <p>
+      Thus:
+    </p>
+    <ul class="points">
+      <li>LAC is the <strong>“envelope”</strong> curve tangential to each SAC curve.</li>
+      <li>
+        For a low output, a <strong>small plant (SAC₁)</strong> is optimal; for a medium output, a
+        <strong>medium plant (SAC₂)</strong> is best; for a large output, a <strong>large plant (SAC₃)</strong> is optimal.
+      </li>
+    </ul>
+
+    <div class="diagram" aria-label="LAC as envelope of SAC curves">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .sac{stroke:#9ca3af;stroke-width:1.7;fill:none}
+          .lac{stroke:#1e3a8a;stroke-width:2.7;fill:none}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- Short-run AC curves (SAC1, SAC2, SAC3) -->
+        <path d="M120 330 C 160 260, 210 240, 260 260 C 300 280, 330 315, 350 350" class="sac"/>
+        <path d="M160 340 C 210 270, 270 245, 330 260 C 380 280, 410 315, 430 350" class="sac"/>
+        <path d="M200 350 C 260 280, 320 255, 380 270 C 420 285, 445 315, 455 345" class="sac"/>
+
+        <!-- LAC envelope -->
+        <path d="M130 320 C 190 260, 260 235, 340 245 C 390 255, 425 280, 450 305" class="lac"/>
+
+        <!-- Labels -->
+        <text x="240" y="260" class="label small">SAC₁</text>
+        <text x="300" y="272" class="label small">SAC₂</text>
+        <text x="360" y="285" class="label small">SAC₃</text>
+        <text x="350" y="240" class="label small">LAC</text>
+      </svg>
+      <div class="caption">
+        Fig. 2 — LAC as Envelope of SAC Curves: For each output level, LAC shows the minimum
+        possible average cost when the firm can choose the most suitable plant size.
+      </div>
+    </div>
+
+    <p class="subheading">2. U-shape of LAC: Role of Economies and Diseconomies of Scale</p>
+    <p>
+      The <strong>U-shape</strong> of the LAC curve is explained by the interaction of
+      <strong>economies of scale</strong> and <strong>diseconomies of scale</strong> as the firm expands its scale of
+      operations.
+    </p>
+
+    <p class="subheading">A. Falling Portion of LAC: Economies of Scale</p>
+    <p>
+      In the initial range of output, as the firm increases its scale, it enjoys various <strong>internal and external
+      economies</strong> of scale:
+    </p>
+    <ul class="points">
+      <li><strong>Technical economies:</strong> use of larger and more efficient machinery, better utilisation of fixed plant.</li>
+      <li><strong>Managerial economies:</strong> specialisation of managerial functions, improved supervision.</li>
+      <li><strong>Marketing economies:</strong> bulk buying and selling, spreading advertising cost over more units.</li>
+      <li><strong>Financial economies:</strong> easier and cheaper access to finance.</li>
+      <li><strong>Risk-bearing economies:</strong> diversification of products and markets.</li>
+    </ul>
+    <p>
+      Due to these economies, <strong>long-run average cost falls</strong> as output increases. This gives the downward
+      sloping part of the LAC curve.
+    </p>
+
+    <p class="subheading">B. Flat Portion of LAC: Constant Returns to Scale</p>
+    <p>
+      Over some intermediate range of output, economies of scale may be <strong>exhausted</strong>, but diseconomies
+      have not yet started. In this range:
+    </p>
+    <ul class="points">
+      <li>Increasing scale neither reduces nor increases average cost significantly.</li>
+      <li>The firm experiences <strong>constant returns to scale</strong>.</li>
+      <li>LAC is approximately <strong>flat</strong> or gently sloping.</li>
+    </ul>
+    <p>
+      This region is often called the <strong>range of constant cost</strong> in the long run.
+    </p>
+
+    <p class="subheading">C. Rising Portion of LAC: Diseconomies of Scale</p>
+    <p>
+      Beyond a certain size, further expansion of the firm gives rise to <strong>diseconomies of scale</strong>:
+    </p>
+    <ul class="points">
+      <li><strong>Managerial difficulties:</strong> problems of coordination and control in a very large firm.</li>
+      <li><strong>Communication delays:</strong> complex hierarchical structure slows down decisions.</li>
+      <li><strong>Labour problems:</strong> reduced personal contact, low morale, possible industrial disputes.</li>
+      <li><strong>Over-burdened infrastructure:</strong> congestion, higher transport and storage costs.</li>
+    </ul>
+    <p>
+      When diseconomies of scale outweigh remaining economies, <strong>LAC begins to rise</strong>. This gives the
+      upward sloping part of the U-shaped LAC curve.
+    </p>
+
+    <div class="diagram" aria-label="U-shaped LAC curve with economies and diseconomies of scale">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .lac{stroke:#1e3a8a;stroke-width:2.6;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:4 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+          .small{font-size:12px}
+        </style>
+
+        <!-- Axes -->
+        <line x1="80" y1="70" x2="80" y2="410" class="axis"/>
+        <line x1="80" y1="410" x2="460" y2="410" class="axis"/>
+
+        <text x="55" y="65" class="label small">Cost</text>
+        <text x="440" y="430" class="label small">Output (Q)</text>
+
+        <!-- LAC curve -->
+        <path d="M100 260 C 160 210, 240 190, 310 200 C 360 210, 410 240, 445 280" class="lac"/>
+
+        <!-- Minimum point -->
+        <circle cx="280" cy="195" r="4" fill="#111827"/>
+        <line x1="280" y1="195" x2="280" y2="410" class="guide"/>
+
+        <!-- Labels -->
+        <text x="420" y="240" class="label small">LAC</text>
+        <text x="285" y="188" class="label small">Minimum LAC</text>
+        <text x="273" y="430" class="label small">Q*</text>
+
+        <text x="120" y="270" class="label small">Economies of Scale</text>
+        <text x="340" y="270" class="label small">Diseconomies of Scale</text>
+      </svg>
+      <div class="caption">
+        Fig. 3 — U-shaped LAC Curve: Falling part due to economies of scale; minimum point at optimum
+        scale Q*; rising part due to diseconomies of scale.
+      </div>
+    </div>
+
+    <div class="boxed">
+      <strong>Conclusion on LAC:</strong><br>
+      LAC is U-shaped because at low levels of output, economies of scale dominate; at intermediate levels,
+      economies and diseconomies balance; and at high levels of output, diseconomies dominate. The lowest point of
+      LAC corresponds to the <strong>optimum size of the firm</strong> in the long run.
+    </div>
+
+    <!-- PART IV: SUMMARY -->
+    <p class="section-title">IV. Combined Summary: AC–MC Relation and U-shape of LAC</p>
+    <ul class="points">
+      <li>
+        In the short run, <strong>AC</strong> is the cost per unit and <strong>MC</strong> is the cost of an additional
+        unit. Both curves are U-shaped due to the law of variable proportions.
+      </li>
+      <li>
+        The relation between AC and MC is governed by a general average–marginal principle: when <strong>MC &lt; AC</strong>,
+        AC falls; when <strong>MC &gt; AC</strong>, AC rises; and when <strong>MC = AC</strong>, AC is minimum. Hence,
+        the MC curve <strong>must cut</strong> the AC curve at its minimum point.
+      </li>
+      <li>
+        In the long run, the <strong>LAC</strong> curve is the envelope of a family of short-run AC curves, and its
+        U-shape reflects <strong>economies and diseconomies of scale</strong>. The falling part shows increasing returns
+        to scale; the flat portion shows constant returns to scale; the rising part shows decreasing returns to scale.
+      </li>
+    </ul>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip (for 15 Marks):</strong>
+      To secure full marks in Panjab University B.Com (Sem I), structure your answer as follows: (i) define AC and MC
+      with formulae; (ii) give a small numerical table showing the AC–MC relation; (iii) draw a neat diagram showing
+      AC and MC with MC cutting AC at its minimum point; (iv) define LAC and explain it as an envelope of SAC curves
+      with a second diagram; (v) analytically explain the U-shape of LAC using economies and diseconomies of scale; and
+      (vi) conclude with a short summary. This systematic pattern closely matches the expectations of university examiners.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To conclude, the <strong>relation between AC and MC</strong> is a fundamental tool of microeconomic analysis.
+      Marginal cost governs the movement of average cost and determines the firm’s equilibrium output under different
+      market structures. The <strong>U-shaped LAC curve</strong> summarises the long-run cost behaviour of the firm
+      when scale of operations can be varied freely. Together, these concepts provide a complete and coherent picture
+      of cost in the short and long run as presented in the traditional cost theory of your prescribed text by
+      T.R. Jain &amp; V.K. Ohri.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      These notes form part of a carefully curated set of important questions which have frequently appeared in
+      past university examinations and therefore carry a high probability of being reflected, in whole or in part,
+      in future question papers. However, they are intended as high-quality academic support material only and
+      should not be treated as a guarantee or assurance of any specific questions being asked in forthcoming exams.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>

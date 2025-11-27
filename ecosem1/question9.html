@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Q9 — Law of Equi-Marginal Utility (Critically Discuss with Importance)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.85;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:17px;
+      color:#0b1220;
+    }
+    .subheading{
+      margin-top:20px;
+      margin-bottom:4px;
+      font-weight:600;
+      font-size:15px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+      font-size:14px;
+    }
+    .example{
+      margin-top:8px;
+      padding:10px 12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:3px solid #10b981;
+      font-size:14px;
+    }
+    .importance-box{
+      margin-top:10px;
+      padding:12px;
+      border-radius:8px;
+      background:#f9fff5;
+      border-left:3px solid #16a34a;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:8px 10px;
+      text-align:center;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+      line-height:1.6;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Book Reference Required — Popup Disclaimer (10 seconds) -->
+<div id="bookDisclaimerOverlay" style="
+  position:fixed; inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+">
+  <div id="bookDisclaimerModal" style="
+    max-width:520px; width:90%;
+    background:#fffaf0;
+    border-radius:12px;
+    border:1px solid #fee4a6;
+    box-shadow:0 20px 45px rgba(15,23,42,0.25);
+    padding:20px 20px 16px 20px;
+    position:relative;
+    font-family:Inter,system-ui,Arial;
+  ">
+    <button id="bookDisclaimerClose" aria-label="Close disclaimer" style="
+      position:absolute;
+      top:10px; right:12px;
+      border:none;
+      background:transparent;
+      font-size:20px;
+      color:#7c6f54;
+      cursor:pointer;
+    ">&times;</button>
+
+    <div style="
+      display:inline-block;
+      margin-bottom:8px;
+      font-size:11px;
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+      color:#a16207;
+      background:#fef3c7;
+      padding:4px 8px;
+      border-radius:999px;
+      font-weight:600;
+    ">Book Reference Required</div>
+
+    <h3 style="margin:2px 0 8px 0;font-size:17px;color:#8a4f0b;">Additional Study Recommended</h3>
+
+    <p style="margin:0;font-size:14px;line-height:1.7;color:#5a3410;">
+      This question involves advanced reasoning and detailed treatment of the Law of Equi-marginal Utility. Students are strongly advised to
+      refer to the official Panjab University prescribed textbook,
+      <strong>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</strong>,
+      along with these structured notes, for complete, examiner-level preparation.
+    </p>
+
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 9 — Law of Equi-Marginal Utility (Critical Discussion with Importance)</h1>
+      <div class="meta">
+        Government College Ludhiana East • Commercial Law — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      The <strong>Law of Equi-marginal Utility</strong>, also known as the <strong>Law of Substitution</strong> or the
+      <strong>Law of Maximum Satisfaction</strong>, is one of the most important laws of consumption in cardinal utility
+      analysis. While the <em>Law of Diminishing Marginal Utility</em> explains how the marginal utility of a single
+      commodity declines as its consumption increases, the Law of Equi-marginal Utility explains how a rational consumer
+      distributes his limited income among different commodities so as to attain <strong>maximum possible satisfaction</strong>.
+    </p>
+    <p>
+      This law generalises consumer behaviour to the realistic case of many goods and provides the basis of the condition
+      for consumer’s equilibrium in cardinal utility theory. It is frequently asked in Panjab University examinations in
+      the form: “Critically discuss the Law of Equi-marginal Utility along with its importance.”
+    </p>
+
+    <!-- MEANING AND STATEMENT -->
+    <p class="section-title">Meaning and Statement of the Law</p>
+    <p>
+      A consumer typically has a limited money income and faces many commodities with given market prices. The central
+      question is: <em>how should the consumer allocate his income among different goods so that total satisfaction is
+      maximised?</em> The Law of Equi-marginal Utility provides the answer.
+    </p>
+
+    <div class="boxed">
+      <strong>Marshallian Statement (In Simple Form):</strong><br>
+      A rational consumer will distribute his given income among various commodities in such a way that the
+      <strong>marginal utility of the last rupee spent on each commodity is equal</strong>. If this equality does not hold,
+      the consumer can increase his total utility by transferring expenditure from one commodity to another.
+    </div>
+
+    <p>
+      In other words, the consumer attains maximum satisfaction when the ratio of the marginal utility of each commodity
+      to its price is the same across all commodities. This is the <strong>equimarginal condition</strong>.
+    </p>
+
+    <!-- CONDITIONS OF EQUILIBRIUM -->
+    <p class="section-title">Condition of Consumer’s Equilibrium (Two-Commodity Case)</p>
+    <p>
+      Consider a consumer who consumes two goods X and Y. Let MU<sub>x</sub> and MU<sub>y</sub> be the marginal utilities of
+      X and Y respectively, and P<sub>x</sub>, P<sub>y</sub> their market prices. For maximum satisfaction:
+    </p>
+
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MU<sub>x</sub> / P<sub>x</sub> = MU<sub>y</sub> / P<sub>y</sub> = MU<sub>m</sub>
+    </p>
+
+    <p>
+      where MU<sub>m</sub> is the <strong>marginal utility of money</strong>. The first equality ensures that the last
+      rupee spent on X and Y yields the same satisfaction. If MU<sub>x</sub>/P<sub>x</sub> &gt; MU<sub>y</sub>/P<sub>y</sub>,
+      the consumer can increase total utility by spending more on X and less on Y until equality is restored.
+    </p>
+
+    <p class="subheading">Extension to Many Commodities</p>
+    <p>
+      When a consumer buys many commodities X, Y, Z, …, the equilibrium condition generalises to:
+    </p>
+    <p style="font-family:ui-monospace,monospace;background:#f3f7fb;padding:6px 10px;border-radius:6px;display:inline-block;">
+      MU<sub>x</sub>/P<sub>x</sub> = MU<sub>y</sub>/P<sub>y</sub> = MU<sub>z</sub>/P<sub>z</sub> = … = MU<sub>m</sub>
+    </p>
+    <p>
+      subject to the budget constraint that total expenditure equals money income. This equality of marginal utility per rupee
+      across all goods is the formal statement of the Law of Equi-marginal Utility.
+    </p>
+
+    <!-- ASSUMPTIONS -->
+    <p class="section-title">Assumptions of the Law of Equi-Marginal Utility</p>
+    <p>
+      The law is based on certain assumptions that simplify consumer behaviour and allow precise formulation:
+    </p>
+    <ol class="points">
+      <li><strong>Cardinal measurability of utility:</strong> Utility can be measured in quantitative units (utils) and compared across goods.</li>
+      <li><strong>Rational behaviour:</strong> The consumer is rational and aims at maximising total satisfaction.</li>
+      <li><strong>Limited money income:</strong> The consumer has a fixed money income to be allocated among different goods.</li>
+      <li><strong>Given prices:</strong> Market prices of commodities are known and constant during the decision period.</li>
+      <li><strong>Diminishing marginal utility:</strong> The marginal utility of each good decreases as more of it is consumed.</li>
+      <li><strong>Divisibility of goods:</strong> Commodities are divisible, so expenditure can be adjusted in small units.</li>
+      <li><strong>Constancy of tastes, fashion and habits:</strong> These remain unchanged while the consumer makes choices.</li>
+      <li><strong>Marginal utility of money is constant:</strong> The satisfaction obtained from each rupee remains unchanged over the relevant range.</li>
+    </ol>
+
+    <!-- ILLUSTRATION WITH SCHEDULE -->
+    <p class="section-title">Illustrative Schedule (Two-Good Case: X and Y)</p>
+    <p>
+      The working of the law can be shown with the help of a simple hypothetical schedule. Suppose the consumer has ₹6 to spend
+      on goods X and Y. The price of each unit of X and Y is ₹1. The marginal utility schedules are:
+    </p>
+
+    <table aria-label="Equi-marginal utility schedule for two goods">
+      <thead>
+        <tr>
+          <th>Units</th>
+          <th>MU<sub>x</sub> (Utils)</th>
+          <th>MU<sub>y</sub> (Utils)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>18</td><td>16</td></tr>
+        <tr><td>2</td><td>14</td><td>12</td></tr>
+        <tr><td>3</td><td>10</td><td>9</td></tr>
+        <tr><td>4</td><td>7</td><td>7</td></tr>
+        <tr><td>5</td><td>5</td><td>5</td></tr>
+        <tr><td>6</td><td>3</td><td>3</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      The consumer must decide how many units of X and Y to buy so that total utility is maximised, given that the total money
+      available is ₹6 and each unit costs ₹1.
+    </p>
+
+    <p class="example">
+      <strong>One possible equilibrium combination:</strong><br>
+      Suppose the consumer buys 3 units of X and 3 units of Y.<br>
+      • MU<sub>x</sub> of 3rd unit = 10 utils<br>
+      • MU<sub>y</sub> of 3rd unit = 9 utils<br>
+      Since price of each good is ₹1, we have:<br>
+      • MU<sub>x</sub>/P<sub>x</sub> ≈ 10, MU<sub>y</sub>/P<sub>y</sub> ≈ 9<br>
+      This combination is close to equimarginal equality. By trying nearby allocations (like 4X + 2Y or 2X + 4Y) and summing total utilities,
+      we find that the consumer reaches maximum total satisfaction when the marginal utilities per rupee spent on X and Y are approximately equal.
+    </p>
+
+    <!-- DIAGRAM -->
+    <p class="section-title">Diagrammatic Explanation (Two-Good Case)</p>
+    <p>
+      The law can be diagrammatically illustrated by plotting the marginal utility curves of X and Y against their respective
+      quantities, assuming the same money price for both goods. Consumer equilibrium is reached at that combination of X and Y
+      where the <strong>marginal utility per rupee spent is equal</strong>.
+    </p>
+
+    <div class="diagram" aria-label="Diagram of law of equi-marginal utility">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .mux{stroke:#1e3a8a;stroke-width:3;fill:none}
+          .muy{stroke:#dc2626;stroke-width:3;fill:none}
+          .guide{stroke:#9ca3af;stroke-dasharray:5 4;stroke-width:1}
+          .label{font-family:Inter,Arial;font-size:14px;fill:#111827}
+        </style>
+
+        <!-- Axes for X -->
+        <line x1="80" y1="60" x2="80" y2="250" class="axis"/>
+        <line x1="80" y1="250" x2="410" y2="250" class="axis"/>
+        <text x="52" y="55" class="label">MU / P (X)</text>
+        <text x="390" y="270" class="label">Qx</text>
+
+        <!-- MUx curve -->
+        <path d="M90 80 C 150 120, 220 170, 380 230" class="mux"/>
+
+        <!-- Equilibrium point for X -->
+        <line x1="250" y1="140" x2="250" y2="250" class="guide"/>
+        <circle cx="250" cy="140" r="4" fill="#1e3a8a"/>
+        <text x="240" y="135" class="label">E<sub>x</sub></text>
+
+        <!-- Axes for Y -->
+        <line x1="500" y1="60" x2="500" y2="250" class="axis"/>
+        <line x1="500" y1="250" x2="830" y2="250" class="axis"/>
+        <text x="472" y="55" class="label">MU / P (Y)</text>
+        <text x="810" y="270" class="label">Qy</text>
+
+        <!-- MUy curve -->
+        <path d="M510 90 C 580 130, 650 180, 820 230" class="muy"/>
+
+        <!-- Equilibrium point for Y -->
+        <line x1="640" y1="140" x2="640" y2="250" class="guide"/>
+        <circle cx="640" cy="140" r="4" fill="#dc2626"/>
+        <text x="630" y="135" class="label">E<sub>y</sub></text>
+
+        <!-- Common MU/P level -->
+        <line x1="80" y1="140" x2="410" y2="140" class="guide"/>
+        <line x1="500" y1="140" x2="830" y2="140" class="guide"/>
+        <text x="415" y="145" class="label">MU/P (common)</text>
+      </svg>
+      <div class="caption">
+        Fig. — Law of Equi-marginal Utility: Consumer attains equilibrium when MU<sub>x</sub>/P<sub>x</sub> = MU<sub>y</sub>/P<sub>y</sub>, i.e., when
+        the marginal utility per rupee is equal across commodities.
+      </div>
+    </div>
+
+    <!-- WORKING OF THE LAW -->
+    <p class="section-title">Working of the Law: Substitution Process</p>
+    <p>
+      The law operates through a process of <strong>substitution</strong>:
+    </p>
+    <ol class="points">
+      <li>If MU<sub>x</sub>/P<sub>x</sub> &gt; MU<sub>y</sub>/P<sub>y</sub>, the last rupee spent on X yields more satisfaction than the last rupee spent on Y.</li>
+      <li>The consumer can increase total utility by transferring some expenditure from Y to X (buying more X and less Y).</li>
+      <li>As consumption of X rises, MU<sub>x</sub> falls (due to diminishing marginal utility); as consumption of Y falls, MU<sub>y</sub> rises.</li>
+      <li>This process continues until MU<sub>x</sub>/P<sub>x</sub> and MU<sub>y</sub>/P<sub>y</sub> become equal. At that point, any further reallocation would reduce total utility.</li>
+    </ol>
+    <p>
+      Thus, equilibrium is stable because any deviation from equality of marginal utilities per rupee automatically
+      sets in motion substitutions that restore the equimarginal condition.
+    </p>
+
+    <!-- CRITICAL EVALUATION / LIMITATIONS -->
+    <p class="section-title">Critical Evaluation and Limitations</p>
+    <p>
+      Like the law of diminishing marginal utility, the Law of Equi-marginal Utility has been criticised on several grounds:
+    </p>
+    <ol class="points">
+      <li>
+        <strong>Cardinal Measurement and Additivity:</strong>
+        The law assumes that the consumer can measure and add utilities of different goods, which modern ordinal utility
+        theory rejects. In reality, utility is not measurable in absolute units.
+      </li>
+      <li>
+        <strong>Constant Marginal Utility of Money:</strong>
+        The assumption that MU of money remains constant while the consumer spends more or less is unrealistic. Changing
+        money balances may alter the marginal utility of money.
+      </li>
+      <li>
+        <strong>Rational Calculation Difficulty:</strong>
+        The law implicitly assumes that consumers calculate MU<sub>x</sub>/P<sub>x</sub> for all goods and adjust expenditure
+        accordingly. Ordinary consumers do not perform such explicit marginal calculations.
+      </li>
+      <li>
+        <strong>Oversimplified Environment:</strong>
+        In real life, prices often change, tastes evolve, credit facilities exist, and information is imperfect. These
+        complications are ignored in the simple version of the law.
+      </li>
+      <li>
+        <strong>Indifference Curve Alternative:</strong>
+        Modern microeconomics uses the indifference curve–budget line framework to derive the condition for consumer equilibrium.
+        In that setting, equilibrium is achieved when the marginal rate of substitution equals the price ratio (MRS = P<sub>x</sub>/P<sub>y</sub>),
+        rather than by equating cardinal marginal utilities per rupee.
+      </li>
+    </ol>
+
+    <div class="boxed">
+      <strong>Balanced View:</strong>  
+      Despite these criticisms, the law captures the essential logic that a rational consumer, with limited resources, will
+      reallocate expenditure across goods until the “last rupee spent” gives approximately equal satisfaction everywhere.
+      Hence it remains a powerful intuitive rule for explaining consumer behaviour.
+    </div>
+
+    <!-- IMPORTANCE AND APPLICATIONS -->
+    <p class="section-title">Importance and Applications of the Law of Equi-Marginal Utility</p>
+    <p>
+      The importance of the law extends far beyond individual consumption. It can be applied to a wide range of economic
+      and managerial decisions:
+    </p>
+
+    <div class="importance-box">
+      <strong>1. Basis of Consumer’s Equilibrium (Cardinal Approach)</strong><br>
+      In cardinal utility theory, the law provides the formal condition under which a consumer attains equilibrium:
+      equality of MU per rupee across goods. Without the Law of Equi-marginal Utility, we cannot explain how consumers
+      actually divide income among many commodities.
+    </div>
+
+    <div class="importance-box">
+      <strong>2. Rational Allocation of Limited Resources</strong><br>
+      The law generalises to the allocation of any scarce resource—time, effort, capital—across competing uses.
+      Maximum satisfaction or output is achieved when the marginal benefit of the last unit of the resource is
+      equal in all uses. This is the equi-marginal principle in production, finance, and resource management.
+    </div>
+
+    <div class="importance-box">
+      <strong>3. Application in Production: Law of Equi-marginal Returns</strong><br>
+      Producers distribute limited factors of production (like labour and capital) among different production lines so
+      that the marginal productivity per rupee spent is equalised. This is essentially the same equi-marginal principle
+      applied to factor allocation.
+    </div>
+
+    <div class="importance-box">
+      <strong>4. Application in Public Finance and Expenditure</strong><br>
+      Governments allocate limited budget among various heads such as education, health, defence and infrastructure.
+      Social welfare is maximised when the marginal social benefit of expenditure is equal across all uses. This is
+      again an application of the equi-marginal rule at the macro level.
+    </div>
+
+    <div class="importance-box">
+      <strong>5. Pricing and Output Decisions of Firms</strong><br>
+      Firms often have to decide how much to spend on different activities—advertising, R&amp;D, distribution, after-sales
+      service. According to the equi-marginal principle, total profit is maximised when the marginal return per rupee
+      spent is equalised across these alternative uses.
+    </div>
+
+    <div class="importance-box">
+      <strong>6. Time Allocation by Individuals</strong><br>
+      Individuals distribute their limited time among work, leisure, study, and other activities. Maximum satisfaction
+      is achieved when the marginal utility of time spent in each activity is equal. This is a practical interpretation
+      of the equi-marginal rule in daily life.
+    </div>
+
+    <div class="importance-box">
+      <strong>7. Explanation of Diversification and Balance in Choices</strong><br>
+      The law explains why consumers, firms, and governments avoid extreme concentration on a single activity and instead
+      choose a diversified, balanced pattern of consumption, production, and expenditure. Diversification is the natural
+      outcome of equating marginal utilities or marginal returns at the margin.
+    </div>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong>
+      For a 15-marks question on this topic, a high-scoring answer should include:
+      (i) meaning and statement of the law; (ii) clear equilibrium condition MU/Price equalities; (iii) assumptions;
+      (iv) numerical schedule and neat diagram; (v) mechanism of substitution; (vi) critical evaluation/limitations;
+      and (vii) a separate, well-organised section on importance and applications. Finish with a short, balanced conclusion.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To sum up, the Law of Equi-marginal Utility is a fundamental principle of rational choice under scarcity. It explains
+      how a consumer, with limited income, allocates expenditure among different goods to achieve maximum satisfaction and
+      provides a general rule for optimal allocation of any scarce resource among competing uses. Although its cardinal
+      utility foundations have been replaced by modern ordinal analysis, the equi-marginal idea continues to play a central
+      role in consumer theory, production theory, public finance and welfare economics, and remains a favourite question
+      in Panjab University examinations.
+    </p>
+
+    <!-- GENERAL IMPORTANT-QUESTION DISCLAIMER -->
+    <div class="disclaimer">
+      This answer forms part of a carefully curated set of important questions that have frequently appeared in
+      past university examinations and therefore hold a high probability of reappearing in future assessments.
+      While prepared with academic accuracy and aligned to the prescribed syllabus, these solutions should be
+      treated as high-quality preparation material rather than a guaranteed prediction of any upcoming exam paper.
+    </div>
+
+  </article>
+</div>
+
+<script>
+  (function(){
+    var overlay = document.getElementById('bookDisclaimerOverlay');
+    var closeBtn = document.getElementById('bookDisclaimerClose');
+
+    function hidePopup(){
+      if(overlay){
+        overlay.style.opacity = '0';
+        setTimeout(function(){
+          overlay.style.display = 'none';
+        }, 400);
+      }
+    }
+
+    if(closeBtn){
+      closeBtn.addEventListener('click', hidePopup);
+    }
+
+    if(overlay){
+      overlay.addEventListener('click', function(e){
+        if(e.target === overlay){
+          hidePopup();
+        }
+      });
+    }
+
+    // Auto hide after 10 seconds
+    setTimeout(hidePopup, 10000);
+  })();
+</script>
+
+</body>
+</html>

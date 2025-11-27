@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q1 — Law of Demand (Microeconomics)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:980px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text);line-height:1.68}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:28px;background:var(--card);
+      border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06);border:1px solid #e9eef3}
+    header{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    .logo{width:56px;height:56px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;color:var(--muted);font-size:13px}
+    .answer{margin-top:20px;padding:22px;background:#fff;border-radius:10px;border:1px solid #eef3fb}
+    .section-title{font-weight:700;margin-top:22px;color:var(--text)}
+    ol.points{padding-left:20px;margin-top:8px}
+    ul{padding-left:20px;margin-top:8px}
+    .boxed{padding:12px;border-left:4px solid #cfe8ff;background:#f7fbff;
+      border-radius:8px;margin-top:12px}
+    .diagram{margin-top:24px;padding:16px;background:#fff;border:1px solid #e6eef8;
+      border-radius:10px}
+    .diagram svg{width:100%;height:auto;max-width:760px;display:block;margin:0 auto}
+    .caption{font-size:13px;color:var(--muted);margin-top:8px;text-align:center}
+    .disclaimer{margin-top:22px;font-size:14px;color:#55606a;background:#f9fafc;
+      border-left:4px solid #1e3a8a;padding:14px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <!-- Book Reference Required — Popup Disclaimer -->
+<div id="bookDisclaimerOverlay" style="
+position:fixed; inset:0;
+background:rgba(15,23,42,0.45);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+">
+<div id="bookDisclaimerModal" style="
+  max-width:520px; width:90%;
+  background:#fffaf0;
+  border-radius:12px;
+  border:1px solid #fee4a6;
+  box-shadow:0 20px 45px rgba(15,23,42,0.25);
+  padding:20px 20px 16px 20px;
+  position:relative;
+  font-family:Inter,system-ui,Arial;
+">
+  <button id="bookDisclaimerClose" aria-label="Close disclaimer" style="
+    position:absolute;
+    top:10px; right:12px;
+    border:none;
+    background:transparent;
+    font-size:20px;
+    color:#7c6f54;
+    cursor:pointer;
+  ">&times;</button>
+
+  <div style="
+    display:inline-block;
+    margin-bottom:8px;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#a16207;
+    background:#fef3c7;
+    padding:4px 8px;
+    border-radius:999px;
+    font-weight:600;
+  ">Book Reference Required</div>
+
+  <h3 style="margin:2px 0 8px 0;font-size:17px;color:#8a4f0b;">Additional Study Recommended</h3>
+
+  <p style="margin:0;font-size:14px;line-height:1.7;color:#5a3410;">
+    This question involves advanced concepts and requires deeper understanding. Students must refer to the official
+    Panjab University prescribed textbook,
+    <strong>“Microeconomics” by T.R. Jain &amp; V.K. Ohri</strong>
+    along with these structured notes for complete exam-oriented preparation.
+  </p>
+
+</div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('bookDisclaimerOverlay');
+  var closeBtn = document.getElementById('bookDisclaimerClose');
+
+  function hidePopup(){
+    if(overlay){
+      overlay.style.opacity = '0';
+      setTimeout(() => { overlay.style.display = 'none'; }, 400);
+    }
+  }
+
+  // Close when click "X"
+  if(closeBtn){
+    closeBtn.addEventListener('click', hidePopup);
+  }
+
+  // Close on click outside
+  overlay.addEventListener('click', function(e){
+    if(e.target === overlay){
+      hidePopup();
+    }
+  });
+
+  // Auto hide after 10 seconds
+  setTimeout(hidePopup, 10000);
+})();
+</script>
+  <div class="wrap">
+
+    <header>
+      <div class="logo">ME</div>
+      <div>
+        <h1>Question 1:  Critically discuss the Law of demand along with the reasons for downward sloping of demand curve</h1>
+        <div class="meta">Government College Ludhiana East • Commercial Law — B.Com (Sem I) | Prepared by: Jeevansh Manocha</div>
+      </div>
+    </header>
+
+    <article>
+      <div class="answer">
+
+        <!-- INTRODUCTION -->
+        <p class="section-title">Introduction</p>
+        <p>
+          The Law of Demand constitutes one of the most fundamental propositions in microeconomic theory. 
+          It expresses a universal behavioural tendency: consumers ordinarily purchase larger quantities of a 
+          commodity at lower prices and smaller quantities at higher prices. This inverse price–quantity 
+          relationship reflects rational economic behaviour, diminishing marginal utility, and the combined 
+          influence of income and substitution effects. As such, the Law of Demand forms the analytical basis 
+          for understanding consumer behaviour, demand schedules, and price-output determination in competitive markets.
+        </p>
+
+        <!-- EXPLANATION OF LAW OF DEMAND -->
+        <p class="section-title">Explanation of the Law of Demand</p>
+        <p>
+          The Law of Demand states that, <em>ceteris paribus</em>, the quantity demanded of a commodity varies 
+          inversely with its price. Thus, when the price of a commodity rises, its quantity demanded falls; 
+          when the price falls, quantity demanded increases. This behaviour results from the rational attempts 
+          of consumers to maximise satisfaction subject to their budget constraints.
+        </p>
+
+        <!-- DIAGRAM 1: NORMAL DEMAND CURVE -->
+        <div class="diagram">
+          <svg viewBox="0 0 500 360">
+            <style>
+              .axis{stroke:#000;stroke-width:2}
+              .dline{stroke:#1e3a8a;stroke-width:3}
+              .label{font-size:14px;font-family:Inter}
+              .dot{fill:#ef4444}
+              .dash{stroke:#777;stroke-dasharray:4,3}
+            </style>
+
+            <!-- Axes -->
+            <line x1="60" y1="40" x2="60" y2="320" class="axis"/>
+            <line x1="60" y1="320" x2="460" y2="320" class="axis"/>
+
+            <!-- Demand Curve -->
+            <line x1="120" y1="80" x2="420" y2="300" class="dline"/>
+
+            <!-- Points -->
+            <circle cx="200" cy="150" r="5" class="dot"/>
+            <circle cx="340" cy="250" r="5" class="dot"/>
+
+            <!-- Dashed Guides -->
+            <line x1="200" y1="150" x2="200" y2="320" class="dash"/>
+            <line x1="340" y1="250" x2="340" y2="320" class="dash"/>
+
+            <line x1="60" y1="150" x2="200" y2="150" class="dash"/>
+            <line x1="60" y1="250" x2="340" y2="250" class="dash"/>
+
+            <!-- Labels -->
+            <text x="40" y="45" class="label">P</text>
+            <text x="465" y="330" class="label">Q</text>
+            <text x="425" y="295" class="label">D</text>
+
+            <text x="20" y="155" class="label">P₁</text>
+            <text x="20" y="255" class="label">P₂</text>
+
+            <text x="192" y="340" class="label">Q₁</text>
+            <text x="332" y="340" class="label">Q₂</text>
+          </svg>
+          <div class="caption">Fig. 1 — Downward-sloping demand curve showing inverse relationship between price and quantity demanded.</div>
+        </div>
+
+        <!-- ASSUMPTIONS -->
+        <p class="section-title">Assumptions of the Law of Demand</p>
+        <ol class="points">
+          <li>There is no change in consumer tastes, preferences, or habits.</li>
+          <li>Consumer’s money income and purchasing power remain unchanged.</li>
+          <li>Prices of substitute and complementary goods remain constant.</li>
+          <li>Population size and distribution remain unchanged.</li>
+          <li>There are no expectations of future price changes.</li>
+          <li>Quality of the commodity remains constant.</li>
+        </ol>
+
+        <!-- WHY DOES DEMAND CURVE SLOPE DOWNWARD -->
+        <p class="section-title">Why Does the Demand Curve Slope Downward?</p>
+        <ol class="points">
+          <li>
+            <strong>Diminishing Marginal Utility:</strong>  
+            Each additional unit of a commodity yields lesser satisfaction than the previous one. 
+            Consumers buy more only at a lower price, creating an inverse price–quantity relation.
+          </li>
+          <li>
+            <strong>Substitution Effect:</strong>  
+            When the price of a commodity rises, other goods become relatively cheaper, inducing consumers 
+            to substitute away from the costlier good.
+          </li>
+          <li>
+            <strong>Income Effect:</strong>  
+            A rise in price reduces real income, reducing demand for normal goods.  
+            A fall in price increases real income, increasing demand.
+          </li>
+          <li>
+            <strong>Entry of New Consumers:</strong>  
+            At lower prices more consumers (especially low-income buyers) enter the market, 
+            increasing total demand.
+          </li>
+          <li>
+            <strong>Multiple Uses of Commodities:</strong>  
+            Goods like electricity or milk have multiple uses.  
+            When price falls, consumers extend consumption to secondary uses, increasing demand.
+          </li>
+        </ol>
+
+        <!-- EXCEPTIONS -->
+        <p class="section-title">Exceptions to the Law of Demand</p>
+        <ol class="points">
+          <li><strong>Giffen Goods:</strong> Highly inferior goods where a strong positive income effect 
+            outweighs the substitution effect, producing an upward-sloping demand curve.</li>
+          <li><strong>Veblen Goods:</strong> Prestige or status goods (e.g., luxury brands) whose higher 
+            prices increase desirability.</li>
+          <li><strong>Speculative Demand:</strong> Expectation of future price rises may increase demand 
+            even at higher prices.</li>
+          <li><strong>Necessities:</strong> Goods with almost no substitutes show highly inelastic demand.</li>
+          <li><strong>Future Expectations:</strong> Anticipated shortages or price hikes may raise current demand.</li>
+        </ol>
+
+        <!-- DIAGRAM 2: EXCEPTIONAL DEMAND CURVE -->
+        <div class="diagram">
+          <svg viewBox="0 0 500 360">
+            <style>
+              .axis{stroke:#000;stroke-width:2}
+              .uline{stroke:#1e3a8a;stroke-width:3}
+              .label{font-size:14px;font-family:Inter}
+            </style>
+
+            <line x1="60" y1="40" x2="60" y2="320" class="axis"/>
+            <line x1="60" y1="320" x2="460" y2="320" class="axis"/>
+
+            <line x1="120" y1="300" x2="420" y2="100" class="uline"/>
+
+            <text x="40" y="45" class="label">P</text>
+            <text x="465" y="330" class="label">Q</text>
+            <text x="430" y="120" class="label">Dₑ</text>
+            <text x="190" y="40" class="label">Exceptional Demand Curve</text>
+          </svg>
+          <div class="caption">Fig. 2 — Exceptional demand curve with a positive slope as seen in Giffen, Veblen and speculative goods.</div>
+        </div>
+
+        <!-- CONCLUSION -->
+        <p class="section-title">Conclusion</p>
+        <p>
+          The Law of Demand remains one of the most consistent generalisations in economic analysis. 
+          Its validity stems from powerful behavioural foundations such as diminishing marginal utility, 
+          the income–substitution mechanism, and rational consumer choice. Although exceptions exist, 
+          they operate under special and identifiable conditions and do not undermine the universal tendency 
+          of consumers to purchase more at lower prices and less at higher prices.
+        </p>
+
+        <!-- DISCLAIMER -->
+        <div class="disclaimer">
+          The following answer forms part of a curated set of frequently recurring university questions. 
+          These questions have appeared repeatedly in past examinations and therefore hold a strong likelihood 
+          of reappearing in future assessments. However, while academically reliable and based on established 
+          patterns, they should be treated as high-quality preparation material rather than an absolute guarantee 
+          of examination recurrence.
+        </div>
+
+      </div>
+    </article>
+  </div>
+</body>
+</html>

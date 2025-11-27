@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q5 — Degrees of Price Elasticity of Demand</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#f8f7ef; --card:#fff; --accent:#1e3a8a; --muted:#55606a;
+      --maxw:1000px; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Arial;
+      line-height:1.8;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:28px;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #e9eef3;
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:800;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{margin-top:6px;font-size:13px;color:var(--muted)}
+
+    .answer{
+      margin-top:22px;
+      padding:24px;
+      background:#fff;
+      border-radius:10px;
+      border:1px solid #eef3fb;
+    }
+
+    .section-title{
+      margin-top:26px;
+      margin-bottom:6px;
+      font-weight:700;
+      font-size:17px;
+      color:#0b1220;
+    }
+
+    p{margin:8px 0}
+    ol.points, ul.points{padding-left:20px;margin-top:6px}
+    .boxed{
+      margin-top:10px;
+      padding:14px;
+      border-radius:8px;
+      border-left:4px solid #cfe8ff;
+      background:#f7fbff;
+    }
+    .formula{
+      display:inline-block;
+      margin-top:4px;
+      padding:8px 10px;
+      border-radius:6px;
+      background:#f3f7fb;
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+    }
+    .example{
+      margin-top:12px;
+      padding:12px;
+      border-radius:8px;
+      background:#f8fff4;
+      border-left:4px solid #10b981;
+      font-size:14px;
+    }
+
+    .diagram{
+      margin-top:22px;
+      padding:16px;
+      border-radius:10px;
+      background:#fff;
+      border:1px solid #e6eef8;
+    }
+    .diagram svg{
+      width:100%;
+      max-width:880px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+    .caption{
+      margin-top:6px;
+      text-align:center;
+      font-size:13px;
+      color:#55606a;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:14px;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #eef3fb;
+      padding:10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f7fbff;
+      font-weight:600;
+    }
+
+    .exam-tip{
+      margin-top:18px;
+      padding:12px;
+      border-radius:8px;
+      background:#fffbe6;
+      border-left:4px solid #ffb020;
+      color:#473410;
+      font-size:14px;
+    }
+
+    .disclaimer{
+      margin-top:24px;
+      padding:14px;
+      border-radius:8px;
+      background:#f9fafc;
+      border-left:4px solid #1e3a8a;
+      font-size:14px;
+      color:#475569;
+    }
+
+    @media(max-width:720px){
+      .wrap{margin:14px;padding:18px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">ME</div>
+    <div>
+      <h1>Question 5 — Degrees of Price Elasticity of Demand</h1>
+      <div class="meta">
+        Government College Ludhiana East • Commercial Law — B.Com (Sem I) | Prepared by: Jeevansh Manocha
+      </div>
+    </div>
+  </header>
+
+  <article class="answer">
+
+    <!-- INTRODUCTION -->
+    <p class="section-title">Introduction</p>
+    <p>
+      The law of demand tells us that quantity demanded of a commodity varies inversely with its price, 
+      <em>ceteris paribus</em>. However, this qualitative statement does not reveal <strong>how much</strong> 
+      quantity demanded will change when price changes. For that, economists use the concept of 
+      <strong>Price Elasticity of Demand</strong>, and within this concept, they speak of different 
+      <strong>degrees</strong> of elasticity. T.R. Jain and V.K. Ohri, in their treatment of microeconomics 
+      for B.Com Semester I (Panjab University), lay particular emphasis on these degrees, because they form 
+      the basis for interpreting diagrams, numerical problems, and policy discussions relating to demand.
+    </p>
+
+    <p>
+      In this answer, the meaning of price elasticity of demand is first recalled briefly, and then the main 
+      <strong>degrees of price elasticity of demand</strong> are explained in detail, with numerical ranges, 
+      conceptual interpretation, simple examples, revenue implications and comparative tabulation.
+    </p>
+
+    <!-- MEANING -->
+    <p class="section-title">Meaning of Price Elasticity of Demand</p>
+    <p>
+      Price Elasticity of Demand may be defined as the <strong>degree of responsiveness of quantity demanded 
+      of a commodity to a change in its own price</strong>, other factors remaining constant. Symbolically:
+    </p>
+
+    <p class="formula">
+      E<sub>p</sub> = (Percentage change in Quantity Demanded) ÷ (Percentage change in Price)
+    </p>
+
+    <p>
+      If a small change in price leads to a relatively large change in quantity demanded, demand is said to be 
+      highly elastic. If even a substantial change in price produces only a small change in quantity demanded, 
+      demand is described as inelastic. On the basis of this responsiveness, different <strong>degrees of elasticity</strong> 
+      are distinguished.
+    </p>
+
+    <!-- DIAGRAM OF DEGREES -->
+    <p class="section-title">Diagrammatic Overview of Degrees of Elasticity</p>
+    <p>
+      The different degrees of price elasticity of demand are usually presented with reference to the shapes 
+      and slopes of demand curves. In the figure below, the main cases as discussed in standard texts are indicated.
+    </p>
+
+    <div class="diagram" aria-label="Different degrees of price elasticity diagram">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .axis{stroke:#000;stroke-width:2}
+          .curve{stroke-width:3;fill:none}
+          .elastic{stroke:#1e3a8a}
+          .inelastic{stroke:#10b981}
+          .perfect{stroke:#dc2626}
+          .label{font-family:Inter,Arial;font-size:13px;fill:#111827}
+        </style>
+
+        <!-- Panel 1: Perfectly Elastic -->
+        <line x1="70" y1="40" x2="70" y2="220" class="axis"/>
+        <line x1="70" y1="220" x2="250" y2="220" class="axis"/>
+        <line x1="90" y1="100" x2="240" y2="100" class="curve perfect"/>
+        <text x="140" y="35" class="label">Perfectly Elastic (E = ∞)</text>
+
+        <!-- Panel 2: Perfectly Inelastic -->
+        <line x1="330" y1="40" x2="330" y2="220" class="axis"/>
+        <line x1="330" y1="220" x2="510" y2="220" class="axis"/>
+        <line x1="410" y1="60" x2="410" y2="210" class="curve perfect"/>
+        <text x="355" y="35" class="label">Perfectly Inelastic (E = 0)</text>
+
+        <!-- Panel 3: Relatively Elastic -->
+        <line x1="590" y1="40" x2="590" y2="220" class="axis"/>
+        <line x1="590" y1="220" x2="770" y2="220" class="axis"/>
+        <path d="M610 70 C 660 110, 710 160, 750 210" class="curve elastic"/>
+        <text x="610" y="35" class="label">Relatively Elastic (E &gt; 1)</text>
+
+        <!-- Panel 4: Relatively Inelastic & Unitary (below) -->
+        <line x1="70" y1="280" x2="70" y2="480" class="axis"/>
+        <line x1="70" y1="480" x2="250" y2="480" class="axis"/>
+        <path d="M90 300 C 140 340, 180 380, 220 430" class="curve inelastic"/>
+        <text x="90" y="275" class="label">Relatively Inelastic (E &lt; 1)</text>
+
+        <line x1="330" y1="280" x2="330" y2="480" class="axis"/>
+        <line x1="330" y1="480" x2="510" y2="480" class="axis"/>
+        <path d="M350 300 C 390 350, 430 390, 470 430" class="curve elastic"/>
+        <text x="350" y="275" class="label">Unitary Elastic (E = 1)</text>
+      </svg>
+      <div class="caption">
+        Fig. — Schematic representation of different degrees of price elasticity of demand.
+      </div>
+    </div>
+
+    <!-- MAIN DEGREES -->
+    <p class="section-title">Main Degrees of Price Elasticity of Demand</p>
+    <p>
+      On the basis of numerical value of E<sub>p</sub> and the nature of the demand curve, the following degrees 
+      are usually distinguished in undergraduate microeconomics as per TR Jain & V.K. Ohri:
+    </p>
+
+    <ol class="points">
+      <li>Perfectly Elastic Demand (E = ∞)</li>
+      <li>Perfectly Inelastic Demand (E = 0)</li>
+      <li>Relatively Elastic Demand (E &gt; 1)</li>
+      <li>Relatively Inelastic Demand (E &lt; 1)</li>
+      <li>Unitary Elastic Demand (E = 1)</li>
+    </ol>
+
+    <!-- 1. PERFECTLY ELASTIC -->
+    <p class="section-title">1. Perfectly Elastic Demand (E<sub>p</sub> = ∞)</p>
+    <p>
+      Demand is said to be <strong>perfectly elastic</strong> when even the smallest possible rise in price reduces 
+      the quantity demanded to zero, and the tiniest fall in price leads to an indefinitely large expansion in quantity demanded.
+      In this case, elasticity is infinite.
+    </p>
+    <p>
+      Graphically, the demand curve is drawn as a <strong>horizontal straight line</strong> parallel to the X-axis. At a given price, 
+      consumers are ready to buy any amount of the commodity, but if price rises even slightly above this level, they refuse to buy at all.
+    </p>
+    <p class="example">
+      <strong>Example:</strong> Highly competitive markets for a perfectly homogeneous commodity with many sellers and buyers, where each seller 
+      is a price-taker, are sometimes approximated as having perfectly elastic demand for the individual firm; any attempt to charge a higher 
+      price would reduce the firm’s sales to zero.
+    </p>
+    <p>
+      Perfectly elastic demand is largely a theoretical limiting case used to illustrate the upper extreme of elasticity. In real markets, 
+      demand may be highly elastic but rarely absolutely infinite.
+    </p>
+
+    <!-- 2. PERFECTLY INELASTIC -->
+    <p class="section-title">2. Perfectly Inelastic Demand (E<sub>p</sub> = 0)</p>
+    <p>
+      Demand is <strong>perfectly inelastic</strong> when quantity demanded remains completely unchanged irrespective of any change in price.
+      Consumers are compelled to buy a fixed quantity regardless of how high or how low the price may be. In this case, elasticity is zero.
+    </p>
+    <p>
+      The demand curve in this situation is a <strong>vertical straight line</strong> parallel to the Y-axis. Whatever the price, the quantity 
+      demanded is fixed and does not respond.
+    </p>
+    <p class="example">
+      <strong>Example:</strong> In extreme theoretical cases, life-saving medicines in the absence of any substitute may be assumed to have 
+      perfectly inelastic demand in the very short run. Some amount must be purchased to survive, however high the price may be.
+    </p>
+    <p>
+      Like the previous case, perfectly inelastic demand is a limiting case used for analytical clarity. In reality, some responsiveness 
+      almost always exists over a sufficiently long time horizon.
+    </p>
+
+    <!-- 3. RELATIVELY ELASTIC -->
+    <p class="section-title">3. Relatively Elastic Demand (E<sub>p</sub> &gt; 1)</p>
+    <p>
+      Demand is said to be <strong>relatively elastic</strong> when the percentage (or proportionate) change in quantity demanded is greater 
+      than the percentage change in price. Thus, a small fall in price leads to a more than proportionate increase in quantity demanded; 
+      conversely, a small rise in price results in a more than proportionate fall in quantity demanded.
+    </p>
+
+    <p class="formula">
+      If |ΔQ/Q| &gt; |ΔP/P| &nbsp;⇒&nbsp; |E<sub>p</sub>| &gt; 1 (Relatively elastic)
+    </p>
+
+    <p>
+      The demand curve in this case is relatively <strong>flatter</strong>, reflecting strong responsiveness. Consumers are sensitive 
+      to price because either close substitutes are available or the good occupies a large share in the consumer’s budget.
+    </p>
+
+    <p class="example">
+      <strong>Example:</strong> Branded goods with plenty of close substitutes (e.g., a particular cold drink in a market with many similar 
+      brands) often exhibit relatively elastic demand; a small increase in price is likely to divert consumers to other brands.
+    </p>
+
+    <p>
+      From the point of view of revenue, when demand is elastic, a fall in price tends to increase total revenue, while a rise in price 
+      tends to reduce total revenue.
+    </p>
+
+    <!-- 4. RELATIVELY INELASTIC -->
+    <p class="section-title">4. Relatively Inelastic Demand (E<sub>p</sub> &lt; 1)</p>
+    <p>
+      Demand is described as <strong>relatively inelastic</strong> when the percentage change in quantity demanded is less than the percentage 
+      change in price. In other words, even a significant change in price induces only a modest change in quantity demanded.
+    </p>
+
+    <p class="formula">
+      If |ΔQ/Q| &lt; |ΔP/P| &nbsp;⇒&nbsp; |E<sub>p</sub>| &lt; 1 (Relatively inelastic)
+    </p>
+
+    <p>
+      The demand curve in such a case is relatively <strong>steep</strong>. Consumers are not very sensitive to price changes, either because 
+      the commodity is a necessity, has very few substitutes, or constitutes a small proportion of their total expenditure.
+    </p>
+
+    <p class="example">
+      <strong>Example:</strong> Basic necessities such as common salt or matches typically exhibit relatively inelastic demand within normal 
+      price ranges. Even if their price rises, consumers do not significantly reduce their consumption, because quantities used are small 
+      and substitutes are limited.
+    </p>
+
+    <p>
+      When demand is inelastic, a rise in price causes total revenue to increase, while a fall in price leads to lower total revenue. This 
+      fact is important for indirect tax policy and pricing of essential goods.
+    </p>
+
+    <!-- 5. UNITARY ELASTIC -->
+    <p class="section-title">5. Unitary Elastic Demand (E<sub>p</sub> = 1)</p>
+    <p>
+      Demand is <strong>unitary elastic</strong> when the percentage change in quantity demanded is exactly equal to the percentage change 
+      in price. Here, the proportionate responsiveness of demand matches the proportionate change in price.
+    </p>
+
+    <p class="formula">
+      |ΔQ/Q| = |ΔP/P| &nbsp;⇒&nbsp; |E<sub>p</sub>| = 1 (Unitary elastic)
+    </p>
+
+    <p>
+      The demand curve representing unitary elasticity is usually drawn as a rectangular hyperbola, indicating that total expenditure 
+      (or total revenue) remains constant at all points on the curve: a fall in price is exactly offset by a proportionate increase 
+      in quantity demanded, and vice versa.
+    </p>
+
+    <p class="example">
+      <strong>Example:</strong> If a fall in price of 20% leads to a rise in quantity demanded of 20%, the demand for that commodity in that 
+      price range is unitary elastic, since total expenditure remains unchanged.
+    </p>
+
+    <!-- COMPARATIVE TABLE -->
+    <p class="section-title">Comparative View of Degrees of Price Elasticity</p>
+    <table aria-label="Comparison of degrees of price elasticity of demand">
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>Numerical Value of E<sub>p</sub></th>
+          <th>Nature of Demand Curve</th>
+          <th>Response of Q to P Change</th>
+          <th>Effect on Total Revenue (TR) when Price Falls</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Perfectly Elastic</td>
+          <td>E<sub>p</sub> = ∞</td>
+          <td>Horizontal line</td>
+          <td>Infinitely large change in Q for any small change in P</td>
+          <td>TR falls to zero if price rises even slightly; rises without bound if output expands</td>
+        </tr>
+        <tr>
+          <td>Perfectly Inelastic</td>
+          <td>E<sub>p</sub> = 0</td>
+          <td>Vertical line</td>
+          <td>No change in Q despite change in P</td>
+          <td>TR moves exactly with price (rise in P → rise in TR; fall in P → fall in TR)</td>
+        </tr>
+        <tr>
+          <td>Relatively Elastic</td>
+          <td>|E<sub>p</sub>| &gt; 1</td>
+          <td>Flatter curve</td>
+          <td>Q changes more than proportionately to P</td>
+          <td>TR increases when price falls; TR decreases when price rises</td>
+        </tr>
+        <tr>
+          <td>Relatively Inelastic</td>
+          <td>|E<sub>p</sub>| &lt; 1</td>
+          <td>Steeper curve</td>
+          <td>Q changes less than proportionately to P</td>
+          <td>TR decreases when price falls; TR increases when price rises</td>
+        </tr>
+        <tr>
+          <td>Unitary Elastic</td>
+          <td>|E<sub>p</sub>| = 1</td>
+          <td>Rectangular hyperbola (TR constant)</td>
+          <td>Q changes in same proportion as P</td>
+          <td>TR remains unchanged when price changes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- APPLICATIONS / IMPORTANCE -->
+    <p class="section-title">Significance of Knowing Degrees of Elasticity</p>
+    <ol class="points">
+      <li>
+        <strong>Pricing and revenue strategy:</strong> Firms adjust prices differently depending on whether 
+        demand for their product is highly elastic, inelastic or unitary. The degree of elasticity guides them 
+        in deciding whether a price cut or a price increase will enhance total revenue.
+      </li>
+      <li>
+        <strong>Taxation and public policy:</strong> Governments prefer to tax commodities whose demand is 
+        relatively inelastic so that revenue is substantial while quantity and welfare distortions are limited.
+      </li>
+      <li>
+        <strong>Substitute and complement analysis:</strong> Degrees of elasticity help evaluate the closeness 
+        of substitutes and the strength of complementarity, which is vital for competition policy.
+      </li>
+      <li>
+        <strong>Welfare and incidence:</strong> The incidence and burden of taxes, subsidies and price controls 
+        depend on the degree of elasticity of demand vis-à-vis supply.
+      </li>
+    </ol>
+
+    <!-- EXAM TIP -->
+    <div class="exam-tip">
+      <strong>Exam Tip:</strong> In a 15-mark answer, begin with a precise definition of elasticity, then 
+      systematically explain each degree under clear headings, including numerical value, diagrammatic idea, 
+      one real-life example and total revenue implication. Conclude with a short paragraph on the practical 
+      significance of knowing whether demand is elastic, inelastic or unitary.
+    </div>
+
+    <!-- CONCLUSION -->
+    <p class="section-title">Conclusion</p>
+    <p>
+      To summarise, the concept of price elasticity of demand becomes meaningful and operational only when its 
+      various degrees are clearly distinguished and understood. The classification into perfectly elastic, perfectly 
+      inelastic, relatively elastic, relatively inelastic and unitary elastic demand allows economists, firms and 
+      policymakers to interpret market behaviour in a systematic way. A well-organised examination answer presenting 
+      definitions, diagrams, numerical ranges, examples and revenue implications of each degree fully satisfies the 
+      expectations of Panjab University examiners and is entirely consistent with the analytical treatment in 
+      standard texts such as T.R. Jain and V.K. Ohri.
+    </p>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      This answer forms part of a curated collection of important questions that have frequently been asked in 
+      past university examinations and therefore possess a high probability of appearing in future assessments. 
+      While prepared with academic care and aligned to the prescribed syllabus, it should be treated as high-quality 
+      preparation material rather than a guaranteed prediction of actual question papers.
+    </div>
+
+  </article>
+</div>
+
+</body>
+</html>
