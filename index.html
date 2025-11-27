@@ -23,9 +23,86 @@ h1{margin:0;font-size:22px;color:#000}
 .resources a{color:var(--accent);text-decoration:none;font-weight:600}
 .footer{margin-top:24px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
 @media(max-width:700px){.grid{grid-template-columns:1fr}.header{flex-direction:row;gap:10px}h1{font-size:20px}}
+
+/* Popup disclaimer styles */
+.disclaimer-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.disclaimer-modal{
+  max-width:520px;
+  width:90%;
+  background:#f9fafc;
+  border-radius:12px;
+  border:1px solid #e5edf8;
+  box-shadow:0 20px 45px rgba(15,23,42,0.25);
+  padding:18px 18px 16px 18px;
+  position:relative;
+}
+.disclaimer-title{
+  margin:0 0 6px 0;
+  font-size:16px;
+  font-weight:700;
+  color:#0b1220;
+}
+.disclaimer-text{
+  margin:0;
+  font-size:14px;
+  line-height:1.7;
+  color:#475569;
+}
+.disclaimer-close{
+  position:absolute;
+  top:8px;
+  right:10px;
+  border:none;
+  background:transparent;
+  font-size:18px;
+  cursor:pointer;
+  color:#6b7280;
+  padding:2px 6px;
+}
+.disclaimer-close:hover{
+  color:#111827;
+}
+.disclaimer-tag{
+  display:inline-block;
+  margin-bottom:6px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  color:#1e3a8a;
+  background:#e0ecff;
+  padding:3px 7px;
+  border-radius:999px;
+}
+@media(max-width:480px){
+  .disclaimer-modal{padding:16px 14px 14px 14px}
+}
 </style>
 </head>
 <body>
+
+<!-- Popup Disclaimer (shown on every load, auto hides after 10s) -->
+<div id="disclaimerOverlay" class="disclaimer-overlay">
+  <div class="disclaimer-modal">
+    <button class="disclaimer-close" id="disclaimerClose" aria-label="Close disclaimer">&times;</button>
+    <div class="disclaimer-tag">Important notice</div>
+    <h2 class="disclaimer-title">Academic Disclaimer</h2>
+    <p class="disclaimer-text">
+      The notes and solutions available on DegreeNotes.store form part of a carefully curated set of important questions
+      that have frequently appeared in past university examinations and therefore hold a high probability of reappearing
+      in future assessments. While prepared with academic accuracy and aligned to the prescribed syllabus, these resources
+      should be treated as high-quality preparation material rather than a guaranteed prediction of any upcoming exam paper.
+    </p>
+  </div>
+</div>
+
 <div class="container">
   <div class="header">
     <div class="logo">DN</div>
@@ -35,7 +112,9 @@ h1{margin:0;font-size:22px;color:#000}
     </div>
   </div>
 
-  <p style="margin-top:18px;color:#374151">Welcome to DegreeNotes.store — Your central hub for clear, structured and examiner-friendly B.Com Semester I important questions.</p>
+  <p style="margin-top:18px;color:#374151">
+    Welcome to DegreeNotes.store — Your central hub for clear, structured and examiner-friendly B.Com Semester I important questions.
+  </p>
 
   <div class="grid">
     <div class="card">
@@ -57,9 +136,9 @@ h1{margin:0;font-size:22px;color:#000}
     </div>
 
     <div class="card">
-      <h3>Micro Economics</h3>
-      <p>Full syllabus important questions (Coming Soon)</p>
-      <a class="cta" href="#">Coming Soon</a>
+      <h3>Micro/Business Economics</h3>
+      <p>Full syllabus important questions</p>
+      <a class="cta" href="ecosem1/ecoindex.html">Open Micro Economics</a>
     </div>
 
     <div class="card">
@@ -81,11 +160,44 @@ h1{margin:0;font-size:22px;color:#000}
     </div>
   </div>
 
- 
   <div class="footer">
     <div>Project made by: <strong>Jeevansh Manocha</strong></div>
     <div style="font-size:13px;color:var(--muted)">© DegreeNotes.store</div>
   </div>
 </div>
+
+<script>
+  (function(){
+    var overlay = document.getElementById('disclaimerOverlay');
+    var closeBtn = document.getElementById('disclaimerClose');
+    var hideTimeout = null;
+
+    function hideDisclaimer(){
+      if(overlay){
+        overlay.style.display = 'none';
+      }
+      if(hideTimeout){
+        clearTimeout(hideTimeout);
+        hideTimeout = null;
+      }
+    }
+
+    // Auto hide after 10 seconds
+    hideTimeout = setTimeout(hideDisclaimer, 10000);
+
+    // Close on X click
+    if(closeBtn){
+      closeBtn.addEventListener('click', hideDisclaimer);
+    }
+
+    // Optional: close if user clicks outside the modal
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay){
+        hideDisclaimer();
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>
