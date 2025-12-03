@@ -17,9 +17,91 @@
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
     a.card{display:block;padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(30,58,138,0.06),rgba(59,130,246,0.03));border:1px solid rgba(30,58,138,0.08);text-decoration:none;color:var(--accent);font-weight:600}
     a.card small{display:block;color:var(--muted);font-weight:400;margin-top:6px}
-    .resources{margin-top:18px;padding:12px;border-radius:10px;background:#fff;border:1px solid #eef6ff}
-    .download{display:inline-block;margin-top:8px;padding:8px 12px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
-    @media(max-width:700px){.grid{grid-template-columns:1fr}.wrap{margin:14px}}
+
+    /* 🔹 Academic-looking Past Paper Section */
+    .past-section{
+      margin-top:28px;
+      padding:18px 20px;
+      border-radius:10px;
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+    }
+    .past-eyebrow{
+      font-size:11px;
+      letter-spacing:0.09em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin:0 0 4px;
+    }
+    .past-section h2{
+      margin:0 0 8px;
+      font-size:17px;
+      color:#111827;
+    }
+    .past-section p{
+      margin:0 0 10px;
+      font-size:14px;
+      color:#374151;
+      line-height:1.6;
+    }
+    .past-section ul{
+      margin:6px 0 10px 18px;
+      padding:0;
+      font-size:14px;
+      color:#374151;
+      line-height:1.55;
+    }
+
+    .past-block{
+      margin-top:10px;
+      display:grid;
+      gap:8px;
+    }
+    .past-year-row{
+      padding:10px 12px;
+      border-radius:8px;
+      border:1px dashed #d1d5db;
+      background:#ffffff;
+    }
+    .past-year-title{
+      font-size:14px;
+      font-weight:600;
+      color:#111827;
+      margin:0 0 4px;
+    }
+    .past-year-sub{
+      font-size:12px;
+      color:#6b7280;
+      margin:0 0 8px;
+    }
+
+    .btn-download{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      padding:7px 12px;
+      font-size:13px;
+      font-weight:600;
+      border-radius:999px;
+      border:1px solid var(--accent);
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      cursor:pointer;
+    }
+    .btn-download:hover{
+      filter:brightness(0.96);
+    }
+    .btn-download span.icon{
+      font-size:14px;
+      line-height:1;
+    }
+
+    @media(max-width:700px){
+      .grid{grid-template-columns:1fr}
+      .wrap{margin:14px}
+    }
   </style>
 </head>
 <body>
@@ -28,7 +110,9 @@
       <div class="logo">FA</div>
       <div>
         <h1>Important Questions — Financial Accounting (Sem I)</h1>
-        <p class="lead">Panjab University – Important Questions | Curated by Jeevansh Manocha, Student at Government College Ludhiana (East)- Click a question to open its solution in further questions</p>
+        <p class="lead">
+          Panjab University – Important Questions | Curated by Jeevansh Manocha, Student at Government College Ludhiana (East) — Click a question to open its solution.
+        </p>
       </div>
     </header>
 
@@ -55,7 +139,6 @@
       </a>
 
       <a class="card" href="question6.html">6. What is realization account? Why it is prepared? How does it differ from revaluation account?
-
         <small>Short answer</small>
       </a>
 
@@ -68,72 +151,109 @@
       </a>
 
       <a class="card" href="question9.html">9. Difference between consignment and Joint Venture.
-
         <small>Short answer</small>
       </a>
 
       <a class="card" href="question10.html">10. Difference between Joint Venture and Partnership.
-
         <small>Short answer</small>
       </a>
 
-      <!-- LONG QUESTIONS (11-21) -->
+      <!-- LONG QUESTIONS (11-22) -->
       <a class="card" href="question11.html">11. Define Accounting. Write process/functions, advantages and objective of accounting.
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question12.html">12. Explain Accounting Principles/Accounting Concepts and Conventions
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question13.html">13. What do you mean by ‘Adjustments’? Enumerate various adjustments which are generally made in the Final Accounts.
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question14.html">14. What do you understand by independent branch? What books are maintained by such a branch and how are its accounts incorporated in the books of the head office.
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question15.html">15. What are departmental accounts? What are the objective and advantages of preparing these accounts ? Explain the basis of allocation of expenses over various departments of an organization.
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question16.html">16. What is meant by dissolution of firm? List and explain the circumstances under which the firm is dissolved. 
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question17.html">17. How distribution of funds is made under piece-meal distribution method?
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question18.html">18. What is meant by dissolution of firm ? Give the accounting treatment in the books of firm at the time of dissolution of firm.
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question19.html">19. What is consignment? Give journal entries in the books of consignor and consignee.
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question20.html">20. Define Joint Venture. Explain the different method of recording joint venture transactions. Also give journal entries to pass under different methods.
-
         <small>Long answer</small>
       </a>
 
       <a class="card" href="question21.html">21. Give journal entries in the books of lessor and lessee in the following cases: 
         (a) when no minimum rent account exists (b) when minimum rent account exists.
-        
+        <small>Long answer</small>
+      </a>
+
+      <a class="card" href="question22.html">22. Explain Indian GAAP and discuss accounting concepts and conventions
         <small>Long answer</small>
       </a>
     </section>
+
+    <!-- 🔹 Academic-looking section for Previous Year Papers with Download Buttons -->
+    <section class="past-section" aria-label="previous year papers">
+      <p class="past-eyebrow">Previous Year University Examinations</p>
+      <h2>Access to Past Question Papers — Financial Accounting</h2>
+      <p>
+        Financial Accounting at B.Com (Semester I) level is predominantly a <strong>practical-based subject</strong>.
+        Along with these important questions, students are strongly advised to practise questions from
+        recent university examinations. Working through past papers helps in:
+      </p>
+      <ul>
+        <li>understanding the pattern and style of numerical as well as theory questions,</li>
+        <li>identifying the weightage of practical portions in comparison to theory, and</li>
+        <li>improving speed, presentation and accuracy under exam conditions.</li>
+      </ul>
+
+      <div class="past-block">
+        <div class="past-year-row">
+          <p class="past-year-title">University Examination 2024–2025</p>
+          <p class="past-year-sub">Financial Accounting – B.Com Semester I</p>
+          <a class="btn-download" href="/pdf/fa_pastpaper_2024-25.pdf" download>
+            <span class="icon">⬇️</span>
+            <span>Download 2024–2025 Paper (PDF)</span>
+          </a>
+        </div>
+
+        <div class="past-year-row">
+          <p class="past-year-title">University Examination 2023–2024</p>
+          <p class="past-year-sub">Financial Accounting – B.Com Semester I</p>
+          <a class="btn-download" href="/pdf/fa_pastpaper_2023-24.pdf" download>
+            <span class="icon">⬇️</span>
+            <span>Download 2023–2024 Paper (PDF)</span>
+          </a>
+        </div>
+
+        <div class="past-year-row">
+          <p class="past-year-title">University Examination 2022–2023</p>
+          <p class="past-year-sub">Financial Accounting – B.Com Semester I</p>
+          <a class="btn-download" href="/pdf/1.pdf" download>
+            <span class="icon">⬇️</span>
+            <span>Download 2022–2023 Paper (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </div>
 </body>
 </html>
