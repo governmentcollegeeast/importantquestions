@@ -120,5 +120,70 @@
     </footer>
 
   </div>
+  <!-- ===== Financial Accounting – Disclaimer Modal (Inline CSS) ===== -->
+
+<div id="fa-book-disclaimer"
+style="position:fixed;inset:0;background:rgba(15,23,42,0.35);display:flex;align-items:center;justify-content:center;padding:1.5rem;z-index:9999;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+
+<div style="position:relative;max-width:520px;width:100%;background:#fffaf3;border-radius:18px;
+padding:1.75rem 1.75rem 1.5rem;box-shadow:0 20px 45px rgba(15,23,42,0.35),
+0 0 0 1px rgba(248,196,113,0.7);">
+
+<button id="dn-close-btn" aria-label="Close disclaimer"
+ style="position:absolute;top:0.55rem;right:0.75rem;border:none;background:transparent;
+   font-size:1.2rem;cursor:pointer;color:#9ca3af;">
+ &times;
+</button>
+
+<div style="display:inline-flex;align-items:center;padding:0.25rem 0.8rem;border-radius:999px;
+ font-size:0.72rem;letter-spacing:0.08em;font-weight:700;text-transform:uppercase;
+ background:#fef3c7;color:#b45309;border:1px solid #facc15;margin-bottom:0.75rem;">
+ BOOK REFERENCE RECOMMENDED
+</div>
+
+<h3 style="margin:0 0 0.5rem;font-size:1.1rem;font-weight:700;color:#92400e;">
+ Additional Study Recommended
+</h3>
+
+<p style="margin:0.35rem 0;font-size:0.9rem;line-height:1.5;color:#4b5563;">
+ This Principles of Financial Accounting question involves important concepts that require
+ deeper understanding and detailed practice. Students are strongly advised to consult the
+ prescribed textbook in addition to these structured notes.
+</p>
+
+<p style="margin:0.35rem 0;font-size:0.9rem;line-height:1.5;color:#4b5563;">
+ For complete, exam-oriented preparation, students should also refer to
+ <strong style="font-weight:700;color:#78350f;">
+   Kalyani Publications – “Principles of Financial Accounting” by
+   S. P. Jain, K. L. Nairang, Simmi Agarwal, and Monica Sehgal
+ </strong>.
+</p>
+
+<p style="margin:0.35rem 0;font-size:0.9rem;line-height:1.5;color:#4b5563;">
+ Use this solution together with the above book to cover all concepts, illustrations
+ and university-level questions based on this topic.
+</p>
+
+</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+var modal = document.getElementById("fa-book-disclaimer");
+var closeBtn = document.getElementById("dn-close-btn");
+
+if (closeBtn && modal) {
+ closeBtn.addEventListener("click", function () {
+   modal.style.display = "none";
+ });
+}
+
+setTimeout(function () {
+ if (modal) {
+   modal.style.display = "none";
+ }
+}, 20000);
+});
+</script>
 </body>
 </html>
