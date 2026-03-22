@@ -3,140 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B.Com — DegreeNotes</title>
+<title>B.Com - DegreeNotes</title>
 
 <style>
-:root{
-  --primary:#1e3a8a;
-  --accent:#4f46e5;
-  --bg:#f4f6fb;
-  --text:#1f2a44;
-  --muted:#6b7280;
-  --card:#ffffff;
-  --border:#e5e7eb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+body {
+  background: #f8fafc;
+  color: #1e293b;
 }
 
-body{
-  background:var(--bg);
-  color:var(--text);
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:30px 20px;
+.logo {
+  font-size: 20px;
+  font-weight: 700;
 }
 
-/* NAV */
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:40px;
+.logo span {
+  color: #2d4bb3;
 }
 
-.logo{
-  font-size:22px;
-  font-weight:700;
-}
-
-.logo span{
-  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
+.back {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
 }
 
 /* HERO */
-.hero{
-  text-align:center;
-  margin-bottom:50px;
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
 }
 
-.hero h1{
-  font-size:32px;
-  margin-bottom:10px;
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
 }
 
-.hero p{
-  color:var(--muted);
-  font-size:15px;
+.hero p {
+  color: #64748b;
+  font-size: 16px;
 }
 
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
+/* MAIN SECTION */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-/* CARD */
-.card{
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:14px;
-  padding:24px;
-  transition:0.25s;
-  text-align:center;
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
 }
 
-.card h3{
-  color:var(--primary);
-  margin-bottom:10px;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
-.card p{
-  font-size:14px;
-  color:var(--muted);
-  margin-bottom:14px;
+.card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
 }
 
-.btn{
-  display:inline-block;
-  padding:8px 16px;
-  background:var(--primary);
-  color:#fff;
-  text-decoration:none;
-  border-radius:8px;
-  font-size:13px;
+.card p {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* BUTTON (CONSISTENT) */
+.btn {
+  display: inline-block;
+  background: #2d4bb3;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #1e3a8a;
+}
+
+/* INFO STRIP */
+.info-strip {
+  margin-top: 50px;
+  background: #eef2ff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #1e3a8a;
 }
 
 /* FOOTER */
-.footer{
-  margin-top:50px;
-  border-top:1px solid var(--border);
-  padding-top:20px;
-  display:flex;
-  justify-content:space-between;
-  font-size:13px;
-  color:var(--muted);
-  flex-wrap:wrap;
+.footer {
+  margin-top: 60px;
+  padding: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+  border-top: 1px solid #e5e7eb;
 }
 
-@media(max-width:600px){
-  .nav{
-    flex-direction:column;
-    gap:10px;
-  }
-
-  .hero h1{
-    font-size:26px;
-  }
-
-  .footer{
-    flex-direction:column;
-    text-align:center;
+/* RESPONSIVE */
+@media(max-width: 500px) {
+  .hero h1 {
+    font-size: 26px;
   }
 }
 </style>
@@ -144,70 +144,48 @@ body{
 
 <body>
 
-<div class="container">
-
-<!-- NAV -->
-<div class="nav">
+<!-- NAVBAR -->
+<div class="navbar">
   <div class="logo">Degree<span>Notes</span></div>
-  <a href="../index.html" style="font-size:14px;color:#6b7280;text-decoration:none;">← Back to Home</a>
+  <a href="/" class="back">← Back to Home</a>
 </div>
 
 <!-- HERO -->
 <div class="hero">
   <h1>Bachelor of Commerce (B.Com)</h1>
-  <p>Select your semester to access structured academic content</p>
+  <p>Access semester-wise important questions and structured exam content</p>
 </div>
 
-<!-- SEMESTERS -->
-<div class="grid">
+<!-- MAIN -->
+<div class="section">
+  <div class="cards">
 
-  <div class="card">
-    <h3>Semester 1</h3>
-    <p>Core subjects and foundational concepts</p>
-    <a href="sem1/index.html" class="btn">Open</a>
+    <!-- SEM 1 -->
+    <div class="card">
+      <h3>Semester 1</h3>
+      <p>Core subjects and foundational concepts to build your base for commerce.</p>
+      <a href="sem1/index.html" class="btn">Open</a>
+    </div>
+
+    <!-- SEM 2 -->
+    <div class="card">
+      <h3>Semester 2</h3>
+      <p>Advanced topics with deeper understanding and continuation of core concepts.</p>
+      <a href="sem2/index.html" class="btn">Open</a>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h3>Semester 2</h3>
-    <p>Advanced topics and continued learning</p>
-    <a href="sem2/index.html" class="btn">Open</a>
-  </div>
-
-  <div class="card">
-    <h3>Semester 3</h3>
-    <p>Intermediate academic concepts</p>
-    <a href="#" class="btn">Coming Soon</a>
-  </div>
-
-  <div class="card">
-    <h3>Semester 4</h3>
-    <p>In-depth subject understanding</p>
-    <a href="#" class="btn">Coming Soon</a>
-  </div>
-
-  <div class="card">
-    <h3>Semester 5</h3>
-    <p>Specialized topics and applications</p>
-    <a href="#" class="btn">Coming Soon</a>
-  </div>
-
-  <div class="card">
-    <h3>Semester 6</h3>
-    <p>Final semester and advanced learning</p>
-    <a href="#" class="btn">Coming Soon</a>
+  <!-- EXTRA SECTION (fills emptiness) -->
+  <div class="info-strip">
+    Designed to help you focus only on what matters for exams — no unnecessary content, only important questions and structured answers.
   </div>
 
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-  <div>
-    Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
-    Government College Ludhiana (East), Panjab University
-  </div>
-  <div>© DegreeNotes.store</div>
-</div>
-
+  Curated by <strong>Jeevansh Manocha</strong> • Government College Ludhiana (East)
 </div>
 
 </body>
