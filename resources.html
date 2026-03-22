@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PYQs — DegreeNotes</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --accent:#4f46e5;
+  --bg:#f4f6fb;
+  --text:#1f2a44;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.header h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.header p{
+  color:var(--muted);
+}
+
+/* SECTION */
+.section{
+  margin-bottom:60px;
+}
+
+.section h2{
+  margin-bottom:20px;
+  color:var(--primary);
+  border-left:5px solid var(--accent);
+  padding-left:10px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:20px;
+  transition:0.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+  color:var(--primary);
+  margin-bottom:8px;
+}
+
+.card p{
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 14px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:13px;
+}
+
+/* FOOTER NOTE */
+.note{
+  margin-top:50px;
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+}
+/* FOOTER */
+.footer{
+  border-top:1px solid var(--border);
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  color:var(--muted);
+  flex-wrap:wrap;
+  gap:10px;
+}
+/* NAVBAR */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+  color:var(--primary);
+  letter-spacing:0.5px;
+}
+
+.logo span{
+  color:var(--accent);
+}
+
+.nav-links a{
+  margin-left:22px;
+  text-decoration:none;
+  font-size:14px;
+  color:var(--muted);
+  transition:0.2s;
+}
+
+.nav-links a:hover{
+  color:var(--primary);
+}
+
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav a{
+  font-size:14px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+@media(max-width:700px){
+  .nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+  }
+  
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">Degree<span>Notes</span></div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resources.html"style="color:#1e3a8a;font-weight:600;">Resources</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</div>
+
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Previous Year Questions (PYQs)</h1>
+  <p>Semester-wise PYQs structured for Panjab University students</p>
+</div>
+
+<!-- ================= B.COM ================= -->
+<div class="section">
+  <h2>B.Com</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Semester 1</h3>
+      <p>All subjects PYQs for Sem 1</p>
+      <a href="https://drive.google.com/drive/folders/1kYULUH3IkRuszQTs1UsTPhBN1NCQvGRT" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 2</h3>
+      <p>All subjects PYQs for Sem 2</p>
+      <a href="https://drive.google.com/drive/folders/1bpYI5HXOeFHP-7tsbb5rFvy2OHg9AQ3z" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 3</h3>
+      <p>All subjects PYQs for Sem 3</p>
+      <a href="https://drive.google.com/drive/folders/1H0CnpSjbMBIbArPx4rXOyHkPI74TQYCh" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 4</h3>
+      <p>All subjects PYQs for Sem 4</p>
+      <a href="https://drive.google.com/drive/folders/1sqBlI1hB6Y6uYMPmnQBJuhe2xOciZcXa" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 5</h3>
+      <p>All subjects PYQs for Sem 5</p>
+      <a href="https://drive.google.com/drive/folders/18rP4kvS0xmaNtmjtzn39T59aAW_TtTeC" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 6</h3>
+      <p>All subjects PYQs for Sem 6</p>
+      <a href="https://drive.google.com/drive/folders/1hY_Jml74qHghVGDjn__qf0a3ujSgMZpD" class="btn">Open</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= BBA ================= -->
+<div class="section">
+  <h2>BBA</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Semester 1</h3>
+      <p>All subjects PYQs for Sem 1</p>
+      <a href="https://drive.google.com/drive/folders/1SkAVxuy_qd6LQnIYDWD_wJup3Cls7ZCG" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 2</h3>
+      <p>All subjects PYQs for Sem 2</p>
+      <a href="https://drive.google.com/drive/folders/1nlFWCmNxrRSujzrXMXO3_SyfFVqW2PRr" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 3</h3>
+      <p>All subjects PYQs for Sem 3</p>
+      <a href="https://drive.google.com/drive/folders/1hx5NkHW3cMUluYcmhqTPYiff14zZPLTU" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 4</h3>
+      <p>All subjects PYQs for Sem 4</p>
+      <a href="https://drive.google.com/drive/folders/1BWqJih5xlXfcEnUvJOI-PwTBfS_h5NYI" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 5</h3>
+      <p>All subjects PYQs for Sem 5</p>
+      <a href="https://drive.google.com/drive/folders/1rVbjFzrb1P-ZEDoHtMDQT6qpeiPOw0AA" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Semester 6</h3>
+      <p>All subjects PYQs for Sem 6</p>
+      <a href="https://drive.google.com/drive/folders/1vW-xzw8cDL2fB0VvZ_gvRHmCE3FCXz3H" class="btn">Open</a>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER -->
+<div class="footer">
+  <div>
+    Curated and developed by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
+    Government College Ludhiana (East), Panjab University
+  </div>
+  <div>© DegreeNotes.store</div>
+</div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
