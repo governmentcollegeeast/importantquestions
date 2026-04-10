@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Resource Management — DegreeNotes</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --accent:#4f46e5;
+  --bg:#f4f6fb;
+  --text:#1f2a44;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav a{
+  font-size:14px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.hero{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.hero h1{
+  font-size:28px;
+  margin-bottom:6px;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  transition:0.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+  color:var(--primary);
+  font-size:15px;
+  margin-bottom:8px;
+}
+
+.card p{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 14px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+}
+
+.footer{
+  margin-top:50px;
+  border-top:1px solid var(--border);
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  color:var(--muted);
+  flex-wrap:wrap;
+}
+
+.disclaimer-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.disclaimer-modal{
+  max-width:520px;
+  width:90%;
+  background:#fff;
+  border-radius:12px;
+  border:1px solid var(--border);
+  box-shadow:0 20px 45px rgba(15,23,42,0.25);
+  padding:18px;
+  position:relative;
+}
+
+.disclaimer-title{
+  font-size:16px;
+  font-weight:700;
+}
+
+.disclaimer-text{
+  font-size:14px;
+  color:#475569;
+}
+
+.disclaimer-close{
+  position:absolute;
+  top:8px;
+  right:10px;
+  border:none;
+  background:transparent;
+  font-size:18px;
+  cursor:pointer;
+}
+
+@media(max-width:600px){
+  .nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- <div id="disclaimerOverlay" class="disclaimer-overlay">
+  <div class="disclaimer-modal">
+    <button class="disclaimer-close" id="disclaimerClose">&times;</button>
+    <div class="disclaimer-title">Academic Disclaimer</div>
+    <p class="disclaimer-text">
+      These notes are based on important questions and syllabus. They are for preparation purposes only.
+    </p>
+  </div>
+</div> -->
+
+<div class="container">
+
+<div class="nav">
+  <div class="logo">Degree<span>Notes</span></div>
+  <a href="../index.html">← Back</a>
+</div>
+
+<div class="hero">
+  <h1>Human Resource Management</h1>
+  <p>B.Com Semester II • Important Questions</p>
+</div>
+
+<div class="grid">
+
+  <!-- Q1 -->
+  <div class="card">
+    <h3>Meaning, Importance & Functions of HRM</h3>
+    <p>Concept, functions and limitations</p>
+    <a href="q1.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q2 -->
+  <div class="card">
+    <h3>Recent Trends & Challenges of HRM</h3>
+    <p>Modern developments and issues</p>
+    <a href="q2.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q3 -->
+  <div class="card">
+    <h3>Human Resource Planning</h3>
+    <p>Meaning, importance, types & limitations</p>
+    <a href="q3.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q4 -->
+  <div class="card">
+    <h3>Process of HR Planning</h3>
+    <p>Steps and implementation</p>
+    <a href="q4.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q5 -->
+  <div class="card">
+    <h3>Sources of Recruitment</h3>
+    <p>Internal and external sources</p>
+    <a href="q5.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q6 -->
+  <div class="card">
+    <h3>Recruitment vs Selection</h3>
+    <p>Steps in selection process</p>
+    <a href="q6.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q7 -->
+  <div class="card">
+    <h3>Selection Process</h3>
+    <p>Detailed steps and importance</p>
+    <a href="q7.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q8 -->
+  <div class="card">
+    <h3>Training Programme</h3>
+    <p>Steps and evaluation methods</p>
+    <a href="q8.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q9 -->
+  <div class="card">
+    <h3>Training Methods & Types</h3>
+    <p>New and existing employees</p>
+    <a href="q9.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q10 -->
+  <div class="card">
+    <h3>Executive Development</h3>
+    <p>Techniques and importance</p>
+    <a href="q10.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q11 -->
+  <div class="card">
+    <h3>Methods of Transfer</h3>
+    <p>Types and purpose</p>
+    <a href="q11.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q12 -->
+  <div class="card">
+    <h3>Promotion</h3>
+    <p>Significance, policies & basis</p>
+    <a href="q12.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q13 -->
+  <div class="card">
+    <h3>Performance Appraisal</h3>
+    <p>Techniques and evaluation</p>
+    <a href="q13.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q14 -->
+  <div class="card">
+    <h3>Problems in Appraisal</h3>
+    <p>Issues and improvement measures</p>
+    <a href="q14.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q15 -->
+  <div class="card">
+    <h3>Job Design</h3>
+    <p>Objectives and techniques</p>
+    <a href="q15.html" class="btn">Read</a>
+  </div>
+
+  <!-- Q16 -->
+  <div class="card">
+    <h3>Employee Separation</h3>
+    <p>Types and reasons</p>
+    <a href="q16.html" class="btn">Read</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div>
+    Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
+    Government College Ludhiana (East), Panjab University
+  </div>
+  <div>© DegreeNotes.store</div>
+</div>
+
+</div>
+
+<script>
+(function(){
+  const overlay = document.getElementById('disclaimerOverlay');
+  const closeBtn = document.getElementById('disclaimerClose');
+  function hide(){ overlay.style.display='none'; }
+  setTimeout(hide, 8000);
+  closeBtn.onclick = hide;
+})();
+</script>
+
+</body>
+</html>
