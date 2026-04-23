@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B.Com Semester 2 — DegreeNotes</title>
+<title>Business Law — DegreeNotes</title>
 
 <style>
 :root{
@@ -34,7 +34,6 @@ body{
   padding:30px 20px;
 }
 
-/* NAV */
 .nav{
   display:flex;
   justify-content:space-between;
@@ -59,15 +58,14 @@ body{
   text-decoration:none;
 }
 
-/* HERO */
 .hero{
   text-align:center;
-  margin-bottom:40px;
+  margin-bottom:30px;
 }
 
 .hero h1{
   font-size:28px;
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
 
 .hero p{
@@ -75,19 +73,17 @@ body{
   font-size:14px;
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:20px;
 }
 
-/* CARD */
 .card{
   background:var(--card);
   border:1px solid var(--border);
   border-radius:14px;
-  padding:20px;
+  padding:18px;
   transition:0.25s;
 }
 
@@ -98,11 +94,12 @@ body{
 
 .card h3{
   color:var(--primary);
+  font-size:15px;
   margin-bottom:8px;
 }
 
 .card p{
-  font-size:14px;
+  font-size:13px;
   color:var(--muted);
   margin-bottom:12px;
 }
@@ -117,7 +114,6 @@ body{
   font-size:13px;
 }
 
-/* FOOTER */
 .footer{
   margin-top:50px;
   border-top:1px solid var(--border);
@@ -129,15 +125,10 @@ body{
   flex-wrap:wrap;
 }
 
-/* MOBILE */
 @media(max-width:600px){
   .nav{
     flex-direction:column;
     gap:10px;
-  }
-
-  .hero h1{
-    font-size:22px;
   }
 
   .footer{
@@ -152,66 +143,54 @@ body{
 
 <div class="container">
 
-<!-- NAV -->
 <div class="nav">
   <div class="logo">Degree<span>Notes</span></div>
   <a href="../index.html">← Back</a>
 </div>
 
-<!-- HERO -->
 <div class="hero">
-  <h1>B.Com Semester 2</h1>
-  <p>Panjab University • Structured Important Questions</p>
+  <h1>Business Law</h1>
+  <p>B.Com / BBA Semester II • Important Questions</p>
 </div>
 
-<!-- SUBJECTS -->
 <div class="grid">
 
-  <div class="card">
-    <h3>Macro Economics</h3>
-    <p>Concepts, theory and exam questions</p>
-    <a href="macro-economics/macroindex.html" class="btn">Open</a>
-  </div>
+  <!-- SHORT QUESTIONS -->
+  <div class="card"><h3>Sale vs Agreement to Sell</h3><p>Difference and legal meaning</p><a href="q1.html" class="btn">Read</a></div>
 
-  <div class="card">
-    <h3>Human Resource Management</h3>
-    <p>HR concepts and exam-focused content</p>
-    <a href="hrm/hrmindex.html" class="btn">Open</a>
-  </div>
+  <div class="card"><h3>Unpaid Seller (Baldi Workman)</h3><p>Concept and role</p><a href="q2.html" class="btn">Read</a></div>
 
-  <div class="card">
-    <h3>English</h3>
-    <p>Exam-oriented English questions</p>
-    <a href="english/englishindex.html" class="btn">Open</a>
-  </div>
+  <div class="card"><h3>Property in Goods</h3><p>Meaning and transfer</p><a href="q3.html" class="btn">Read</a></div>
 
-  <div class="card">
-    <h3>Business Law</h3>
-    <p>Legal concepts and important questions</p>
-    <a href="business-law/business-law.html" class="btn">Open</a>
-  </div>
+  <div class="card"><h3>Lay-off, Lockout & Retrenchment</h3><p>Key differences</p><a href="q4.html" class="btn">Read</a></div>
 
-  <div class="card">
-    <h3>Corporate Accounting</h3>
-    <p>Advanced accounting topics</p>
-    <a href="#" class="btn">Coming Soon</a>
-  </div>
+  <div class="card"><h3>Factories Act (Women & Young Persons)</h3><p>Employment provisions</p><a href="q5.html" class="btn">Read</a></div>
 
-  <div class="card">
-    <h3>E-Commerce</h3>
-    <p>Digital business and online systems</p>
-    <a href="#" class="btn">Coming Soon</a>
-  </div>
+  <div class="card"><h3>Unfair Labour Practices</h3><p>Meaning and examples</p><a href="q6.html" class="btn">Read</a></div>
 
-  <div class="card">
-    <h3>Financial Literacy</h3>
-    <p>Basic finance and practical knowledge</p>
-    <a href="#" class="btn">Coming Soon</a>
-  </div>
+  <div class="card"><h3>Leave with Wages</h3><p>Factories Act provisions</p><a href="q7.html" class="btn">Read</a></div>
+
+  <!-- LONG QUESTIONS -->
+  <div class="card"><h3>Conditions & Warranties</h3><p>Sale of Goods Act 1930</p><a href="q8.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Unpaid Seller Rights</h3><p>Against goods & buyer</p><a href="q9.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Delivery of Goods</h3><p>Rules and legal framework</p><a href="q10.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Nemo Dat Rule</h3><p>Meaning with exceptions</p><a href="q11.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Performance of Contract</h3><p>Legal provisions</p><a href="q12.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Health & Welfare (Factories Act)</h3><p>Worker protection provisions</p><a href="q13.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Safety Measures (Factories Act)</h3><p>Statutory requirements</p><a href="q14.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Industrial Dispute Authorities</h3><p>Investigation & settlement bodies</p><a href="q15.html" class="btn">Read</a></div>
+
+  <div class="card"><h3>Legal vs Illegal Strike</h3><p>Consequences for workers</p><a href="q16.html" class="btn">Read</a></div>
 
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
   <div>
     Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
