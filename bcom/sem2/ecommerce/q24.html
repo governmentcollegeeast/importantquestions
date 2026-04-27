@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart — DegreeNotes</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --bg:#f4f6fb;
+  --text:#1f2a44;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:30px;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:700;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav a{
+  text-decoration:none;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.title{
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.section{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  margin-bottom:15px;
+}
+
+.section h2{
+  font-size:18px;
+  color:var(--primary);
+  margin-bottom:10px;
+}
+
+.section p{
+  font-size:15px;
+  margin-bottom:12px;
+  text-align:justify;
+}
+
+.points{
+  padding-left:20px;
+}
+
+.points li{
+  margin-bottom:10px;
+  font-size:15px;
+}
+
+.highlight{
+  background:#eef2ff;
+  border-left:4px solid #4f46e5;
+  padding:14px;
+  border-radius:10px;
+  margin-top:12px;
+}
+
+.diagram{
+  border:1px dashed #94a3b8;
+  background:#f8fafc;
+  border-radius:12px;
+  padding:20px;
+  margin-top:15px;
+}
+
+.flow-box{
+  background:white;
+  border:1px solid #cbd5e1;
+  border-radius:10px;
+  padding:12px;
+  text-align:center;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.arrow{
+  text-align:center;
+  font-size:22px;
+  color:#1e3a8a;
+  margin-bottom:10px;
+}
+
+.footer{
+  margin-top:30px;
+  border-top:1px solid var(--border);
+  padding-top:15px;
+  font-size:13px;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.footer a{
+  text-decoration:none;
+  color:var(--primary);
+  margin-right:15px;
+  font-size:13px;
+}
+
+.footer-links{
+  margin-bottom:10px;
+}
+
+@media(max-width:600px){
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+  }
+
+  .title{
+    font-size:22px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+  <div class="logo">Degree<span>Notes</span></div>
+  <a href="index.html">← Back</a>
+</div>
+
+<div class="title">
+Shopping Cart
+</div>
+
+<div class="meta">
+Government College Ludhiana East • E-Commerce — BBA Semester II  
+Prepared by: Jeevansh Manocha
+</div>
+
+<!-- INTRODUCTION -->
+
+<div class="section">
+
+<h2>Introduction</h2>
+
+<p>
+A shopping cart is one of the most important components of an E-Commerce website. It allows customers to select, store, and manage products before completing the online purchase process. Shopping cart systems make online shopping convenient, organized, and efficient for customers as well as businesses.
+</p>
+
+</div>
+
+<!-- MEANING -->
+
+<div class="section">
+
+<h2>Meaning of Shopping Cart</h2>
+
+<p>
+A Shopping Cart is a software application used in E-Commerce websites that allows customers to collect and manage products they wish to purchase online.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>Definition:</strong> A Shopping Cart is an online software tool that enables customers to select, review, modify, and purchase products through an E-Commerce website.
+</p>
+
+</div>
+
+</div>
+
+<!-- FEATURES -->
+
+<div class="section">
+
+<h2>Features of Shopping Cart</h2>
+
+<ul class="points">
+
+<li>Add products for purchase</li>
+
+<li>Remove products from the cart</li>
+
+<li>Update quantity of products</li>
+
+<li>Display total cost of products</li>
+
+<li>Provide secure checkout process</li>
+
+<li>Support multiple payment options</li>
+
+</ul>
+
+</div>
+
+<!-- WORKING -->
+
+<div class="section">
+
+<h2>Working of Shopping Cart</h2>
+
+<div class="diagram">
+
+<div class="flow-box">
+Customer Selects Product
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Product Added to Shopping Cart
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Customer Reviews Products
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Checkout & Payment Process
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Order Confirmation
+</div>
+
+</div>
+
+</div>
+
+<!-- IMPORTANCE -->
+
+<div class="section">
+
+<h2>Importance of Shopping Cart in E-Commerce</h2>
+
+<ul class="points">
+
+<li>Provides convenience in online shopping</li>
+
+<li>Helps customers manage selected products</li>
+
+<li>Improves online purchasing experience</li>
+
+<li>Supports secure online transactions</li>
+
+<li>Increases efficiency of E-Commerce operations</li>
+
+</ul>
+
+</div>
+
+<!-- ADVANTAGES -->
+
+<div class="section">
+
+<h2>Advantages of Shopping Cart</h2>
+
+<ul class="points">
+
+<li>Easy product selection and management</li>
+
+<li>Fast online purchasing process</li>
+
+<li>Automatic calculation of total price</li>
+
+<li>Supports multiple payment methods</li>
+
+<li>Enhances customer satisfaction</li>
+
+</ul>
+
+</div>
+
+<!-- LIMITATIONS -->
+
+<div class="section">
+
+<h2>Limitations of Shopping Cart</h2>
+
+<ul class="points">
+
+<li>Technical errors may affect transactions</li>
+
+<li>Security risks in online payments</li>
+
+<li>Dependence on internet connectivity</li>
+
+<li>Cart abandonment by customers</li>
+
+</ul>
+
+</div>
+
+<!-- CONCLUSION -->
+
+<div class="section">
+
+<h2>Conclusion</h2>
+
+<p>
+A Shopping Cart is an essential tool of E-Commerce that simplifies the online purchasing process for customers. It helps users select, manage, and purchase products conveniently through digital platforms. By improving customer experience and supporting secure online transactions, shopping carts play a vital role in the success of E-Commerce businesses.
+</p>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<div>
+
+<div class="footer-links">
+<a href="https://degreenotes.store/">Home</a>
+<a href="https://degreenotes.store/about.html">About</a>
+<a href="https://degreenotes.store/resources.html">Resources</a>
+</div>
+
+Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
+Government College Ludhiana (East), Panjab University
+
+</div>
+
+<div>
+© DegreeNotes.store
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

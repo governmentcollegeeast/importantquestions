@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cryptography: Public and Private Key Cryptography — DegreeNotes</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --bg:#f4f6fb;
+  --text:#1f2a44;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:30px;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:700;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav a{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.title{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:13px;
+  margin-bottom:22px;
+}
+
+.section{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:22px;
+  margin-bottom:18px;
+}
+
+.section h2{
+  color:var(--primary);
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+.section p{
+  font-size:15px;
+  margin-bottom:14px;
+  text-align:justify;
+}
+
+.points{
+  padding-left:22px;
+}
+
+.points li{
+  margin-bottom:14px;
+  font-size:15px;
+}
+
+.highlight{
+  background:#eef2ff;
+  border-left:5px solid #4f46e5;
+  padding:16px;
+  border-radius:12px;
+  margin-top:10px;
+}
+
+.diagram{
+  border:1px dashed #94a3b8;
+  background:#f8fafc;
+  border-radius:14px;
+  padding:20px;
+  margin-top:15px;
+}
+
+.flow-box{
+  background:#fff;
+  border:1px solid #cbd5e1;
+  border-radius:10px;
+  padding:14px;
+  text-align:center;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.arrow{
+  text-align:center;
+  font-size:22px;
+  color:#1e3a8a;
+  margin-bottom:10px;
+}
+
+.table-wrapper{
+  overflow-x:auto;
+  margin-top:15px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:700px;
+}
+
+table th{
+  background:#1e3a8a;
+  color:white;
+  padding:12px;
+  text-align:left;
+  font-size:14px;
+}
+
+table td{
+  border:1px solid #e5e7eb;
+  padding:12px;
+  font-size:14px;
+  vertical-align:top;
+}
+
+.footer{
+  margin-top:30px;
+  border-top:1px solid var(--border);
+  padding-top:15px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.footer-links{
+  margin-bottom:10px;
+}
+
+.footer a{
+  text-decoration:none;
+  color:var(--primary);
+  margin-right:15px;
+}
+
+@media(max-width:600px){
+
+.footer{
+flex-direction:column;
+text-align:center;
+gap:10px;
+}
+
+.title{
+font-size:24px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<div class="logo">Degree<span>Notes</span></div>
+<a href="index.html">← Back</a>
+</div>
+
+<div class="title">
+What is Cryptography? Explain Public and Private Key Cryptography in Detail
+</div>
+
+<div class="meta">
+Government College Ludhiana East • E-Commerce — BBA Semester II  
+Prepared by: Jeevansh Manocha
+</div>
+
+<!-- INTRODUCTION -->
+
+<div class="section">
+
+<h2>Introduction</h2>
+
+<p>
+In modern E-Commerce systems, businesses exchange highly sensitive information such as passwords, banking details, customer records, and financial transactions through digital networks. Without proper security systems, this information may be stolen, modified, or misused by unauthorized users.
+</p>
+
+<p>
+To protect electronic information and ensure secure communication, organizations use cryptography. Cryptography converts readable information into coded form so that only authorized users can access and understand it. It plays an important role in securing online transactions, digital communication, and E-Commerce systems.
+</p>
+
+</div>
+
+<!-- MEANING -->
+
+<div class="section">
+
+<h2>Meaning of Cryptography</h2>
+
+<p>
+Cryptography refers to the process of converting readable information into coded or encrypted form to protect it from unauthorized access.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>Definition:</strong> Cryptography is the science of securing information by converting data into coded form so that only authorized users can access and understand it.
+</p>
+
+</div>
+
+<p>
+The original readable information is called <strong>Plain Text</strong>, while the coded information is called <strong>Cipher Text</strong>.
+</p>
+
+</div>
+
+<!-- OBJECTIVES -->
+
+<div class="section">
+
+<h2>Objectives of Cryptography</h2>
+
+<ul class="points">
+
+<li>Protect confidentiality of information.</li>
+
+<li>Prevent unauthorized access to data.</li>
+
+<li>Ensure data integrity during transmission.</li>
+
+<li>Provide authentication of users.</li>
+
+<li>Secure online business transactions.</li>
+
+</ul>
+
+</div>
+
+<!-- PROCESS -->
+
+<div class="section">
+
+<h2>Basic Process of Cryptography</h2>
+
+<div class="diagram">
+
+<div class="flow-box">
+Plain Text
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Encryption Process
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Cipher Text
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Decryption Process
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Original Information
+</div>
+
+</div>
+
+</div>
+
+<!-- PRIVATE KEY -->
+
+<div class="section">
+
+<h2>Private Key Cryptography</h2>
+
+<p>
+Private Key Cryptography is also known as Symmetric Key Cryptography. In this method, a single secret key is used for both encryption and decryption of information.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>Definition:</strong> Private Key Cryptography is a security method in which the same secret key is used for converting plain text into cipher text and converting cipher text back into readable form.
+</p>
+
+</div>
+
+<h2>Working of Private Key Cryptography</h2>
+
+<div class="diagram">
+
+<div class="flow-box">
+Plain Text
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Encryption Using Secret Key
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Cipher Text
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Decryption Using Same Secret Key
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Readable Information
+</div>
+
+</div>
+
+<h2>Advantages of Private Key Cryptography</h2>
+
+<ul class="points">
+
+<li>Fast encryption and decryption process.</li>
+
+<li>Efficient for large amounts of data.</li>
+
+<li>Simple implementation process.</li>
+
+</ul>
+
+<h2>Limitations of Private Key Cryptography</h2>
+
+<ul class="points">
+
+<li>Difficulty in securely sharing the secret key.</li>
+
+<li>Risk of key theft by unauthorized users.</li>
+
+<li>Less secure for large communication networks.</li>
+
+</ul>
+
+</div>
+
+<!-- PUBLIC KEY -->
+
+<div class="section">
+
+<h2>Public Key Cryptography</h2>
+
+<p>
+Public Key Cryptography is also known as Asymmetric Key Cryptography. In this method, two different keys are used — a public key and a private key.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>Definition:</strong> Public Key Cryptography is a cryptographic system that uses two different keys, one for encryption and another for decryption of information.
+</p>
+
+</div>
+
+<h2>Working of Public Key Cryptography</h2>
+
+<ul class="points">
+
+<li>The sender encrypts the information using the receiver’s public key.</li>
+
+<li>The encrypted message is transmitted electronically.</li>
+
+<li>The receiver decrypts the message using a private key.</li>
+
+<li>Only the authorized receiver can access the original information.</li>
+
+</ul>
+
+<div class="diagram">
+
+<div class="flow-box">
+Plain Text
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Encryption Using Public Key
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Cipher Text
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Decryption Using Private Key
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Original Information
+</div>
+
+</div>
+
+<h2>Advantages of Public Key Cryptography</h2>
+
+<ul class="points">
+
+<li>Higher level of security.</li>
+
+<li>No need to share private keys publicly.</li>
+
+<li>Supports digital signatures and authentication.</li>
+
+<li>Suitable for internet-based communication systems.</li>
+
+</ul>
+
+<h2>Limitations of Public Key Cryptography</h2>
+
+<ul class="points">
+
+<li>Slower encryption and decryption process.</li>
+
+<li>Complex implementation.</li>
+
+<li>Requires high computational power.</li>
+
+</ul>
+
+</div>
+
+<!-- COMPARISON -->
+
+<div class="section">
+
+<h2>Difference Between Public Key and Private Key Cryptography</h2>
+
+<div class="table-wrapper">
+
+<table>
+
+<tr>
+<th>Basis</th>
+<th>Private Key Cryptography</th>
+<th>Public Key Cryptography</th>
+</tr>
+
+<tr>
+<td>Number of Keys</td>
+<td>Uses one secret key</td>
+<td>Uses two keys</td>
+</tr>
+
+<tr>
+<td>Security Level</td>
+<td>Lower security</td>
+<td>Higher security</td>
+</tr>
+
+<tr>
+<td>Speed</td>
+<td>Faster process</td>
+<td>Slower process</td>
+</tr>
+
+<tr>
+<td>Key Sharing</td>
+<td>Secret key must be shared</td>
+<td>No need to share private key</td>
+</tr>
+
+<tr>
+<td>Complexity</td>
+<td>Simple system</td>
+<td>Complex system</td>
+</tr>
+
+<tr>
+<td>Main Use</td>
+<td>Data encryption</td>
+<td>Secure communication and authentication</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- IMPORTANCE -->
+
+<div class="section">
+
+<h2>Importance of Cryptography in E-Commerce</h2>
+
+<ul class="points">
+
+<li>Protects online financial transactions.</li>
+
+<li>Secures customer information.</li>
+
+<li>Prevents cybercrime and hacking.</li>
+
+<li>Supports secure communication systems.</li>
+
+<li>Enhances trust in online business transactions.</li>
+
+</ul>
+
+</div>
+
+<!-- CONCLUSION -->
+
+<div class="section">
+
+<h2>Conclusion</h2>
+
+<p>
+Cryptography is an essential security system used in E-Commerce and digital communication to protect sensitive information from unauthorized access. It ensures confidentiality, integrity, authentication, and security in online transactions.
+</p>
+
+<p>
+Private key cryptography uses a single secret key for encryption and decryption, while public key cryptography uses two separate keys for higher security. Both methods play an important role in securing electronic communication and maintaining trust in modern digital business systems.
+</p>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<div>
+
+<div class="footer-links">
+<a href="https://degreenotes.store/">Home</a>
+<a href="https://degreenotes.store/about.html">About</a>
+<a href="https://degreenotes.store/resources.html">Resources</a>
+</div>
+
+Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
+Government College Ludhiana (East), Panjab University
+
+</div>
+
+<div>
+© DegreeNotes.store
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

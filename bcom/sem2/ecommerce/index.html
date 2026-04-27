@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce — DegreeNotes</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --accent:#4f46e5;
+  --bg:#f4f6fb;
+  --text:#1f2a44;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav a{
+  font-size:14px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.hero h1{
+  font-size:28px;
+  margin-bottom:6px;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* SECTION TITLE */
+.unit-title{
+  margin:30px 0 15px;
+  font-size:18px;
+  font-weight:600;
+  color:var(--primary);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  transition:0.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+  color:var(--primary);
+  font-size:15px;
+  margin-bottom:8px;
+}
+
+.card p{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 14px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:50px;
+  border-top:1px solid var(--border);
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  color:var(--muted);
+  flex-wrap:wrap;
+}
+
+/* DISCLAIMER */
+.disclaimer-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.disclaimer-modal{
+  max-width:520px;
+  width:90%;
+  background:#fff;
+  border-radius:12px;
+  border:1px solid var(--border);
+  box-shadow:0 20px 45px rgba(15,23,42,0.25);
+  padding:18px;
+  position:relative;
+}
+
+.disclaimer-title{
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.disclaimer-text{
+  font-size:14px;
+  color:#475569;
+  line-height:1.6;
+}
+
+.disclaimer-close{
+  position:absolute;
+  top:8px;
+  right:10px;
+  border:none;
+  background:transparent;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .hero h1{
+    font-size:22px;
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- DISCLAIMER -->
+<div id="disclaimerOverlay" class="disclaimer-overlay">
+  <div class="disclaimer-modal">
+    <button class="disclaimer-close" id="disclaimerClose">&times;</button>
+    <div class="disclaimer-title">Academic Disclaimer</div>
+    <p class="disclaimer-text">
+      These notes are based on important questions and syllabus. They are for preparation purposes only and not guaranteed exam predictions.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">Degree<span>Notes</span></div>
+  <a href="../index.html">← Back</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>E-Commerce</h1>
+  <p>BBA Semester II • Important Questions</p>
+</div>
+
+<!-- LONG QUESTIONS -->
+<div class="unit-title">Long Questions</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Introduction to E-Commerce</h3>
+    <p>Meaning, traditional commerce comparison & framework</p>
+    <a href="q1.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>History of E-Commerce in India</h3>
+    <p>E-Commerce vs E-Business</p>
+    <a href="q2.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>E-Business & Opportunities</h3>
+    <p>Concept and opportunities in digital business</p>
+    <a href="q3.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Online Business Requirements</h3>
+    <p>Development & deployment stages of E-Commerce system</p>
+    <a href="q4.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>E-Business Models & SCM</h3>
+    <p>Business models and role in supply chain management</p>
+    <a href="q5.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Emergence of E-Commerce</h3>
+    <p>Factors responsible for growth of E-Commerce</p>
+    <a href="q6.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Electronic Payment Systems</h3>
+    <p>Types, options and threats in EPS</p>
+    <a href="q7.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Impact of E-Commerce on Business</h3>
+    <p>Effects on various business sectors</p>
+    <a href="q8.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Digital Signature Infrastructure</h3>
+    <p>Securing E-Commerce systems</p>
+    <a href="q9.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Electronic Data Interchange (EDI)</h3>
+    <p>Importance and benefits in business management</p>
+    <a href="q10.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Structure of E-Commerce</h3>
+    <p>Organization and structural framework</p>
+    <a href="q11.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Cryptography</h3>
+    <p>Public key and private key cryptography</p>
+    <a href="q12.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Impact of E-Commerce Services</h3>
+    <p>Financial, education, entertainment & healthcare sectors</p>
+    <a href="q13.html" class="btn">Read</a>
+  </div>
+
+</div>
+
+<!-- SHORT QUESTIONS -->
+<div class="unit-title">Short Questions</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>E-Business Model</h3>
+    <a href="q14.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Tools of E-Commerce</h3>
+    <a href="q15.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Economic Impact of E-Commerce</h3>
+    <a href="q16.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Supply Chain Management</h3>
+    <a href="q17.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Web Based vs Traditional Business</h3>
+    <a href="q18.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Growth of E-Commerce</h3>
+    <a href="q19.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Pure Online vs Brick & Click</h3>
+    <a href="q20.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Cryptography</h3>
+    <a href="q21.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Digital Signature</h3>
+    <a href="q22.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>E-Wallet, E-Cheque & E-Cash</h3>
+    <a href="q23.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Shopping Cart</h3>
+    <a href="q24.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Currency Servers</h3>
+    <a href="q25.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Credit, Debit & Smart Cards</h3>
+    <a href="q26.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Present Status of E-Commerce</h3>
+    <a href="q27.html" class="btn">Read</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+  <div>
+    <div style="margin-bottom:8px;">
+      <a href="https://degreenotes.store/" style="margin-right:15px;color:#6b7280;text-decoration:none;">Home</a>
+      <a href="https://degreenotes.store/about.html" style="margin-right:15px;color:#6b7280;text-decoration:none;">About</a>
+      <a href="https://degreenotes.store/resources.html" style="color:#6b7280;text-decoration:none;">Resources</a>
+    </div>
+
+    Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
+    Government College Ludhiana (East), Panjab University
+  </div>
+
+  <div>© DegreeNotes.store</div>
+
+</div>
+
+</div>
+
+<script>
+(function(){
+  const overlay = document.getElementById('disclaimerOverlay');
+  const closeBtn = document.getElementById('disclaimerClose');
+
+  function hide(){
+    overlay.style.display='none';
+  }
+
+  setTimeout(hide, 8000);
+  closeBtn.onclick = hide;
+})();
+</script>
+
+</body>
+</html>

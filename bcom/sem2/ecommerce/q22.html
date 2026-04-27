@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Signature — DegreeNotes</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --bg:#f4f6fb;
+  --text:#1f2a44;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:30px;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:700;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav a{
+  text-decoration:none;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.title{
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.section{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  margin-bottom:15px;
+}
+
+.section h2{
+  font-size:18px;
+  color:var(--primary);
+  margin-bottom:10px;
+}
+
+.section p{
+  font-size:15px;
+  margin-bottom:12px;
+  text-align:justify;
+}
+
+.points{
+  padding-left:20px;
+}
+
+.points li{
+  margin-bottom:10px;
+  font-size:15px;
+}
+
+.highlight{
+  background:#eef2ff;
+  border-left:4px solid #4f46e5;
+  padding:14px;
+  border-radius:10px;
+  margin-top:12px;
+}
+
+.diagram{
+  border:1px dashed #94a3b8;
+  background:#f8fafc;
+  border-radius:12px;
+  padding:20px;
+  margin-top:15px;
+}
+
+.flow-box{
+  background:white;
+  border:1px solid #cbd5e1;
+  border-radius:10px;
+  padding:12px;
+  text-align:center;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.arrow{
+  text-align:center;
+  font-size:22px;
+  color:#1e3a8a;
+  margin-bottom:10px;
+}
+
+.footer{
+  margin-top:30px;
+  border-top:1px solid var(--border);
+  padding-top:15px;
+  font-size:13px;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.footer a{
+  text-decoration:none;
+  color:var(--primary);
+  margin-right:15px;
+  font-size:13px;
+}
+
+.footer-links{
+  margin-bottom:10px;
+}
+
+@media(max-width:600px){
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+  }
+
+  .title{
+    font-size:22px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+  <div class="logo">Degree<span>Notes</span></div>
+  <a href="index.html">← Back</a>
+</div>
+
+<div class="title">
+Digital Signature
+</div>
+
+<div class="meta">
+Government College Ludhiana East • E-Commerce — BBA Semester II  
+Prepared by: Jeevansh Manocha
+</div>
+
+<!-- INTRODUCTION -->
+
+<div class="section">
+
+<h2>Introduction</h2>
+
+<p>
+Security is one of the most important requirements in E-Commerce and online business transactions. Businesses and customers exchange sensitive information through digital networks, which creates risks of fraud, hacking, and unauthorized access. To ensure authenticity and security in electronic transactions, digital signatures are widely used.
+</p>
+
+</div>
+
+<!-- MEANING -->
+
+<div class="section">
+
+<h2>Meaning of Digital Signature</h2>
+
+<p>
+A Digital Signature is an electronic method used to verify the identity of the sender and ensure that electronic information has not been altered during transmission.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>Definition:</strong> A Digital Signature is an electronic authentication technique that verifies the authenticity and integrity of digital messages or documents using cryptographic methods.
+</p>
+
+</div>
+
+</div>
+
+<!-- FEATURES -->
+
+<div class="section">
+
+<h2>Features of Digital Signature</h2>
+
+<ul class="points">
+
+<li>Provides authentication of users</li>
+
+<li>Ensures data integrity</li>
+
+<li>Supports secure electronic transactions</li>
+
+<li>Prevents unauthorized modification of data</li>
+
+<li>Provides non-repudiation in transactions</li>
+
+</ul>
+
+</div>
+
+<!-- WORKING -->
+
+<div class="section">
+
+<h2>Working of Digital Signature</h2>
+
+<div class="diagram">
+
+<div class="flow-box">
+Electronic Document Created
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Digital Signature Generated Using Private Key
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Signed Document Sent Online
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Verification Using Public Key
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="flow-box">
+Authenticated & Secure Transaction
+</div>
+
+</div>
+
+</div>
+
+<!-- IMPORTANCE -->
+
+<div class="section">
+
+<h2>Importance of Digital Signature in E-Commerce</h2>
+
+<ul class="points">
+
+<li>Provides security in online transactions</li>
+
+<li>Authenticates identity of users</li>
+
+<li>Protects confidential business information</li>
+
+<li>Prevents online fraud and forgery</li>
+
+<li>Improves customer trust in E-Commerce systems</li>
+
+</ul>
+
+</div>
+
+<!-- ADVANTAGES -->
+
+<div class="section">
+
+<h2>Advantages of Digital Signature</h2>
+
+<ul class="points">
+
+<li>Fast electronic authentication</li>
+
+<li>Secure communication over networks</li>
+
+<li>Reduction in paperwork</li>
+
+<li>Legally accepted in many countries</li>
+
+<li>Improves efficiency of business transactions</li>
+
+</ul>
+
+</div>
+
+<!-- LIMITATIONS -->
+
+<div class="section">
+
+<h2>Limitations of Digital Signature</h2>
+
+<ul class="points">
+
+<li>Requires technical infrastructure</li>
+
+<li>Risk of private key theft</li>
+
+<li>Need for proper cybersecurity systems</li>
+
+<li>Technical complexity in implementation</li>
+
+</ul>
+
+</div>
+
+<!-- CONCLUSION -->
+
+<div class="section">
+
+<h2>Conclusion</h2>
+
+<p>
+Digital Signature is an important security tool used in E-Commerce and online communication systems. It helps verify the authenticity of users, ensures data integrity, and protects electronic transactions from fraud and unauthorized access. With the increasing growth of digital business activities, digital signatures have become essential for maintaining trust and security in the modern digital economy.
+</p>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<div>
+
+<div class="footer-links">
+<a href="https://degreenotes.store/">Home</a>
+<a href="https://degreenotes.store/about.html">About</a>
+<a href="https://degreenotes.store/resources.html">Resources</a>
+</div>
+
+Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
+Government College Ludhiana (East), Panjab University
+
+</div>
+
+<div>
+© DegreeNotes.store
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
