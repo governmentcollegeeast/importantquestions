@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Literacy VAC 101 — DegreeNotes</title>
+
+<style>
+:root{
+  --primary:#1e3a8a;
+  --accent:#4f46e5;
+  --bg:#f4f6fb;
+  --text:#1f2a44;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+}
+
+.logo span{
+  background:linear-gradient(90deg,#1e3a8a,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav a{
+  font-size:14px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.hero h1{
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* SECTION TITLE */
+.unit-title{
+  margin:35px 0 18px;
+  font-size:20px;
+  font-weight:700;
+  color:var(--primary);
+  border-left:4px solid var(--accent);
+  padding-left:12px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  transition:0.25s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.card h3{
+  color:var(--primary);
+  font-size:16px;
+  margin-bottom:10px;
+  line-height:1.4;
+}
+
+.card p{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:14px;
+  line-height:1.6;
+}
+
+.btn{
+  display:inline-block;
+  padding:9px 15px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+  transition:0.2s;
+}
+
+.btn:hover{
+  background:#172554;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:60px;
+  border-top:1px solid var(--border);
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.footer-links{
+  margin-bottom:8px;
+}
+
+.footer-links a{
+  margin-right:15px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+/* DISCLAIMER */
+.disclaimer-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,0.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.disclaimer-modal{
+  max-width:520px;
+  width:90%;
+  background:#fff;
+  border-radius:12px;
+  border:1px solid var(--border);
+  box-shadow:0 20px 45px rgba(15,23,42,0.25);
+  padding:18px;
+  position:relative;
+}
+
+.disclaimer-title{
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.disclaimer-text{
+  font-size:14px;
+  color:#475569;
+  line-height:1.6;
+}
+
+.disclaimer-close{
+  position:absolute;
+  top:8px;
+  right:10px;
+  border:none;
+  background:transparent;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+  .nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .hero h1{
+    font-size:24px;
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- DISCLAIMER -->
+<div id="disclaimerOverlay" class="disclaimer-overlay">
+  <div class="disclaimer-modal">
+    <button class="disclaimer-close" id="disclaimerClose">&times;</button>
+
+    <div class="disclaimer-title">Academic Disclaimer</div>
+
+    <p class="disclaimer-text">
+      These notes are based on important questions and syllabus. They are for preparation purposes only and not guaranteed exam predictions.
+    </p>
+
+  </div>
+</div>
+
+<div class="container">
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">Degree<span>Notes</span></div>
+  <a href="../index.html">← Back</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Financial Literacy VAC 101</h1>
+  <p>B.Com Semester I • Important Questions</p>
+</div>
+
+<!-- UNIT I -->
+<div class="unit-title">Unit I — Long Questions</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Financial Planning & Budgeting</h3>
+    <p>Meaning, importance, need, procedure and different types of budgets.</p>
+    <a href="q1.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Avenues for Savings from Surplus</h3>
+    <p>Concept of savings and various avenues for investing surplus funds.</p>
+    <a href="q2.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Financial Literacy</h3>
+    <p>Meaning, features, components and major concepts of financial literacy.</p>
+    <a href="q3.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Financial Institutions</h3>
+    <p>Meaning, types and role of financial institutions in the economy.</p>
+    <a href="q4.html" class="btn">Read</a>
+  </div>
+
+</div>
+
+<div class="unit-title">Unit I — Short Questions</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Steps in Financial Planning</h3>
+    <p>Procedure for financial planning and budgeting.</p>
+    <a href="q5.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Risk Management Plan</h3>
+    <p>Meaning and importance of risk management plan.</p>
+    <a href="q6.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Close-ended Scheme</h3>
+    <p>Concept and features of close-ended schemes.</p>
+    <a href="q7.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Concept of Savings</h3>
+    <p>Meaning and importance of savings.</p>
+    <a href="q8.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Financial Knowledge</h3>
+    <p>Meaning and significance of financial knowledge.</p>
+    <a href="q9.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Features of Financial Literacy</h3>
+    <p>Main characteristics and features of financial literacy.</p>
+    <a href="q10.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Financial Instruments</h3>
+    <p>Short note on financial instruments.</p>
+    <a href="q11.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Financial Intermediation</h3>
+    <p>Meaning and role of financial intermediation.</p>
+    <a href="q12.html" class="btn">Read</a>
+  </div>
+
+</div>
+
+<!-- UNIT II -->
+<div class="unit-title">Unit II — Long Questions</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Banking: Meaning & Functions</h3>
+    <p>Role of commercial banks in economic development.</p>
+    <a href="q13.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Types of Banks</h3>
+    <p>Different types of banks and their functions.</p>
+    <a href="q14.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Insurance: Meaning, Functions & Types</h3>
+    <p>Definition, importance and various types of insurance.</p>
+    <a href="q15.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>General Insurance</h3>
+    <p>Meaning and principles of fire insurance contract.</p>
+    <a href="q16.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Life Insurance</h3>
+    <p>Nature, importance and principles of life insurance.</p>
+    <a href="q17.html" class="btn">Read</a>
+  </div>
+
+</div>
+
+<div class="unit-title">Unit II — Short Questions</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Role of Banks</h3>
+    <p>Role of banks in economic development.</p>
+    <a href="q18.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Retail Bank</h3>
+    <p>Meaning and functions of retail banking.</p>
+    <a href="q19.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>E-Purse</h3>
+    <p>Meaning and concept of E-Purse.</p>
+    <a href="q20.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>NEFT</h3>
+    <p>Meaning and working of NEFT system.</p>
+    <a href="q21.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>E-Money</h3>
+    <p>Concept and uses of electronic money.</p>
+    <a href="q22.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Deposit Mobilization</h3>
+    <p>Meaning and importance of deposit mobilization.</p>
+    <a href="q23.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Management of Deposits</h3>
+    <p>Meaning and methods of managing deposits.</p>
+    <a href="q24.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>KYC Norms</h3>
+    <p>Concepts and significance of KYC norms.</p>
+    <a href="q25.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Life Insurance vs General Insurance</h3>
+    <p>Comparison between life insurance and general insurance.</p>
+    <a href="q26.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Health Insurance Premium</h3>
+    <p>Factors affecting health insurance premium.</p>
+    <a href="q27.html" class="btn">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Family Health Insurance Policy</h3>
+    <p>Meaning and benefits of family health insurance policy.</p>
+    <a href="q28.html" class="btn">Read</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+  <div>
+
+    <div class="footer-links">
+      <a href="https://degreenotes.store/">Home</a>
+      <a href="https://degreenotes.store/about.html">About</a>
+      <a href="https://degreenotes.store/resources.html">Resources</a>
+    </div>
+
+    Curated by <strong style="color:#1e3a8a;">Jeevansh Manocha</strong><br>
+    Government College Ludhiana (East), Panjab University
+
+  </div>
+
+  <div>
+    © DegreeNotes.store
+  </div>
+
+</div>
+
+</div>
+
+<script>
+
+(function(){
+
+  const overlay = document.getElementById('disclaimerOverlay');
+  const closeBtn = document.getElementById('disclaimerClose');
+
+  function hide(){
+    overlay.style.display='none';
+  }
+
+  setTimeout(hide,8000);
+
+  closeBtn.onclick = hide;
+
+})();
+
+</script>
+
+</body>
+</html>
